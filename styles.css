@@ -1704,13 +1704,19 @@ ul {
     }
 
     .product-key-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         padding: 1.5rem;
         gap: 1.5rem;
+        max-width: 400px;
+        margin: 0 auto 3rem;
     }
 
-    .product-key-stat:not(:last-child)::after {
-        display: none;
+    .product-key-stat__val {
+        font-size: 1.5rem;
+    }
+
+    .product-key-stat__label {
+        font-size: 0.7rem;
     }
 
     .products {
