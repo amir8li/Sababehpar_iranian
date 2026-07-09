@@ -188,18 +188,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (prevBtn && nextBtn && track) {
         nextBtn.addEventListener('click', () => {
-            const maxScroll = getMaxScroll();
-            const step = getCardWidth();
-            carouselPosition = Math.min(carouselPosition + step, maxScroll);
-            const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
-            track.style.transform = `translateX(${dir * carouselPosition}px)`;
+            if (window.innerWidth <= 640) {
+                const dir = document.documentElement.dir === 'rtl' ? -1 : 1;
+                track.scrollBy({ left: dir * getCardWidth(), behavior: 'smooth' });
+            } else {
+                const maxScroll = getMaxScroll();
+                const step = getCardWidth();
+                carouselPosition = Math.min(carouselPosition + step, maxScroll);
+                const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
+                track.style.transform = `translateX(${dir * carouselPosition}px)`;
+            }
         });
 
         prevBtn.addEventListener('click', () => {
-            const step = getCardWidth();
-            carouselPosition = Math.max(carouselPosition - step, 0);
-            const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
-            track.style.transform = `translateX(${dir * carouselPosition}px)`;
+            if (window.innerWidth <= 640) {
+                const dir = document.documentElement.dir === 'rtl' ? -1 : 1;
+                track.scrollBy({ left: -dir * getCardWidth(), behavior: 'smooth' });
+            } else {
+                const step = getCardWidth();
+                carouselPosition = Math.max(carouselPosition - step, 0);
+                const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
+                track.style.transform = `translateX(${dir * carouselPosition}px)`;
+            }
         });
     }
 

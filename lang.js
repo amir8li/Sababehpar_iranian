@@ -98,7 +98,8 @@ const translations = {
         'phone-header': 'Quick Contact',
         'phone-office': '<strong>Office</strong><span>+98 21 8800 0000</span>',
         'phone-factory': '<strong>Factory</strong><span>+98 912 000 0000</span>',
-        'modal-cta': 'Request Industry Sample'
+        'modal-cta': 'Request Industry Sample',
+        'swipe-text-span': 'Swipe for more'
     },
     'fa': {
         'nav-home': 'خانه',
@@ -199,7 +200,8 @@ const translations = {
         'phone-header': 'تماس سریع',
         'phone-office': '<strong>دفتر مرکزی</strong><span>+98 21 8800 0000</span>',
         'phone-factory': '<strong>کارخانه</strong><span>+98 912 000 0000</span>',
-        'modal-cta': 'درخواست نمونه صنعتی'
+        'modal-cta': 'درخواست نمونه صنعتی',
+        'swipe-text-span': 'برای مشاهده بیشتر بکشید'
     }
 };
 
@@ -302,7 +304,8 @@ const mapIds = {
     'phone-header': '.floating-phone__header',
     'phone-office': '#phone-office div',
     'phone-factory': '#phone-factory div',
-    'modal-cta': '#modal-cta'
+    'modal-cta': '#modal-cta',
+    'swipe-text-span': '#swipe-text-span'
 };
 
 function changeLanguage(lang) {
