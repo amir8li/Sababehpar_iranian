@@ -721,6 +721,59 @@ ul {
     margin-top: 0.35rem;
 }
 
+.about__features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.feature-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.feature-card__icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    background: rgba(212, 175, 55, 0.1);
+    color: #D4AF37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.feature-card:hover .feature-card__icon {
+    background: #D4AF37;
+    color: #ffffff;
+}
+
+.feature-card__title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #0A192F;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card__desc {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.6;
+}
 
 /* =========================================
    SECTION 4: FEATURED PRODUCTS
@@ -1505,6 +1558,10 @@ ul {
         gap: 2.5rem;
     }
 
+    .about__features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .about__image-frame img {
         height: 300px;
     }
@@ -1564,6 +1621,11 @@ ul {
     .about__stats {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.5rem;
+    }
+
+    .about__features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .about__stat-number {
