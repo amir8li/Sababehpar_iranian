@@ -1,0 +1,481 @@
+const translations = {
+    'en': {
+        'nav-home': 'Home',
+        'nav-about': 'About Us',
+        'nav-products': 'Products',
+        'nav-industries': 'Industries',
+        'nav-news': 'News',
+        'nav-knowledge': 'Knowledge Center',
+        'nav-contact-btn': 'Contact Us',
+        'brand-title': 'SABABEHPAR',
+        'brand-subtitle': 'Iranian Mining Co.',
+        'hero-tag': 'Premium Mineral Solutions Since 2010',
+        'hero-title': 'Iran\'s Leading Producer of<br><span class="hero__title--gold">Calcium Carbonate</span>',
+        'hero-desc': 'High-purity micronized CaCO₃ powders from Aligoodarz mines.<br>Serving paint, plastics, construction & paper industries worldwide.',
+        'hero-cta-explore': 'Explore Our Company',
+        'hero-cta-products': 'View Products',
+        'about-badge-number': '15+',
+        'about-badge-text': 'Years of Excellence',
+        'about-tag': 'About Sababehpar Iranian',
+        'about-title': 'A Trusted Name in <span class="gold-text">Mineral Processing</span>',
+        'about-text-1': 'Sababehpar Iranian Mining Company specializes in the extraction and processing of high-purity calcium carbonate from the premium mines of <strong>Shaghaz, Aligoodarz</strong>. With state-of-the-art production lines and rigorous quality control, we deliver consistently superior micronized powders to industries across Iran and the region.',
+        'about-text-2': 'Our vertically integrated operation — from mine to finished product — ensures unmatched purity levels and precise particle size distribution tailored to each client\'s manufacturing specifications.',
+        'about-learn-more': 'Learn More About Us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>',
+        'stat-workers-label': 'Workers & Staff',
+        'stat-lines-label': 'Production Lines',
+        'stat-capacity-label': 'Annual Capacity',
+        'stat-capacity-unit': ',000+ T',
+        'products-tag': 'Our Products',
+        'products-title': 'Industrial-Grade <span class="gold-text">Mineral Powders</span>',
+        'products-subtitle': 'Five core product grades manufactured with precision at our Aligoodarz facility, each engineered for specific industrial applications.',
+        'product-1-badge': 'Best Seller',
+        'product-1-title': 'GCC Coated<br><small>Stearic Coated CaCO₃</small>',
+        'product-1-kpi-1': 'CaCO₃ Purity',
+        'product-1-kpi-2': 'Whiteness',
+        'product-1-kpi-3': 'D50 Size',
+        'product-1-cta': 'Request Quote →',
+        'product-2-title': 'Talc Powder<br><small>Industrial & Cosmetic Grade</small>',
+        'product-2-kpi-1': 'Purity',
+        'product-2-kpi-2': 'Whiteness',
+        'product-2-kpi-3': 'D50 Size',
+        'product-2-cta': 'Request Quote →',
+        'product-3-title': 'GCC Uncoated<br><small>Ultra-Fine CaCO₃</small>',
+        'product-3-kpi-1': 'CaCO₃ Purity',
+        'product-3-kpi-2': 'Whiteness',
+        'product-3-kpi-3': 'D50 Size',
+        'product-3-cta': 'Request Quote →',
+        'product-4-title': 'Paper-Grade<br><small>CaCO₃ Filler</small>',
+        'product-4-kpi-1': 'CaCO₃ Purity',
+        'product-4-kpi-2': 'Whiteness',
+        'product-4-kpi-3': 'D50 Size',
+        'product-4-cta': 'Request Quote →',
+        'product-5-title': 'Paint Filler<br><small>White CaCO₃ Grade</small>',
+        'product-5-kpi-1': 'CaCO₃ Purity',
+        'product-5-kpi-2': 'Whiteness',
+        'product-5-kpi-3': 'D50 Size',
+        'product-5-cta': 'Request Quote →',
+        'news-tag': 'News & Insights',
+        'news-title': 'Latest From <span class="gold-text">Sababehpar</span>',
+        'news-view-all': 'View All Articles →',
+        'news-1-tag': 'Company News',
+        'news-1-title': 'Expansion of Aligoodarz Mining Operations: Phase II',
+        'news-1-excerpt': 'Sababehpar Iranian announces the commencement of Phase II mining operations, increasing annual extraction capacity by 30%...',
+        'news-1-cta': 'Read Article →',
+        'news-2-tag': 'Technical Paper',
+        'news-2-title': 'Achieving 99% Purity: Our New Quality Control Methodology',
+        'news-2-excerpt': 'How advanced XRF analysis and AI-driven sorting technology have elevated our product purity to industry-leading levels...',
+        'news-2-cta': 'Read Article →',
+        'news-3-tag': 'Industry Trends',
+        'news-3-title': 'CaCO₃ in Modern Polymer Manufacturing: A Comprehensive Guide',
+        'news-3-excerpt': 'Understanding how calcium carbonate particle size and coating type affect mechanical properties of PVC and PP compounds...',
+        'news-3-cta': 'Download PDF →',
+        'industries-tag': 'Industries We Serve',
+        'industries-title': 'Powering <span class="gold-text">Global Industries</span>',
+        'industries-subtitle': 'Our mineral products serve as essential raw materials across diverse manufacturing sectors. Click any industry to learn more.',
+        'industry-paint-title': 'Paint & Coatings',
+        'industry-paint-text': 'Filler & extender pigment for emulsion, industrial and automotive paints.',
+        'industry-plastics-title': 'Plastics & Polymers',
+        'industry-plastics-text': 'Impact modifier and cost reducer for PVC, PP, PE compounds.',
+        'industry-adhesive-title': 'Adhesive & Mastic',
+        'industry-adhesive-text': 'Rheology modifier and thixotropic agent for sealants and adhesives.',
+        'industry-paper-title': 'Paper & Packaging',
+        'industry-paper-text': 'Brightness and opacity enhancer for coated and uncoated paper.',
+        'industry-construction-title': 'Construction',
+        'industry-construction-text': 'Essential raw material for cement, mortar, dry-mix, and tile adhesives.',
+        'footer-desc': 'Leading producer of high-purity micronized calcium carbonate powders from Aligoodarz, Iran. Serving global industries since 2010.',
+        'footer-products-title': 'Products',
+        'footer-contact-title': 'Contact Us',
+        'footer-product-1': 'GCC Coated CaCO₃',
+        'footer-product-2': 'Micronized Talc',
+        'footer-product-3': 'GCC Uncoated CaCO₃',
+        'footer-product-4': 'Paper-Grade Filler',
+        'footer-product-5': 'Paint-Grade CaCO₃',
+        'footer-office': '<strong>Tehran Sales Office</strong><br>Tehran, Iran',
+        'footer-factory': '<strong>Processing Plant</strong><br>Aligoodarz, Lorestan, Iran',
+        'footer-copyright': '&copy; 2026 Sababehpar Iranian Mining Company. All rights reserved.',
+        'footer-privacy': 'Privacy Policy',
+        'footer-terms': 'Terms of Service',
+        'phone-header': 'Quick Contact',
+        'phone-office': '<strong>Office</strong><span>+98 21 8800 0000</span>',
+        'phone-factory': '<strong>Factory</strong><span>+98 912 000 0000</span>',
+        'modal-cta': 'Request Industry Sample'
+    },
+    'fa': {
+        'nav-home': 'خانه',
+        'nav-about': 'درباره ما',
+        'nav-products': 'محصولات',
+        'nav-industries': 'صنایع',
+        'nav-news': 'اخبار',
+        'nav-knowledge': 'مرکز دانش',
+        'nav-contact-btn': 'تماس با ما',
+        'brand-title': 'صبابهپر',
+        'brand-subtitle': 'شرکت معدنی ایرانیان',
+        'hero-tag': 'راهکارهای معدنی برتر از سال ۱۳۸۹',
+        'hero-title': 'تولیدکننده پیشرو <br><span class="hero__title--gold">کربنات کلسیم</span> در ایران',
+        'hero-desc': 'پودرهای میکرونیزه کربنات کلسیم با خلوص بالا از معادن الیگودرز.<br>تأمین‌کننده صنایع رنگ، پلاستیک، ساختمان و کاغذ در جهان.',
+        'hero-cta-explore': 'آشنایی با شرکت',
+        'hero-cta-products': 'مشاهده محصولات',
+        'about-badge-number': '۱۵+',
+        'about-badge-text': 'سال سابقه درخشان',
+        'about-tag': 'درباره صبابهپر ایرانیان',
+        'about-title': 'نامی معتبر در <span class="gold-text">فرآوری مواد معدنی</span>',
+        'about-text-1': 'شرکت معدنی صبابهپر ایرانیان در استخراج و فرآوری کربنات کلسیم با خلوص بالا از معادن ممتاز <strong>شاقز، الیگودرز</strong> تخصص دارد. ما با بهره‌گیری از خطوط تولید مدرن و کنترل کیفیت دقیق، پودرهای میکرونیزه برتر را به صنایع ایران و منطقه عرضه می‌کنیم.',
+        'about-text-2': 'عملیات یکپارچه ما — از معدن تا محصول نهایی — سطوح بی‌نظیر خلوص و توزیع دقیق اندازه ذرات متناسب با مشخصات تولیدی هر مشتری را تضمین می‌کند.',
+        'about-learn-more': 'بیشتر بدانید <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>',
+        'stat-workers-label': 'پرسنل و متخصصین',
+        'stat-lines-label': 'خطوط تولید',
+        'stat-capacity-label': 'ظرفیت سالانه',
+        'stat-capacity-unit': '<span dir="ltr" style="display:inline-block;">+</span> هزار تن',
+        'products-tag': 'محصولات ما',
+        'products-title': '<span class="gold-text">پودرهای معدنی</span> درجه صنعتی',
+        'products-subtitle': 'پنج گرید اصلی محصول که با دقت در کارخانه الیگودرز تولید می‌شوند و هر کدام برای کاربردهای خاص صنعتی مهندسی شده‌اند.',
+        'product-1-badge': 'پرفروش‌ترین',
+        'product-1-title': 'کربنات کلسیم کوتد<br><small>پوشش داده شده با اسید استئاریک</small>',
+        'product-1-kpi-1': 'خلوص CaCO₃',
+        'product-1-kpi-2': 'سفیدی',
+        'product-1-kpi-3': 'اندازه D50',
+        'product-1-cta': 'دریافت قیمت ←',
+        'product-2-title': 'پودر تالک<br><small>گرید صنعتی و آرایشی</small>',
+        'product-2-kpi-1': 'خلوص',
+        'product-2-kpi-2': 'سفیدی',
+        'product-2-kpi-3': 'اندازه D50',
+        'product-2-cta': 'دریافت قیمت ←',
+        'product-3-title': 'کربنات کلسیم ساده<br><small>فوق ریز</small>',
+        'product-3-kpi-1': 'خلوص CaCO₃',
+        'product-3-kpi-2': 'سفیدی',
+        'product-3-kpi-3': 'اندازه D50',
+        'product-3-cta': 'دریافت قیمت ←',
+        'product-4-title': 'گرید کاغذ<br><small>فیلر CaCO₃</small>',
+        'product-4-kpi-1': 'خلوص CaCO₃',
+        'product-4-kpi-2': 'سفیدی',
+        'product-4-kpi-3': 'اندازه D50',
+        'product-4-cta': 'دریافت قیمت ←',
+        'product-5-title': 'فیلر رنگ<br><small>گرید سفید CaCO₃</small>',
+        'product-5-kpi-1': 'خلوص CaCO₃',
+        'product-5-kpi-2': 'سفیدی',
+        'product-5-kpi-3': 'اندازه D50',
+        'product-5-cta': 'دریافت قیمت ←',
+        'news-tag': 'اخبار و مقالات',
+        'news-title': 'جدیدترین‌های <span class="gold-text">صبابهپر</span>',
+        'news-view-all': 'مشاهده همه مقالات ←',
+        'news-1-tag': 'اخبار شرکت',
+        'news-1-title': 'توسعه عملیات معدنی الیگودرز: فاز دوم',
+        'news-1-excerpt': 'صبابهپر ایرانیان از آغاز فاز دوم عملیات معدنی خبر داد که ظرفیت استخراج سالانه را ۳۰٪ افزایش می‌دهد...',
+        'news-1-cta': 'خواندن مقاله ←',
+        'news-2-tag': 'مقاله فنی',
+        'news-2-title': 'دستیابی به خلوص ۹۹٪: روش نوین کنترل کیفیت ما',
+        'news-2-excerpt': 'چگونه تحلیل پیشرفته XRF و فناوری سورتینگ هوش مصنوعی، خلوص محصول ما را ارتقا داده است...',
+        'news-2-cta': 'خواندن مقاله ←',
+        'news-3-tag': 'روندهای صنعت',
+        'news-3-title': 'CaCO₃ در تولید پلیمر مدرن: راهنمای جامع',
+        'news-3-excerpt': 'درک تأثیر اندازه ذرات و پوشش کربنات کلسیم بر خواص مکانیکی ترکیبات PVC و PP...',
+        'news-3-cta': 'دانلود PDF ←',
+        'industries-tag': 'صنایع هدف ما',
+        'industries-title': 'تأمین‌کننده <span class="gold-text">صنایع جهانی</span>',
+        'industries-subtitle': 'محصولات معدنی ما به عنوان مواد اولیه در صنایع مختلف استفاده می‌شوند. برای جزئیات بیشتر کلیک کنید.',
+        'industry-paint-title': 'رنگ و پوشش',
+        'industry-paint-text': 'رنگدانه پرکننده برای رنگ‌های امولسیونی، صنعتی و خودرویی.',
+        'industry-plastics-title': 'پلاستیک و پلیمر',
+        'industry-plastics-text': 'تعدیل‌کننده ضربه و کاهش‌دهنده هزینه برای ترکیبات PVC، PP، PE.',
+        'industry-adhesive-title': 'چسب و رزین',
+        'industry-adhesive-text': 'عامل تیکسوتروپیک برای درزگیرها و چسب‌ها.',
+        'industry-paper-title': 'کاغذ و بسته‌بندی',
+        'industry-paper-text': 'افزایش‌دهنده روشنایی برای کاغذهای پوشش‌دار و بدون پوشش.',
+        'industry-construction-title': 'صنایع ساختمانی',
+        'industry-construction-text': 'ماده اولیه سیمان، ملات، مخلوط خشک و چسب کاشی.',
+        'footer-desc': 'تولیدکننده پیشرو پودرهای میکرونیزه کربنات کلسیم با خلوص بالا از الیگودرز، ایران. تأمین‌کننده صنایع جهانی از سال ۱۳۸۹.',
+        'footer-products-title': 'محصولات',
+        'footer-contact-title': 'تماس با ما',
+        'footer-product-1': 'کربنات کلسیم کوتد',
+        'footer-product-2': 'تالک میکرونیزه',
+        'footer-product-3': 'کربنات کلسیم ساده',
+        'footer-product-4': 'گرید فیلر کاغذ',
+        'footer-product-5': 'کربنات کلسیم گرید رنگ',
+        'footer-office': '<strong>دفتر فروش تهران</strong><br>تهران، ایران',
+        'footer-factory': '<strong>کارخانه فرآوری</strong><br>الیگودرز، لرستان، ایران',
+        'footer-copyright': '&copy; 2026 شرکت معدنی صبابهپر ایرانیان. تمامی حقوق محفوظ است.',
+        'footer-privacy': 'حریم خصوصی',
+        'footer-terms': 'شرایط استفاده',
+        'phone-header': 'تماس سریع',
+        'phone-office': '<strong>دفتر مرکزی</strong><span>+98 21 8800 0000</span>',
+        'phone-factory': '<strong>کارخانه</strong><span>+98 912 000 0000</span>',
+        'modal-cta': 'درخواست نمونه صنعتی'
+    }
+};
+
+const mapIds = {
+    'nav-home': '#nav-home, .navbar__mobile-link:nth-child(1)',
+    'nav-about': '#nav-about, .navbar__mobile-link:nth-child(2)',
+    'nav-products': '#nav-products, .navbar__mobile-link:nth-child(3)',
+    'nav-industries': '#nav-industries, .navbar__mobile-link:nth-child(4)',
+    'nav-news': '#nav-news, .navbar__mobile-link:nth-child(5)',
+    'nav-knowledge': '#nav-knowledge, .navbar__mobile-link:nth-child(6)',
+    'nav-contact-btn': '#nav-contact-btn, .navbar__mobile-cta',
+    'brand-title': '.navbar__title',
+    'brand-subtitle': '.navbar__subtitle',
+    'hero-tag': '.hero__tag',
+    'hero-title': '#hero-title',
+    'hero-desc': '#hero-description',
+    'hero-cta-explore': '#hero-cta-explore',
+    'hero-cta-products': '#hero-cta-products',
+    'about-badge-number': '.about__image-badge-number',
+    'about-badge-text': '.about__image-badge-text',
+    'about-tag': '.about__content .section-tag',
+    'about-title': '.about__content .section-title',
+    'about-text-1': '.about__content p.about__text:nth-of-type(2)',
+    'about-text-2': '.about__content p.about__text:nth-of-type(3)',
+    'about-learn-more': '#about-learn-more',
+    'stat-workers-label': '#stat-workers .about__stat-label',
+    'stat-lines-label': '#stat-lines .about__stat-label',
+    'stat-capacity-label': '#stat-capacity .about__stat-label',
+    'stat-capacity-unit': '#stat-capacity .about__stat-plus',
+    'products-tag': '.products__header .section-tag',
+    'products-title': '.products__header .section-title',
+    'products-subtitle': '.products__header .section-subtitle',
+    'product-1-badge': '#product-1 .product-card__badge',
+    'product-1-title': '#product-1 .product-card__title',
+    'product-1-kpi-1': '#product-1 .product-card__kpi:nth-child(1) .product-card__kpi-label',
+    'product-1-kpi-2': '#product-1 .product-card__kpi:nth-child(2) .product-card__kpi-label',
+    'product-1-kpi-3': '#product-1 .product-card__kpi:nth-child(3) .product-card__kpi-label',
+    'product-1-cta': '#product-1-cta',
+    'product-2-title': '#product-2 .product-card__title',
+    'product-2-kpi-1': '#product-2 .product-card__kpi:nth-child(1) .product-card__kpi-label',
+    'product-2-kpi-2': '#product-2 .product-card__kpi:nth-child(2) .product-card__kpi-label',
+    'product-2-kpi-3': '#product-2 .product-card__kpi:nth-child(3) .product-card__kpi-label',
+    'product-2-cta': '#product-2-cta',
+    'product-3-title': '#product-3 .product-card__title',
+    'product-3-kpi-1': '#product-3 .product-card__kpi:nth-child(1) .product-card__kpi-label',
+    'product-3-kpi-2': '#product-3 .product-card__kpi:nth-child(2) .product-card__kpi-label',
+    'product-3-kpi-3': '#product-3 .product-card__kpi:nth-child(3) .product-card__kpi-label',
+    'product-3-cta': '#product-3-cta',
+    'product-4-title': '#product-4 .product-card__title',
+    'product-4-kpi-1': '#product-4 .product-card__kpi:nth-child(1) .product-card__kpi-label',
+    'product-4-kpi-2': '#product-4 .product-card__kpi:nth-child(2) .product-card__kpi-label',
+    'product-4-kpi-3': '#product-4 .product-card__kpi:nth-child(3) .product-card__kpi-label',
+    'product-4-cta': '#product-4-cta',
+    'product-5-title': '#product-5 .product-card__title',
+    'product-5-kpi-1': '#product-5 .product-card__kpi:nth-child(1) .product-card__kpi-label',
+    'product-5-kpi-2': '#product-5 .product-card__kpi:nth-child(2) .product-card__kpi-label',
+    'product-5-kpi-3': '#product-5 .product-card__kpi:nth-child(3) .product-card__kpi-label',
+    'product-5-cta': '#product-5-cta',
+    'news-tag': '.news__header .section-tag',
+    'news-title': '.news__header .section-title',
+    'news-view-all': '#news-view-all',
+    'news-1-tag': '#news-1 .news-card__tag',
+    'news-1-title': '#news-1 .news-card__title',
+    'news-1-excerpt': '#news-1 .news-card__excerpt',
+    'news-1-cta': '#news-1-cta',
+    'news-2-tag': '#news-2 .news-card__tag',
+    'news-2-title': '#news-2 .news-card__title',
+    'news-2-excerpt': '#news-2 .news-card__excerpt',
+    'news-2-cta': '#news-2-cta',
+    'news-3-tag': '#news-3 .news-card__tag',
+    'news-3-title': '#news-3 .news-card__title',
+    'news-3-excerpt': '#news-3 .news-card__excerpt',
+    'news-3-cta': '#news-3-cta',
+    'industries-tag': '.industries__header .section-tag',
+    'industries-title': '.industries__header .section-title',
+    'industries-subtitle': '.industries__header .section-subtitle',
+    'industry-paint-title': '#industry-paint .industry-card__title',
+    'industry-paint-text': '#industry-paint .industry-card__text',
+    'industry-plastics-title': '#industry-plastics .industry-card__title',
+    'industry-plastics-text': '#industry-plastics .industry-card__text',
+    'industry-adhesive-title': '#industry-adhesive .industry-card__title',
+    'industry-adhesive-text': '#industry-adhesive .industry-card__text',
+    'industry-paper-title': '#industry-paper .industry-card__title',
+    'industry-paper-text': '#industry-paper .industry-card__text',
+    'industry-construction-title': '#industry-construction .industry-card__title',
+    'industry-construction-text': '#industry-construction .industry-card__text',
+    'footer-desc': '.footer__desc',
+    'footer-products-title': '.footer__products .footer__heading',
+    'footer-contact-title': '.footer__contact .footer__heading',
+    'footer-product-1': '#footer-product-1',
+    'footer-product-2': '#footer-product-2',
+    'footer-product-3': '#footer-product-3',
+    'footer-product-4': '#footer-product-4',
+    'footer-product-5': '#footer-product-5',
+    'footer-office': '.footer__contact-item:nth-child(2) div',
+    'footer-factory': '.footer__contact-item:nth-child(3) div',
+    'footer-copyright': '.footer__bottom-inner p',
+    'footer-privacy': '.footer__bottom-links a:nth-child(1)',
+    'footer-terms': '.footer__bottom-links a:nth-child(2)',
+    'phone-header': '.floating-phone__header',
+    'phone-office': '#phone-office div',
+    'phone-factory': '#phone-factory div',
+    'modal-cta': '#modal-cta'
+};
+
+function changeLanguage(lang) {
+    // Save language to localStorage
+    localStorage.setItem('sababehpar-lang', lang);
+    
+    // Switch dir attribute for styling (RTL/LTR)
+    if (lang === 'fa' || lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+    }
+    
+    // Apply translations
+    const currentTranslations = translations[lang] || translations['en'];
+    for (const [key, selector] of Object.entries(mapIds)) {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(el => {
+            if (currentTranslations[key] !== undefined) {
+                // If it's the learn more button with the SVG icon, we need to preserve the SVG
+                if (key === 'about-learn-more') {
+                    el.innerHTML = currentTranslations[key];
+                } 
+                // For phone elements, preserve the SVG icon by updating just the text content wrapper
+                else if (key === 'phone-office' || key === 'phone-factory') {
+                    const icon = el.parentElement.querySelector('svg');
+                    el.innerHTML = currentTranslations[key];
+                }
+                else {
+                    el.innerHTML = currentTranslations[key];
+                }
+            }
+        });
+    }
+
+    // Update dynamic stat numbers immediately on language switch
+    const statNumbers = document.querySelectorAll('.about__stat-number');
+    statNumbers.forEach(counter => {
+        const target = counter.dataset.target;
+        if (target) {
+            if (lang === 'fa' || lang === 'ar') {
+                const faDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+                counter.textContent = target.replace(/\d/g, d => faDigits[d]);
+            } else {
+                counter.textContent = target;
+            }
+        }
+    });
+
+    // Update industry modal data (as it's generated dynamically)
+    if (typeof industryData !== 'undefined') {
+        if (lang === 'fa') {
+            industryData.paint.title = 'رنگ و پوشش';
+            industryData.paint.description = 'کربنات کلسیم به عنوان یک پرکننده و فیلر مهم در فرمولاسیون رنگ عمل می‌کند. کربنات کلسیم پوشش‌دار و فوق ریز ما، سفیدی عالی، کنترل کدورت و مدیریت ویسکوزیته را در عین کاهش چشمگیر هزینه‌های تولید ارائه می‌دهد.';
+            industryData.paint.specs = [
+                { label: 'مش توصیه‌شده', value: '۸۰۰ – ۲۵۰۰' },
+                { label: 'سفیدی مورد نیاز', value: '۹۶٪+' },
+                { label: 'نوع پوشش', value: 'اسید استئاریک' },
+                { label: 'کاربرد', value: 'داخلی و خارجی' }
+            ];
+
+            industryData.plastics.title = 'پلاستیک و پلیمر';
+            industryData.plastics.description = 'کربنات کلسیم پوشش‌دار ما به عنوان تعدیل‌کننده ضربه و پرکننده مقرون‌به‌صرفه در ترکیبات PVC، PP و PE عمل می‌کند. پوشش اسید استئاریک پراکندگی و سازگاری عالی را با ماتریس‌های پلیمری تضمین می‌کند.';
+            industryData.plastics.specs = [
+                { label: 'مش توصیه‌شده', value: '۱۵۰۰ – ۳۵۰۰' },
+                { label: 'خلوص مورد نیاز', value: '۹۸٪+' },
+                { label: 'پوشش', value: 'کوتد با استئاریک' },
+                { label: 'کاربرد', value: 'لوله‌های PVC، فیلم‌های PE' }
+            ];
+
+            industryData.adhesive.title = 'چسب و رزین';
+            industryData.adhesive.description = 'کربنات کلسیم میکرونیزه به عنوان تعدیل‌کننده رئولوژی و عامل تیکسوتروپیک در درزگیرها، چسب‌ها و ترکیبات ماستیک عمل می‌کند. توزیع دقیق اندازه ذرات ما قوام بهینه را تضمین می‌کند.';
+            industryData.adhesive.specs = [
+                { label: 'مش توصیه‌شده', value: '۴۰۰ – ۱۵۰۰' },
+                { label: 'جذب روغن', value: 'کم' },
+                { label: 'شکل ذرات', value: 'رومبوئدرال' },
+                { label: 'کاربرد', value: 'درزگیر، بتونه' }
+            ];
+
+            industryData.paper.title = 'کاغذ و بسته‌بندی';
+            industryData.paper.description = 'کربنات کلسیم گرید کاغذ ما باعث افزایش روشنایی و شفافیت برای کاغذهای پوشش‌دار و بدون پوشش می‌شود. سفیدی بالا و توزیع کنترل‌شده ذرات، کیفیت چاپ برتر را ارائه می‌دهد.';
+            industryData.paper.specs = [
+                { label: 'مش توصیه‌شده', value: '۲۵۰۰ – ۳۵۰۰' },
+                { label: 'سفیدی', value: '۹۷٪+' },
+                { label: 'روشنایی', value: '۹۵٪+' },
+                { label: 'کاربرد', value: 'پوشش‌دهی، فیلر' }
+            ];
+
+            industryData.construction.title = 'صنایع ساختمانی';
+            industryData.construction.description = 'کربنات کلسیم و محصولات سنگ آهک در سیمان، ملات، محصولات مخلوط خشک و چسب کاشی ضروری هستند. طیف وسیع گریدهای ما از کاربردهای متنوع ساختمانی پشتیبانی می‌کند.';
+            industryData.construction.specs = [
+                { label: 'مش توصیه‌شده', value: '۲۰۰ – ۸۰۰' },
+                { label: 'میزان CaCO₃', value: '۹۵٪+' },
+                { label: 'شکل', value: 'پودر و کلوخه' },
+                { label: 'کاربرد', value: 'سیمان، ملات' }
+            ];
+        } else {
+            // Restore English industry data
+            industryData.paint.title = 'Paint & Coatings Industry';
+            industryData.paint.description = 'Calcium carbonate serves as a critical extender and filler in paint formulations. Our ultra-fine GCC and coated CaCO₃ provide excellent whiteness, opacity control, and viscosity management while significantly reducing production costs.';
+            industryData.paint.specs = [
+                { label: 'Recommended Mesh', value: '800 – 2500' },
+                { label: 'Whiteness Required', value: '96%+' },
+                { label: 'Coating Type', value: 'Stearic Acid' },
+                { label: 'Application', value: 'Interior & Exterior' }
+            ];
+
+            industryData.plastics.title = 'Plastics & Polymers Industry';
+            industryData.plastics.description = 'Our coated CaCO₃ serves as an impact modifier and cost-effective filler in PVC, PP, and PE compounds. The stearic acid coating ensures excellent dispersion and compatibility with polymer matrices.';
+            industryData.plastics.specs = [
+                { label: 'Recommended Mesh', value: '1500 – 3500' },
+                { label: 'Purity Required', value: '98%+' },
+                { label: 'Coating', value: 'Stearic Coated' },
+                { label: 'Application', value: 'PVC Pipes, PE Films' }
+            ];
+
+            industryData.adhesive.title = 'Adhesive & Mastic Industry';
+            industryData.adhesive.description = 'Micronized calcium carbonate acts as a rheology modifier and thixotropic agent in sealants, adhesives, and mastic compounds. Our precise particle size distribution ensures optimal consistency.';
+            industryData.adhesive.specs = [
+                { label: 'Recommended Mesh', value: '400 – 1500' },
+                { label: 'Oil Absorption', value: 'Low' },
+                { label: 'Particle Shape', value: 'Rhombohedral' },
+                { label: 'Application', value: 'Sealants, Putty' }
+            ];
+
+            industryData.paper.title = 'Paper & Packaging Industry';
+            industryData.paper.description = 'Our paper-grade CaCO₃ provides brightness and opacity enhancement for both coated and uncoated paper. High whiteness and controlled particle distribution deliver superior print quality.';
+            industryData.paper.specs = [
+                { label: 'Recommended Mesh', value: '2500 – 3500' },
+                { label: 'Whiteness', value: '97%+' },
+                { label: 'Brightness', value: '95%+' },
+                { label: 'Application', value: 'Coating, Filling' }
+            ];
+
+            industryData.construction.title = 'Construction Industry';
+            industryData.construction.description = 'Calcium carbonate and limestone products are essential in cement, mortar, dry-mix products, and tile adhesives. Our range of grades supports diverse construction applications.';
+            industryData.construction.specs = [
+                { label: 'Recommended Mesh', value: '200 – 800' },
+                { label: 'CaCO₃ Content', value: '95%+' },
+                { label: 'Form', value: 'Powder & Lumps' },
+                { label: 'Application', value: 'Cement, Mortar' }
+            ];
+        }
+    }
+}
+
+// Check local storage for language preference on load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('sababehpar-lang') || 'en';
+    
+    // Set initial language switcher text
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle && savedLang !== 'en') {
+        const option = document.querySelector(`.language-selector__option[data-lang="${savedLang}"]`);
+        if (option) {
+            document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
+            option.classList.add('active');
+            langToggle.childNodes[2].textContent = ` ${savedLang.toUpperCase()} `;
+        }
+    }
+
+    // Apply the saved language immediately
+    if (savedLang !== 'en') {
+        changeLanguage(savedLang);
+    }
+    
+    // Ensure the language change listener calls the actual changeLanguage function
+    document.querySelectorAll('.language-selector__option').forEach(option => {
+        option.addEventListener('click', (e) => {
+            e.preventDefault();
+            const selectedLang = option.dataset.lang;
+            changeLanguage(selectedLang);
+            // The active class and text is handled in script.js by default
+        });
+    });
+});
