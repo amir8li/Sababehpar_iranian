@@ -169,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const track = document.getElementById('industries-track');
     const prevBtn = document.getElementById('carousel-prev');
     const nextBtn = document.getElementById('carousel-next');
-    let carouselPosition = 0;
 
     function getCardWidth() {
         const cards = track.querySelectorAll('.industry-card');
@@ -179,37 +178,47 @@ document.addEventListener('DOMContentLoaded', () => {
         return cards[0].offsetWidth + gap;
     }
 
-    function getMaxScroll() {
-        const cards = track.querySelectorAll('.industry-card');
-        const containerWidth = track.parentElement.offsetWidth;
-        const totalWidth = track.scrollWidth;
-        return Math.max(0, totalWidth - containerWidth);
-    }
-
     if (prevBtn && nextBtn && track) {
+        let isAnimating = false;
+
         nextBtn.addEventListener('click', () => {
-            if (window.innerWidth <= 640) {
-                const dir = document.documentElement.dir === 'rtl' ? -1 : 1;
-                track.scrollBy({ left: dir * getCardWidth(), behavior: 'smooth' });
-            } else {
-                const maxScroll = getMaxScroll();
-                const step = getCardWidth();
-                carouselPosition = Math.min(carouselPosition + step, maxScroll);
-                const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
-                track.style.transform = `translateX(${dir * carouselPosition}px)`;
-            }
+            if (isAnimating) return;
+            isAnimating = true;
+
+            const step = getCardWidth();
+            const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
+            
+            track.style.transition = 'transform 0.5s ease';
+            track.style.transform = `translateX(${dir * step}px)`;
+
+            setTimeout(() => {
+                track.style.transition = 'none';
+                track.appendChild(track.firstElementChild);
+                track.style.transform = 'translateX(0)';
+                track.offsetHeight; // force reflow
+                isAnimating = false;
+            }, 500);
         });
 
         prevBtn.addEventListener('click', () => {
-            if (window.innerWidth <= 640) {
-                const dir = document.documentElement.dir === 'rtl' ? -1 : 1;
-                track.scrollBy({ left: -dir * getCardWidth(), behavior: 'smooth' });
-            } else {
-                const step = getCardWidth();
-                carouselPosition = Math.max(carouselPosition - step, 0);
-                const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
-                track.style.transform = `translateX(${dir * carouselPosition}px)`;
-            }
+            if (isAnimating) return;
+            isAnimating = true;
+
+            const step = getCardWidth();
+            const dir = document.documentElement.dir === 'rtl' ? 1 : -1;
+            
+            track.insertBefore(track.lastElementChild, track.firstElementChild);
+            track.style.transition = 'none';
+            track.style.transform = `translateX(${dir * step}px)`;
+            
+            track.offsetHeight; // force reflow
+
+            track.style.transition = 'transform 0.5s ease';
+            track.style.transform = 'translateX(0)';
+
+            setTimeout(() => {
+                isAnimating = false;
+            }, 500);
         });
     }
 

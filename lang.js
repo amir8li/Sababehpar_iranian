@@ -98,8 +98,7 @@ const translations = {
         'phone-header': 'Quick Contact',
         'phone-office': '<strong>Office</strong><span>+98 21 8800 0000</span>',
         'phone-factory': '<strong>Factory</strong><span>+98 912 000 0000</span>',
-        'modal-cta': 'Request Industry Sample',
-        'swipe-text-span': 'Swipe for more'
+        'modal-cta': 'Request Industry Sample'
     },
     'fa': {
         'nav-home': 'خانه',
@@ -126,7 +125,7 @@ const translations = {
         'stat-workers-label': 'پرسنل و متخصصین',
         'stat-lines-label': 'خطوط تولید',
         'stat-capacity-label': 'ظرفیت سالانه',
-        'stat-capacity-unit': '<span dir="ltr" style="display:inline-block;">+</span> هزار تن',
+        'stat-capacity-unit': '+ هزار تن',
         'products-tag': 'محصولات ما',
         'products-title': '<span class="gold-text">پودرهای معدنی</span> درجه صنعتی',
         'products-subtitle': 'پنج گرید اصلی محصول که با دقت در کارخانه الیگودرز تولید می‌شوند و هر کدام برای کاربردهای خاص صنعتی مهندسی شده‌اند.',
@@ -200,8 +199,7 @@ const translations = {
         'phone-header': 'تماس سریع',
         'phone-office': '<strong>دفتر مرکزی</strong><span>+98 21 8800 0000</span>',
         'phone-factory': '<strong>کارخانه</strong><span>+98 912 000 0000</span>',
-        'modal-cta': 'درخواست نمونه صنعتی',
-        'swipe-text-span': 'برای مشاهده بیشتر بکشید'
+        'modal-cta': 'درخواست نمونه صنعتی'
     }
 };
 
@@ -304,8 +302,7 @@ const mapIds = {
     'phone-header': '.floating-phone__header',
     'phone-office': '#phone-office div',
     'phone-factory': '#phone-factory div',
-    'modal-cta': '#modal-cta',
-    'swipe-text-span': '#swipe-text-span'
+    'modal-cta': '#modal-cta'
 };
 
 function changeLanguage(lang) {

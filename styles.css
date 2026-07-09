@@ -681,7 +681,19 @@ ul {
 }
 
 .about__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    height: 100%;
+}
+
+.about__stat-val {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
 }
 
 .about__stat-number {
@@ -695,6 +707,7 @@ ul {
     font-size: 1.1rem;
     font-weight: 700;
     color: #D4AF37;
+    white-space: nowrap;
 }
 
 .about__stat-label {
@@ -1067,17 +1080,6 @@ ul {
     background: #D4AF37;
     border-color: #D4AF37;
     color: #121620;
-}
-
-.industries__swipe-hint {
-    display: none;
-    text-align: center;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-    margin-top: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
 }
 
 /* Industry Modal */
@@ -1560,7 +1562,7 @@ ul {
 
     .about__stats {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     .about__stat-number {
@@ -1604,28 +1606,12 @@ ul {
         height: 18px;
     }
 
-    .industries__swipe-hint {
-        display: flex;
-    }
-
     .reveal {
         transition-delay: 0s !important;
     }
 
-    .industries__track {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
-
-    .industries__track::-webkit-scrollbar {
-        display: none;
-    }
-
     .industry-card {
-        scroll-snap-align: center;
-        flex: 0 0 85%;
+        flex: 0 0 100%;
     }
 
     .footer__inner {
@@ -1677,8 +1663,7 @@ html[dir="rtl"] .industry-modal__content {
     text-align: right;
 }
 
-html[dir="rtl"] .industries__nav svg,
-html[dir="rtl"] .industries__swipe-hint svg {
+html[dir="rtl"] .industries__nav svg {
     transform: scaleX(-1);
 }
 
