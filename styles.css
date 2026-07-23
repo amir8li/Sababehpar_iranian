@@ -2,10 +2,10 @@
    SABABEHPAR IRANIAN MINING COMPANY
    Homepage Stylesheet
    
-   Color Palette:
-   - White / Light Gray: #FFFFFF / #F8F9FA
-   - Dark Blue / Navy:   #0B0E14 / #121620
-   - Light Orange / Gold: #D4AF37 / #E5A93B
+   Color Palette (Dark Mode Premium Theme):
+   - Deep Dark Navy: #0B0E14 / #0E131F / #121726
+   - Light Orange / Gold Accents: #D4AF37 / #E5A93B
+   - Text & Copy: #FFFFFF / rgba(255, 255, 255, 0.85) / rgba(255, 255, 255, 0.65)
    =================================== */
 
 /* ------- CSS RESET & BASE ------- */
@@ -25,8 +25,8 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #1a1a2e;
-    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #0B0E14;
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -72,14 +72,14 @@ ul {
 .section-title {
     font-size: clamp(1.75rem, 4vw, 2.75rem);
     font-weight: 800;
-    color: #0A192F;
+    color: #ffffff;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
 .section-subtitle {
     font-size: 1.05rem;
-    color: #555;
+    color: rgba(255, 255, 255, 0.7);
     max-width: 640px;
     line-height: 1.7;
 }
@@ -129,14 +129,15 @@ ul {
 
 .btn--outline-dark {
     background: transparent;
-    color: #0A192F;
-    border: 2px solid #0A192F;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     padding: 0.7rem 1.5rem;
 }
 
 .btn--outline-dark:hover {
-    background: #0A192F;
-    color: #ffffff;
+    background: #D4AF37;
+    border-color: #D4AF37;
+    color: #121620;
 }
 
 .btn--text {
@@ -611,7 +612,7 @@ ul {
 
 .about {
     padding: 6rem 0;
-    background: #F8F9FA;
+    background: #0E131F;
 }
 
 .about__inner {
@@ -644,7 +645,7 @@ ul {
     bottom: -20px;
     right: -20px;
     background: #D4AF37;
-    color: #0A192F;
+    color: #121620;
     padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
@@ -666,7 +667,7 @@ ul {
 }
 
 .about__text {
-    color: #555;
+    color: rgba(255, 255, 255, 0.75);
     font-size: 0.95rem;
     line-height: 1.8;
     margin-bottom: 1rem;
@@ -678,7 +679,7 @@ ul {
     gap: 1.5rem;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .about__stat {
@@ -715,7 +716,7 @@ ul {
     display: block;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #888;
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-top: 0.35rem;
@@ -729,18 +730,18 @@ ul {
 }
 
 .feature-card {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #121726;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 2rem 1.5rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
     border-color: rgba(212, 175, 55, 0.3);
 }
 
@@ -759,19 +760,19 @@ ul {
 
 .feature-card:hover .feature-card__icon {
     background: #D4AF37;
-    color: #ffffff;
+    color: #121620;
 }
 
 .feature-card__title {
     font-size: 1.05rem;
     font-weight: 800;
-    color: #0A192F;
+    color: #ffffff;
     margin-bottom: 0.75rem;
 }
 
 .feature-card__desc {
     font-size: 0.85rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.65);
     line-height: 1.6;
 }
 
@@ -781,7 +782,7 @@ ul {
 
 .products {
     padding: 6rem 0;
-    background: #ffffff;
+    background: #0B0E14;
 }
 
 .products__header {
@@ -794,14 +795,15 @@ ul {
 }
 
 .product-key-stats {
-    background: #0A192F;
+    background: #121726;
+    border: 1px solid rgba(212, 175, 55, 0.15);
     border-radius: 12px;
     padding: 2.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-bottom: 4rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .product-key-stat {
@@ -843,8 +845,8 @@ ul {
 }
 
 .product-card {
-    background: #ffffff;
-    border: 1px solid #eee;
+    background: #121726;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.4s ease;
@@ -854,7 +856,7 @@ ul {
 .product-card:hover {
     transform: translateY(-6px) scale(1.03);
     border-color: #D4AF37;
-    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.15), 0 0 0 1px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.2), 0 0 0 1px rgba(212, 175, 55, 0.3);
 }
 
 .product-card__image {
@@ -895,7 +897,7 @@ ul {
 .product-card__title {
     font-size: 1.15rem;
     font-weight: 800;
-    color: #0A192F;
+    color: #ffffff;
     margin-bottom: 1.2rem;
     line-height: 1.3;
 }
@@ -903,7 +905,7 @@ ul {
 .product-card__title small {
     font-size: 0.75rem;
     font-weight: 500;
-    color: #888;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .product-card__kpis {
@@ -912,7 +914,7 @@ ul {
     gap: 0.5rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .product-card__kpi {
@@ -932,7 +934,7 @@ ul {
     display: block;
     font-size: 0.6rem;
     font-weight: 500;
-    color: #999;
+    color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
@@ -944,7 +946,7 @@ ul {
     font-weight: 700;
     color: #D4AF37;
     padding: 0.6rem;
-    background: rgba(212, 175, 55, 0.08);
+    background: rgba(212, 175, 55, 0.12);
     border-radius: 6px;
     transition: all 0.3s;
 }
@@ -961,7 +963,7 @@ ul {
 
 .news {
     padding: 6rem 0;
-    background: #F8F9FA;
+    background: #0E131F;
 }
 
 .news__header {
@@ -978,16 +980,17 @@ ul {
 }
 
 .news-card {
-    background: #ffffff;
+    background: #121726;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid #eee;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.4s ease;
 }
 
 .news-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(212, 175, 55, 0.3);
 }
 
 .news-card__image {
@@ -1019,7 +1022,7 @@ ul {
 
 .news-card__date {
     font-size: 0.75rem;
-    color: #999;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .news-card__tag {
@@ -1036,14 +1039,14 @@ ul {
 .news-card__title {
     font-size: 1.1rem;
     font-weight: 800;
-    color: #0A192F;
+    color: #ffffff;
     line-height: 1.4;
     margin-bottom: 0.75rem;
 }
 
 .news-card__excerpt {
     font-size: 0.88rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.65);
     line-height: 1.6;
     margin-bottom: 1.25rem;
 }
@@ -1056,7 +1059,7 @@ ul {
 }
 
 .news-card__cta:hover {
-    color: #B8941E;
+    color: #E5A93B;
 }
 
 
@@ -1066,7 +1069,7 @@ ul {
 
 .industries {
     padding: 6rem 0;
-    background: #0A192F;
+    background: #0B0E14;
     color: #ffffff;
 }
 
