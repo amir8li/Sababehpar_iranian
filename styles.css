@@ -662,7 +662,7 @@ html[dir="rtl"] .section-badge {
 
 .about {
     padding: 6rem 0;
-    background: #0E131F;
+    background: linear-gradient(180deg, #181410 0%, #1F1914 100%);
 }
 
 .about__inner {
@@ -780,13 +780,13 @@ html[dir="rtl"] .section-badge {
 }
 
 .feature-card {
-    background: #121726;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #261F1A;
+    border: 1px solid rgba(212, 175, 55, 0.15);
     border-radius: 12px;
     padding: 2rem 1.5rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .feature-card:hover {
@@ -832,7 +832,7 @@ html[dir="rtl"] .section-badge {
 
 .products {
     padding: 6rem 0;
-    background: #131926;
+    background: linear-gradient(180deg, #0D1524 0%, #111C30 100%);
 }
 
 .products__header {
@@ -845,15 +845,15 @@ html[dir="rtl"] .section-badge {
 }
 
 .product-key-stats {
-    background: #121726;
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    background: #16243D;
+    border: 1px solid rgba(212, 175, 55, 0.2);
     border-radius: 12px;
     padding: 2.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-bottom: 4rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .product-key-stat {
@@ -895,13 +895,13 @@ html[dir="rtl"] .section-badge {
 }
 
 .product-card {
-    background: #1C2436;
+    background: #18253D;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.4s ease;
     position: relative;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
 
 .product-card:hover {
@@ -1014,7 +1014,7 @@ html[dir="rtl"] .section-badge {
 
 .news {
     padding: 6rem 0;
-    background: #0E131F;
+    background: linear-gradient(180deg, #0A1C18 0%, #0F2620 100%);
 }
 
 .news__header {
@@ -1031,17 +1031,17 @@ html[dir="rtl"] .section-badge {
 }
 
 .news-card {
-    background: #121726;
+    background: #142E28;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.18);
     transition: all 0.4s ease;
 }
 
 .news-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.15);
+    border-color: #D4AF37;
 }
 
 .news-card__image {
@@ -1120,7 +1120,7 @@ html[dir="rtl"] .section-badge {
 
 .industries {
     padding: 6rem 0;
-    background: #090D16;
+    background: linear-gradient(180deg, #131024 0%, #1A1633 100%);
     color: #ffffff;
 }
 
@@ -1165,8 +1165,8 @@ html[dir="rtl"] .section-badge {
 
 .industry-card {
     flex: 0 0 calc(33.333% - 1rem);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #211B40;
+    border: 1px solid rgba(212, 175, 55, 0.15);
     border-radius: 12px;
     padding: 2rem 1.5rem;
     text-align: center;
@@ -1175,8 +1175,8 @@ html[dir="rtl"] .section-badge {
 }
 
 .industry-card:hover {
-    background: rgba(212, 175, 55, 0.08);
-    border-color: rgba(212, 175, 55, 0.3);
+    background: #2C2454;
+    border-color: #D4AF37;
     transform: translateY(-5px);
 }
 
