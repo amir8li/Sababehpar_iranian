@@ -375,16 +375,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* =========================================
-       8. SMOOTH SCROLL & ACTIVE NAV
+       8. SMOOTH SCROLL & ACTIVE NAV (SCROLL-SPY)
        ========================================= */
 
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.navbar__link');
+    const mobileLinks = document.querySelectorAll('.navbar__mobile-link');
 
-    window.addEventListener('scroll', () => {
+    function updateActiveNav() {
         let current = '';
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 150;
+            const sectionTop = section.offsetTop - 180;
             if (window.scrollY >= sectionTop) {
                 current = section.getAttribute('id');
             }
@@ -396,6 +397,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.classList.add('active');
             }
         });
-    });
+
+        mobileLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNav);
+    updateActiveNav();
 
 });

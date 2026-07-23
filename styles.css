@@ -60,13 +60,55 @@ ul {
 /* ------- SHARED COMPONENTS ------- */
 
 .section-tag {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #D4AF37;
     margin-bottom: 0.75rem;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #D4AF37;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-right: 0.6rem;
+    letter-spacing: 0.05em;
+}
+
+html[dir="rtl"] .section-badge {
+    margin-right: 0;
+    margin-left: 0.6rem;
+}
+
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.35) 50%, transparent 100%);
+    position: relative;
+    z-index: 10;
+}
+
+.section-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: #D4AF37;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
 }
 
 .section-title {
@@ -429,7 +471,15 @@ ul {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: color 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar__mobile-link.active {
+    color: #D4AF37;
+    background: rgba(212, 175, 55, 0.1);
+    padding-left: 0.75rem;
+    border-left: 3px solid #D4AF37;
+    border-radius: 4px;
 }
 
 .navbar__mobile-cta {
@@ -782,7 +832,7 @@ ul {
 
 .products {
     padding: 6rem 0;
-    background: #0B0E14;
+    background: #131926;
 }
 
 .products__header {
@@ -845,12 +895,13 @@ ul {
 }
 
 .product-card {
-    background: #121726;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #1C2436;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.4s ease;
     position: relative;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 .product-card:hover {
@@ -1069,7 +1120,7 @@ ul {
 
 .industries {
     padding: 6rem 0;
-    background: #0B0E14;
+    background: #090D16;
     color: #ffffff;
 }
 
@@ -1298,7 +1349,7 @@ ul {
    ========================================= */
 
 .footer {
-    background: #040D1A;
+    background: #05080E;
     color: rgba(255, 255, 255, 0.7);
     padding-top: 4rem;
 }
