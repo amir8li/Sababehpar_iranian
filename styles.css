@@ -577,30 +577,53 @@ html[dir="rtl"] .section-badge {
 }
 
 /* Hero Text Animations Across All Pages */
-.hero .section-badge,
-.hero .section-tag,
 .hero__tag {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 1.25rem;
+    display: inline-block;
     opacity: 0;
     transform: translateY(24px);
     animation: heroTextReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s;
 }
 
-.hero h1,
 .hero__title {
+    font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.15;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
     opacity: 0;
     transform: translateY(28px);
     animation: heroTextReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.4s;
 }
 
-.hero p,
+.hero__title--orange,
+.hero__title--gold {
+    color: var(--color-accent) !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+
 .hero__description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2rem;
     opacity: 0;
     transform: translateY(32px);
     animation: heroTextReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.6s;
 }
 
-.hero .hero__actions,
-.hero .btn {
+.hero__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
     opacity: 0;
     transform: translateY(24px);
     animation: heroTextReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.8s;
