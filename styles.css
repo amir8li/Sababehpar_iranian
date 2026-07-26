@@ -1953,3 +1953,91 @@ html[dir="rtl"] .floating-phone__popup {
         right: 1.25rem;
     }
 }
+
+/* =========================================
+   ABOUT US SUBPAGE RESPONSIVE STYLES
+   ========================================= */
+
+.about-page-hero {
+    position: relative;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets/images/about_hero.jpg') center/cover no-repeat;
+}
+
+.about-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-sticky-img {
+    position: sticky;
+    top: 100px;
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.about-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+
+@media (max-width: 992px) {
+    .about-grid-2col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-sticky-img {
+        position: static;
+        order: -1;
+    }
+
+    .about-team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page-hero {
+        min-height: 380px;
+        padding: 3rem 1rem !important;
+    }
+
+    .about-page-hero h1 {
+        font-size: 1.95rem !important;
+    }
+
+    .about-page-hero p {
+        font-size: 0.95rem !important;
+    }
+
+    .about-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .about-metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .about-team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page-hero h1 {
+        font-size: 1.65rem !important;
+    }
+}
