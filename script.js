@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* =========================================
-       8. SMOOTH SCROLL & ACTIVE NAV (SCROLL-SPY)
+       8. SMOOTH SCROLL & ACTIVE NAV (SCROLL-SPY & PAGE PATH)
        ========================================= */
 
     const sections = document.querySelectorAll('section[id]');
@@ -391,19 +391,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-
-        mobileLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
+        if (current) {
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href') || '';
+                if (href === `#${current}` || href.endsWith(`#${current}`)) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            mobileLinks.forEach(link => {
+                const href = link.getAttribute('href') || '';
+                if (href === `#${current}` || href.endsWith(`#${current}`)) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        } else {
+            // Fallback: Check current URL pathname to set active link
+            const path = window.location.pathname.toLowerCase();
+            navLinks.forEach(link => {
+                const href = (link.getAttribute('href') || '').toLowerCase();
+                const cleanHref = href.replace('../', '').replace('./', '');
+                if (cleanHref && path.includes(cleanHref.replace('.html', ''))) {
+                    link.classList.add('active');
+                }
+            });
+        }
     }
 
     window.addEventListener('scroll', updateActiveNav);
