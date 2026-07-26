@@ -2176,3 +2176,70 @@ html[dir="rtl"] .floating-phone__popup {
         font-size: 1.65rem !important;
     }
 }
+
+/* =========================================
+   ALTERNATING MANAGEMENT TEAM ROWS (ODD/EVEN)
+   ========================================= */
+
+.mgmt-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(222, 131, 75, 0.15);
+}
+
+.mgmt-row:last-child {
+    border-bottom: none;
+}
+
+.mgmt-row__img-frame {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid rgba(222, 131, 75, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(222, 131, 75, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mgmt-row__img-frame:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(222, 131, 75, 0.3);
+}
+
+.mgmt-row__img-frame img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.mgmt-row__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (max-width: 992px) {
+    .mgmt-row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .mgmt-row__img-col {
+        order: -1 !important;
+    }
+
+    .mgmt-row__content {
+        align-items: center;
+    }
+
+    .mgmt-row__img-frame img {
+        height: 300px;
+    }
+}
