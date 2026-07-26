@@ -375,53 +375,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* =========================================
-       8. SMOOTH SCROLL & ACTIVE NAV (SCROLL-SPY & PAGE PATH)
+       8. SMOOTH SCROLL & ACTIVE NAV (HASH LINKS ONLY)
        ========================================= */
 
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.navbar__link');
-    const mobileLinks = document.querySelectorAll('.navbar__mobile-link');
+    const inPageSections = document.querySelectorAll('section[id]');
+    const hashNavLinks = document.querySelectorAll('.navbar__link[href^="#"]');
 
-    function updateActiveNav() {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 180;
-            if (window.scrollY >= sectionTop) {
-                current = section.getAttribute('id');
+    if (inPageSections.length > 0 && hashNavLinks.length > 0) {
+        function updateActiveNav() {
+            let current = '';
+            inPageSections.forEach(section => {
+                const sectionTop = section.offsetTop - 180;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            if (current) {
+                hashNavLinks.forEach(link => {
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
             }
-        });
-
-        if (current) {
-            navLinks.forEach(link => {
-                const href = link.getAttribute('href') || '';
-                if (href === `#${current}` || href.endsWith(`#${current}`)) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-            mobileLinks.forEach(link => {
-                const href = link.getAttribute('href') || '';
-                if (href === `#${current}` || href.endsWith(`#${current}`)) {
-                    link.classList.add('active');
-                } else {
-                    link.classList.remove('active');
-                }
-            });
-        } else {
-            // Fallback: Check current URL pathname to set active link
-            const path = window.location.pathname.toLowerCase();
-            navLinks.forEach(link => {
-                const href = (link.getAttribute('href') || '').toLowerCase();
-                const cleanHref = href.replace('../', '').replace('./', '');
-                if (cleanHref && path.includes(cleanHref.replace('.html', ''))) {
-                    link.classList.add('active');
-                }
-            });
         }
-    }
 
-    window.addEventListener('scroll', updateActiveNav);
-    updateActiveNav();
+        window.addEventListener('scroll', updateActiveNav);
+        updateActiveNav();
+    }
 
 });

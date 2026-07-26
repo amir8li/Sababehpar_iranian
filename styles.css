@@ -404,18 +404,20 @@ html[dir="rtl"] .section-badge {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.85);
     position: relative;
-    padding: 0.25rem 0;
-    transition: color 0.3s;
+    padding: 0.4rem 0;
+    transition: color 0.3s ease;
 }
 
 .navbar__link::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: -4px;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background: var(--color-accent);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(var(--color-accent-rgb), 0.6);
     transition: width 0.3s ease;
 }
 
@@ -423,22 +425,14 @@ html[dir="rtl"] .section-badge {
     color: var(--color-accent);
 }
 
-.navbar__link:hover::after {
+.navbar__link:hover::after,
+.navbar__link.active::after {
     width: 100%;
 }
 
 .navbar__link.active {
     color: var(--color-accent);
     font-weight: 700;
-    background: rgba(var(--color-accent-rgb), 0.15);
-    padding: 0.35rem 0.85rem;
-    border-radius: 20px;
-    border: 1px solid rgba(var(--color-accent-rgb), 0.4);
-    box-shadow: 0 0 12px rgba(var(--color-accent-rgb), 0.25);
-}
-
-.navbar__link.active::after {
-    display: none;
 }
 
 .navbar__cta {
