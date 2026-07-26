@@ -419,14 +419,26 @@ html[dir="rtl"] .section-badge {
     transition: width 0.3s ease;
 }
 
-.navbar__link:hover,
-.navbar__link.active {
+.navbar__link:hover {
     color: var(--color-accent);
 }
 
-.navbar__link:hover::after,
-.navbar__link.active::after {
+.navbar__link:hover::after {
     width: 100%;
+}
+
+.navbar__link.active {
+    color: var(--color-accent);
+    font-weight: 700;
+    background: rgba(var(--color-accent-rgb), 0.15);
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    border: 1px solid rgba(var(--color-accent-rgb), 0.4);
+    box-shadow: 0 0 12px rgba(var(--color-accent-rgb), 0.25);
+}
+
+.navbar__link.active::after {
+    display: none;
 }
 
 .navbar__cta {
