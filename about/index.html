@@ -62,7 +62,17 @@
             </a>
             <div class="navbar__links" id="nav-links">
                 <a href="../index.html" class="navbar__link" id="nav-home">Home</a>
-                <a href="index.html" class="navbar__link active" id="nav-about">About Us</a>
+                <div class="navbar__dropdown">
+                    <a href="index.html" class="navbar__link active" id="nav-about">
+                        About Us
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="index.html" class="navbar__dropdown-item" id="nav-about-overview">About Us (Overview)</a>
+                        <a href="management-team.html" class="navbar__dropdown-item" id="nav-about-management">Management Team</a>
+                        <a href="sustainability.html" class="navbar__dropdown-item" id="nav-about-sustainability">Sustainability & ESG</a>
+                    </div>
+                </div>
                 <a href="../products/index.html" class="navbar__link" id="nav-products">Products</a>
                 <a href="../industries/index.html" class="navbar__link" id="nav-industries">Industries</a>
                 <a href="../news/index.html" class="navbar__link" id="nav-news">News</a>
@@ -78,6 +88,11 @@
         <div class="navbar__mobile-menu" id="mobile-menu">
             <a href="../index.html" class="navbar__mobile-link">Home</a>
             <a href="index.html" class="navbar__mobile-link active">About Us</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="index.html" class="navbar__mobile-sublink active" id="mobile-about-overview">Overview</a>
+                <a href="management-team.html" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
+                <a href="sustainability.html" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
+            </div>
             <a href="../products/index.html" class="navbar__mobile-link">Products</a>
             <a href="../industries/index.html" class="navbar__mobile-link">Industries</a>
             <a href="../news/index.html" class="navbar__mobile-link">News</a>
