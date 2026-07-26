@@ -110,7 +110,54 @@ const translations = {
         'phone-header': 'Quick Contact',
         'phone-office': '<strong>Office</strong><span>+98 21 8800 0000</span>',
         'phone-factory': '<strong>Factory</strong><span>+98 912 000 0000</span>',
-        'modal-cta': 'Request Industry Sample'
+        'modal-cta': 'Request Industry Sample',
+        // About Us Page Keys
+        'about-hero-tag': 'SABABEHPAR IRANIAN MINING CO.',
+        'about-hero-title': 'Pioneering Industrial Minerals & Powder Innovation',
+        'about-hero-desc': 'From raw marble quarry extraction in Shaghez Aligoodarz to high-precision ball mill micronizing, Sababehpar Iranian delivers pure calcium carbonate and talc powders to global B2B manufacturers.',
+        'about-history-badge': '01',
+        'about-history-title': 'History & Company Foundations',
+        'about-history-p1': '<strong>1. Founding & Mining Rights (2010):</strong> Sababehpar Iranian Mining Company was established in 2010 after acquiring direct mining extraction rights at the world-renowned Shaghez marble deposits in Aligoodarz, Lorestan province.',
+        'about-history-p2': '<strong>2. Vertical Integration Strategy:</strong> Unlike standard processing trading firms, Sababehpar operates fully vertically integrated operations — controlling raw quarry block selection, crushing, continuous ball mill micronizing, and automated packaging under one roof.',
+        'about-history-p3': '<strong>3. Exceptional Chemical Purity (99%+ CaCO3):</strong> Aligoodarz marble is internationally recognized for its crystalline structure and ultra-high chemical purity, yielding natural whiteness indices exceeding 98.0% with minimal silica impurities.',
+        'about-history-p4': '<strong>4. Automated Micronizing Lines & Coating:</strong> Our Aligoodarz processing plant operates 3 automated production lines, including specialized high-temperature stearic acid surface treatment units for polymer extrusion grades.',
+        'about-history-p5': '<strong>5. Scaled B2B Capacity (150,000+ Tons):</strong> With an annual processing capacity exceeding 150,000 metric tons, Sababehpar serves domestic and regional polymer, coating, masterbatch, mortar, and paper manufacturing industries.',
+        'about-team-badge': '02',
+        'about-team-title': 'Executive Management Team',
+        'about-team-subtitle': 'Leadership, geological expertise, and chemical engineering innovation driving Sababehpar forward.',
+        'about-team-m1-title': 'Eng. M. Rezaei',
+        'about-team-m1-role': 'Board Chairman & CEO',
+        'about-team-m1-desc': '20+ yrs strategic management in quarry mining & B2B export growth.',
+        'about-team-m2-title': 'Dr. A. Ahmadi',
+        'about-team-m2-role': 'Head of R&D & Quality',
+        'about-team-m2-desc': 'Directs XRF testing & stearic acid surface treatment formulations.',
+        'about-team-m3-title': 'Eng. H. Ghasemi',
+        'about-team-m3-role': 'Plant Operations Director',
+        'about-team-m3-desc': 'Manages 3 continuous ball mill lines and 120+ factory staff in Aligoodarz.',
+        'about-team-m4-title': 'Eng. K. Hosseini',
+        'about-team-m4-role': 'Mining & Exploration Lead',
+        'about-team-m4-desc': 'Leads Shaghez quarry wire-saw extraction & geological survey mapping.',
+        'about-team-m5-title': 'Ms. S. Karimi',
+        'about-team-m5-role': 'International Sales Lead',
+        'about-team-m5-desc': 'Coordinates regional export contracts and B2B customer support.',
+        'about-team-learn-more': 'Learn More About Executive Team →',
+        'about-sust-badge': '03',
+        'about-sust-title': 'Sustainability & ESG Commitment',
+        'about-sust-p1': '<strong>1. Closed-Loop Water Recycling (95%+):</strong> All processing plant wash water is directed into closed-loop clarifier tanks, recycling over 95% of industrial water with zero chemical effluent discharge into local watersheds.',
+        'about-sust-p2': '<strong>2. Energy Efficient Micronizing (22% Savings):</strong> By installing frequency variable drives on our main ball mill motors, Sababehpar has reduced electricity consumption per metric ton of processed powder by 22%.',
+        'about-sust-p3': '<strong>3. Progressive Quarry Land Restoration:</strong> Wire-saw extraction techniques eliminate explosive blasting damage, allowing progressive backfilling and topsoil revegetation at Shaghez mining sites.',
+        'about-sust-p4': '<strong>4. Dust Containment & ISO 14001 Standards:</strong> Fully enclosed pneumatic conveying lines and pulse-jet bag filter houses maintain workplace dust emissions below 5 mg/m³ in compliance with ISO 14001 environmental standards.',
+        'about-sust-p5': '<strong>5. Alignment with United Nations SDGs:</strong> Sababehpar aligns its corporate social responsibility roadmap with UN Sustainable Development Goals (SDGs 6, 7, 12, and 13) for sustainable industrial production.',
+        'about-card-1-title': 'Water Recycling',
+        'about-card-1-desc': '95%+ process water closed-loop recycling rate across all processing lines.',
+        'about-card-2-title': 'Power Reduction',
+        'about-card-2-desc': '22% reduction in electrical power consumption (kWh) per processed metric ton.',
+        'about-card-3-title': 'Zero Effluent',
+        'about-card-3-desc': 'Zero chemical effluent discharge into local watersheds and soil ecosystems.',
+        'about-card-4-title': 'Land Restoration',
+        'about-card-4-desc': 'Progressive backfilling and topsoil revegetation at Shaghez quarry sites.',
+        'about-card-5-title': 'UN SDG Audit',
+        'about-card-5-desc': 'Verified alignment with UN SDGs 6, 7, 12, and 13 for sustainable production.'
     },
     'fa': {
         'nav-home': 'خانه',
@@ -220,10 +267,54 @@ const translations = {
         'footer-copyright': '&copy; 2026 شرکت معدنی صبابهپر ایرانیان. تمامی حقوق محفوظ است.',
         'footer-privacy': 'حریم خصوصی',
         'footer-terms': 'شرایط استفاده',
-        'phone-header': 'تماس سریع',
-        'phone-office': '<strong>دفتر مرکزی</strong><span>+98 21 8800 0000</span>',
-        'phone-factory': '<strong>کارخانه</strong><span>+98 912 000 0000</span>',
-        'modal-cta': 'درخواست نمونه صنعتی'
+        'modal-cta': 'درخواست نمونه صنعتی',
+        // About Us Farsi Translation Keys
+        'about-hero-tag': 'شرکت معدنی سبب‌بحار ایرانیان',
+        'about-hero-title': 'پیشگام در نوآوری مواد معدنی صنعتی و پودرهای میکرونیزه',
+        'about-hero-desc': 'از استخراج سنگ مرمر در معادن شاقز الیگودرز تا میکرونیزاسیون پیشرفته، سبب‌بحار ایرانیان تامین‌کننده کربنات کلسیم و تالک خالص صنایع B2B جهانی است.',
+        'about-history-badge': '۰۱',
+        'about-history-title': 'تاریخچه و بنیان‌های شرکت',
+        'about-history-p1': '<strong>۱. تأسیس و حقوق بهره‌برداری (۱۳۸۹):</strong> شرکت معدنی سبب‌بحار ایرانیان در سال ۱۳۸۹ پس از اخذ حقوق بهره‌برداری مستقیم از معادن مرمر شاقز الیگودرز تاسیس شد.',
+        'about-history-p2': '<strong>۲. استراتژی یکپارچه‌سازی عمودی:</strong> برخلاف بازرگانی‌های عادی، سبب‌بحار کنترل کامل از استخراج کوپ، خردایش تا میکرونیزاسیون و بسته‌بندی را بر عهده دارد.',
+        'about-history-p3': '<strong>۳. خلوص شیمیایی فوق‌العاده (۹۹٪+ CaCO3):</strong> مرمر الیگودرز دارای سفیدی طبیعی بالای ۹۸٪ و حداقل ناخالصی سیلیس است.',
+        'about-history-p4': '<strong>۴. خطوط میکرونیزه و پوشش‌دهی:</strong> بهره‌برداری از ۳ خط تولید اتوماتیک شامل واحدهای پوشش‌دهی با اسید استئاریک.',
+        'about-history-p5': '<strong>۵. ظرفیت صنعتی ۱۵۰,۰۰۰ تن:</strong> ظرفیت سالانه ۱۵۰,۰۰۰ تن برای تامین صنایع پلیمر، رنگ، مستربچ و کاغذ.',
+        'about-team-badge': '۰۲',
+        'about-team-title': 'تیم مدیریت ارشد',
+        'about-team-subtitle': 'رهبری، دانش زمین‌شناسی و نوآوری مهندسی شیمی در سبب‌بحار ایرانیان.',
+        'about-team-m1-title': 'مهندس م. رضایی',
+        'about-team-m1-role': 'رئیس هیئت مدیره و مدیرعامل',
+        'about-team-m1-desc': 'بیش از ۲۰ سال مدیریت استراتژیک در معدنکاری مرمر و توسعه صادرات.',
+        'about-team-m2-title': 'دکتر ع. احمدی',
+        'about-team-m2-role': 'مدیر تحقیق و توسعه و کنترل کیفیت',
+        'about-team-m2-desc': 'مدیریت آزمایشگاه XRF و فرمولاسیون پوشش‌دهی اسید استئاریک.',
+        'about-team-m3-title': 'مهندس ح. قاسمی',
+        'about-team-m3-role': 'مدیر عملیات کارخانه',
+        'about-team-m3-desc': 'مدیریت ۳ خط آسیاب گلوله‌ای و ۱۲۰ پرسنل فنی در الیگودرز.',
+        'about-team-m4-title': 'مهندس ک. حسینی',
+        'about-team-m4-role': 'مدیر اکتشاف و استخراج',
+        'about-team-m4-desc': 'سرپرستی استخراج سیم‌بر و نقشه برداری زمین‌شناسی معدن شاقز.',
+        'about-team-m5-title': 'مهندس س. کریمی',
+        'about-team-m5-role': 'مدیر فروش بین‌الملل',
+        'about-team-m5-desc': 'هماهنگی قراردادهای صادراتی و پشتیبانی مشتریان صنعتی B2B.',
+        'about-team-learn-more': 'اطلاعات بیشتر درباره تیم مدیریت ←',
+        'about-sust-badge': '۰۳',
+        'about-sust-title': 'تعهد به پایداری محیط‌زیست و ESG',
+        'about-sust-p1': '<strong>۱. بازچرخانی ۹۵٪+ آب:</strong> بازچرخانی تصفیه آب کارخانه با صفر درصد پساب شیمیایی.',
+        'about-sust-p2': '<strong>۲. صرفه‌جویی ۲۲٪ انرژی:</strong> نصب درایوهای متغیر فرکانس و کاهش مصرف برق به ازای هر تن پودر.',
+        'about-sust-p3': '<strong>۳. بازسازی تدریجی زمین معدن:</strong> استخراج با سیم‌بر و بازسازی با خاک نباتی.',
+        'about-sust-p4': '<strong>۴. فیلتراسیون گرد و غبار ISO 14001:</strong> سیستم غبارگیری پالس‌جت زیر ۵ میلی‌گرم در متر مکعب.',
+        'about-sust-p5': '<strong>۵. انطباق با اهداف توسعه پایدار سازمان ملل:</strong> انطباق با اهداف ۶، ۷، ۱۲ و ۱۳ SDG.',
+        'about-card-1-title': 'بازچرخانی آب',
+        'about-card-1-desc': 'بازچرخانی بیش از ۹۵٪ آب مصرفی در مدار بسته.',
+        'about-card-2-title': 'کاهش مصرف برق',
+        'about-card-2-desc': '۲۲٪ کاهش مصرف انرژی برق به ازای هر تن تولید.',
+        'about-card-3-title': 'صفر درصد پساب',
+        'about-card-3-desc': 'عدم تخلیه پساب شیمیایی به اکوسیستم منطقه‌ای.',
+        'about-card-4-title': 'احیای اراضی معدن',
+        'about-card-4-desc': 'بازسازی تدریجی خاک و پوشش گیاهی معدن شاقز.',
+        'about-card-5-title': 'ممیزی SDG سازمان ملل',
+        'about-card-5-desc': 'تاییدیه انطباق با اهداف توسعه پایدار ۶، ۷، ۱۲ و ۱۳.'
     }
 };
 
@@ -352,26 +443,23 @@ function changeLanguage(lang) {
         document.documentElement.setAttribute('dir', 'ltr');
     }
     
-    // Apply translations
+    // Apply translations by mapIds
     const currentTranslations = translations[lang] || translations['en'];
     for (const [key, selector] of Object.entries(mapIds)) {
         const elements = document.querySelectorAll(selector);
         elements.forEach(el => {
             if (currentTranslations[key] !== undefined) {
-                // If it's the learn more button with the SVG icon, we need to preserve the SVG
-                if (key === 'about-learn-more') {
-                    el.innerHTML = currentTranslations[key];
-                } 
-                // For phone elements, preserve the SVG icon by updating just the text content wrapper
-                else if (key === 'phone-office' || key === 'phone-factory') {
-                    const icon = el.parentElement.querySelector('svg');
-                    el.innerHTML = currentTranslations[key];
-                }
-                else {
-                    el.innerHTML = currentTranslations[key];
-                }
+                el.innerHTML = currentTranslations[key];
             }
         });
+    }
+
+    // Apply translations by element ID fallback for all subpages
+    for (const [key, text] of Object.entries(currentTranslations)) {
+        const el = document.getElementById(key);
+        if (el) {
+            el.innerHTML = text;
+        }
     }
 
     // Update dynamic stat numbers immediately on language switch
