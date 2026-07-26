@@ -2,7 +2,7 @@ const translations = {
     'en': {
         'nav-home': 'Home',
         'nav-about': 'About Us',
-        'nav-about-overview': 'About Us (Overview)',
+        'nav-about-overview': 'Company Overview',
         'nav-about-management': 'Management Team',
         'nav-about-sustainability': 'Sustainability & ESG',
         'nav-products': 'Products',
@@ -212,7 +212,7 @@ const translations = {
     'fa': {
         'nav-home': 'خانه',
         'nav-about': 'درباره ما',
-        'nav-about-overview': 'درباره ما (نگاه کلی)',
+        'nav-about-overview': 'معرفی و تاریخچه شرکت',
         'nav-about-management': 'تیم مدیریت',
         'nav-about-sustainability': 'پایداری و محیط‌زیست',
         'nav-products': 'محصولات',
@@ -419,17 +419,17 @@ const translations = {
 };
 
 const mapIds = {
-    'nav-home': '#nav-home, .navbar__mobile-link:nth-child(1)',
-    'nav-about': '#nav-about, .navbar__mobile-link:nth-child(2)',
+    'nav-home': '#nav-home, #mobile-nav-home',
+    'nav-about': '#nav-about, #mobile-nav-about',
     'nav-about-overview': '#nav-about-overview, #mobile-about-overview',
     'nav-about-management': '#nav-about-management, #mobile-about-management',
     'nav-about-sustainability': '#nav-about-sustainability, #mobile-about-sustainability',
-    'nav-products': '#nav-products, .navbar__mobile-link:nth-child(3)',
-    'nav-industries': '#nav-industries, .navbar__mobile-link:nth-child(4)',
-    'nav-news': '#nav-news, .navbar__mobile-link:nth-child(5)',
-    'nav-articles': '#nav-articles, .navbar__mobile-link:nth-child(6)',
-    'nav-knowledge': '#nav-knowledge, .navbar__mobile-link:nth-child(7)',
-    'nav-contact-btn': '#nav-contact-btn, .navbar__mobile-cta',
+    'nav-products': '#nav-products, #mobile-nav-products',
+    'nav-industries': '#nav-industries, #mobile-nav-industries',
+    'nav-news': '#nav-news, #mobile-nav-news',
+    'nav-articles': '#nav-articles, #mobile-nav-articles',
+    'nav-knowledge': '#nav-knowledge, #mobile-nav-knowledge',
+    'nav-contact-btn': '#nav-contact-btn, #mobile-nav-contact',
     'brand-title': '.navbar__title',
     'brand-subtitle': '.navbar__subtitle',
     'hero-tag': '.hero__tag',
