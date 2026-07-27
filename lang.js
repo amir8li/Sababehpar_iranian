@@ -245,7 +245,31 @@ const translations = {
         'pcard-5-desc': 'Coarse and fine ground limestone fillers engineered for dry-mix mortars, tile adhesives, self-leveling floors, and precast concrete formulations.',
         'pcard-5-spec1': '• <strong>Mesh & Purity:</strong> 200 to 800 Mesh | 95.0%+ CaCO₃ Content',
         'pcard-5-spec2': '• <strong>Applications:</strong> Tile Adhesives, Dry-Mix Mortars, Self-Leveling Screeds, Cement',
-        'pcard-5-cta': 'View Construction Specs & PDFs →'
+        'pcard-5-cta': 'View Construction Specs & PDFs →',
+        // Calcium Carbonate Detail Page Keys
+        'caco3-badge': 'HIGH-PURITY GCC PRODUCT GROUP',
+        'caco3-title': 'Calcium Carbonate (GCC) Product Group',
+        'caco3-desc': 'Ultra-white micronized calcium carbonate manufactured from Aligoodarz marble deposits. Available in stearic acid surface-coated, ultra-fine uncoated, paper filler, and dry-mix construction mineral grades.',
+        'caco3-spec-title': 'Technical Specification & Sieve Analysis',
+        'caco3-th-grade': 'Grade Name',
+        'caco3-th-purity': 'CaCO3 Purity',
+        'caco3-th-whiteness': 'Whiteness Index',
+        'caco3-th-d50': 'D50 Particle Size',
+        'caco3-th-coating': 'Surface Coating',
+        'caco3-th-apps': 'Target Applications',
+        'caco3-th-download': 'Download TDS',
+        // Talc Detail Page Keys
+        'talc-badge': 'INDUSTRIAL TALC PRODUCT GROUP',
+        'talc-title': 'Micronized Talc Powder Product Group',
+        'talc-desc': 'High-purity micro-lamellar hydrous magnesium silicate engineered for polypropylene (PP) automotive parts, technical polymer reinforcement, industrial anti-corrosive coatings, and cosmetics.',
+        'talc-spec-title': 'Technical Specification & Sieve Analysis',
+        'talc-th-grade': 'Grade Name',
+        'talc-th-purity': 'Talc Purity',
+        'talc-th-whiteness': 'Whiteness Index',
+        'talc-th-d50': 'D50 Particle Size',
+        'talc-th-loi': 'Loss on Ignition',
+        'talc-th-apps': 'Target Applications',
+        'talc-th-download': 'Download TDS'
     },
     'fa': {
         'nav-home': 'خانه',
@@ -490,7 +514,31 @@ const translations = {
         'pcard-5-desc': 'فیلرهای سنگ آهک خردشده ریز و درشت طراحی‌شده برای ملات‌های آماده، چسب کاشی، ملات‌های خودتراز شونده و بتن‌های پیش‌ساخته.',
         'pcard-5-spec1': '• <strong>مش و خلوص:</strong> مش ۲۰۰ تا ۸۰۰ | ۹۵.۰٪+ محتوای CaCO3',
         'pcard-5-spec2': '• <strong>کاربردها:</strong> چسب کاشی، ملات‌های خشک، کف‌پوش‌های خودتراز، سیمان',
-        'pcard-5-cta': 'مشاهده مشخصات گرید ساختمانی ←'
+        'pcard-5-cta': 'مشاهده مشخصات گرید ساختمانی ←',
+        // Calcium Carbonate Detail Page Farsi Keys
+        'caco3-badge': 'گرید کربنات کلسیم با خلوص بالا',
+        'caco3-title': 'گروه محصولات کربنات کلسیم (GCC)',
+        'caco3-desc': 'کربنات کلسیم میکرونیزه سفید مرمر حاصل از معادن الیگودرز. عرضه در گریدهای پوشش‌دار اسید استئاریک، بدون پوشش فوق‌ریز، پرکننده کاغذ و فیلرهای ملات خشک ساختمانی.',
+        'caco3-spec-title': 'مشخصات فنی و دانه‌بندی مش',
+        'caco3-th-grade': 'نام گرید',
+        'caco3-th-purity': 'خلوص CaCO3',
+        'caco3-th-whiteness': 'سفیدی (Whiteness)',
+        'caco3-th-d50': 'اندازه ذرات D50',
+        'caco3-th-coating': 'پوشش سطحی',
+        'caco3-th-apps': 'کاربردهای صنعتی',
+        'caco3-th-download': 'دانلود TDS',
+        // Talc Detail Page Farsi Keys
+        'talc-badge': 'گروه محصولات تالک صنعتی',
+        'talc-title': 'گروه محصولات پودر تالک صنعتی',
+        'talc-desc': 'سیلیکات منیزیم هیدراته میکرونیزه با ساختار ورقه‌ای بسیار منظم. طراحی‌شده برای قطعات خودرویی پلی‌پروپیلن (PP)، تقویت پلیمرهای مهندسی، پوشش‌های ضدخوردگی و صنایع آرایشی.',
+        'talc-spec-title': 'مشخصات فنی و دانه‌بندی مش پودر تالک',
+        'talc-th-grade': 'نام گرید',
+        'talc-th-purity': 'خلوص تالک',
+        'talc-th-whiteness': 'سفیدی (Whiteness)',
+        'talc-th-d50': 'اندازه ذرات D50',
+        'talc-th-loi': 'افت حرارتی (LOI)',
+        'talc-th-apps': 'کاربردهای صنعتی',
+        'talc-th-download': 'دانلود TDS'
     }
 };
 
