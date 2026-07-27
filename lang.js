@@ -549,13 +549,20 @@ function changeLanguage(lang) {
         document.documentElement.setAttribute('dir', 'ltr');
     }
     
+    // SVG Dropdown Arrow Icon
+    const dropdownArrowSvg = `<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><path d="m6 9 6 6 6-6"/></svg>`;
+
     // Apply translations by mapIds
     const currentTranslations = translations[lang] || translations['en'];
     for (const [key, selector] of Object.entries(mapIds)) {
         const elements = document.querySelectorAll(selector);
         elements.forEach(el => {
             if (currentTranslations[key] !== undefined) {
-                el.innerHTML = currentTranslations[key];
+                if (key === 'nav-about' && el.classList.contains('navbar__link')) {
+                    el.innerHTML = `${currentTranslations[key]} ${dropdownArrowSvg}`;
+                } else {
+                    el.innerHTML = currentTranslations[key];
+                }
             }
         });
     }
@@ -564,7 +571,11 @@ function changeLanguage(lang) {
     for (const [key, text] of Object.entries(currentTranslations)) {
         const el = document.getElementById(key);
         if (el) {
-            el.innerHTML = text;
+            if (key === 'nav-about' && el.classList.contains('navbar__link')) {
+                el.innerHTML = `${text} ${dropdownArrowSvg}`;
+            } else {
+                el.innerHTML = text;
+            }
         }
     }
 
