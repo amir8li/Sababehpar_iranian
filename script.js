@@ -406,4 +406,89 @@ document.addEventListener('DOMContentLoaded', () => {
         updateActiveNav();
     }
 
+
+    /* =========================================
+       9. EXECUTIVE TEAM POP-UP MODAL (ABOUT US PAGE)
+       ========================================= */
+
+    const teamCards = document.querySelectorAll('.about-team-grid .product-card');
+    const teamModal = document.getElementById('team-modal');
+    const teamModalClose = document.getElementById('team-modal-close');
+
+    if (teamCards.length > 0 && teamModal) {
+        teamCards.forEach((card, index) => {
+            card.style.cursor = 'pointer';
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+            card.setAttribute('aria-label', `View details for manager ${index + 1}`);
+
+            card.addEventListener('click', (e) => {
+                // Prevent trigger if clicking directly on a mailto link
+                if (e.target.tagName === 'A') return;
+
+                const currentLang = localStorage.getItem('sababehpar-lang') || 'en';
+                const pNameKey = `mgmt-p${index + 1}-name`;
+                const pRoleKey = `mgmt-p${index + 1}-role`;
+                const pBioKey = `mgmt-p${index + 1}-bio`;
+
+                const dict = (typeof translations !== 'undefined' && translations[currentLang]) 
+                    ? translations[currentLang] 
+                    : (typeof translations !== 'undefined' ? translations['en'] : {});
+
+                const imgEl = card.querySelector('img');
+                const emailEl = card.querySelector('a[href^="mailto:"]');
+
+                const nameVal = dict[pNameKey] || card.querySelector('h3').textContent;
+                const roleVal = dict[pRoleKey] || card.querySelector('p[id$="-role"]').textContent;
+                const bioVal = dict[pBioKey] || card.querySelector('p[id$="-desc"]').textContent;
+
+                document.getElementById('team-modal-img').src = imgEl ? imgEl.src : '';
+                document.getElementById('team-modal-img').alt = nameVal;
+                document.getElementById('team-modal-name').textContent = nameVal;
+                document.getElementById('team-modal-role').textContent = roleVal;
+                document.getElementById('team-modal-bio').textContent = bioVal;
+
+                if (emailEl) {
+                    const modalEmailLink = document.getElementById('team-modal-email');
+                    modalEmailLink.href = emailEl.href;
+                    modalEmailLink.textContent = emailEl.href.replace('mailto:', '');
+                }
+
+                teamModal.style.display = 'flex';
+                teamModal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            });
+
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    card.click();
+                }
+            });
+        });
+
+        function closeTeamModal() {
+            teamModal.style.display = 'none';
+            teamModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        if (teamModalClose) {
+            teamModalClose.addEventListener('click', closeTeamModal);
+        }
+
+        teamModal.addEventListener('click', (e) => {
+            if (e.target === teamModal) {
+                closeTeamModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && teamModal.style.display === 'flex') {
+                closeTeamModal();
+            }
+        });
+    }
+
 });
+
