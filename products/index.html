@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Catalog | Sababehpar Iranian Mining Co.</title>
-    <meta name="description" content="Explore Sababehpar's catalog of micronized calcium carbonate (GCC coated & uncoated) and industrial talc powders. Download technical datasheets.">
+    <meta name="description" content="Explore Sababehpar Iranian's catalog of manufactured industrial mineral powders — coated calcium carbonate, uncoated micronized GCC, industrial talc powder, paper grade fillers, and construction dry-mix minerals.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,12 +12,34 @@
 </head>
 <body>
 
-    <!-- Utility Header -->
-    <div class="utility-header">
+    <!-- ============================================== -->
+    <!-- 1. HEADER + NAVBAR (BILINGUAL SUPPORT)         -->
+    <!-- ============================================== -->
+    <div class="utility-header" id="utility-header">
         <div class="container utility-header__inner">
             <div class="utility-header__contact">
-                <a href="tel:+982188000000" class="utility-header__link"><span dir="ltr">+98 21 8800 0000</span></a>
-                <a href="mailto:info@sababehpar.com" class="utility-header__link"><span dir="ltr">info@sababehpar.com</span></a>
+                <a href="tel:+982188000000" class="utility-header__link" id="header-phone">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span dir="ltr">+98 21 8800 0000</span>
+                </a>
+                <a href="mailto:info@sababehpar.com" class="utility-header__link" id="header-email">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span dir="ltr">info@sababehpar.com</span>
+                </a>
+            </div>
+            <div class="utility-header__actions">
+                <div class="language-selector" id="language-selector">
+                    <button class="language-selector__btn" id="lang-toggle" aria-label="Select language">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+                        EN
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="language-selector__dropdown" id="lang-dropdown">
+                        <a href="#" class="language-selector__option active" data-lang="en">English</a>
+                        <a href="#" class="language-selector__option" data-lang="fa">فارسی</a>
+                        <a href="#" class="language-selector__option" data-lang="ar">العربية</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -34,74 +56,228 @@
                     </svg>
                 </div>
                 <div class="navbar__brand-text">
-                    <span class="navbar__title">SABABEHPAR</span>
-                    <span class="navbar__subtitle">Iranian Mining Co.</span>
+                    <span class="navbar__title" id="brand-title">SABABEHPAR</span>
+                    <span class="navbar__subtitle" id="brand-subtitle">Iranian Mining Co.</span>
                 </div>
             </a>
-            <div class="navbar__links">
-                <a href="../index.html" class="navbar__link">Home</a>
-                <a href="../about/index.html" class="navbar__link">About Us</a>
-                <a href="index.html" class="navbar__link active">Products</a>
-                <a href="../industries/index.html" class="navbar__link">Industries</a>
-                <a href="../news/index.html" class="navbar__link">News</a>
-                <a href="../articles/index.html" class="navbar__link">Articles</a>
-                <a href="../knowledge-center/index.html" class="navbar__link">Knowledge Center</a>
+            <div class="navbar__links" id="nav-links">
+                <a href="../index.html" class="navbar__link" id="nav-home">Home</a>
+                <div class="navbar__dropdown">
+                    <a href="../about/index.html" class="navbar__link" id="nav-about">
+                        About Us
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="../about/index.html" class="navbar__dropdown-item" id="nav-about-overview">Company Overview</a>
+                        <a href="../about/management-team.html" class="navbar__dropdown-item" id="nav-about-management">Management Team</a>
+                        <a href="../about/sustainability.html" class="navbar__dropdown-item" id="nav-about-sustainability">Sustainability & ESG</a>
+                    </div>
+                </div>
+                <a href="index.html" class="navbar__link active" id="nav-products">Products</a>
+                <a href="../industries/index.html" class="navbar__link" id="nav-industries">Industries</a>
+                <a href="../news/index.html" class="navbar__link" id="nav-news">News</a>
+                <a href="../articles/index.html" class="navbar__link" id="nav-articles">Articles</a>
+                <a href="../knowledge-center/index.html" class="navbar__link" id="nav-knowledge">Knowledge Center</a>
             </div>
-            <a href="../contact/index.html" class="navbar__cta">Contact Us</a>
+            <a href="../contact/index.html" class="navbar__cta" id="nav-contact-btn">Contact Us</a>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="navbar__mobile-menu" id="mobile-menu">
+            <a href="../index.html" class="navbar__mobile-link" id="mobile-nav-home">Home</a>
+            <a href="../about/index.html" class="navbar__mobile-link" id="mobile-nav-about">About Us</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="../about/index.html" class="navbar__mobile-sublink" id="mobile-about-overview">Company Overview</a>
+                <a href="../about/management-team.html" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
+                <a href="../about/sustainability.html" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
+            </div>
+            <a href="index.html" class="navbar__mobile-link active" id="mobile-nav-products">Products</a>
+            <a href="../industries/index.html" class="navbar__mobile-link" id="mobile-nav-industries">Industries</a>
+            <a href="../news/index.html" class="navbar__mobile-link" id="mobile-nav-news">News</a>
+            <a href="../articles/index.html" class="navbar__mobile-link" id="mobile-nav-articles">Articles</a>
+            <a href="../knowledge-center/index.html" class="navbar__mobile-link" id="mobile-nav-knowledge">Knowledge Center</a>
+            <a href="../contact/index.html" class="navbar__mobile-link navbar__mobile-cta" id="mobile-nav-contact">Contact Us</a>
         </div>
     </nav>
 
-    <!-- Subpage Banner -->
-    <header class="products" style="background: linear-gradient(135deg, #0D1524 0%, #16243D 100%); padding: 4rem 0 2.5rem; text-align: center;">
-        <div class="container">
-            <span class="section-badge">Route: /products</span>
-            <h1 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-top: 0.5rem;">Product Catalog & Technical Specs</h1>
-            <p style="font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0.75rem auto 0;">Explore Sababehpar's manufactured product lines. Click any product category to view technical datasheets, sieve analysis, and COA downloads.</p>
+    <!-- ============================================== -->
+    <!-- HERO SECTION (PRODUCTS GENERAL EXPLANATION)    -->
+    <!-- ============================================== -->
+    <header class="hero about-page-hero" style="background: linear-gradient(135deg, #0A192F 0%, #16243D 100%); padding: 4.5rem 0 3rem; text-align: center;">
+        <div class="container" style="position: relative; z-index: 2; padding: 0 1rem;">
+            <span class="section-badge" id="products-hero-tag" style="background: rgba(222,131,75,0.18); color: #de834b; border: 1px solid rgba(222,131,75,0.4); padding: 6px 18px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px;">HIGH-PURITY INDUSTRIAL MINERAL POWDERS</span>
+            <h1 id="products-hero-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #FFFFFF; margin-top: 1rem; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Sababehpar Manufactured Product Catalog</h1>
+            <p id="products-hero-desc" style="font-size: clamp(0.95rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); max-width: 820px; margin: 1.25rem auto 0; line-height: 1.75;">Mined directly from our ultra-white Shaghez Aligoodarz marble deposits and micronized via 3 continuous ball mills. Sababehpar Iranian produces stearic acid coated calcium carbonate, ultra-fine uncoated GCC, industrial talc powder, paper grade extenders, and dry-mix construction minerals for B2B manufacturers worldwide.</p>
         </div>
     </header>
 
     <div class="section-divider"></div>
 
-    <!-- Product Category Groups -->
-    <section style="background: #0B0E14; padding: 4rem 0;">
+    <!-- ============================================== -->
+    <!-- SECTION 2: 5 PRODUCTS GRID (2 DESKTOP / 1 MOBILE) -->
+    <!-- ============================================== -->
+    <section style="background: linear-gradient(135deg, #0E131F 0%, #171E2E 100%); padding: 4.5rem 0;">
         <div class="container">
-            <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-                
-                <!-- Group 1: Calcium Carbonate -->
-                <div class="product-card" style="padding: 2rem;">
-                    <span class="kpi-badge">4 Product Grades</span>
-                    <h2 style="color: #D4AF37; font-size: 1.5rem; margin: 10px 0;">Calcium Carbonate (GCC)</h2>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 1.5rem;">Manufactured from ultra-white Aligoodarz marble quarries. Available in stearic acid coated, ultra-fine uncoated, paper filler, and paint extender grades (400 to 3500 Mesh).</p>
-                    <div style="margin-bottom: 1.5rem; font-size: 0.85rem; color: #FFF;">
-                        <div style="margin-bottom: 6px;">• <strong>GCC Coated (Stearic Acid):</strong> 10μm D50 | 98.5% Purity</div>
-                        <div style="margin-bottom: 6px;">• <strong>GCC Uncoated (Ultra-Fine):</strong> 3μm D50 | 99.0% Purity</div>
-                        <div style="margin-bottom: 6px;">• <strong>Paper-Grade CaCO3 Filler:</strong> 8μm D50 | 98.0% Purity</div>
-                        <div>• <strong>Paint & Coating White Filler:</strong> 2μm D50 | 97.0% Whiteness</div>
-                    </div>
-                    <a href="calcium-carbonate.html" class="btn-primary" style="display: inline-block; padding: 10px 24px; background: #D4AF37; color: #121620; text-decoration: none; font-weight: 700; border-radius: 6px;">View Calcium Carbonate Specs & PDFs →</a>
-                </div>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span class="section-badge" id="products-sec-badge" style="background: rgba(222,131,75,0.2); color: #de834b; border-color: rgba(222,131,75,0.4);">PRODUCT LINES</span>
+                <h2 id="products-sec-title" style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 800; color: #FFF; margin-top: 0.5rem; margin-bottom: 0.5rem;">Select a Product Line to View Technical Specifications</h2>
+                <p id="products-sec-desc" style="color: rgba(255,255,255,0.7); font-size: 1rem; max-width: 720px; margin: 0 auto;">Click any product card below to explore mesh sizing charts, chemical purity analyses (XRF), and Certificate of Analysis (COA) datasheets.</p>
+            </div>
 
-                <!-- Group 2: Talc Powder -->
-                <div class="product-card" style="padding: 2rem;">
-                    <span class="kpi-badge">Industrial Grade</span>
-                    <h2 style="color: #D4AF37; font-size: 1.5rem; margin: 10px 0;">Micronized Talc Powder</h2>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 1.5rem;">Hydrous magnesium silicate powder engineered for automotive polypropylene (PP) reinforcement, industrial coatings, silicone sealants, and cosmetics.</p>
-                    <div style="margin-bottom: 1.5rem; font-size: 0.85rem; color: #FFF;">
-                        <div style="margin-bottom: 6px;">• <strong>Purity (Mg3Si4O10(OH)2):</strong> ≥ 97.0%</div>
-                        <div style="margin-bottom: 6px;">• <strong>Particle Size (D50):</strong> 5.0 μm ± 0.3</div>
-                        <div>• <strong>Whiteness Index (Ry):</strong> ≥ 93.0%</div>
+            <!-- 5 Product Cards Grid: 2 per row on Desktop, 1 per row on Mobile -->
+            <div class="products-catalog-grid">
+
+                <!-- CARD 1: COATED CALCIUM CARBONATE -->
+                <a href="calcium-carbonate.html#coated" class="product-card-link">
+                    <div class="product-card" style="padding: 2rem; background: #1C2436; border: 1px solid rgba(222,131,75,0.3); border-radius: 12px;">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <span id="pcard-1-tag" style="background: rgba(222,131,75,0.2); color: #de834b; border: 1px solid rgba(222,131,75,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Coated Grade (Surface Treated)</span>
+                                <span style="font-size: 1.5rem;">✨</span>
+                            </div>
+                            <h3 id="pcard-1-title" style="color: #FFF; font-size: 1.35rem; font-weight: 800; margin-bottom: 0.65rem;">Stearic Acid Coated Calcium Carbonate</h3>
+                            <p id="pcard-1-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Ultra-white micronized CaCO₃ coated with high-purity stearic acid. Provides hydrophobic surface properties, excellent dispersion, and reduced torque in polymer extrusion.</p>
+                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #de834b; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
+                                <div id="pcard-1-spec1">• <strong>Purity & Mesh:</strong> 98.5%+ CaCO₃ | 400 to 3500 Mesh (D50: 2µm – 10µm)</div>
+                                <div id="pcard-1-spec2">• <strong>Applications:</strong> PVC Pipes & Profiles, PP Masterbatch, Plastic Compounding</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                            <span id="pcard-1-cta" style="color: #de834b; font-weight: 700; font-size: 0.9rem;">View Coated CaCO₃ Specs & PDFs →</span>
+                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-C Series</span>
+                        </div>
                     </div>
-                    <a href="talc.html" class="btn-primary" style="display: inline-block; padding: 10px 24px; background: #D4AF37; color: #121620; text-decoration: none; font-weight: 700; border-radius: 6px;">View Talc Specs & PDFs →</a>
-                </div>
+                </a>
+
+                <!-- CARD 2: UNCOATED CALCIUM CARBONATE -->
+                <a href="calcium-carbonate.html#uncoated" class="product-card-link">
+                    <div class="product-card" style="padding: 2rem; background: #1C2436; border: 1px solid rgba(222,131,75,0.3); border-radius: 12px;">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <span id="pcard-2-tag" style="background: rgba(0,210,255,0.15); color: #00D2FF; border: 1px solid rgba(0,210,255,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Natural Uncoated Grade</span>
+                                <span style="font-size: 1.5rem;">💎</span>
+                            </div>
+                            <h3 id="pcard-2-title" style="color: #FFF; font-size: 1.35rem; font-weight: 800; margin-bottom: 0.65rem;">Uncoated Micronized Calcium Carbonate</h3>
+                            <p id="pcard-2-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Natural ground marble calcium carbonate with 99.0%+ chemical purity and 98%+ natural brightness. Ideal for water-based coatings, adhesives, and rubber formulations.</p>
+                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #00D2FF; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
+                                <div id="pcard-2-spec1">• <strong>Purity & Mesh:</strong> 99.0%+ CaCO₃ | 400 to 3500 Mesh (D50: 1.5µm – 8µm)</div>
+                                <div id="pcard-2-spec2">• <strong>Applications:</strong> Emulsion Paints, Adhesives, Rubber, Sealants & Putty</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                            <span id="pcard-2-cta" style="color: #00D2FF; font-weight: 700; font-size: 0.9rem;">View Uncoated CaCO₃ Specs & PDFs →</span>
+                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-U Series</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 3: MICRONIZED TALC POWDER -->
+                <a href="talc.html" class="product-card-link">
+                    <div class="product-card" style="padding: 2rem; background: #1C2436; border: 1px solid rgba(155,89,182,0.35); border-radius: 12px;">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <span id="pcard-3-tag" style="background: rgba(155,89,182,0.2); color: #9B59B6; border: 1px solid rgba(155,89,182,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Industrial Talc Grade</span>
+                                <span style="font-size: 1.5rem;">⚡</span>
+                            </div>
+                            <h3 id="pcard-3-title" style="color: #FFF; font-size: 1.35rem; font-weight: 800; margin-bottom: 0.65rem;">Micronized Industrial Talc Powder</h3>
+                            <p id="pcard-3-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Hydrous magnesium silicate powder engineered with high lamellar platy structure. Enhances stiffness, heat stability, and impact strength in technical polymers.</p>
+                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #9B59B6; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
+                                <div id="pcard-3-spec1">• <strong>Purity & Mesh:</strong> 97.0%+ Pure Talc | 800 to 3250 Mesh (D50: 5.0µm ± 0.3)</div>
+                                <div id="pcard-3-spec2">• <strong>Applications:</strong> Automotive PP Reinforcement, Anti-Corrosive Paints, Cosmetics</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                            <span id="pcard-3-cta" style="color: #9B59B6; font-weight: 700; font-size: 0.9rem;">View Talc Specs & Technical PDFs →</span>
+                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">TALC-M Series</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 4: PAPER-GRADE CALCIUM CARBONATE -->
+                <a href="calcium-carbonate.html#paper-grade" class="product-card-link">
+                    <div class="product-card" style="padding: 2rem; background: #1C2436; border: 1px solid rgba(46,204,113,0.35); border-radius: 12px;">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <span id="pcard-4-tag" style="background: rgba(46,204,113,0.15); color: #2ECC71; border: 1px solid rgba(46,204,113,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Paper & Packaging Grade</span>
+                                <span style="font-size: 1.5rem;">📄</span>
+                            </div>
+                            <h3 id="pcard-4-title" style="color: #FFF; font-size: 1.35rem; font-weight: 800; margin-bottom: 0.65rem;">Paper-Grade High-Whiteness CaCO₃</h3>
+                            <p id="pcard-4-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Controlled particle size distribution with high brightness (96%+) and low abrasive index. Replaces costly Titanium Dioxide (TiO₂) in paper filling and coating slurries.</p>
+                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #2ECC71; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
+                                <div id="pcard-4-spec1">• <strong>Brightness & Mesh:</strong> 96%+ ISO Brightness | 2500 to 3500 Mesh</div>
+                                <div id="pcard-4-spec2">• <strong>Applications:</strong> Alkaline Papermaking, Coated Board, Packaging Sheets</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                            <span id="pcard-4-cta" style="color: #2ECC71; font-weight: 700; font-size: 0.9rem;">View Paper Grade Specs & PDFs →</span>
+                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-P Series</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 5: CONSTRUCTION & DRY-MIX MINERALS -->
+                <a href="calcium-carbonate.html#construction-grade" class="product-card-link" style="grid-column: span 1;">
+                    <div class="product-card" style="padding: 2rem; background: #1C2436; border: 1px solid rgba(230,126,34,0.35); border-radius: 12px;">
+                        <div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <span id="pcard-5-tag" style="background: rgba(230,126,34,0.18); color: #E67E22; border: 1px solid rgba(230,126,34,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Construction & Dry-Mix Grade</span>
+                                <span style="font-size: 1.5rem;">🏗️</span>
+                            </div>
+                            <h3 id="pcard-5-title" style="color: #FFF; font-size: 1.35rem; font-weight: 800; margin-bottom: 0.65rem;">Construction & Dry-Mix Mineral Fillers</h3>
+                            <p id="pcard-5-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Coarse and fine ground limestone fillers engineered for dry-mix mortars, tile adhesives, self-leveling floors, and precast concrete formulations.</p>
+                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #E67E22; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
+                                <div id="pcard-5-spec1">• <strong>Mesh & Purity:</strong> 200 to 800 Mesh | 95.0%+ CaCO₃ Content</div>
+                                <div id="pcard-5-spec2">• <strong>Applications:</strong> Tile Adhesives, Dry-Mix Mortars, Self-Leveling Screeds, Cement</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                            <span id="pcard-5-cta" style="color: #E67E22; font-weight: 700; font-size: 0.9rem;">View Construction Specs & PDFs →</span>
+                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-K Series</span>
+                        </div>
+                    </div>
+                </a>
 
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" style="background: #05080E; padding: 3rem 0; border-top: 1px solid rgba(212,175,55,0.3);">
-        <div class="container" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
-            <p>© 2026 Sababehpar Iranian Mining Company. All rights reserved.</p>
+    <!-- ============================================== -->
+    <!-- FOOTER                                         -->
+    <!-- ============================================== -->
+    <footer class="footer" style="background: #05080E; padding: 4rem 0 2rem; border-top: 1px solid rgba(222,131,75,0.3);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div>
+                    <span id="footer-brand-title" style="font-size: 1.2rem; font-weight: 800; color: #FFF; display: block; margin-bottom: 1rem;">SABABEHPAR IRANIAN</span>
+                    <p id="footer-desc" style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6;">Leading producer of micronized calcium carbonate and industrial talc powders from Aligoodarz mines.</p>
+                </div>
+                <div>
+                    <h4 id="footer-quick-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+                        <a href="../index.html" id="footer-link-home" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a>
+                        <a href="../about/index.html" id="footer-link-about" style="color: rgba(255,255,255,0.7); text-decoration: none;">About Us</a>
+                        <a href="index.html" id="footer-link-products" style="color: rgba(255,255,255,0.7); text-decoration: none;">Products Catalog</a>
+                        <a href="../industries/index.html" id="footer-link-industries" style="color: rgba(255,255,255,0.7); text-decoration: none;">Industries Served</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 id="footer-knowledge-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Knowledge Center</h4>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+                        <a href="../knowledge-center/quality-control.html" id="footer-kc-qc" style="color: rgba(255,255,255,0.7); text-decoration: none;">Quality Control</a>
+                        <a href="../knowledge-center/labs.html" id="footer-kc-labs" style="color: rgba(255,255,255,0.7); text-decoration: none;">R&D Laboratories</a>
+                        <a href="../knowledge-center/certifications.html" id="footer-kc-certs" style="color: rgba(255,255,255,0.7); text-decoration: none;">ISO Certifications</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 id="footer-contact-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Contact Us</h4>
+                    <p id="footer-contact-info" style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6;">Tehran Office: +98 21 8800 0000<br>Plant: Aligoodarz, Lorestan<br>Email: info@sababehpar.com</p>
+                </div>
+            </div>
+            <div style="text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                <p id="footer-copyright">© 2026 Sababehpar Iranian Mining Company. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

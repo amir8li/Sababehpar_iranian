@@ -2210,6 +2210,42 @@ html[dir="rtl"] .floating-phone__popup {
 }
 
 /* =========================================
+   PRODUCTS CATALOG GRID (2-COL DESKTOP / 1-COL MOBILE)
+   ========================================= */
+
+.products-catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.product-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-card-link .product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-link:hover .product-card {
+    transform: translateY(-6px);
+    border-color: #de834b !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(222, 131, 75, 0.25);
+}
+
+@media (max-width: 992px) {
+    .products-catalog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
    ALTERNATING MANAGEMENT TEAM ROWS (ODD/EVEN)
    ========================================= */
 
