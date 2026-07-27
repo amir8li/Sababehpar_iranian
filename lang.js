@@ -501,6 +501,9 @@ const mapIds = {
     'nav-about-management': '#nav-about-management, #mobile-about-management',
     'nav-about-sustainability': '#nav-about-sustainability, #mobile-about-sustainability',
     'nav-products': '#nav-products, #mobile-nav-products',
+    'nav-products-overview': '#nav-products-overview, #mobile-products-overview',
+    'nav-products-caco3': '#nav-products-caco3, #mobile-products-caco3',
+    'nav-products-talc': '#nav-products-talc, #mobile-products-talc',
     'nav-industries': '#nav-industries, #mobile-nav-industries',
     'nav-news': '#nav-news, #mobile-nav-news',
     'nav-articles': '#nav-articles, #mobile-nav-articles',
@@ -632,7 +635,7 @@ function changeLanguage(lang) {
         const elements = document.querySelectorAll(selector);
         elements.forEach(el => {
             if (currentTranslations[key] !== undefined) {
-                if (key === 'nav-about' && el.classList.contains('navbar__link')) {
+                if ((key === 'nav-about' || key === 'nav-products') && el.classList.contains('navbar__link')) {
                     el.innerHTML = `${currentTranslations[key]} ${dropdownArrowSvg}`;
                 } else {
                     el.innerHTML = currentTranslations[key];
@@ -645,7 +648,7 @@ function changeLanguage(lang) {
     for (const [key, text] of Object.entries(currentTranslations)) {
         const el = document.getElementById(key);
         if (el) {
-            if (key === 'nav-about' && el.classList.contains('navbar__link')) {
+            if ((key === 'nav-about' || key === 'nav-products') && el.classList.contains('navbar__link')) {
                 el.innerHTML = `${text} ${dropdownArrowSvg}`;
             } else {
                 el.innerHTML = text;

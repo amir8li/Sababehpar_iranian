@@ -38,16 +38,60 @@
                     <span class="navbar__subtitle">Iranian Mining Co.</span>
                 </div>
             </a>
-            <div class="navbar__links">
-                <a href="../index.html" class="navbar__link">Home</a>
-                <a href="../about/index.html" class="navbar__link">About Us</a>
-                <a href="index.html" class="navbar__link active">Products</a>
-                <a href="../industries/index.html" class="navbar__link">Industries</a>
-                <a href="../news/index.html" class="navbar__link">News</a>
-                <a href="../articles/index.html" class="navbar__link">Articles</a>
-                <a href="../knowledge-center/index.html" class="navbar__link">Knowledge Center</a>
+            <div class="navbar__links" id="nav-links">
+                <a href="../index.html" class="navbar__link" id="nav-home">Home</a>
+                <div class="navbar__dropdown">
+                    <a href="../about/index.html" class="navbar__link" id="nav-about">
+                        About Us
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="../about/index.html" class="navbar__dropdown-item" id="nav-about-overview">Company Overview</a>
+                        <a href="../about/management-team.html" class="navbar__dropdown-item" id="nav-about-management">Management Team</a>
+                        <a href="../about/sustainability.html" class="navbar__dropdown-item" id="nav-about-sustainability">Sustainability & ESG</a>
+                    </div>
+                </div>
+                <div class="navbar__dropdown">
+                    <a href="index.html" class="navbar__link active" id="nav-products">
+                        Products
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="index.html" class="navbar__dropdown-item" id="nav-products-overview">Products Overview</a>
+                        <a href="calcium-carbonate.html" class="navbar__dropdown-item" id="nav-products-caco3">Calcium Carbonate (GCC)</a>
+                        <a href="talc.html" class="navbar__dropdown-item active" id="nav-products-talc" style="color: #9B59B6; font-weight: 700;">Micronized Talc Powder</a>
+                    </div>
+                </div>
+                <a href="../industries/index.html" class="navbar__link" id="nav-industries">Industries</a>
+                <a href="../news/index.html" class="navbar__link" id="nav-news">News</a>
+                <a href="../articles/index.html" class="navbar__link" id="nav-articles">Articles</a>
+                <a href="../knowledge-center/index.html" class="navbar__link" id="nav-knowledge">Knowledge Center</a>
             </div>
-            <a href="../contact/index.html" class="navbar__cta">Contact Us</a>
+            <a href="../contact/index.html" class="navbar__cta" id="nav-contact-btn">Contact Us</a>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="navbar__mobile-menu" id="mobile-menu">
+            <a href="../index.html" class="navbar__mobile-link" id="mobile-nav-home">Home</a>
+            <a href="../about/index.html" class="navbar__mobile-link" id="mobile-nav-about">About Us</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="../about/index.html" class="navbar__mobile-sublink" id="mobile-about-overview">Company Overview</a>
+                <a href="../about/management-team.html" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
+                <a href="../about/sustainability.html" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
+            </div>
+            <a href="index.html" class="navbar__mobile-link active" id="mobile-nav-products">Products</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="index.html" class="navbar__mobile-sublink" id="mobile-products-overview">Products Overview</a>
+                <a href="calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-products-caco3">Calcium Carbonate (GCC)</a>
+                <a href="talc.html" class="navbar__mobile-sublink active" id="mobile-products-talc">Micronized Talc Powder</a>
+            </div>
+            <a href="../industries/index.html" class="navbar__mobile-link" id="mobile-nav-industries">Industries</a>
+            <a href="../news/index.html" class="navbar__mobile-link" id="mobile-nav-news">News</a>
+            <a href="../articles/index.html" class="navbar__mobile-link" id="mobile-nav-articles">Articles</a>
+            <a href="../knowledge-center/index.html" class="navbar__mobile-link" id="mobile-nav-knowledge">Knowledge Center</a>
+            <a href="../contact/index.html" class="navbar__mobile-link navbar__mobile-cta" id="mobile-nav-contact">Contact Us</a>
         </div>
     </nav>
 
