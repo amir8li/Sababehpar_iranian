@@ -2239,6 +2239,10 @@ html[dir="rtl"] .floating-phone__popup {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(222, 131, 75, 0.25);
 }
 
+.product-card-link:hover .product-card img {
+    transform: scale(1.05);
+}
+
 @media (max-width: 992px) {
     .products-catalog-grid {
         grid-template-columns: 1fr;
