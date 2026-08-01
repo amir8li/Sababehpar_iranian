@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function goToSlide(index) {
         slides.forEach(s => s.classList.remove('active'));
-        dots.forEach(d => d.classList.remove('active'));
+        if (dots.length > 0) dots.forEach(d => d.classList.remove('active'));
         currentSlide = index;
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
+        if (slides.length > 0) slides[currentSlide].classList.add('active');
+        if (dots.length > 0) dots[currentSlide].classList.add('active');
     }
 
     function nextSlide() {
-        goToSlide((currentSlide + 1) % slides.length);
+        if (slides.length > 0) goToSlide((currentSlide + 1) % slides.length);
     }
 
     function startSlideshow() {
