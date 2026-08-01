@@ -233,54 +233,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.industryData = {
         paint: {
-            title: 'Paint & Coatings Industry',
-            description: 'Calcium carbonate serves as a critical extender and filler in paint formulations. Our ultra-fine GCC and coated CaCO₃ provide excellent whiteness, opacity control, and viscosity management while significantly reducing production costs.',
-            specs: [
-                { label: 'Recommended Mesh', value: '800 – 2500' },
-                { label: 'Whiteness Required', value: '96%+' },
-                { label: 'Coating Type', value: 'Stearic Acid' },
-                { label: 'Application', value: 'Interior & Exterior' }
-            ]
+            title: 'Paint & Resin',
+            description: 'Micronized calcium carbonate powder is used as one of the most widely used mineral fillers in the production of various industrial paints, resins, and coatings. Having desirable whiteness and uniform granulation, it helps improve coverage, adjust viscosity, and create appropriate texture in the final product. Using the right grade of calcium carbonate can optimize formulation and reduce production costs while maintaining quality. This product is used in the production of architectural paints, industrial paints, primers, putties, and various water-based and solvent-based coatings. Selecting the right grade is based on whiteness, particle size, oil absorption, and dispersibility in the formulation.',
+            specs: []
         },
         plastics: {
-            title: 'Plastics & Polymers Industry',
-            description: 'Our coated CaCO₃ serves as an impact modifier and cost-effective filler in PVC, PP, and PE compounds. The stearic acid coating ensures excellent dispersion and compatibility with polymer matrices.',
-            specs: [
-                { label: 'Recommended Mesh', value: '1500 – 3500' },
-                { label: 'Purity Required', value: '98%+' },
-                { label: 'Coating', value: 'Stearic Coated' },
-                { label: 'Application', value: 'PVC Pipes, PE Films' }
-            ]
+            title: 'Plastics & Polymers',
+            description: 'Micronized calcium carbonate powder is one of the most consumed mineral fillers in the plastics and polymer industries, used in producing a wide range of polymeric products. Its controlled granulation, low moisture, and good dispersibility contribute to blend uniformity and production process stability. Regular and coated calcium carbonate grades are selected based on the polymer type and formulation to improve processing properties and final product characteristics. It is applied in manufacturing masterbatches, polymer films, injection molded products, plastic parts, and polymer compounds. Grade selection considers particle size, surface coating, whiteness, and end-product requirements.',
+            specs: []
         },
-        adhesive: {
-            title: 'Adhesive & Mastic Industry',
-            description: 'Micronized calcium carbonate acts as a rheology modifier and thixotropic agent in sealants, adhesives, and mastic compounds. Our precise particle size distribution ensures optimal consistency.',
-            specs: [
-                { label: 'Recommended Mesh', value: '400 – 1500' },
-                { label: 'Oil Absorption', value: 'Low' },
-                { label: 'Particle Shape', value: 'Rhombohedral' },
-                { label: 'Application', value: 'Sealants, Putty' }
-            ]
+        pvc: {
+            title: 'PVC, UPVC & Profiles',
+            description: 'Micronized calcium carbonate powder is an essential mineral in PVC and UPVC product formulations, widely used in manufacturing door and window profiles, wall panels, baseboards, flooring, and construction parts. The powder\'s granulation uniformity, suitable whiteness, and low moisture impact the product\'s visual quality, extrusion stability, and production consistency. Coated grades are utilized in many PVC formulations due to better dispersion in the polymer matrix. The appropriate grade is chosen based on product type, usage percentage, production speed, and expected mechanical and visual properties. Continuous powder quality control ensures stable production and reduces process fluctuations.',
+            specs: []
         },
         paper: {
-            title: 'Paper & Packaging Industry',
-            description: 'Our paper-grade CaCO₃ provides brightness and opacity enhancement for both coated and uncoated paper. High whiteness and controlled particle distribution deliver superior print quality.',
-            specs: [
-                { label: 'Recommended Mesh', value: '2500 – 3500' },
-                { label: 'Whiteness', value: '97%+' },
-                { label: 'Brightness', value: '95%+' },
-                { label: 'Application', value: 'Coating, Filling' }
-            ]
+            title: 'Paper & Cardboard',
+            description: 'Micronized calcium carbonate powder is a highly utilized mineral filler in the paper and cardboard industry, used to produce various packaging and printing papers and boards. This material improves the product\'s whiteness, surface uniformity, and visual quality, thereby enhancing printability and final appearance. Controlling the powder\'s granulation, purity, and quality stability is crucial for achieving stable production and a uniform product. Calcium carbonate is used in filler applications as well as certain coating formulations. Grade selection depends on the production line type, paper/cardboard specifications, and consumer technical needs.',
+            specs: []
+        },
+        feed: {
+            title: 'Animal, Poultry & Aquatic Feed',
+            description: 'Micronized calcium carbonate powder is considered a rich source of calcium for meeting vital needs in the animal, poultry, and aquatic feed industry. This substance plays a key role in strengthening skeletal structure, improving eggshell quality in poultry, and regulating animal metabolism. High purity, the absence of heavy metal impurities, and precise granulation are significant features of this powder to ensure maximum absorption and final product health. Using a suitable grade with controlled particle size helps achieve uniform distribution in the formulation and increases feed production efficiency. This product fully complies with health and nutritional standards and is extensively used in producing various concentrates and supplements for livestock, poultry, and aquatic animals.',
+            specs: []
+        },
+        rubber: {
+            title: 'Rubber & Foam',
+            description: 'Micronized calcium carbonate powder acts as a key mineral filler in the rubber and foam industries, effectively improving physical properties and reducing production costs. Using this material in rubber product formulations not only increases hardness and elastic modulus but also improves processing characteristics and compound flowability during production. In producing various foams, this powder enhances product quality and durability by maintaining uniform cellular structure. Selecting the right grade with precise granulation and optimal oil absorption directly impacts the dimensional stability and abrasion resistance of the final products.',
+            specs: []
         },
         construction: {
-            title: 'Construction Industry',
-            description: 'Calcium carbonate and limestone products are essential in cement, mortar, dry-mix products, and tile adhesives. Our range of grades supports diverse construction applications.',
-            specs: [
-                { label: 'Recommended Mesh', value: '200 – 800' },
-                { label: 'CaCO₃ Content', value: '95%+' },
-                { label: 'Form', value: 'Powder & Lumps' },
-                { label: 'Application', value: 'Cement, Mortar' }
-            ]
+            title: 'Tiles, Ceramics & Construction',
+            description: 'Micronized calcium carbonate powder is widely used as an applied mineral in producing various tiles, ceramics, and construction materials. It effectively contributes to the formulations of ceramic bodies, dry mortars, tile adhesives, putties, polymer plasters, and construction coatings. The powder\'s uniform granulation and stable quality significantly help control the production process and enhance the final product\'s quality. Choosing the right grade based on required technical features and production line conditions ensures achieving the desired texture and physical resistance. Micronized calcium carbonate plays a fundamental role in optimizing construction and ceramic product formulations by providing excellent filling properties.',
+            specs: []
         }
     };
 
