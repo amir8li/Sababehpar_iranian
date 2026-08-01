@@ -114,7 +114,7 @@ const translations = {
         'footer-kc-labs': 'R&D Laboratories',
         'footer-kc-certs': 'ISO Certifications',
         'footer-contact-title': 'Contact Us',
-        'footer-contact-info': 'Tehran Office: +98 21 8800 0000<br>Plant: Aligoodarz, Lorestan<br>Email: info@sababehpar.com',
+        'footer-contact-info': 'Tehran Office: 021 7761 4878<br>Plant: Lorestan, Aligoodarz<br>Email: info@sababehpar.com',
         'footer-product-1': 'GCC Coated CaCO₃',
         'footer-product-2': 'Micronized Talc',
         'footer-product-3': 'GCC Uncoated CaCO₃',
@@ -272,7 +272,19 @@ const translations = {
         'talc-th-d50': 'D50 Particle Size',
         'talc-th-loi': 'Loss on Ignition',
         'talc-th-apps': 'Target Applications',
-        'talc-th-download': 'Download TDS'
+        'talc-th-download': 'Download TDS',
+        // Contact Page
+        'contact-hero-tag': 'GET IN TOUCH',
+        'contact-hero-title': 'Contact Sababehpar Iranian',
+        'contact-hero-desc': 'Connect with our sales office in Tehran or processing plant in Aligoodarz for product quotes and technical support.',
+        'contact-details-title': 'Sababehpar Iranian Mining Co.',
+        'contact-details-desc': 'Sababehpar Iranian Mining Company specializes in the extraction and processing of high-purity calcium carbonate. We are ready to answer your questions and fulfill your orders.',
+        'contact-office-title': 'Tehran Office',
+        'contact-office-addr': 'Tehran, Shariati Ave, Hoghoughi St, No. 60, Ground Floor',
+        'contact-factory-title': 'Aligoodarz Factory',
+        'contact-factory-addr': 'Lorestan, Aligoodarz, 5th km of Old Road',
+        'contact-phone-title': 'Phone Numbers',
+        'contact-mobile-title': 'Social Media & Mobile'
     },
     'fa': {
         'nav-home': 'خانه',
@@ -389,7 +401,7 @@ const translations = {
         'footer-kc-labs': 'آزمایشگاه‌های تحقیق و توسعه',
         'footer-kc-certs': 'گواهینامه‌های ایزو',
         'footer-contact-title': 'تماس با ما',
-        'footer-contact-info': 'دفتر تهران: ۰۲۱-۸۸۰۰۰۰۰۰<br>کارخانه: الیگودرز، لرستان<br>ایمیل: info@sababehpar.com',
+        'footer-contact-info': 'دفتر تهران: ۰۲۱۷۷۶۱۴۸۷۸<br>کارخانه: لرستان، الیگودرز<br>ایمیل: info@sababehpar.com',
         'footer-product-1': 'کربنات کلسیم کوتد',
         'footer-product-2': 'تالک میکرونیزه',
         'footer-product-3': 'کربنات کلسیم ساده',
@@ -544,7 +556,19 @@ const translations = {
         'talc-th-d50': 'اندازه ذرات D50',
         'talc-th-loi': 'افت حرارتی (LOI)',
         'talc-th-apps': 'کاربردهای صنعتی',
-        'talc-th-download': 'دانلود TDS'
+        'talc-th-download': 'دانلود TDS',
+        // Contact Page
+        'contact-hero-tag': 'تماس با ما',
+        'contact-hero-title': 'ارتباط با صبابهپر ایرانیان',
+        'contact-hero-desc': 'برای دریافت قیمت محصولات و پشتیبانی فنی با دفتر فروش ما در تهران یا کارخانه فراوری در الیگودرز تماس بگیرید.',
+        'contact-details-title': 'شرکت معدنی صبابهپر ایرانیان',
+        'contact-details-desc': 'شرکت معدنی صبابهپر ایرانیان متخصص در استخراج و فراوری کربنات کلسیم با خلوص بالا است. ما آماده پاسخگویی به سوالات و تامین سفارشات شما هستیم.',
+        'contact-office-title': 'دفتر تهران',
+        'contact-office-addr': 'تهران، خیابان شریعتی، خیابان حقوقی، پلاک ۶۰، طبقه همکف',
+        'contact-factory-title': 'کارخانه الیگودرز',
+        'contact-factory-addr': 'لرستان، الیگودرز، کیلومتر ۵ جاده قدیم',
+        'contact-phone-title': 'شماره های تماس',
+        'contact-mobile-title': 'شبکه های اجتماعی و موبایل'
     }
 };
 
@@ -563,6 +587,17 @@ const mapIds = {
     'nav-articles': '#nav-articles, #mobile-nav-articles',
     'nav-knowledge': '#nav-knowledge, #mobile-nav-knowledge',
     'nav-contact-btn': '#nav-contact-btn, #mobile-nav-contact',
+    'contact-hero-tag': '#contact-hero-tag',
+    'contact-hero-title': '#contact-hero-title',
+    'contact-hero-desc': '#contact-hero-desc',
+    'contact-details-title': '#contact-details-title',
+    'contact-details-desc': '#contact-details-desc',
+    'contact-office-title': '#contact-office-title',
+    'contact-office-addr': '#contact-office-addr',
+    'contact-factory-title': '#contact-factory-title',
+    'contact-factory-addr': '#contact-factory-addr',
+    'contact-phone-title': '#contact-phone-title',
+    'contact-mobile-title': '#contact-mobile-title',
     'brand-title': '.navbar__title',
     'brand-subtitle': '.navbar__subtitle',
     'hero-tag': '.hero__tag',

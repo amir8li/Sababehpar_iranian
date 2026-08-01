@@ -12,12 +12,34 @@
 </head>
 <body>
 
-    <!-- Utility Header -->
-    <div class="utility-header">
+    <!-- ============================================== -->
+    <!-- 1. HEADER + NAVBAR (BILINGUAL SUPPORT)         -->
+    <!-- ============================================== -->
+    <div class="utility-header" id="utility-header">
         <div class="container utility-header__inner">
             <div class="utility-header__contact">
-                <a href="tel:+982188000000" class="utility-header__link"><span dir="ltr">+98 21 8800 0000</span></a>
-                <a href="mailto:info@sababehpar.com" class="utility-header__link"><span dir="ltr">info@sababehpar.com</span></a>
+                <a href="tel:02177614878" class="utility-header__link" id="header-phone">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span dir="ltr">021 7761 4878</span>
+                </a>
+                <a href="mailto:info@sababehpar.com" class="utility-header__link" id="header-email">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span dir="ltr">info@sababehpar.com</span>
+                </a>
+            </div>
+            <div class="utility-header__actions">
+                <div class="language-selector" id="language-selector">
+                    <button class="language-selector__btn" id="lang-toggle" aria-label="Select language">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+                        EN
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="language-selector__dropdown" id="lang-dropdown">
+                        <a href="#" class="language-selector__option active" data-lang="en">English</a>
+                        <a href="#" class="language-selector__option" data-lang="fa">فارسی</a>
+                        <a href="#" class="language-selector__option" data-lang="ar">العربية</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -26,100 +48,177 @@
     <nav class="navbar" id="navbar">
         <div class="container navbar__inner">
             <a href="../index.html" class="navbar__brand">
-                <div class="navbar__logo">
-                    <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-                        <path d="M20 2L35 12V28L20 38L5 28V12L20 2Z" fill="#de834b" opacity="0.2"/>
-                        <path d="M20 6L31 13.5V26.5L20 34L9 26.5V13.5L20 6Z" stroke="#de834b" stroke-width="2"/>
-                        <path d="M20 14L26 18V24L20 28L14 24V18L20 14Z" fill="#de834b"/>
-                    </svg>
-                </div>
+                <div class="navbar__logo"><img src="../assets/images/logo.jpg" alt="Sababehpar Logo" style="height: 48px; object-fit: contain; background: white; padding: 4px; border-radius: 8px;"></div>
                 <div class="navbar__brand-text">
-                    <span class="navbar__title">SABABEHPAR</span>
-                    <span class="navbar__subtitle">Iranian Mining Co.</span>
+                    <span class="navbar__title" id="brand-title">SABABEHPAR</span>
+                    <span class="navbar__subtitle" id="brand-subtitle">Iranian Mining Co.</span>
                 </div>
             </a>
-            <div class="navbar__links">
-                <a href="../index.html" class="navbar__link">Home</a>
-                <a href="../about/index.html" class="navbar__link">About Us</a>
-                <a href="../products/index.html" class="navbar__link">Products</a>
-                <a href="../industries/index.html" class="navbar__link">Industries</a>
-                <a href="../news/index.html" class="navbar__link">News</a>
-                <a href="../articles/index.html" class="navbar__link">Articles</a>
-                <a href="../knowledge-center/index.html" class="navbar__link">Knowledge Center</a>
+            <div class="navbar__links" id="nav-links">
+                <a href="../index.html" class="navbar__link" id="nav-home">Home</a>
+                <div class="navbar__dropdown">
+                    <a href="../about/index.html" class="navbar__link" id="nav-about">
+                        About Us
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="../about/index.html" class="navbar__dropdown-item" id="nav-about-overview">Company Overview</a>
+                        <a href="../about/management-team.html" class="navbar__dropdown-item" id="nav-about-management">Management Team</a>
+                        <a href="../about/sustainability.html" class="navbar__dropdown-item" id="nav-about-sustainability">Sustainability & ESG</a>
+                    </div>
+                </div>
+                <div class="navbar__dropdown">
+                    <a href="index.html" class="navbar__link" id="nav-products">
+                        Products
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="index.html" class="navbar__dropdown-item" id="nav-products-overview" style="color: #de834b; font-weight: 700;">Products Overview</a>
+                        <a href="calcium-carbonate.html" class="navbar__dropdown-item" id="nav-products-caco3">Calcium Carbonate (GCC)</a>
+                        <a href="talc.html" class="navbar__dropdown-item" id="nav-products-talc">Micronized Talc Powder</a>
+                    </div>
+                </div>
+                <a href="../industries/index.html" class="navbar__link" id="nav-industries">Industries</a>
+                <a href="../news/index.html" class="navbar__link" id="nav-news">News</a>
+                <a href="../articles/index.html" class="navbar__link" id="nav-articles">Articles</a>
+                <a href="../knowledge-center/index.html" class="navbar__link" id="nav-knowledge">Knowledge Center</a>
             </div>
-            <a href="index.html" class="navbar__cta">Contact Us</a>
+            <a href="../contact/index.html" class="navbar__cta active" id="nav-contact-btn">Contact Us</a>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="navbar__mobile-menu" id="mobile-menu">
+            <a href="../index.html" class="navbar__mobile-link" id="mobile-nav-home">Home</a>
+            <a href="../about/index.html" class="navbar__mobile-link" id="mobile-nav-about">About Us</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="../about/index.html" class="navbar__mobile-sublink" id="mobile-about-overview">Company Overview</a>
+                <a href="../about/management-team.html" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
+                <a href="../about/sustainability.html" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
+            </div>
+            <a href="index.html" class="navbar__mobile-link" id="mobile-nav-products">Products</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="index.html" class="navbar__mobile-sublink" id="mobile-products-overview">Products Overview</a>
+                <a href="calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-products-caco3">Calcium Carbonate (GCC)</a>
+                <a href="talc.html" class="navbar__mobile-sublink" id="mobile-products-talc">Micronized Talc Powder</a>
+            </div>
+            <a href="../industries/index.html" class="navbar__mobile-link" id="mobile-nav-industries">Industries</a>
+            <a href="../news/index.html" class="navbar__mobile-link" id="mobile-nav-news">News</a>
+            <a href="../articles/index.html" class="navbar__mobile-link" id="mobile-nav-articles">Articles</a>
+            <a href="../knowledge-center/index.html" class="navbar__mobile-link" id="mobile-nav-knowledge">Knowledge Center</a>
+            <a href="../contact/index.html" class="navbar__mobile-link navbar__mobile-cta active" id="mobile-nav-contact">Contact Us</a>
         </div>
     </nav>
 
-    <!-- Subpage Banner -->
-    <header style="background: linear-gradient(135deg, #131A29 0%, #1A2438 100%); padding: 4rem 0 2.5rem; text-align: center;">
-        <div class="container">
-            <span class="section-badge">Route: /contact</span>
-            <h1 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-top: 0.5rem;">Contact Us &amp; Inquiry Directory</h1>
-            <p style="font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0.75rem auto 0;">Connect with our sales office in Tehran or processing plant in Aligoodarz for product quotes and technical support.</p>
+    <!-- ============================================== -->
+    <!-- HERO SECTION -->
+    <!-- ============================================== -->
+    <header class="hero about-page-hero" style="background: linear-gradient(135deg, rgba(10,25,47,0.92) 0%, rgba(22,36,61,0.86) 100%); min-height: 380px; display:flex; align-items:center;">
+        <div class="container" style="text-align: center; padding: 4.5rem 1rem;">
+            <span class="section-badge" id="contact-hero-tag" style="background: rgba(222,131,75,0.18); color: #de834b; border: 1px solid rgba(222,131,75,0.4); padding: 6px 18px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px;">GET IN TOUCH</span>
+            <h1 id="contact-hero-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #FFFFFF; margin-top: 1rem; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Contact Sababehpar Iranian</h1>
+            <p id="contact-hero-desc" style="font-size: clamp(0.95rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); max-width: 820px; margin: 1.25rem auto 0; line-height: 1.75;">Connect with our sales office in Tehran or processing plant in Aligoodarz for product quotes and technical support.</p>
         </div>
     </header>
 
     <div class="section-divider"></div>
 
-    <!-- Contact Grid -->
-    <section style="background: #0B0E14; padding: 4rem 0;">
+    <!-- ============================================== -->
+    <!-- CONTACT INFO GRID -->
+    <!-- ============================================== -->
+    <section style="background: linear-gradient(135deg, #0E131F 0%, #171E2E 100%); padding: 4.5rem 0;">
         <div class="container">
-            <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+            <div class="grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: start;">
                 
-                <!-- Fast Quote Form -->
-                <div class="product-card" style="padding: 2rem;">
-                    <h3 style="color: #D4AF37; font-size: 1.3rem; margin-bottom: 1rem;">Request a Fast Quote / Sample Pack</h3>
-                    <form onsubmit="event.preventDefault(); alert('Quote Request Sent! Our sales team will contact you within 24 hours.');">
-                        <div style="margin-bottom: 12px;">
-                            <label style="font-size: 0.8rem; color: rgba(255,255,255,0.7); display: block; margin-bottom: 4px;">Full Name *</label>
-                            <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); background: #0F1522; color: #FFF;">
-                        </div>
-                        <div style="margin-bottom: 12px;">
-                            <label style="font-size: 0.8rem; color: rgba(255,255,255,0.7); display: block; margin-bottom: 4px;">Company Name *</label>
-                            <input type="text" required placeholder="Manufacturing Corp" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); background: #0F1522; color: #FFF;">
-                        </div>
-                        <div style="margin-bottom: 12px;">
-                            <label style="font-size: 0.8rem; color: rgba(255,255,255,0.7); display: block; margin-bottom: 4px;">Selected Product Grade *</label>
-                            <select style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); background: #0F1522; color: #FFF;">
-                                <option>GCC Coated (Stearic Acid Treated)</option>
-                                <option>Micronized Talc Powder</option>
-                                <option>GCC Uncoated (Ultra-Fine)</option>
-                                <option>Paper-Grade CaCO3 Filler</option>
-                                <option>Paint &amp; Coating White Filler</option>
-                            </select>
-                        </div>
-                        <button type="submit" style="width: 100%; padding: 12px; background: #D4AF37; color: #121620; font-weight: 700; border: none; border-radius: 6px; cursor: pointer;">Submit Quote Request</button>
-                    </form>
+                <!-- Google Map Placeholder -->
+                <div class="product-card" style="padding: 0; overflow: hidden; height: 100%; min-height: 400px; display: flex; flex-direction: column;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103730.08182902096!2d51.340919106093866!3d35.69830825316104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e004e0e5616b7%3A0xe545c9284d720b0b!2sTehran%2C%20Tehran%2C%20Iran!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; flex-grow: 1; min-height: 400px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
 
-                <!-- Office Directory & Map -->
-                <div class="product-card" style="padding: 2rem;">
-                    <h3 style="color: #D4AF37; font-size: 1.3rem; margin-bottom: 1rem;">Direct Office &amp; Plant Directory</h3>
+                <!-- Contact Details -->
+                <div class="product-card" style="padding: 2.5rem;">
+                    <h3 id="contact-details-title" style="color: #D4AF37; font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(212,175,55,0.2); padding-bottom: 0.75rem;">Sababehpar Iranian Mining Co.</h3>
+                    <p id="contact-details-desc" style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 2rem; font-size: 0.95rem;">Sababehpar Iranian Mining Company specializes in the extraction and processing of high-purity calcium carbonate. We are ready to answer your questions and fulfill your orders.</p>
                     
-                    <div style="margin-bottom: 1.5rem;">
-                        <strong style="color: #FFF; font-size: 1.1rem; display: block; margin-bottom: 4px;">🏢 Tehran Sales &amp; Export Office</strong>
-                        <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.5;">Africa Ave, Tehran, Iran<br>Tel: +98 21 8800 0000<br>Email: sales@sababehpar.com</p>
+                    <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;">
+                        <svg style="flex-shrink: 0; margin-top: 4px; color: #de834b;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <strong id="contact-office-title" style="color: #FFF; font-size: 1.1rem; display: block; margin-bottom: 4px;">Tehran Office</strong>
+                            <p id="contact-office-addr" style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.5;">Tehran, Shariati Ave, Hoghoughi St, No. 60, Ground Floor</p>
+                        </div>
                     </div>
 
-                    <div style="margin-bottom: 1.5rem;">
-                        <strong style="color: #FFF; font-size: 1.1rem; display: block; margin-bottom: 4px;">🏭 Aligoodarz Processing Plant</strong>
-                        <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.5;">Shaghez Mining Region, Aligoodarz, Lorestan, Iran<br>Tel: +98 66 3300 0000</p>
+                    <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;">
+                        <svg style="flex-shrink: 0; margin-top: 4px; color: #de834b;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <strong id="contact-factory-title" style="color: #FFF; font-size: 1.1rem; display: block; margin-bottom: 4px;">Aligoodarz Factory</strong>
+                            <p id="contact-factory-addr" style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.5;">Lorestan, Aligoodarz, 5th km of Old Road</p>
+                        </div>
                     </div>
 
-                    <div style="background: #0F1626; border: 1px solid rgba(212,175,55,0.3); border-radius: 8px; padding: 16px; text-align: center; color: rgba(255,255,255,0.7); font-size: 0.85rem;">
-                        📍 <strong>Google Maps Location:</strong> Interactive GPS coordinates available for quarry audit tours.
+                    <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;">
+                        <svg style="flex-shrink: 0; margin-top: 4px; color: #de834b;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <strong id="contact-phone-title" style="color: #FFF; font-size: 1.1rem; display: block; margin-bottom: 4px;">Phone Numbers</strong>
+                            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.5;" dir="ltr"><a href="tel:02177614878" style="color:inherit;text-decoration:none;">021 7761 4878</a> <br> <a href="tel:02177615985" style="color:inherit;text-decoration:none;">021 7761 5985</a></p>
+                        </div>
                     </div>
+
+                    <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;">
+                        <svg style="flex-shrink: 0; margin-top: 4px; color: #de834b;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        <div>
+                            <strong id="contact-mobile-title" style="color: #FFF; font-size: 1.1rem; display: block; margin-bottom: 4px;">Social Media & Mobile</strong>
+                            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.5;" dir="ltr"><a href="tel:09123956647" style="color:inherit;text-decoration:none;">0912 395 6647</a></p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" style="background: #05080E; padding: 3rem 0; border-top: 1px solid rgba(212,175,55,0.3);">
-        <div class="container" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
-            <p>© 2026 Sababehpar Iranian Mining Company. All rights reserved.</p>
+<footer class="footer" style="background: #05080E; padding: 4rem 0 2rem; border-top: 1px solid rgba(222,131,75,0.3);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div>
+                    <span id="footer-brand-title" style="font-size: 1.2rem; font-weight: 800; color: #FFF; display: block; margin-bottom: 1rem;">SABABEHPAR IRANIAN</span>
+                    <p id="footer-desc" style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6;">Leading producer of micronized calcium carbonate and industrial talc powders from Aligoodarz mines.</p>
+                </div>
+                <div>
+                    <h4 id="footer-quick-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+                        <a href="../index.html" id="footer-link-home" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a>
+                        <a href="../about/index.html" id="footer-link-about" style="color: rgba(255,255,255,0.7); text-decoration: none;">About Us</a>
+                        <a href="index.html" id="footer-link-products" style="color: rgba(255,255,255,0.7); text-decoration: none;">Products Catalog</a>
+                        <a href="../industries/index.html" id="footer-link-industries" style="color: rgba(255,255,255,0.7); text-decoration: none;">Industries Served</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 id="footer-knowledge-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Knowledge Center</h4>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+                        <a href="../knowledge-center/quality-control.html" id="footer-kc-qc" style="color: rgba(255,255,255,0.7); text-decoration: none;">Quality Control</a>
+                        <a href="../knowledge-center/labs.html" id="footer-kc-labs" style="color: rgba(255,255,255,0.7); text-decoration: none;">R&D Laboratories</a>
+                        <a href="../knowledge-center/certifications.html" id="footer-kc-certs" style="color: rgba(255,255,255,0.7); text-decoration: none;">ISO Certifications</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 id="footer-contact-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Contact Us</h4>
+                    <p id="footer-contact-info" style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6;">Tehran Office: +98 21 8800 0000<br>Plant: Aligoodarz, Lorestan<br>Email: info@sababehpar.com</p>
+                </div>
+            </div>
+            <div style="text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                <p id="footer-copyright">© 2026 Sababehpar Iranian Mining Company. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
