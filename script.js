@@ -277,7 +277,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             modalTitle.textContent = data.title;
             modalDescription.textContent = data.description;
-            modalIcon.innerHTML = card.querySelector('.industry-card__icon').innerHTML;
+            const iconEl = card.querySelector('.industry-card__icon');
+            modalIcon.innerHTML = iconEl ? iconEl.innerHTML : '';
             modalSpecs.innerHTML = data.specs.map(spec =>
                 `<div class="industry-modal__spec">
                     <div class="industry-modal__spec-label">${spec.label}</div>

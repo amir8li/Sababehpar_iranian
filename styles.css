@@ -2424,3 +2424,42 @@ html[dir="rtl"] .floating-phone__popup {
     color: var(--color-text-light);
     line-height: 1.6;
 }
+
+/* ========================================= */
+/* PAGE HERO (INDUSTRIES PAGE)              */
+/* ========================================= */
+.page-hero {
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 1rem;
+    border-bottom: 1px solid rgba(222, 131, 75, 0.3);
+}
+
+.page-hero__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-hero__title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+.page-hero__text {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
