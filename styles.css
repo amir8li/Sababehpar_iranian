@@ -2357,3 +2357,70 @@ html[dir="rtl"] .floating-phone__popup {
         height: 300px;
     }
 }
+/* ========================================= */
+/* INDUSTRIES GRID (INDUSTRIES PAGE)        */
+/* ========================================= */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.products-grid__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: var(--color-bg-secondary);
+    border: 1px solid rgba(222, 131, 75, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+    padding: 0 !important;
+    min-height: auto;
+}
+
+.products-grid__card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(222, 131, 75, 0.6);
+    box-shadow: 0 10px 30px rgba(222, 131, 75, 0.15);
+}
+
+.products-grid__img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(222, 131, 75, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.products-grid__card:hover .products-grid__img {
+    transform: scale(1.05);
+}
+
+.products-grid__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    z-index: 2;
+    background: var(--color-bg-secondary);
+}
+
+.products-grid__card .industry-card__title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.products-grid__card .industry-card__text {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
