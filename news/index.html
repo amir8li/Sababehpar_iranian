@@ -13,11 +13,45 @@
 <body>
 
     <!-- Utility Header -->
-    <div class="utility-header">
+    <div class="utility-header" id="utility-header">
         <div class="container utility-header__inner">
             <div class="utility-header__contact">
-                <a href="tel:02177614878" class="utility-header__link"><span dir="ltr">021 7761 4878</span></a>
-                <a href="mailto:info@sababehpar.com" class="utility-header__link"><span dir="ltr">info@sababehpar.com</span></a>
+                <a href="tel:02177614878" class="utility-header__link" id="header-phone">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span dir="ltr">021 7761 4878</span>
+                </a>
+                <a href="mailto:info@sababehpar.com" class="utility-header__link" id="header-email">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span dir="ltr">info@sababehpar.com</span>
+                </a>
+                </div>
+            <div class="utility-header__actions">
+                <div class="utility-header__social">
+                    <a href="https://wa.me/989123956647" aria-label="WhatsApp" class="social-icon" id="social-whatsapp">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="social-icon" id="social-linkedin">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-icon" id="social-instagram">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Telegram" class="social-icon" id="social-telegram">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </a>
+                </div>
+                <div class="language-selector" id="language-selector">
+                    <button class="language-selector__btn" id="lang-toggle" aria-label="Select language">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        EN
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="language-selector__dropdown" id="lang-dropdown">
+                        <a href="#" class="language-selector__option active" data-lang="en">English</a>
+                        <a href="#" class="language-selector__option" data-lang="fa">فارسی</a>
+                        <a href="#" class="language-selector__option" data-lang="ar">العربية</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -25,58 +59,131 @@
     <!-- Main Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="container navbar__inner">
-            <a href="../index.html" class="navbar__brand">
+            <a href="/" class="navbar__brand" id="brand-logo">
                 <div class="navbar__logo"><img src="../assets/images/logo.jpg" alt="Sababehpar Logo" style="height: 48px; object-fit: contain; background: white; padding: 4px; border-radius: 8px;"></div>
                 <div class="navbar__brand-text">
                     <span class="navbar__title">SABABEHPAR</span>
                     <span class="navbar__subtitle">Iranian Mining Co.</span>
                 </div>
             </a>
-            <div class="navbar__links">
-                <a href="../index.html" class="navbar__link">Home</a>
-                <a href="../about/index.html" class="navbar__link">About Us</a>
-                <a href="../products/index.html" class="navbar__link">Products</a>
-                <a href="../industries/index.html" class="navbar__link">Industries</a>
-                <a href="index.html" class="navbar__link active">News</a>
-                <a href="../articles/index.html" class="navbar__link">Articles</a>
-                <a href="../knowledge-center/index.html" class="navbar__link">Knowledge Center</a>
+            <div class="navbar__links" id="nav-links">
+                <a href="../index.html" class="navbar__link" id="nav-home">Home</a>
+                <div class="navbar__dropdown">
+                    <a href="../about/index.html" class="navbar__link" id="nav-about">
+                        About Us
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="../about/index.html" class="navbar__dropdown-item" id="nav-about-overview">Company Overview</a>
+                        <a href="../about/management-team.html" class="navbar__dropdown-item" id="nav-about-management">Management Team</a>
+                        <a href="../about/sustainability.html" class="navbar__dropdown-item" id="nav-about-sustainability">Sustainability & ESG</a>
+                    </div>
+                </div>
+                <div class="navbar__dropdown">
+                    <a href="../products/index.html" class="navbar__link" id="nav-products">
+                        Products
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="../products/index.html" class="navbar__dropdown-item" id="nav-products-overview">Products Overview</a>
+                        <a href="../products/calcium-carbonate.html" class="navbar__dropdown-item" id="nav-products-caco3">Calcium Carbonate (GCC)</a>
+                        <a href="../products/talc.html" class="navbar__dropdown-item" id="nav-products-talc">Micronized Talc Powder</a>
+                    </div>
+                </div>
+                <a href="../industries/index.html" class="navbar__link" id="nav-industries">Industries</a>
+                <a href="../news/index.html" class="navbar__link active" id="nav-news">News</a>
+                <a href="../articles/index.html" class="navbar__link" id="nav-articles">Articles</a>
+                <a href="../knowledge-center/index.html" class="navbar__link" id="nav-knowledge">Knowledge Center</a>
             </div>
-            <a href="../contact/index.html" class="navbar__cta">Contact Us</a>
+            <a href="../contact/index.html" class="navbar__cta" id="nav-contact-btn">Contact Us</a>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="navbar__mobile-menu" id="mobile-menu">
+            <a href="../index.html" class="navbar__mobile-link" id="mobile-nav-home">Home</a>
+            <a href="../about/index.html" class="navbar__mobile-link" id="mobile-nav-about">About Us</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="../about/index.html" class="navbar__mobile-sublink" id="mobile-about-overview">Company Overview</a>
+                <a href="../about/management-team.html" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
+                <a href="../about/sustainability.html" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
+            </div>
+            <a href="../products/index.html" class="navbar__mobile-link" id="mobile-nav-products">Products</a>
+            <div class="navbar__mobile-sublinks">
+                <a href="../products/index.html" class="navbar__mobile-sublink" id="mobile-products-overview">Products Overview</a>
+                <a href="../products/calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-products-caco3">Calcium Carbonate (GCC)</a>
+                <a href="../products/talc.html" class="navbar__mobile-sublink" id="mobile-products-talc">Micronized Talc Powder</a>
+            </div>
+            <a href="../industries/index.html" class="navbar__mobile-link" id="mobile-nav-industries">Industries</a>
+            <a href="../news/index.html" class="navbar__mobile-link active" id="mobile-nav-news">News</a>
+            <a href="../articles/index.html" class="navbar__mobile-link" id="mobile-nav-articles">Articles</a>
+            <a href="../knowledge-center/index.html" class="navbar__mobile-link" id="mobile-nav-knowledge">Knowledge Center</a>
+            <a href="../contact/index.html" class="navbar__mobile-link navbar__mobile-cta" id="mobile-nav-contact">Contact Us</a>
         </div>
     </nav>
 
-    <!-- Subpage Banner -->
-    <header class="news" style="background: linear-gradient(135deg, #0A1C18 0%, #0F2620 100%); padding: 4rem 0 2.5rem; text-align: center;">
-        <div class="container">
-            <span class="section-badge">Route: /news</span>
-            <h1 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-top: 0.5rem;">News & Company Press Releases</h1>
-            <p style="font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0.75rem auto 0;">Latest corporate milestones, mining expansions, R&D innovations, and international exhibition news.</p>
+    <!-- Subpage Banner / Hero -->
+    <section class="hero">
+        <div class="hero__slideshow">
+            <div class="hero__slide active" style="background-image: url('../assets/images/about_history.jpg')">
+                <div class="hero__overlay"></div>
+            </div>
         </div>
-    </header>
+        <div class="hero__content">
+            
+            <h1 class="hero__title" id="news-hero-title">
+                News & Company<br>
+                <span class="hero__title--orange">Press Releases</span>
+            </h1>
+            <p class="hero__description" id="news-hero-text">
+                Latest corporate milestones, mining expansions, R&D innovations, and international exhibition news.
+            </p>
+        </div>
+    </section>
 
-    <div class="section-divider"></div>
-
-    <!-- News Feed -->
-    <section style="background: #0B0E14; padding: 4rem 0;">
+    <!-- News Feed (List Layout) -->
+    <section style="background: #0B0E14; padding: 5rem 0;">
         <div class="container">
-            <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="article-list">
                 
-                <div class="product-card" style="padding: 2rem;">
-                    <span class="kpi-badge">June 2026</span>
-                    <h3 style="color: #FFF; font-size: 1.2rem; margin: 10px 0 6px;">Phase II Quarry Expansion Completed</h3>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.6;">Sababehpar Iranian completes Phase II development at Shaghez Aligoodarz quarry, increasing raw white marble extraction by 30%.</p>
+                <!-- News Item 1 -->
+                <div class="article-list-item">
+                    <div class="article-list-item__image-wrap">
+                        <img src="../assets/images/factory_production_line.jpg" alt="News 1" class="article-list-item__image">
+                    </div>
+                    <div class="article-list-item__content">
+                        <span class="article-list-item__badge" id="news-1-date">June 2026</span>
+                        <h3 class="article-list-item__title" id="news-1-title">Phase II Quarry Expansion Completed</h3>
+                        <p class="article-list-item__text" id="news-1-desc">Sababehpar Iranian completes Phase II development at Shaghez Aligoodarz quarry, increasing raw white marble extraction by 30%.</p>
+                        <a href="news-1.html" class="article-list-item__cta" id="news-1-cta">Read News →</a>
+                    </div>
                 </div>
 
-                <div class="product-card" style="padding: 2rem;">
-                    <span class="kpi-badge">May 2026</span>
-                    <h3 style="color: #FFF; font-size: 1.2rem; margin: 10px 0 6px;">AI-Driven Laser Optical Sorter Installation</h3>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.6;">Integration of automated optical sorters at Processing Plant Line III, guaranteeing 98%+ whiteness consistency across all batches.</p>
+                <!-- News Item 2 (Reversed) -->
+                <div class="article-list-item article-list-item--reverse">
+                    <div class="article-list-item__image-wrap">
+                        <img src="../assets/images/about_history.jpg" alt="News 2" class="article-list-item__image">
+                    </div>
+                    <div class="article-list-item__content">
+                        <span class="article-list-item__badge" id="news-2-date">May 2026</span>
+                        <h3 class="article-list-item__title" id="news-2-title">AI-Driven Laser Optical Sorter Installation</h3>
+                        <p class="article-list-item__text" id="news-2-desc">Integration of automated optical sorters at Processing Plant Line III, guaranteeing 98%+ whiteness consistency across all batches.</p>
+                        <a href="news-2.html" class="article-list-item__cta" id="news-2-cta">Read News →</a>
+                    </div>
                 </div>
 
-                <div class="product-card" style="padding: 2rem;">
-                    <span class="kpi-badge">April 2026</span>
-                    <h3 style="color: #FFF; font-size: 1.2rem; margin: 10px 0 6px;">ISO Recertification Accomplished</h3>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.6;">Successful completion of annual international compliance audits for ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018.</p>
+                <!-- News Item 3 -->
+                <div class="article-list-item">
+                    <div class="article-list-item__image-wrap">
+                        <img src="../assets/images/about_sustainability.jpg" alt="News 3" class="article-list-item__image">
+                    </div>
+                    <div class="article-list-item__content">
+                        <span class="article-list-item__badge" id="news-3-date">April 2026</span>
+                        <h3 class="article-list-item__title" id="news-3-title">ISO Recertification Accomplished</h3>
+                        <p class="article-list-item__text" id="news-3-desc">Successful completion of annual international compliance audits for ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018.</p>
+                        <a href="news-3.html" class="article-list-item__cta" id="news-3-cta">Read News →</a>
+                    </div>
                 </div>
 
             </div>
