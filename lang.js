@@ -284,7 +284,7 @@ const translations = {
         'contact-factory-title': 'Aligoodarz Factory',
         'contact-factory-addr': 'Lorestan, Aligoodarz, 5th km of Old Road',
         'contact-phone-title': 'Phone Numbers',
-        'contact-mobile-title': 'Social Media & Mobile'
+        'contact-social-title': 'Social Media'
     },
     'fa': {
         'nav-home': 'خانه',
@@ -568,7 +568,7 @@ const translations = {
         'contact-factory-title': 'کارخانه الیگودرز',
         'contact-factory-addr': 'لرستان، الیگودرز، کیلومتر ۵ جاده قدیم',
         'contact-phone-title': 'شماره های تماس',
-        'contact-mobile-title': 'شبکه های اجتماعی و موبایل'
+        'contact-social-title': 'شبکه های اجتماعی'
     }
 };
 
@@ -597,7 +597,7 @@ const mapIds = {
     'contact-factory-title': '#contact-factory-title',
     'contact-factory-addr': '#contact-factory-addr',
     'contact-phone-title': '#contact-phone-title',
-    'contact-mobile-title': '#contact-mobile-title',
+    'contact-social-title': '#contact-social-title',
     'brand-title': '.navbar__title',
     'brand-subtitle': '.navbar__subtitle',
     'hero-tag': '.hero__tag',
