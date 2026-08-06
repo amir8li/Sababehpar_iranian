@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micronized Talc Powder Datasheets | Sababehpar Iranian</title>
-    <meta name="description" content="Technical specifications, sieve analysis, and COA downloads for Sababehpar's micronized industrial talc powder.">
+    <title>Talc Powder | Sababehpar Iranian</title>
+    <meta name="description" content="Technical datasheets, sieve analysis, and COA downloads for Sababehpar's stearic coated and uncoated calcium carbonate powders.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -45,11 +45,11 @@
     <!-- Main Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="container navbar__inner">
-            <a href="../index.html" class="navbar__brand">
+            <a href="../index.html" class="navbar__brand" style="text-decoration: none;">
                 <div class="navbar__logo"><img src="../assets/images/logo.jpg" alt="Sababehpar Logo" style="height: 48px; object-fit: contain; background: white; padding: 4px; border-radius: 8px;"></div>
                 <div class="navbar__brand-text">
-                    <span class="navbar__title">SABABEHPAR</span>
-                    <span class="navbar__subtitle">Iranian Mining Co.</span>
+                    <span class="navbar__title" id="brand-title">SABABEHPAR</span>
+                    <span class="navbar__subtitle" id="brand-subtitle">Iranian Mining Co.</span>
                 </div>
             </a>
             <div class="navbar__links" id="nav-links">
@@ -66,14 +66,18 @@
                     </div>
                 </div>
                 <div class="navbar__dropdown">
-                    <a href="index.html" class="navbar__link active" id="nav-products">
+                    <a href="../products/index.html" class="navbar__link active" id="nav-products">
                         Products
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                     </a>
                     <div class="navbar__dropdown-menu">
                         <a href="../products/index.html" class="navbar__dropdown-item" id="nav-products-overview">Products Overview</a>
-                        <a href="../products/calcium-carbonate.html" class="navbar__dropdown-item" id="nav-products-caco3">Calcium Carbonate (GCC)</a>
-                        <a href="../products/talc.html" class="navbar__dropdown-item active" id="nav-products-talc" style="color: #9B59B6; font-weight: 700;">Micronized Talc Powder</a>
+                        <a href="../products/calcium-carbonate.html" class="navbar__dropdown-item" id="nav-product-1">Calcium Carbonate Powder</a>
+                        <a href="../products/coated-calcium-carbonate.html" class="navbar__dropdown-item" id="nav-product-2">Coated Calcium Carbonate</a>
+                        <a href="../products/barite.html" class="navbar__dropdown-item" id="nav-product-3">Barite Powder</a>
+                        <a href="../products/ochre.html" class="navbar__dropdown-item" id="nav-product-4">Ochre Powder</a>
+                        <a href="../products/talc.html" class="navbar__dropdown-item active" id="nav-product-5">Talc Powder</a>
+                        <a href="../products/afghan-talc.html" class="navbar__dropdown-item active" id="nav-product-6">Afghan Talc Powder</a>
                     </div>
                 </div>
                 <a href="../industries/index.html" class="navbar__link" id="nav-industries">Industries</a>
@@ -89,18 +93,31 @@
         <!-- Mobile Menu -->
         <div class="navbar__mobile-menu" id="mobile-menu">
             <a href="../index.html" class="navbar__mobile-link" id="mobile-nav-home">Home</a>
-            <a href="../about/index.html" class="navbar__mobile-link" id="mobile-nav-about">About Us</a>
+            
+            <a href="#" class="navbar__mobile-link navbar__mobile-toggle" id="mobile-nav-about">
+                <span>About Us</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
             <div class="navbar__mobile-sublinks">
                 <a href="../about/index.html" class="navbar__mobile-sublink" id="mobile-about-overview">Company Overview</a>
                 <a href="../about/management-team.html" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
                 <a href="../about/sustainability.html" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
             </div>
-            <a href="index.html" class="navbar__mobile-link active" id="mobile-nav-products">Products</a>
-            <div class="navbar__mobile-sublinks">
-                <a href="index.html" class="navbar__mobile-sublink" id="mobile-products-overview">Products Overview</a>
-                <a href="calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-products-caco3">Calcium Carbonate (GCC)</a>
-                <a href="talc.html" class="navbar__mobile-sublink active" id="mobile-products-talc">Micronized Talc Powder</a>
+            
+            <a href="#" class="navbar__mobile-link navbar__mobile-toggle active" id="mobile-nav-products">
+                <span>Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <div class="navbar__mobile-sublinks open">
+                <a href="../products/index.html" class="navbar__mobile-sublink" id="mobile-products-overview">Products Overview</a>
+                <a href="../products/calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-product-1">Calcium Carbonate Powder</a>
+                <a href="../products/coated-calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-product-2">Coated Calcium Carbonate</a>
+                <a href="../products/barite.html" class="navbar__mobile-sublink" id="mobile-product-3">Barite Powder</a>
+                <a href="../products/ochre.html" class="navbar__mobile-sublink" id="mobile-product-4">Ochre Powder</a>
+                <a href="../products/talc.html" class="navbar__mobile-sublink active" id="mobile-product-5">Talc Powder</a>
+                <a href="../products/afghan-talc.html" class="navbar__mobile-sublink active" id="mobile-product-6">Afghan Talc Powder</a>
             </div>
+            
             <a href="../industries/index.html" class="navbar__mobile-link" id="mobile-nav-industries">Industries</a>
             <a href="../news/index.html" class="navbar__mobile-link" id="mobile-nav-news">News</a>
             <a href="../articles/index.html" class="navbar__mobile-link" id="mobile-nav-articles">Articles</a>
@@ -109,60 +126,57 @@
         </div>
     </nav>
 
-    <!-- Subpage Banner -->
-    <header class="products" style="background: linear-gradient(135deg, #0D1524 0%, #16243D 100%); padding: 4rem 0 3rem;">
+    
+    <!-- Product Detail Banner -->
+    <header class="products" style="background: linear-gradient(135deg, #0D1524 0%, #16243D 100%); padding: 6rem 0 4rem;">
         <div class="container">
             <div class="product-header-grid">
                 <div>
-                    <span class="section-badge" id="talc-badge" style="background: rgba(155,89,182,0.18); color: #9B59B6; border: 1px solid rgba(155,89,182,0.4);">INDUSTRIAL TALC PRODUCT GROUP</span>
-                    <h1 id="talc-title" style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; color: #ffffff; margin-top: 0.75rem;">Micronized Talc Powder Product Group</h1>
-                    <p id="talc-desc" style="font-size: 1rem; color: rgba(255,255,255,0.85); max-width: 750px; margin-top: 0.75rem; line-height: 1.7;">High-purity micro-lamellar hydrous magnesium silicate engineered for polypropylene (PP) automotive parts, technical polymer reinforcement, industrial anti-corrosive coatings, and cosmetics.</p>
+                    <span class="section-badge" style="background: rgba(222,131,75,0.18); color: #de834b; border: 1px solid rgba(222,131,75,0.4); margin-bottom: 1rem; display: inline-block;" id="products-top-badge">SABABEHPAR PRODUCTS</span>
+                    <h1 id="product-5-title" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #ffffff; margin-bottom: 1.5rem; line-height: 1.2;">Talc Powder</h1>
+                    <p id="product-5-full" style="font-size: 1.1rem; color: rgba(255,255,255,0.85); line-height: 1.8;">Saba Behpar's talc powder, with its natural softness, excellent lubricating properties, and high thermal resistance, is one of the specialized fillers in our product portfolio. Due to its hydrophobicity and lamellar particle structure, this powder plays an important role in improving the physical properties of the paper industry, engineering plastics, rubber industry, and moisture insulations. The talc micronization process in our factory is carried out with high precision so that the layered structure of the particles is not damaged and its optimal properties are preserved. Saba Behpar supplies this product with high purity and completely uniform particle size distribution to industrial markets.</p>
+                    <div style="margin-top: 3rem;">
+                        <a href="../contact/index.html" class="btn btn--gold">Contact Sales</a>
+                    </div>
                 </div>
                 <div>
-                    <div class="product-header-img-wrapper" style="border-color: rgba(155,89,182,0.4); box-shadow: 0 12px 35px rgba(0,0,0,0.6), 0 0 25px rgba(155,89,182,0.25);">
-                        <img src="../assets/images/talc_header.jpg" alt="Micronized Talc Powder Product Group" class="product-header-img">
+                    <div class="product-header-img-wrapper">
+                        <img src="../assets/images/product_talc.jpg" alt="Talc Powder" class="product-header-img">
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="section-divider"></div>
-
-    <!-- Datasheet Table & Downloads -->
-    <section style="background: #0B0E14; padding: 4rem 0;">
+    
+    <!-- ============================== -->
+    <!-- SECTION: DATA SHEETS / ASSETS  -->
+    <!-- ============================== -->
+    <section id="assets" style="padding: 6rem 0; background: #0D1524; border-top: 1px solid rgba(255,255,255,0.05);">
         <div class="container">
-            <h2 id="talc-spec-title" style="color: #9B59B6; font-size: 1.5rem; margin-bottom: 1.5rem;">Technical Specification & Sieve Analysis</h2>
-
-            <div style="background: #1C2436; border: 1px solid rgba(155,89,182,0.3); border-radius: 12px; overflow-x: auto; margin-bottom: 2rem;">
-                <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
-                    <thead>
-                        <tr style="background: #0A192F; color: #9B59B6; text-transform: uppercase; font-size: 0.75rem;">
-                            <th id="talc-th-grade" style="padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">Grade Name</th>
-                            <th id="talc-th-purity" style="padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">Talc Purity</th>
-                            <th id="talc-th-whiteness" style="padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">Whiteness Index</th>
-                            <th id="talc-th-d50" style="padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">D50 Particle Size</th>
-                            <th id="talc-th-loi" style="padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">Loss on Ignition</th>
-                            <th id="talc-th-apps" style="padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">Target Applications</th>
-                            <th id="talc-th-download" style="padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">Download TDS</th>
-                        </tr>
-                    </thead>
-                    <tbody style="color: #FFF;">
-                        <tr>
-                            <td style="padding: 14px 20px;"><strong>Micronized Talc (2500 Mesh)</strong></td>
-                            <td style="padding: 14px 20px;"><span class="kpi-badge">97.0%</span></td>
-                            <td style="padding: 14px 20px;">93.0%</td>
-                            <td style="padding: 14px 20px;">5.0 μm</td>
-                            <td style="padding: 14px 20px;">≤ 6.5%</td>
-                            <td style="padding: 14px 20px;">Automotive PP, Coatings, Plastics, Cosmetics</td>
-                            <td style="padding: 14px 20px;"><button style="padding: 6px 14px; background: #D4AF37; color: #121620; font-weight: 700; border: none; border-radius: 4px; cursor: pointer;" onclick="alert('Simulated PDF File Download: TDS-Micronized-Talc-2026.pdf starting...')">📄 Download PDF</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <span class="section-badge" id="prod-assets-badge" style="background: rgba(222,131,75,0.18); color: #de834b; border: 1px solid rgba(222,131,75,0.4);">DOWNLOADS</span>
+                <h2 class="section-title" id="prod-assets-title">Data Sheets & Assets</h2>
+                <p class="section-subtitle" id="prod-assets-desc">Download technical data sheets, safety documents, and quality certificates for this product.</p>
+            </div>
+            
+            <div class="assets-grid">
+                <!-- Asset Card -->
+                <a href="../assets/docs/blank.pdf" download class="asset-card">
+                    <div class="asset-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                    </div>
+                    <div class="asset-info">
+                        <h4 class="asset-title" id="prod-asset-1-title">Technical Data Sheet (TDS)</h4>
+                        <span class="asset-meta" id="prod-asset-1-type">PDF Document</span>
+                    </div>
+                    <svg class="asset-download" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </a>
             </div>
         </div>
     </section>
 
+    <div class="section-divider"></div>
     <!-- Footer -->
     <footer class="footer" style="background: #05080E; padding: 4rem 0 2rem; border-top: 1px solid rgba(222,131,75,0.3);">
         <div class="container">

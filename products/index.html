@@ -47,7 +47,7 @@
     <!-- Main Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="container navbar__inner">
-            <a href="../index.html" class="navbar__brand">
+            <a href="../index.html" class="navbar__brand" style="text-decoration: none;">
                 <div class="navbar__logo"><img src="../assets/images/logo.jpg" alt="Sababehpar Logo" style="height: 48px; object-fit: contain; background: white; padding: 4px; border-radius: 8px;"></div>
                 <div class="navbar__brand-text">
                     <span class="navbar__title" id="brand-title">SABABEHPAR</span>
@@ -68,14 +68,18 @@
                     </div>
                 </div>
                 <div class="navbar__dropdown">
-                    <a href="index.html" class="navbar__link active" id="nav-products">
+                    <a href="../products/index.html" class="navbar__link active" id="nav-products">
                         Products
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                     </a>
                     <div class="navbar__dropdown-menu">
-                        <a href="../products/index.html" class="navbar__dropdown-item active" id="nav-products-overview" style="color: #de834b; font-weight: 700;">Products Overview</a>
-                        <a href="../products/calcium-carbonate.html" class="navbar__dropdown-item" id="nav-products-caco3">Calcium Carbonate (GCC)</a>
-                        <a href="../products/talc.html" class="navbar__dropdown-item" id="nav-products-talc">Micronized Talc Powder</a>
+                        <a href="../products/index.html" class="navbar__dropdown-item active" id="nav-products-overview">Products Overview</a>
+                        <a href="../products/calcium-carbonate.html" class="navbar__dropdown-item" id="nav-product-1">Calcium Carbonate Powder</a>
+                        <a href="../products/coated-calcium-carbonate.html" class="navbar__dropdown-item" id="nav-product-2">Coated Calcium Carbonate</a>
+                        <a href="../products/barite.html" class="navbar__dropdown-item" id="nav-product-3">Barite Powder</a>
+                        <a href="../products/ochre.html" class="navbar__dropdown-item" id="nav-product-4">Ochre Powder</a>
+                        <a href="../products/talc.html" class="navbar__dropdown-item" id="nav-product-5">Talc Powder</a>
+                        <a href="../products/afghan-talc.html" class="navbar__dropdown-item" id="nav-product-6">Afghan Talc Powder</a>
                     </div>
                 </div>
                 <a href="../industries/index.html" class="navbar__link" id="nav-industries">Industries</a>
@@ -91,18 +95,31 @@
         <!-- Mobile Menu -->
         <div class="navbar__mobile-menu" id="mobile-menu">
             <a href="../index.html" class="navbar__mobile-link" id="mobile-nav-home">Home</a>
-            <a href="../about/index.html" class="navbar__mobile-link" id="mobile-nav-about">About Us</a>
+            
+            <a href="#" class="navbar__mobile-link navbar__mobile-toggle" id="mobile-nav-about">
+                <span>About Us</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
             <div class="navbar__mobile-sublinks">
                 <a href="../about/index.html" class="navbar__mobile-sublink" id="mobile-about-overview">Company Overview</a>
                 <a href="../about/management-team.html" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
                 <a href="../about/sustainability.html" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
             </div>
-            <a href="index.html" class="navbar__mobile-link active" id="mobile-nav-products">Products</a>
-            <div class="navbar__mobile-sublinks">
-                <a href="index.html" class="navbar__mobile-sublink active" id="mobile-products-overview">Products Overview</a>
-                <a href="calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-products-caco3">Calcium Carbonate (GCC)</a>
-                <a href="talc.html" class="navbar__mobile-sublink" id="mobile-products-talc">Micronized Talc Powder</a>
+            
+            <a href="#" class="navbar__mobile-link navbar__mobile-toggle active" id="mobile-nav-products">
+                <span>Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <div class="navbar__mobile-sublinks open">
+                <a href="../products/index.html" class="navbar__mobile-sublink active" id="mobile-products-overview">Products Overview</a>
+                <a href="../products/calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-product-1">Calcium Carbonate Powder</a>
+                <a href="../products/coated-calcium-carbonate.html" class="navbar__mobile-sublink" id="mobile-product-2">Coated Calcium Carbonate</a>
+                <a href="../products/barite.html" class="navbar__mobile-sublink" id="mobile-product-3">Barite Powder</a>
+                <a href="../products/ochre.html" class="navbar__mobile-sublink" id="mobile-product-4">Ochre Powder</a>
+                <a href="../products/talc.html" class="navbar__mobile-sublink" id="mobile-product-5">Talc Powder</a>
+                <a href="../products/afghan-talc.html" class="navbar__mobile-sublink" id="mobile-product-6">Afghan Talc Powder</a>
             </div>
+            
             <a href="../industries/index.html" class="navbar__mobile-link" id="mobile-nav-industries">Industries</a>
             <a href="../news/index.html" class="navbar__mobile-link" id="mobile-nav-news">News</a>
             <a href="../articles/index.html" class="navbar__mobile-link" id="mobile-nav-articles">Articles</a>
@@ -128,150 +145,94 @@
     <!-- ============================================== -->
     <!-- SECTION 2: 5 PRODUCTS GRID (2 DESKTOP / 1 MOBILE) -->
     <!-- ============================================== -->
+    
+    <!-- ============================================== -->
+    <!-- SECTION 2: 6 PRODUCTS GRID -->
+    <!-- ============================================== -->
     <section style="background: linear-gradient(135deg, #0E131F 0%, #171E2E 100%); padding: 4.5rem 0;">
         <div class="container">
             <div style="text-align: center; margin-bottom: 3.5rem;">
                 <span class="section-badge" id="products-sec-badge" style="background: rgba(222,131,75,0.2); color: #de834b; border-color: rgba(222,131,75,0.4);">PRODUCT LINES</span>
                 <h2 id="products-sec-title" style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 800; color: #FFF; margin-top: 0.5rem; margin-bottom: 0.5rem;">Select a Product Line to View Technical Specifications</h2>
-                <p id="products-sec-desc" style="color: rgba(255,255,255,0.7); font-size: 1rem; max-width: 720px; margin: 0 auto;">Click any product card below to explore mesh sizing charts, chemical purity analyses (XRF), and Certificate of Analysis (COA) datasheets.</p>
+                <p id="products-sec-desc" style="color: rgba(255,255,255,0.7); font-size: 1rem; max-width: 720px; margin: 0 auto;">Click any product card below to explore our detailed technical specifications and data.</p>
             </div>
 
-            <!-- 5 Product Cards Grid: 2 per row on Desktop, 1 per row on Mobile -->
-            <div class="products-catalog-grid">
-
-                <!-- CARD 1: COATED CALCIUM CARBONATE -->
-                <a href="calcium-carbonate.html#coated" class="product-card-link">
-                    <div class="product-card" style="padding: 1.5rem; background: #1C2436; border: 1px solid rgba(222,131,75,0.3); border-radius: 12px;">
-                        <div>
-                            <!-- Product Image -->
-                            <div style="width: 100%; height: 210px; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid rgba(222,131,75,0.25);">
-                                <img src="../assets/images/product_coated_caco3.jpg" alt="Stearic Acid Coated Calcium Carbonate" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
-                                <span id="pcard-1-tag" style="background: rgba(222,131,75,0.2); color: #de834b; border: 1px solid rgba(222,131,75,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Coated Grade (Surface Treated)</span>
-                                <span style="font-size: 1.3rem;">✨</span>
-                            </div>
-                            <h3 id="pcard-1-title" style="color: #FFF; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.65rem;">Stearic Acid Coated Calcium Carbonate</h3>
-                            <p id="pcard-1-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Ultra-white micronized CaCO₃ coated with high-purity stearic acid. Provides hydrophobic surface properties, excellent dispersion, and reduced torque in polymer extrusion.</p>
-                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #de834b; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
-                                <div id="pcard-1-spec1">• <strong>Purity & Mesh:</strong> 98.5%+ CaCO₃ | 400 to 3500 Mesh (D50: 2µm – 10µm)</div>
-                                <div id="pcard-1-spec2">• <strong>Applications:</strong> PVC Pipes & Profiles, PP Masterbatch, Plastic Compounding</div>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span id="pcard-1-cta" style="color: #de834b; font-weight: 700; font-size: 0.9rem;">View Coated CaCO₃ Specs & PDFs →</span>
-                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-C Series</span>
-                        </div>
+            <div class="products__grid" id="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" id="product-1">
+                    <div class="product-card__image">
+                        <img src="../assets/images/product_uncoated_caco3.jpg" alt="Calcium Carbonate Powder" loading="lazy">
                     </div>
-                </a>
-
-                <!-- CARD 2: UNCOATED CALCIUM CARBONATE -->
-                <a href="calcium-carbonate.html#uncoated" class="product-card-link">
-                    <div class="product-card" style="padding: 1.5rem; background: #1C2436; border: 1px solid rgba(222,131,75,0.3); border-radius: 12px;">
-                        <div>
-                            <!-- Product Image -->
-                            <div style="width: 100%; height: 210px; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid rgba(0,210,255,0.25);">
-                                <img src="../assets/images/product_uncoated_caco3.jpg" alt="Uncoated Micronized Calcium Carbonate" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
-                                <span id="pcard-2-tag" style="background: rgba(0,210,255,0.15); color: #00D2FF; border: 1px solid rgba(0,210,255,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Natural Uncoated Grade</span>
-                                <span style="font-size: 1.3rem;">💎</span>
-                            </div>
-                            <h3 id="pcard-2-title" style="color: #FFF; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.65rem;">Uncoated Micronized Calcium Carbonate</h3>
-                            <p id="pcard-2-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Natural ground marble calcium carbonate with 99.0%+ chemical purity and 98%+ natural brightness. Ideal for water-based coatings, adhesives, and rubber formulations.</p>
-                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #00D2FF; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
-                                <div id="pcard-2-spec1">• <strong>Purity & Mesh:</strong> 99.0%+ CaCO₃ | 400 to 3500 Mesh (D50: 1.5µm – 8µm)</div>
-                                <div id="pcard-2-spec2">• <strong>Applications:</strong> Emulsion Paints, Adhesives, Rubber, Sealants & Putty</div>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span id="pcard-2-cta" style="color: #00D2FF; font-weight: 700; font-size: 0.9rem;">View Uncoated CaCO₃ Specs & PDFs →</span>
-                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-U Series</span>
-                        </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title" id="product-1-title">Calcium Carbonate Powder</h3>
+                        <p class="product-card__desc" id="product-1-desc" style="color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">High chemical purity (>98%) and unparalleled whiteness index for various industries.</p>
+                        <a href="calcium-carbonate.html" class="product-card__cta" id="product-1-cta">View Details →</a>
                     </div>
-                </a>
+                </div>
 
-                <!-- CARD 3: MICRONIZED TALC POWDER -->
-                <a href="talc.html" class="product-card-link">
-                    <div class="product-card" style="padding: 1.5rem; background: #1C2436; border: 1px solid rgba(155,89,182,0.35); border-radius: 12px;">
-                        <div>
-                            <!-- Product Image -->
-                            <div style="width: 100%; height: 210px; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid rgba(155,89,182,0.3);">
-                                <img src="../assets/images/product_talc.jpg" alt="Micronized Industrial Talc Powder" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
-                                <span id="pcard-3-tag" style="background: rgba(155,89,182,0.2); color: #9B59B6; border: 1px solid rgba(155,89,182,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Industrial Talc Grade</span>
-                                <span style="font-size: 1.3rem;">⚡</span>
-                            </div>
-                            <h3 id="pcard-3-title" style="color: #FFF; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.65rem;">Micronized Industrial Talc Powder</h3>
-                            <p id="pcard-3-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Hydrous magnesium silicate powder engineered with high lamellar platy structure. Enhances stiffness, heat stability, and impact strength in technical polymers.</p>
-                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #9B59B6; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
-                                <div id="pcard-3-spec1">• <strong>Purity & Mesh:</strong> 97.0%+ Pure Talc | 800 to 3250 Mesh (D50: 5.0µm ± 0.3)</div>
-                                <div id="pcard-3-spec2">• <strong>Applications:</strong> Automotive PP Reinforcement, Anti-Corrosive Paints, Cosmetics</div>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span id="pcard-3-cta" style="color: #9B59B6; font-weight: 700; font-size: 0.9rem;">View Talc Specs & Technical PDFs →</span>
-                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">TALC-M Series</span>
-                        </div>
+                <!-- Product 2 -->
+                <div class="product-card" id="product-2">
+                    <div class="product-card__image">
+                        <img src="../assets/images/product_coated_caco3.jpg" alt="Coated Calcium Carbonate" loading="lazy">
                     </div>
-                </a>
-
-                <!-- CARD 4: PAPER-GRADE CALCIUM CARBONATE -->
-                <a href="calcium-carbonate.html#paper-grade" class="product-card-link">
-                    <div class="product-card" style="padding: 1.5rem; background: #1C2436; border: 1px solid rgba(46,204,113,0.35); border-radius: 12px;">
-                        <div>
-                            <!-- Product Image -->
-                            <div style="width: 100%; height: 210px; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid rgba(46,204,113,0.3);">
-                                <img src="../assets/images/product_paper_caco3.jpg" alt="Paper-Grade High-Whiteness Calcium Carbonate" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
-                                <span id="pcard-4-tag" style="background: rgba(46,204,113,0.15); color: #2ECC71; border: 1px solid rgba(46,204,113,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Paper & Packaging Grade</span>
-                                <span style="font-size: 1.3rem;">📄</span>
-                            </div>
-                            <h3 id="pcard-4-title" style="color: #FFF; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.65rem;">Paper-Grade High-Whiteness CaCO₃</h3>
-                            <p id="pcard-4-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Controlled particle size distribution with high brightness (96%+) and low abrasive index. Replaces costly Titanium Dioxide (TiO₂) in paper filling and coating slurries.</p>
-                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #2ECC71; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
-                                <div id="pcard-4-spec1">• <strong>Brightness & Mesh:</strong> 96%+ ISO Brightness | 2500 to 3500 Mesh</div>
-                                <div id="pcard-4-spec2">• <strong>Applications:</strong> Alkaline Papermaking, Coated Board, Packaging Sheets</div>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span id="pcard-4-cta" style="color: #2ECC71; font-weight: 700; font-size: 0.9rem;">View Paper Grade Specs & PDFs →</span>
-                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-P Series</span>
-                        </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title" id="product-2-title">Coated Calcium Carbonate</h3>
+                        <p class="product-card__desc" id="product-2-desc" style="color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Stearic acid coated for high compatibility with polymeric materials.</p>
+                        <a href="coated-calcium-carbonate.html" class="product-card__cta" id="product-2-cta">View Details →</a>
                     </div>
-                </a>
+                </div>
 
-                <!-- CARD 5: CONSTRUCTION & DRY-MIX MINERALS -->
-                <a href="calcium-carbonate.html#construction-grade" class="product-card-link">
-                    <div class="product-card" style="padding: 1.5rem; background: #1C2436; border: 1px solid rgba(230,126,34,0.35); border-radius: 12px;">
-                        <div>
-                            <!-- Product Image -->
-                            <div style="width: 100%; height: 210px; border-radius: 8px; overflow: hidden; margin-bottom: 1.25rem; border: 1px solid rgba(230,126,34,0.3);">
-                                <img src="../assets/images/product_construction_caco3.jpg" alt="Construction & Dry-Mix Mineral Fillers" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
-                                <span id="pcard-5-tag" style="background: rgba(230,126,34,0.18); color: #E67E22; border: 1px solid rgba(230,126,34,0.4); padding: 4px 12px; border-radius: 14px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Construction & Dry-Mix Grade</span>
-                                <span style="font-size: 1.3rem;">🏗️</span>
-                            </div>
-                            <h3 id="pcard-5-title" style="color: #FFF; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.65rem;">Construction & Dry-Mix Mineral Fillers</h3>
-                            <p id="pcard-5-desc" style="color: rgba(255,255,255,0.75); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.25rem;">Coarse and fine ground limestone fillers engineered for dry-mix mortars, tile adhesives, self-leveling floors, and precast concrete formulations.</p>
-                            <div style="background: rgba(0,0,0,0.25); padding: 1rem; border-radius: 8px; border-left: 3px solid #E67E22; margin-bottom: 1.5rem; font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
-                                <div id="pcard-5-spec1">• <strong>Mesh & Purity:</strong> 200 to 800 Mesh | 95.0%+ CaCO₃ Content</div>
-                                <div id="pcard-5-spec2">• <strong>Applications:</strong> Tile Adhesives, Dry-Mix Mortars, Self-Leveling Screeds, Cement</div>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span id="pcard-5-cta" style="color: #E67E22; font-weight: 700; font-size: 0.9rem;">View Construction Specs & PDFs →</span>
-                            <span style="color: rgba(255,255,255,0.4); font-size: 0.8rem;">GCC-K Series</span>
-                        </div>
+                <!-- Product 3 -->
+                <div class="product-card" id="product-3">
+                    <div class="product-card__image">
+                        <img src="../assets/images/ind_rubber.jpg" alt="Barite Powder" loading="lazy">
                     </div>
-                </a>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title" id="product-3-title">Barite Powder</h3>
+                        <p class="product-card__desc" id="product-3-desc" style="color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Widely used heavy filler for industrial and drilling applications.</p>
+                        <a href="barite.html" class="product-card__cta" id="product-3-cta">View Details →</a>
+                    </div>
+                </div>
 
+                <!-- Product 4 -->
+                <div class="product-card" id="product-4">
+                    <div class="product-card__image">
+                        <img src="../assets/images/ind_paint.jpg" alt="Ochre Powder" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title" id="product-4-title">Ochre Powder</h3>
+                        <p class="product-card__desc" id="product-4-desc" style="color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">High-quality natural iron oxide pigment with exceptional coloring power.</p>
+                        <a href="ochre.html" class="product-card__cta" id="product-4-cta">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" id="product-5">
+                    <div class="product-card__image">
+                        <img src="../assets/images/product_talc.jpg" alt="Talc Powder" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title" id="product-5-title">Talc Powder</h3>
+                        <p class="product-card__desc" id="product-5-desc" style="color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Specialized filler with natural softness and excellent lubricating properties.</p>
+                        <a href="talc.html" class="product-card__cta" id="product-5-cta">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" id="product-6">
+                    <div class="product-card__image">
+                        <img src="../assets/images/talc_header.jpg" alt="Afghan Talc Powder" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title" id="product-6-title">Afghan Talc Powder</h3>
+                        <p class="product-card__desc" id="product-6-desc" style="color: var(--text-color); margin-bottom: 1.5rem; line-height: 1.6; font-size: 0.95rem;">Premium imported export grade with exceptionally high whiteness and silicate purity.</p>
+                        <a href="afghan-talc.html" class="product-card__cta" id="product-6-cta">View Details →</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- ============================================== -->
     <!-- FOOTER                                         -->
