@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Sababehpar Iranian Mining Company</title>
+    <meta name="description" content="Learn about Sababehpar Iranian Mining Company — 15+ years of high-purity calcium carbonate and talc mining from Aligoodarz, Lorestan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/{% static 'css/styles.css' %}' %}">
+</head>
+<body>
+
+    <!-- ============================================== -->
+    <!-- 1. HEADER + NAVBAR (BILINGUAL SUPPORT)         -->
+    <!-- ============================================== -->
+    <div class="utility-header" id="utility-header">
+        <div class="container utility-header__inner">
+            <div class="utility-header__contact">
+                <a href="tel:02177614878" class="utility-header__link" id="header-phone">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span dir="ltr">021 7761 4878</span>
+                </a>
+                <a href="mailto:info@sababehpar.com" class="utility-header__link" id="header-email">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span dir="ltr">info@sababehpar.com</span>
+                </a>
+                </div>
+            <div class="utility-header__actions">
+                <div class="language-selector" id="language-selector">
+                    <button class="language-selector__btn" id="lang-toggle" aria-label="Select language">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg>
+                        EN
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="language-selector__dropdown" id="lang-dropdown">
+                        <a href="#" class="language-selector__option active" data-lang="en">English</a>
+                        <a href="#" class="language-selector__option" data-lang="fa">فارسی</a>
+                        <a href="#" class="language-selector__option" data-lang="ar">العربية</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="{% url 'website:home' %}" class="navbar__brand" style="text-decoration: none;">
+                <div class="navbar__logo"><img src="{% static 'images/' %}logo.jpg" alt="Sababehpar Logo" style="height: 48px; object-fit: contain; background: white; padding: 4px; border-radius: 8px;"></div>
+                <div class="navbar__brand-text">
+                    <span class="navbar__title" id="brand-title">SABABEHPAR</span>
+                    <span class="navbar__subtitle" id="brand-subtitle">Iranian Mining Co.</span>
+                </div>
+            </a>
+            <div class="navbar__links" id="nav-links">
+                <a href="{% url 'website:home' %}" class="navbar__link" id="nav-home">Home</a>
+                <div class="navbar__dropdown">
+                    <a href="{% url 'website:about' %}" class="navbar__link active" id="nav-about">
+                        About Us
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="{% url 'website:about' %}" class="navbar__dropdown-item active" id="nav-about-overview">Company Overview</a>
+                        <a href="{% url 'website:management_team' %}" class="navbar__dropdown-item" id="nav-about-management">Management Team</a>
+                        <a href="{% url 'website:sustainability' %}" class="navbar__dropdown-item" id="nav-about-sustainability">Sustainability & ESG</a>
+                    </div>
+                </div>
+                <div class="navbar__dropdown">
+                    <a href="{% url 'products:index' %}" class="navbar__link" id="nav-products">
+                        Products
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                    </a>
+                    <div class="navbar__dropdown-menu">
+                        <a href="{% url 'products:index' %}" class="navbar__dropdown-item" id="nav-products-overview">Products Overview</a>
+                        <a href="{% url 'products:calcium_carbonate' %}" class="navbar__dropdown-item" id="nav-product-1">Calcium Carbonate Powder</a>
+                        <a href="{% url 'products:coated_calcium_carbonate' %}" class="navbar__dropdown-item" id="nav-product-2">Coated Calcium Carbonate</a>
+                        <a href="{% url 'products:barite' %}" class="navbar__dropdown-item" id="nav-product-3">Barite Powder</a>
+                        <a href="{% url 'products:ochre' %}" class="navbar__dropdown-item" id="nav-product-4">Ochre Powder</a>
+                        <a href="{% url 'products:talc' %}" class="navbar__dropdown-item" id="nav-product-5">Talc Powder</a>
+                        <a href="{% url 'products:afghan_talc' %}" class="navbar__dropdown-item" id="nav-product-6">Afghan Talc Powder</a>
+                    </div>
+                </div>
+                <a href="{% url 'website:industries' %}" class="navbar__link" id="nav-industries">Industries</a>
+                <a href="{% url 'news:index' %}" class="navbar__link" id="nav-news">News</a>
+                <a href="{% url 'articles_list' %}" class="navbar__link" id="nav-articles">Articles</a>
+                <a href="{% url 'website:knowledge_center' %}" class="navbar__link" id="nav-knowledge">Knowledge Center</a>
+            </div>
+            <a href="{% url 'contact:index' %}" class="navbar__cta" id="nav-contact-btn">Contact Us</a>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="navbar__mobile-menu" id="mobile-menu">
+            <a href="{% url 'website:home' %}" class="navbar__mobile-link" id="mobile-nav-home">Home</a>
+            
+            <a href="#" class="navbar__mobile-link navbar__mobile-toggle active" id="mobile-nav-about">
+                <span>About Us</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <div class="navbar__mobile-sublinks open">
+                <a href="{% url 'website:about' %}" class="navbar__mobile-sublink active" id="mobile-about-overview">Company Overview</a>
+                <a href="{% url 'website:management_team' %}" class="navbar__mobile-sublink" id="mobile-about-management">Management Team</a>
+                <a href="{% url 'website:sustainability' %}" class="navbar__mobile-sublink" id="mobile-about-sustainability">Sustainability & ESG</a>
+            </div>
+            
+            <a href="#" class="navbar__mobile-link navbar__mobile-toggle" id="mobile-nav-products">
+                <span>Products</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+            </a>
+            <div class="navbar__mobile-sublinks">
+                <a href="{% url 'products:index' %}" class="navbar__mobile-sublink" id="mobile-products-overview">Products Overview</a>
+                <a href="{% url 'products:calcium_carbonate' %}" class="navbar__mobile-sublink" id="mobile-product-1">Calcium Carbonate Powder</a>
+                <a href="{% url 'products:coated_calcium_carbonate' %}" class="navbar__mobile-sublink" id="mobile-product-2">Coated Calcium Carbonate</a>
+                <a href="{% url 'products:barite' %}" class="navbar__mobile-sublink" id="mobile-product-3">Barite Powder</a>
+                <a href="{% url 'products:ochre' %}" class="navbar__mobile-sublink" id="mobile-product-4">Ochre Powder</a>
+                <a href="{% url 'products:talc' %}" class="navbar__mobile-sublink" id="mobile-product-5">Talc Powder</a>
+                <a href="{% url 'products:afghan_talc' %}" class="navbar__mobile-sublink" id="mobile-product-6">Afghan Talc Powder</a>
+            </div>
+            
+            <a href="{% url 'website:industries' %}" class="navbar__mobile-link" id="mobile-nav-industries">Industries</a>
+            <a href="{% url 'news:index' %}" class="navbar__mobile-link" id="mobile-nav-news">News</a>
+            <a href="{% url 'articles_list' %}" class="navbar__mobile-link" id="mobile-nav-articles">Articles</a>
+            <a href="{% url 'website:knowledge_center' %}" class="navbar__mobile-link" id="mobile-nav-knowledge">Knowledge Center</a>
+            <a href="{% url 'contact:index' %}" class="navbar__mobile-link navbar__mobile-cta" id="mobile-nav-contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- ============================================== -->
+    <!-- SECTION 1: HERO SECTION (BLUE BACKGROUND)      -->
+    <!-- ============================================== -->
+    <header class="hero about-page-hero">
+        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,25,47,0.92) 0%, rgba(22,36,61,0.85) 100%);"></div>
+        <div class="container" style="position: relative; z-index: 2; text-align: center; padding: 4rem 1rem;">
+            <span class="section-badge" id="about-hero-tag" style="background: rgba(0,210,255,0.15); color: #00D2FF; border: 1px solid rgba(0,210,255,0.4); padding: 6px 18px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px;">SABABEHPAR IRANIAN MINING CO.</span>
+            <h1 id="about-hero-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #FFFFFF; margin-top: 1rem; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Pioneering Industrial Minerals & Powder Innovation</h1>
+            <p id="about-hero-desc" style="font-size: clamp(0.95rem, 2vw, 1.15rem); color: rgba(255,255,255,0.85); max-width: 800px; margin: 1.25rem auto 0; line-height: 1.7;">From raw marble quarry extraction in Shaghez Aligoodarz to high-precision ball mill micronizing, Sababehpar Iranian delivers pure calcium carbonate and talc powders to global B2B manufacturers.</p>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================== -->
+    <!-- SECTION 2: HISTORY - ABOUT US (ORANGE BACKGROUND) -->
+    <!-- ============================================== -->
+    <section style="background: linear-gradient(135deg, #181410 0%, #261F1A 100%); padding: 4rem 0;">
+        <div class="container">
+            <span class="section-badge" id="about-history-badge" style="background: rgba(222,131,75,0.2); color: #de834b; border-color: rgba(222,131,75,0.4);">01</span>
+            <h2 id="about-history-title" style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 800; color: #FFF; margin-bottom: 2rem;">History & Company Foundations</h2>
+            
+            <div class="about-grid-2col">
+                <!-- Left Column: 5 Paragraph Text Blocks -->
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <p id="about-history-p1" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #2A1F18; padding: 1.1rem 1.3rem; border-left: 3px solid #de834b; border-radius: 6px;">
+                        <strong>1. Founding & Mining Rights (2010):</strong> Sababehpar Iranian Mining Company was established in 2010 after acquiring direct mining extraction rights at the world-renowned Shaghez marble deposits in Aligoodarz, Lorestan province.
+                    </p>
+                    <p id="about-history-p2" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #2A1F18; padding: 1.1rem 1.3rem; border-left: 3px solid #de834b; border-radius: 6px;">
+                        <strong>2. Vertical Integration Strategy:</strong> Unlike standard processing trading firms, Sababehpar operates fully vertically integrated operations — controlling raw quarry block selection, crushing, continuous ball mill micronizing, and automated packaging under one roof.
+                    </p>
+                    <p id="about-history-p3" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #2A1F18; padding: 1.1rem 1.3rem; border-left: 3px solid #de834b; border-radius: 6px;">
+                        <strong>3. Exceptional Chemical Purity (99%+ CaCO3):</strong> Aligoodarz marble is internationally recognized for its crystalline structure and ultra-high chemical purity, yielding natural whiteness indices exceeding 98.0% with minimal silica impurities.
+                    </p>
+                    <p id="about-history-p4" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #2A1F18; padding: 1.1rem 1.3rem; border-left: 3px solid #de834b; border-radius: 6px;">
+                        <strong>4. Automated Micronizing Lines & Coating:</strong> Our Aligoodarz processing plant operates 3 automated production lines, including specialized high-temperature stearic acid surface treatment units for polymer extrusion grades.
+                    </p>
+                    <p id="about-history-p5" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #2A1F18; padding: 1.1rem 1.3rem; border-left: 3px solid #de834b; border-radius: 6px;">
+                        <strong>5. Scaled B2B Capacity (150,000+ Tons):</strong> With an annual processing capacity exceeding 150,000 metric tons, Sababehpar serves domestic and regional polymer, coating, masterbatch, mortar, and paper manufacturing industries.
+                    </p>
+                </div>
+
+                <!-- Right Column: Generated Image -->
+                <div class="about-sticky-img">
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(222,131,75,0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.6);">
+                        <img src="{% static 'images/' %}about_history.jpg" alt="Aligoodarz Quarry Extraction Wire-Saw" style="width: 100%; height: auto; display: block; filter: brightness(0.95);">
+                        <div style="position: absolute; bottom: 0; inset-x: 0; background: linear-gradient(0deg, #181410 0%, transparent 100%); padding: 1.25rem; color: #FFF;">
+                            <span id="about-history-img-tag" style="color: #de834b; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Shaghez Aligoodarz Quarry</span>
+                            <h4 id="about-history-img-title" style="margin-top: 4px; font-size: 1.05rem; font-weight: 700;">Automated Wire-Saw Extraction</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================== -->
+    <!-- SECTION 3: MANAGEMENT TEAM (PURPLE BACKGROUND) -->
+    <!-- ============================================== -->
+    <section style="background: linear-gradient(135deg, #131024 0%, #1B1633 100%); padding: 4rem 0;">
+        <div class="container">
+            <span class="section-badge" id="about-team-badge" style="background: rgba(155,89,182,0.2); color: #9B59B6; border-color: rgba(155,89,182,0.4);">02</span>
+            <h2 id="about-team-title" style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 800; color: #FFF; margin-bottom: 0.5rem;">Executive Management Team</h2>
+            <p id="about-team-subtitle" style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-bottom: 2.5rem;">Leadership, geological expertise, and chemical engineering innovation driving Sababehpar forward.</p>
+
+            <!-- Responsive Cards Grid -->
+            <div class="about-team-grid">
+                
+                <!-- Card 1 -->
+                <div class="product-card" style="padding: 1.25rem; text-align: center; background: #1F1938; border: 1px solid rgba(155,89,182,0.3);">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 0.85rem; border: 2px solid #de834b; box-shadow: 0 4px 15px rgba(222,131,75,0.3);">
+                        <img src="{% static 'images/' %}team_rezaei.jpg" alt="Eng. M. Rezaei - CEO" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 id="about-team-m1-title" style="color: #FFF; font-size: 1rem; margin-bottom: 0.2rem;">Ali Akbar Hamtaei</h3>
+                    <p id="about-team-m1-role" style="color: #de834b; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.65rem;">Chairman of the Board</p>
+                    <p id="about-team-m1-desc" style="color: rgba(255,255,255,0.65); font-size: 0.75rem; line-height: 1.45; margin-bottom: 0.85rem;"></p>
+                    <div style="display: flex; justify-content: center; gap: 8px;">
+                        <a href="#" style="color: #de834b; font-size: 0.78rem; text-decoration: none; font-weight: 600;">LinkedIn</a>
+                        <span style="color: rgba(255,255,255,0.3);">|</span>
+                        <a href="mailto:ceo@sababehpar.com" style="color: rgba(255,255,255,0.7); font-size: 0.78rem; text-decoration: none;">Email</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card" style="padding: 1.25rem; text-align: center; background: #1F1938; border: 1px solid rgba(155,89,182,0.3);">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 0.85rem; border: 2px solid #de834b; box-shadow: 0 4px 15px rgba(222,131,75,0.3);">
+                        <img src="{% static 'images/' %}team_ahmadi.jpg" alt="Dr. A. Ahmadi - R&D Head" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 id="about-team-m2-title" style="color: #FFF; font-size: 1rem; margin-bottom: 0.2rem;">Mohammad Reza Bahraman</h3>
+                    <p id="about-team-m2-role" style="color: #de834b; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.65rem;">CEO</p>
+                    <p id="about-team-m2-desc" style="color: rgba(255,255,255,0.65); font-size: 0.75rem; line-height: 1.45; margin-bottom: 0.85rem;">Chairman of the Iran Mine House and Chairman of the Mining Committee in the Expediency Discernment Council, with decades of foundational leadership in Iran's mining sector.</p>
+                    <div style="display: flex; justify-content: center; gap: 8px;">
+                        <a href="#" style="color: #de834b; font-size: 0.78rem; text-decoration: none; font-weight: 600;">LinkedIn</a>
+                        <span style="color: rgba(255,255,255,0.3);">|</span>
+                        <a href="mailto:rd@sababehpar.com" style="color: rgba(255,255,255,0.7); font-size: 0.78rem; text-decoration: none;">Email</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card" style="padding: 1.25rem; text-align: center; background: #1F1938; border: 1px solid rgba(155,89,182,0.3);">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 0.85rem; border: 2px solid #de834b; box-shadow: 0 4px 15px rgba(222,131,75,0.3);">
+                        <img src="{% static 'images/' %}team_ghasemi.jpg" alt="Eng. H. Ghasemi - Operations Director" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 id="about-team-m3-title" style="color: #FFF; font-size: 1rem; margin-bottom: 0.2rem;">Mohammad Mehdi Maleki Ashtiani</h3>
+                    <p id="about-team-m3-role" style="color: #de834b; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.65rem;">Board Member</p>
+                    <p id="about-team-m3-desc" style="color: rgba(255,255,255,0.65); font-size: 0.75rem; line-height: 1.45; margin-bottom: 0.85rem;">Senior executive with over 29 years of experience in mineral processing, business development, and strategic management.</p>
+                    <div style="display: flex; justify-content: center; gap: 8px;">
+                        <a href="#" style="color: #de834b; font-size: 0.78rem; text-decoration: none; font-weight: 600;">LinkedIn</a>
+                        <span style="color: rgba(255,255,255,0.3);">|</span>
+                        <a href="mailto:plant@sababehpar.com" style="color: rgba(255,255,255,0.7); font-size: 0.78rem; text-decoration: none;">Email</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card" style="padding: 1.25rem; text-align: center; background: #1F1938; border: 1px solid rgba(155,89,182,0.3);">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 0.85rem; border: 2px solid #de834b; box-shadow: 0 4px 15px rgba(222,131,75,0.3);">
+                        <img src="{% static 'images/' %}team_hosseini.jpg" alt="Eng. K. Hosseini - Mining Lead" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 id="about-team-m4-title" style="color: #FFF; font-size: 1rem; margin-bottom: 0.2rem;">Mokhtar Bakhshi</h3>
+                    <p id="about-team-m4-role" style="color: #de834b; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.65rem;">Board Member & Plant Manager</p>
+                    <p id="about-team-m4-desc" style="color: rgba(255,255,255,0.65); font-size: 0.75rem; line-height: 1.45; margin-bottom: 0.85rem;">Directs manufacturing operations and serves as Plant Manager at Sababehpar Iranian since its inception.</p>
+                    <div style="display: flex; justify-content: center; gap: 8px;">
+                        <a href="#" style="color: #de834b; font-size: 0.78rem; text-decoration: none; font-weight: 600;">LinkedIn</a>
+                        <span style="color: rgba(255,255,255,0.3);">|</span>
+                        <a href="mailto:mining@sababehpar.com" style="color: rgba(255,255,255,0.7); font-size: 0.78rem; text-decoration: none;">Email</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Learn More Link at the end of Management section -->
+            <div style="text-align: center;">
+                <a href="management-team.html" id="about-team-learn-more" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; background: rgba(222,131,75,0.15); color: #de834b; border: 1.5px solid #de834b; text-decoration: none; font-weight: 700; border-radius: 6px; transition: all 0.3s ease;">
+                    Learn More About Executive Team →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ============================================== -->
+    <!-- SECTION 4: SUSTAINABILITY (GREEN BACKGROUND)   -->
+    <!-- ============================================== -->
+    <section style="background: linear-gradient(135deg, #0A1C18 0%, #12241E 100%); padding: 4rem 0;">
+        <div class="container">
+            <span class="section-badge" id="about-sust-badge" style="background: rgba(46,204,113,0.15); color: #2ECC71; border-color: rgba(46,204,113,0.4);">03</span>
+            <h2 id="about-sust-title" style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 800; color: #FFF; margin-bottom: 2rem;">Sustainability & ESG Commitment</h2>
+            
+            <div class="about-grid-2col" style="margin-bottom: 3rem;">
+                <!-- Left Column: 5 Paragraph Text Blocks -->
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <p id="about-sust-p1" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #15362F; padding: 1.1rem 1.3rem; border-left: 3px solid #2ECC71; border-radius: 6px;">
+                        <strong>1. Energy Optimization and Management:</strong> Due to its energy-intensive nature, the crushing and micronization process at Saba Behpar is carefully managed. By investing in modern equipment and high-efficiency electric motors, we strive to reduce energy consumption in our production unit. Furthermore, our production schedule is designed to distribute workloads intelligently across different hours, preventing excessive strain on the power grid and prioritizing optimal consumption. Our goal is the gradual but continuous reduction of the company's carbon footprint through the smart automation of production line equipment.
+                    </p>
+                    <p id="about-sust-p2" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #15362F; padding: 1.1rem 1.3rem; border-left: 3px solid #2ECC71; border-radius: 6px;">
+                        <strong>2. Waste Management and Zero-Waste Production:</strong> Our approach at Saba Behpar is the maximum utilization of extracted minerals. By adopting a "three-tier quality grade production" strategy, we categorize and process all parts of the incoming ore based on their physical and chemical specifications. This precise quality segregation allows us to prevent mineral waste and, instead of discarding, transform every part of the ore into a practical product for various industries. This cycle not only increases economic efficiency but also demonstrates our commitment to the responsible use of natural resources.
+                    </p>
+                    <p id="about-sust-p3" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #15362F; padding: 1.1rem 1.3rem; border-left: 3px solid #2ECC71; border-radius: 6px;">
+                        <strong>3. Advanced Filtration Systems and Air Quality Control:</strong> The health of the working environment air and the area surrounding the factory is a vital priority for us. Saba Behpar's production lines are equipped with the most advanced Bag Filter systems, capable of absorbing 99.9% of suspended particles. Through continuous monitoring, these systems prevent dust from escaping into the open air. This measure not only guarantees clean air for local communities but also provides a healthy, respiratory-pollution-free environment for the factory personnel.
+                    </p>
+                    <p id="about-sust-p4" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #15362F; padding: 1.1rem 1.3rem; border-left: 3px solid #2ECC71; border-radius: 6px;">
+                        <strong>4. Economic Development and Local Workforce Empowerment:</strong> The development of Saba Behpar is intertwined with the development of the Aligoodarz region. Our primary policy is to prioritize the recruitment and employment of local experts and workforce. We believe that human capital is our most valuable asset; therefore, we implement continuous training programs to upgrade the technical knowledge and specialized skills of our local personnel. Our goal is to create sustainable employment where our regional experts act as the main pillars of production at the highest national standards.
+                    </p>
+                    <p id="about-sust-p5" style="color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.7; background: #15362F; padding: 1.1rem 1.3rem; border-left: 3px solid #2ECC71; border-radius: 6px;">
+                        <strong>5. Occupational Health and Safety Standards (HSE):</strong> At Saba Behpar, safety goes beyond a legal requirement; it is a part of our organizational culture. We have developed and implemented strict protocols for the physical health and safety of all employees. In addition to equipping personnel with advanced personal protective equipment, environmental safety and ventilation systems are designed to neutralize all potential hazards at their inception. Our approach to occupational health is preventive, ensuring that every person who enters the factory in the morning returns home in perfect health at the end of their shift.
+                    </p>
+                </div>
+
+                <!-- Right Column: Generated Image -->
+                <div class="about-sticky-img">
+                    <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(46,204,113,0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.6);">
+                        <img src="{% static 'images/' %}about_sustainability.jpg" alt="Eco-Friendly Industrial Complex" style="width: 100%; height: auto; display: block; filter: brightness(0.95);">
+                        <div style="position: absolute; bottom: 0; inset-x: 0; background: linear-gradient(0deg, #0A1C18 0%, transparent 100%); padding: 1.25rem; color: #FFF;">
+                            <span id="about-sust-img-tag" style="color: #2ECC71; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Green Mining Initiative</span>
+                            <h4 id="about-sust-img-title" style="margin-top: 4px; font-size: 1.05rem; font-weight: 700;">Closed-Loop Water & Energy Recycling</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learn More Link at the end of Sustainability section -->
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="sustainability.html" id="about-sust-learn-more" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; background: rgba(46,204,113,0.15); color: #2ECC71; border: 1.5px solid #2ECC71; text-decoration: none; font-weight: 700; border-radius: 6px; transition: all 0.3s ease;">
+                    Learn More About Sustainability & ESG →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- FOOTER                                         -->
+    <!-- ============================================== -->
+    <footer class="footer" style="background: #05080E; padding: 4rem 0 2rem; border-top: 1px solid rgba(222,131,75,0.3);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div>
+                    <span id="footer-brand-title" style="font-size: 1.2rem; font-weight: 800; color: #FFF; display: block; margin-bottom: 1rem;">SABABEHPAR IRANIAN</span>
+                    <p id="footer-desc" style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6;">Leading producer of micronized calcium carbonate and industrial talc powders from Aligoodarz mines.</p>
+                </div>
+                <div>
+                    <h4 id="footer-quick-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+                        <a href="{% url 'website:home' %}" id="footer-link-home" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a>
+                        <a href="{% url 'website:about' %}" id="footer-link-about" style="color: rgba(255,255,255,0.7); text-decoration: none;">About Us</a>
+                        <a href="{% url 'products:index' %}" id="footer-link-products" style="color: rgba(255,255,255,0.7); text-decoration: none;">Products Catalog</a>
+                        <a href="{% url 'contact:index' %}" id="footer-link-contact" style="color: rgba(255,255,255,0.7); text-decoration: none;">Contact Us</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 id="footer-contact-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Contact Us</h4>
+                    <p id="footer-contact-info" style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6;">
+                        <span dir="ltr">021 7761 4878</span><br>
+                        <span dir="ltr">021 7761 5985</span><br>
+                        <span dir="ltr">0912 395 6647</span><br>
+                        Plant: Aligoodarz, Lorestan
+                    </p>
+                </div>
+                <div>
+                    <h4 id="footer-social-title" style="color: #de834b; font-size: 1rem; margin-bottom: 1rem;">Social Media</h4>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="#" aria-label="WhatsApp" style="display:inline-block; transition: transform 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+                        <a href="#" aria-label="Telegram" style="display:inline-block; transition: transform 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#0088CC"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                        <a href="#" aria-label="Instagram" style="display:inline-block; transition: transform 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#E1306C"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn" style="display:inline-block; transition: transform 0.2s;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; color: rgba(255,255,255,0.5); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                <p id="footer-copyright">© 2026 Sababehpar Iranian Mining Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================== -->
+    <!-- SECTION 8: FLOATING PHONE      -->
+    <!-- ============================== -->
+    <div class="floating-phone" id="floating-phone">
+        <button class="floating-phone__trigger" id="phone-trigger" aria-label="Contact options">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </button>
+        <div class="floating-phone__popup" id="phone-popup">
+            <div class="floating-phone__header" id="phone-popup-header">Quick Contact</div>
+            <a href="tel:02177614878" class="floating-phone__option">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                    <strong id="phone-popup-office">Office</strong>
+                    <span dir="ltr">021 7761 4878</span>
+                </div>
+            </a>
+            <a href="tel:02177615985" class="floating-phone__option">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                    <strong id="phone-popup-office2">Office 2</strong>
+                    <span dir="ltr">021 7761 5985</span>
+                </div>
+            </a>
+            <a href="tel:09123956647" class="floating-phone__option">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+                <div>
+                    <strong id="phone-popup-mobile">Mobile</strong>
+                    <span dir="ltr">0912 395 6647</span>
+                </div>
+            </a>
+            <div class="floating-phone__divider"></div>
+            <div class="floating-phone__messengers">
+                <a href="https://wa.me/989123956647" class="floating-phone__messenger" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+                <a href="#" class="floating-phone__messenger" aria-label="Telegram" id="phone-telegram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#0088CC"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </a>
+                <a href="#" class="floating-phone__messenger" aria-label="Instagram" id="phone-instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#E1306C"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="#" class="floating-phone__messenger" aria-label="LinkedIn" id="phone-linkedin">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#0077B5"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    <script src="{% static 'js/{% static 'js/script.js' %}' %}"></script>
+    <script src="{% static 'js/{% static 'js/lang.js' %}' %}"></script>
+</body>
+</html>
