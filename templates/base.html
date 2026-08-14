@@ -23,9 +23,9 @@
     <div class="utility-header" id="utility-header">
         <div class="container utility-header__inner">
             <div class="utility-header__contact">
-                <a href="tel:+982188000000" class="utility-header__link" id="header-phone">
+                <a href="tel:02177614878" class="utility-header__link" id="header-phone">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span dir="ltr">+98 21 8800 0000</span>
+                    <span dir="ltr">021 7761 4878</span>
                 </a>
                 <a href="mailto:info@sababehpar.com" class="utility-header__link" id="header-email">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
@@ -50,6 +50,7 @@
                     <div class="language-selector__dropdown" id="lang-dropdown">
                         <a href="#" class="language-selector__option active" data-lang="en">English</a>
                         <a href="#" class="language-selector__option" data-lang="fa">فارسی</a>
+                        <a href="#" class="language-selector__option" data-lang="ar">العربية</a>
                     </div>
                 </div>
             </div>
@@ -59,13 +60,9 @@
     <!-- Main Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="container navbar__inner">
-            <a href="{% url 'website:home' %}" class="navbar__brand" id="brand-logo">
+            <a href="{% url 'website:home' %}" class="navbar__brand" id="brand-logo" style="text-decoration: none;">
                 <div class="navbar__logo">
-                    <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-                        <path d="M20 2L35 12V28L20 38L5 28V12L20 2Z" fill="#de834b" opacity="0.2"/>
-                        <path d="M20 6L31 13.5V26.5L20 34L9 26.5V13.5L20 6Z" stroke="#de834b" stroke-width="2"/>
-                        <path d="M20 14L26 18V24L20 28L14 24V18L20 14Z" fill="#de834b"/>
-                    </svg>
+                    <img src="{% static 'images/logo.jpg' %}" alt="Sababehpar Logo" style="height: 48px; object-fit: contain; background: white; padding: 4px; border-radius: 8px;">
                 </div>
                 <div class="navbar__brand-text">
                     <span class="navbar__title">SABABEHPAR</span>
@@ -169,7 +166,7 @@
                 <div class="footer__contact-item">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#de834b" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     <div>
-                        <a href="tel:+982188000000">+98 21 8800 0000</a>
+                        <a href="tel:02177614878">021 7761 4878</a>
                     </div>
                 </div>
             </div>
@@ -188,11 +185,11 @@
         </button>
         <div class="floating-phone__popup" id="phone-popup">
             <div class="floating-phone__header">Quick Contact</div>
-            <a href="tel:+982188000000" class="floating-phone__option" id="phone-office">
+            <a href="tel:02177614878" class="floating-phone__option" id="phone-office">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 <div>
                     <strong>Office</strong>
-                    <span>+98 21 8800 0000</span>
+                    <span>021 7761 4878</span>
                 </div>
             </a>
             <a href="tel:+989120000000" class="floating-phone__option" id="phone-factory">
