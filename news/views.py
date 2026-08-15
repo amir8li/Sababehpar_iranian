@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
+from django.template.loader import select_template
 from .models import NewsArticle, TechnicalArticle
 
 def news_list(request):
@@ -18,8 +19,15 @@ def news_3(request):
     return render(request, 'news/news_3.html', {'article': article})
 
 def news_detail(request, slug):
-    article = get_object_or_404(NewsArticle, slug=slug, is_published=True)
-    return render(request, 'news/detail.html', {'article': article})
+    clean_slug = slug.replace('.html', '')
+    article = NewsArticle.objects.filter(slug=clean_slug, is_published=True).first()
+    
+    template_name = f"news/{clean_slug.replace('-', '_')}.html"
+    try:
+        select_template([template_name])
+        return render(request, template_name, {'article': article})
+    except:
+        return render(request, 'news/detail.html', {'article': article})
 
 def articles_list(request):
     technical_articles = TechnicalArticle.objects.filter(is_published=True)
@@ -30,5 +38,12 @@ def article_1(request):
     return render(request, 'articles/article_1.html', {'article': article})
 
 def article_detail(request, slug):
-    article = get_object_or_404(TechnicalArticle, slug=slug, is_published=True)
-    return render(request, 'articles/detail.html', {'article': article})
+    clean_slug = slug.replace('.html', '')
+    article = TechnicalArticle.objects.filter(slug=clean_slug, is_published=True).first()
+    
+    template_name = f"articles/{clean_slug.replace('-', '_')}.html"
+    try:
+        select_template([template_name])
+        return render(request, template_name, {'article': article})
+    except:
+        return render(request, 'articles/detail.html', {'article': article})

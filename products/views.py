@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
+from django.template.loader import select_template
 from .models import Product, ProductCategory
 
 def product_list(request):
@@ -34,5 +35,14 @@ def ochre(request):
     return render(request, 'products/ochre.html', {'product': product})
 
 def product_detail(request, slug):
-    product = get_object_or_404(Product, slug=slug, is_active=True)
-    return render(request, 'products/detail.html', {'product': product})
+    # Strip .html if present in slug
+    clean_slug = slug.replace('.html', '')
+    product = Product.objects.filter(slug=clean_slug, is_active=True).first()
+    
+    # Try finding specific static template first (e.g., products/calcium_carbonate.html)
+    template_name = f"products/{clean_slug.replace('-', '_')}.html"
+    try:
+        select_template([template_name])
+        return render(request, template_name, {'product': product})
+    except:
+        return render(request, 'products/detail.html', {'product': product})

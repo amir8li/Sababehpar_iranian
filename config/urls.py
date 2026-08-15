@@ -12,7 +12,9 @@ urlpatterns = [
     path('news/', include('news.urls')),
     path('articles/', news_views.articles_list, name='articles_list'),
     path('articles/article-1/', news_views.article_1, name='article_1'),
+    path('articles/article-1.html', news_views.article_1),
     path('articles/<slug:slug>/', news_views.article_detail, name='article_detail'),
+    path('articles/<slug:slug>.html', news_views.article_detail),
     path('contact/', include('contact.urls')),
 ]
 
