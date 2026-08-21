@@ -243,68 +243,127 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalSpecs = document.getElementById('modal-specs');
     const modalIcon = document.getElementById('modal-icon');
 
-    window.industryData = {
-        paint: {
-            title: 'Paint & Resin',
-            description: 'Micronized calcium carbonate powder is used as one of the most widely used mineral fillers in the production of various industrial paints, resins, and coatings. Having desirable whiteness and uniform granulation, it helps improve coverage, adjust viscosity, and create appropriate texture in the final product. Using the right grade of calcium carbonate can optimize formulation and reduce production costs while maintaining quality. This product is used in the production of architectural paints, industrial paints, primers, putties, and various water-based and solvent-based coatings. Selecting the right grade is based on whiteness, particle size, oil absorption, and dispersibility in the formulation.',
-            specs: []
-        },
-        plastics: {
-            title: 'Plastics & Polymers',
-            description: 'Micronized calcium carbonate powder is one of the most consumed mineral fillers in the plastics and polymer industries, used in producing a wide range of polymeric products. Its controlled granulation, low moisture, and good dispersibility contribute to blend uniformity and production process stability. Regular and coated calcium carbonate grades are selected based on the polymer type and formulation to improve processing properties and final product characteristics. It is applied in manufacturing masterbatches, polymer films, injection molded products, plastic parts, and polymer compounds. Grade selection considers particle size, surface coating, whiteness, and end-product requirements.',
-            specs: []
-        },
-        pvc: {
-            title: 'PVC, UPVC & Profiles',
-            description: 'Micronized calcium carbonate powder is an essential mineral in PVC and UPVC product formulations, widely used in manufacturing door and window profiles, wall panels, baseboards, flooring, and construction parts. The powder\'s granulation uniformity, suitable whiteness, and low moisture impact the product\'s visual quality, extrusion stability, and production consistency. Coated grades are utilized in many PVC formulations due to better dispersion in the polymer matrix. The appropriate grade is chosen based on product type, usage percentage, production speed, and expected mechanical and visual properties. Continuous powder quality control ensures stable production and reduces process fluctuations.',
-            specs: []
-        },
-        paper: {
-            title: 'Paper & Cardboard',
-            description: 'Micronized calcium carbonate powder is a highly utilized mineral filler in the paper and cardboard industry, used to produce various packaging and printing papers and boards. This material improves the product\'s whiteness, surface uniformity, and visual quality, thereby enhancing printability and final appearance. Controlling the powder\'s granulation, purity, and quality stability is crucial for achieving stable production and a uniform product. Calcium carbonate is used in filler applications as well as certain coating formulations. Grade selection depends on the production line type, paper/cardboard specifications, and consumer technical needs.',
-            specs: []
-        },
-        feed: {
-            title: 'Animal, Poultry & Aquatic Feed',
-            description: 'Micronized calcium carbonate powder is considered a rich source of calcium for meeting vital needs in the animal, poultry, and aquatic feed industry. This substance plays a key role in strengthening skeletal structure, improving eggshell quality in poultry, and regulating animal metabolism. High purity, the absence of heavy metal impurities, and precise granulation are significant features of this powder to ensure maximum absorption and final product health. Using a suitable grade with controlled particle size helps achieve uniform distribution in the formulation and increases feed production efficiency. This product fully complies with health and nutritional standards and is extensively used in producing various concentrates and supplements for livestock, poultry, and aquatic animals.',
-            specs: []
-        },
-        rubber: {
-            title: 'Rubber & Foam',
-            description: 'Micronized calcium carbonate powder acts as a key mineral filler in the rubber and foam industries, effectively improving physical properties and reducing production costs. Using this material in rubber product formulations not only increases hardness and elastic modulus but also improves processing characteristics and compound flowability during production. In producing various foams, this powder enhances product quality and durability by maintaining uniform cellular structure. Selecting the right grade with precise granulation and optimal oil absorption directly impacts the dimensional stability and abrasion resistance of the final products.',
-            specs: []
-        },
-        construction: {
-            title: 'Tiles, Ceramics & Construction',
-            description: 'Micronized calcium carbonate powder is widely used as an applied mineral in producing various tiles, ceramics, and construction materials. It effectively contributes to the formulations of ceramic bodies, dry mortars, tile adhesives, putties, polymer plasters, and construction coatings. The powder\'s uniform granulation and stable quality significantly help control the production process and enhance the final product\'s quality. Choosing the right grade based on required technical features and production line conditions ensures achieving the desired texture and physical resistance. Micronized calcium carbonate plays a fundamental role in optimizing construction and ceramic product formulations by providing excellent filling properties.',
-            specs: []
-        }
-    };
+    if (!window.industryData) {
+        window.industryData = {
+            en: {
+                paint: {
+                    title: 'Paint & Resin',
+                    description: 'Micronized calcium carbonate powder is used as one of the most widely used mineral fillers in the production of various industrial paints, resins, and coatings. Having desirable whiteness and uniform granulation, it helps improve coverage, adjust viscosity, and create appropriate texture in the final product. Using the right grade of calcium carbonate can optimize formulation and reduce production costs while maintaining quality. This product is used in the production of architectural paints, industrial paints, primers, putties, and various water-based and solvent-based coatings. Selecting the right grade is based on whiteness, particle size, oil absorption, and dispersibility in the formulation.',
+                    specs: []
+                },
+                plastics: {
+                    title: 'Plastics & Polymers',
+                    description: 'Micronized calcium carbonate powder is one of the most consumed mineral fillers in the plastics and polymer industries, used in producing a wide range of polymeric products. Its controlled granulation, low moisture, and good dispersibility contribute to blend uniformity and production process stability. Regular and coated calcium carbonate grades are selected based on the polymer type and formulation to improve processing properties and final product characteristics. It is applied in manufacturing masterbatches, polymer films, injection molded products, plastic parts, and polymer compounds. Grade selection considers particle size, surface coating, whiteness, and end-product requirements.',
+                    specs: []
+                },
+                pvc: {
+                    title: 'PVC, UPVC & Profiles',
+                    description: 'Micronized calcium carbonate powder is an essential mineral in PVC and UPVC product formulations, widely used in manufacturing door and window profiles, wall panels, baseboards, flooring, and construction parts. The powder\'s granulation uniformity, suitable whiteness, and low moisture impact the product\'s visual quality, extrusion stability, and production consistency. Coated grades are utilized in many PVC formulations due to better dispersion in the polymer matrix. The appropriate grade is chosen based on product type, usage percentage, production speed, and expected mechanical and visual properties. Continuous powder quality control ensures stable production and reduces process fluctuations.',
+                    specs: []
+                },
+                paper: {
+                    title: 'Paper & Cardboard',
+                    description: 'Micronized calcium carbonate powder is a highly utilized mineral filler in the paper and cardboard industry, used to produce various packaging and printing papers and boards. This material improves the product\'s whiteness, surface uniformity, and visual quality, thereby enhancing printability and final appearance. Controlling the powder\'s granulation, purity, and quality stability is crucial for achieving stable production and a uniform product. Calcium carbonate is used in filler applications as well as certain coating formulations. Grade selection depends on the production line type, paper/cardboard specifications, and consumer technical needs.',
+                    specs: []
+                },
+                feed: {
+                    title: 'Animal, Poultry & Aquatic Feed',
+                    description: 'Micronized calcium carbonate powder is considered a rich source of calcium for meeting vital needs in the animal, poultry, and aquatic feed industry. This substance plays a key role in strengthening skeletal structure, improving eggshell quality in poultry, and regulating animal metabolism. High purity, the absence of heavy metal impurities, and precise granulation are significant features of this powder to ensure maximum absorption and final product health. Using a suitable grade with controlled particle size helps achieve uniform distribution in the formulation and increases feed production efficiency. This product fully complies with health and nutritional standards and is extensively used in producing various concentrates and supplements for livestock, poultry, and aquatic animals.',
+                    specs: []
+                },
+                rubber: {
+                    title: 'Rubber & Foam',
+                    description: 'Micronized calcium carbonate powder acts as a key mineral filler in the rubber and foam industries, effectively improving physical properties and reducing production costs. Using this material in rubber product formulations not only increases hardness and elastic modulus but also improves processing characteristics and compound flowability during production. In producing various foams, this powder enhances product quality and durability by maintaining uniform cellular structure. Selecting the right grade with precise granulation and optimal oil absorption directly impacts the dimensional stability and abrasion resistance of the final products.',
+                    specs: []
+                },
+                construction: {
+                    title: 'Tiles, Ceramics & Construction',
+                    description: 'Micronized calcium carbonate powder is widely used as an applied mineral in producing various tiles, ceramics, and construction materials. It effectively contributes to the formulations of ceramic bodies, dry mortars, tile adhesives, putties, polymer plasters, and construction coatings. The powder\'s uniform granulation and stable quality significantly help control the production process and enhance the final product\'s quality. Choosing the right grade based on required technical features and production line conditions ensures achieving the desired texture and physical resistance. Micronized calcium carbonate plays a fundamental role in optimizing construction and ceramic product formulations by providing excellent filling properties.',
+                    specs: []
+                }
+            },
+            fa: {
+                paint: {
+                    title: 'رنگ و رزین',
+                    description: 'پودر میکرونیزه کربنات کلسیم به‌عنوان یکی از پرکننده‌های معدنی پرکاربرد در تولید انواع رنگ، رزین و پوشش‌های صنعتی استفاده می‌شود. این ماده با برخورداری از سفیدی مطلوب و دانه‌بندی یکنواخت، به بهبود پوشش‌دهی، تنظیم غلظت و ایجاد بافت مناسب در محصول نهایی کمک می‌کند. استفاده از گرید مناسب کربنات کلسیم می‌تواند ضمن حفظ کیفیت، باعث بهینه‌سازی فرمولاسیون و کاهش هزینه‌های تولید شود. این محصول در تولید رنگ‌های ساختمانی، رنگ‌های صنعتی، پرایمرها، بتونه‌ها و انواع پوشش‌های پایه آب و پایه حلال کاربرد دارد. انتخاب گرید مناسب بر اساس میزان سفیدی، اندازه ذرات، جذب روغن و قابلیت پراکنش در فرمولاسیون انجام می‌شود.',
+                    specs: []
+                },
+                plastics: {
+                    title: 'پلاستیک و پلیمر',
+                    description: 'پودر میکرونیزه کربنات کلسیم یکی از پرکننده‌های معدنی پرمصرف در صنایع پلاستیک و پلیمر است و در تولید طیف گسترده‌ای از محصولات پلیمری به کار می‌رود. دانه‌بندی کنترل‌شده، رطوبت پایین و پراکنش‌پذیری مناسب این ماده، به یکنواختی ترکیب و پایداری فرآیند تولید کمک می‌کند. گریدهای معمولی و کوتد کربنات کلسیم، بسته به نوع پلیمر و فرمولاسیون، برای بهبود خواص فرآیندی و تنظیم ویژگی‌های محصول نهایی انتخاب می‌شوند. این محصول در تولید مستربچ، فیلم‌های پلیمری، محصولات تزریقی، قطعات پلاستیکی و کامپاندهای پلیمری کاربرد دارد. انتخاب گرید مناسب با توجه به اندازه ذرات، میزان پوشش‌دهی سطحی، سفیدی و الزامات محصول نهایی انجام می‌شود.',
+                    specs: []
+                },
+                pvc: {
+                    title: 'PVC، UPVC و پروفیل',
+                    description: 'پودر میکرونیزه کربنات کلسیم یکی از مواد معدنی مهم در فرمولاسیون محصولات PVC و UPVC است و در تولید پروفیل‌های در و پنجره، دیوارپوش، قرنیز، کفپوش و قطعات ساختمانی کاربرد گسترده دارد. یکنواختی دانه‌بندی، سفیدی مناسب و رطوبت پایین پودر در کیفیت ظاهری محصول، پایداری فرآیند اکستروژن و یکنواختی تولید نقش دارد. گریدهای کوتد به‌دلیل پراکنش بهتر در ماتریس پلیمری، در بسیاری از فرمولاسیون‌های PVC مورد استفاده قرار می‌گیرند. انتخاب گرید مناسب با توجه به نوع محصول، درصد مصرف، سرعت تولید و ویژگی‌های مکانیکی و ظاهری مورد انتظار انجام می‌شود. کنترل مستمر کیفیت پودر، به تولید پایدار و کاهش نوسان در فرآیند کمک می‌کند.',
+                    specs: []
+                },
+                paper: {
+                    title: 'کاغذ و مقوا',
+                    description: 'پودر میکرونیزه کربنات کلسیم یکی از پرکننده‌های معدنی پرکاربرد در صنعت کاغذ و مقوا است و در تولید انواع کاغذ و مقوای بسته‌بندی و چاپ استفاده می‌شود. این ماده می‌تواند به بهبود سفیدی، یکنواختی سطح و کیفیت ظاهری محصول کمک کند و در نتیجه قابلیت چاپ‌پذیری و جلوه نهایی را ارتقا دهد. کنترل دانه‌بندی، خلوص و ثبات کیفیت پودر، برای دستیابی به تولید پایدار و محصول یکنواخت اهمیت بالایی دارد. کربنات کلسیم می‌تواند در کاربردهای فیلر و همچنین برخی فرمولاسیون‌های کوتینگ مورد استفاده قرار گیرد. انتخاب گرید مناسب بر اساس نوع خط تولید، مشخصات کاغذ/مقوا و نیازهای فنی مصرف‌کننده انجام می‌شود.',
+                    specs: []
+                },
+                feed: {
+                    title: 'خوراک دام، طیور و آبزیان',
+                    description: 'پودر میکرونیزه کربنات کلسیم یک منبع غنی از کلسیم برای تأمین نیازهای حیاتی در صنعت خوراک دام، طیور و آبزیان محسوب می‌شود. این ماده در تقویت استخوان‌بندی، بهبود کیفیت پوسته تخم‌مرغ در طیور و تنظیم سوخت‌وساز بدن دام نقش کلیدی ایفا می‌کند. خلوص بالا، عدم وجود ناخالصی‌های فلزات سنگین و دانه‌بندی دقیق، از ویژگی‌های حائز اهمیت این پودر برای اطمینان از جذب حداکثری و سلامت محصولات نهایی است. استفاده از گرید مناسب با اندازه ذرات کنترل‌شده، به توزیع یکنواخت در فرمولاسیون و افزایش راندمان تولید خوراک کمک می‌کند. این محصول با استانداردهای بهداشتی و تغذیه‌ای سازگاری کامل دارد و در تولید انواع کنسانتره‌ها و مکمل‌های دامی، طیور و آبزیان به شکل گسترده استفاده می‌شود.',
+                    specs: []
+                },
+                rubber: {
+                    title: 'صنایع لاستیک و فوم',
+                    description: 'پودر میکرونیزه کربنات کلسیم به‌عنوان یک پرکننده معدنی کلیدی در صنایع لاستیک و فوم، نقش مؤثری در بهبود خواص فیزیکی و کاهش هزینه‌های تولید دارد. استفاده از این ماده در فرمولاسیون محصولات لاستیکی، علاوه بر افزایش سختی و مدول الاستیسیته، به بهبود ویژگی‌های پردازشی و جریان‌پذیری آمیزه در فرآیند تولید کمک می‌کند. در صنایع تولید انواع فوم، این پودر با حفظ یکنواختی سلولی و ساختار نهایی، کیفیت و دوام محصول را ارتقا می‌دهد. انتخاب گرید مناسب با دانه‌بندی دقیق و جذب روغن بهینه، تأثیر مستقیمی بر پایداری ابعادی و مقاومت سایشی محصولات نهایی خواهد داشت.',
+                    specs: []
+                },
+                construction: {
+                    title: 'کاشی، سرامیک و ساختمان',
+                    description: 'پودر میکرونیزه کربنات کلسیم در تولید انواع کاشی، سرامیک و مصالح ساختمانی به‌عنوان یک ماده معدنی پرکاربرد استفاده می‌شود. این محصول در فرمولاسیون بدنه‌های سرامیکی، ملات‌های خشک، چسب کاشی، بتونه، گچ‌های پلیمری و پوشش‌های ساختمانی نقش مؤثری دارد. یکنواختی دانه‌بندی و کیفیت پایدار پودر، به کنترل بهتر فرآیند تولید و افزایش کیفیت محصول نهایی کمک شایانی می‌کند. انتخاب گرید مناسب با توجه به ویژگی‌های فنی مورد نیاز و شرایط خط تولید، دستیابی به بافت مطلوب و مقاومت فیزیکی مورد انتظار را تضمین می‌نماید. کربنات کلسیم میکرونیزه با ایجاد خواص پرکنندگی عالی، در بهینه‌سازی فرمولاسیون محصولات ساختمانی و سرامیکی نقش اساسی ایفا می‌کند.',
+                    specs: []
+                }
+            }
+        };
+    }
 
     document.querySelectorAll('.industry-card').forEach(card => {
         card.addEventListener('click', () => {
             const industry = card.dataset.industry;
-            const data = window.industryData[industry];
+            const currentLang = localStorage.getItem('sababehpar-lang') || 'en';
+            const langData = (window.industryData && window.industryData[currentLang]) 
+                ? window.industryData[currentLang] 
+                : (window.industryData && window.industryData.en ? window.industryData.en : window.industryData);
+            const data = langData ? langData[industry] : null;
             if (!data) return;
 
-            modalTitle.textContent = data.title;
-            modalDescription.textContent = data.description;
+            if (modalTitle) modalTitle.textContent = data.title;
+            if (modalDescription) modalDescription.textContent = data.description;
             const iconEl = card.querySelector('.industry-card__icon');
-            modalIcon.innerHTML = iconEl ? iconEl.innerHTML : '';
-            modalSpecs.innerHTML = data.specs.map(spec =>
-                `<div class="industry-modal__spec">
-                    <div class="industry-modal__spec-label">${spec.label}</div>
-                    <div class="industry-modal__spec-value">${spec.value}</div>
-                </div>`
-            ).join('');
+            if (modalIcon) modalIcon.innerHTML = iconEl ? iconEl.innerHTML : '';
+            if (modalSpecs) {
+                modalSpecs.innerHTML = (data.specs || []).map(spec =>
+                    `<div class="industry-modal__spec">
+                        <div class="industry-modal__spec-label">${spec.label}</div>
+                        <div class="industry-modal__spec-value">${spec.value}</div>
+                    </div>`
+                ).join('');
+            }
 
-            modal.classList.add('open');
-            document.body.style.overflow = 'hidden';
+            const modalCta = document.getElementById('modal-cta');
+            if (modalCta) {
+                if (currentLang === 'fa') {
+                    modalCta.textContent = 'درخواست نمونه محصول';
+                } else {
+                    modalCta.textContent = 'Request Industry Sample';
+                }
+            }
+
+            if (modal) {
+                modal.dataset.activeIndustry = industry;
+                modal.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
         });
     });
 
     function closeModal() {
-        modal.classList.remove('open');
+        if (modal) modal.classList.remove('open');
         document.body.style.overflow = '';
     }
 

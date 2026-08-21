@@ -7,18 +7,18 @@
 <!-- Subpage Banner / Hero -->
     <section class="hero">
         <div class="hero__slideshow">
-            <div class="hero__slide active" style="background-image: url('{% static 'images/' %}talc_header_1785162219577.jpg')">
+            <div class="hero__slide active" style="background-image: url('{% static 'images/lab_quality_control.jpg' %}'); background-size: cover; background-position: center;">
                 <div class="hero__overlay"></div>
             </div>
         </div>
         <div class="hero__content">
-            
+            <span class="hero__tag" id="articles-hero-badge">KNOWLEDGE &amp; RESEARCH</span>
             <h1 class="hero__title" id="articles-hero-title">
-                Technical Articles &<br>
+                Technical Articles &amp;<br>
                 <span class="hero__title--orange">Whitepapers</span>
             </h1>
             <p class="hero__description" id="articles-hero-text">
-                In-depth technical papers for chemical engineers, R&D procurement teams, and polymer compounders.
+                In-depth technical papers for chemical engineers, R&amp;D procurement teams, and polymer compounders.
             </p>
         </div>
     </section>
@@ -31,13 +31,13 @@
                 <!-- Article Item 1 -->
                 <div class="article-list-item">
                     <div class="article-list-item__image-wrap">
-                        <img src="{% static 'images/' %}talc_header_1785162219577.jpg" alt="Article 1" class="article-list-item__image">
+                        <img src="{% static 'images/ind_pvc.jpg' %}" alt="Stearic Acid Coating Impact on PVC Processing" class="article-list-item__image">
                     </div>
                     <div class="article-list-item__content">
                         <span class="article-list-item__badge" id="article-1-badge">Research Whitepaper</span>
                         <h3 class="article-list-item__title" id="article-1-title">Stearic Acid Coating Impact on PVC Processing</h3>
                         <p class="article-list-item__text" id="article-1-desc">Demonstrates how 1.0% surface coating reduces extruder torque by 14% and prevents screw wear during high-speed PVC pipe extrusion.</p>
-                        <a href="article-1.html" class="article-list-item__cta" id="article-1-cta">Read Article →</a>
+                        <a href="{% url 'article_1' %}" class="article-list-item__cta" id="article-1-cta">Read Article →</a>
                     </div>
                 </div>
 

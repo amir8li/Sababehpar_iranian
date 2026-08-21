@@ -1,3 +1,80 @@
+window.industryData = {
+    en: {
+        paint: {
+            title: 'Paint & Resin',
+            description: 'Micronized calcium carbonate powder is used as one of the most widely used mineral fillers in the production of various industrial paints, resins, and coatings. Having desirable whiteness and uniform granulation, it helps improve coverage, adjust viscosity, and create appropriate texture in the final product. Using the right grade of calcium carbonate can optimize formulation and reduce production costs while maintaining quality. This product is used in the production of architectural paints, industrial paints, primers, putties, and various water-based and solvent-based coatings. Selecting the right grade is based on whiteness, particle size, oil absorption, and dispersibility in the formulation.',
+            specs: []
+        },
+        plastics: {
+            title: 'Plastics & Polymers',
+            description: 'Micronized calcium carbonate powder is one of the most consumed mineral fillers in the plastics and polymer industries, used in producing a wide range of polymeric products. Its controlled granulation, low moisture, and good dispersibility contribute to blend uniformity and production process stability. Regular and coated calcium carbonate grades are selected based on the polymer type and formulation to improve processing properties and final product characteristics. It is applied in manufacturing masterbatches, polymer films, injection molded products, plastic parts, and polymer compounds. Grade selection considers particle size, surface coating, whiteness, and end-product requirements.',
+            specs: []
+        },
+        pvc: {
+            title: 'PVC, UPVC & Profiles',
+            description: 'Micronized calcium carbonate powder is an essential mineral in PVC and UPVC product formulations, widely used in manufacturing door and window profiles, wall panels, baseboards, flooring, and construction parts. The powder\'s granulation uniformity, suitable whiteness, and low moisture impact the product\'s visual quality, extrusion stability, and production consistency. Coated grades are utilized in many PVC formulations due to better dispersion in the polymer matrix. The appropriate grade is chosen based on product type, usage percentage, production speed, and expected mechanical and visual properties. Continuous powder quality control ensures stable production and reduces process fluctuations.',
+            specs: []
+        },
+        paper: {
+            title: 'Paper & Cardboard',
+            description: 'Micronized calcium carbonate powder is a highly utilized mineral filler in the paper and cardboard industry, used to produce various packaging and printing papers and boards. This material improves the product\'s whiteness, surface uniformity, and visual quality, thereby enhancing printability and final appearance. Controlling the powder\'s granulation, purity, and quality stability is crucial for achieving stable production and a uniform product. Calcium carbonate is used in filler applications as well as certain coating formulations. Grade selection depends on the production line type, paper/cardboard specifications, and consumer technical needs.',
+            specs: []
+        },
+        feed: {
+            title: 'Animal, Poultry & Aquatic Feed',
+            description: 'Micronized calcium carbonate powder is considered a rich source of calcium for meeting vital needs in the animal, poultry, and aquatic feed industry. This substance plays a key role in strengthening skeletal structure, improving eggshell quality in poultry, and regulating animal metabolism. High purity, the absence of heavy metal impurities, and precise granulation are significant features of this powder to ensure maximum absorption and final product health. Using a suitable grade with controlled particle size helps achieve uniform distribution in the formulation and increases feed production efficiency. This product fully complies with health and nutritional standards and is extensively used in producing various concentrates and supplements for livestock, poultry, and aquatic animals.',
+            specs: []
+        },
+        rubber: {
+            title: 'Rubber & Foam',
+            description: 'Micronized calcium carbonate powder acts as a key mineral filler in the rubber and foam industries, effectively improving physical properties and reducing production costs. Using this material in rubber product formulations not only increases hardness and elastic modulus but also improves processing characteristics and compound flowability during production. In producing various foams, this powder enhances product quality and durability by maintaining uniform cellular structure. Selecting the right grade with precise granulation and optimal oil absorption directly impacts the dimensional stability and abrasion resistance of the final products.',
+            specs: []
+        },
+        construction: {
+            title: 'Tiles, Ceramics & Construction',
+            description: 'Micronized calcium carbonate powder is widely used as an applied mineral in producing various tiles, ceramics, and construction materials. It effectively contributes to the formulations of ceramic bodies, dry mortars, tile adhesives, putties, polymer plasters, and construction coatings. The powder\'s uniform granulation and stable quality significantly help control the production process and enhance the final product\'s quality. Choosing the right grade based on required technical features and production line conditions ensures achieving the desired texture and physical resistance. Micronized calcium carbonate plays a fundamental role in optimizing construction and ceramic product formulations by providing excellent filling properties.',
+            specs: []
+        }
+    },
+    fa: {
+        paint: {
+            title: 'رنگ و رزین',
+            description: 'پودر میکرونیزه کربنات کلسیم به‌عنوان یکی از پرکننده‌های معدنی پرکاربرد در تولید انواع رنگ، رزین و پوشش‌های صنعتی استفاده می‌شود. این ماده با برخورداری از سفیدی مطلوب و دانه‌بندی یکنواخت، به بهبود پوشش‌دهی، تنظیم غلظت و ایجاد بافت مناسب در محصول نهایی کمک می‌کند. استفاده از گرید مناسب کربنات کلسیم می‌تواند ضمن حفظ کیفیت، باعث بهینه‌سازی فرمولاسیون و کاهش هزینه‌های تولید شود. این محصول در تولید رنگ‌های ساختمانی، رنگ‌های صنعتی، پرایمرها، بتونه‌ها و انواع پوشش‌های پایه آب و پایه حلال کاربرد دارد. انتخاب گرید مناسب بر اساس میزان سفیدی، اندازه ذرات، جذب روغن و قابلیت پراکنش در فرمولاسیون انجام می‌شود.',
+            specs: []
+        },
+        plastics: {
+            title: 'پلاستیک و پلیمر',
+            description: 'پودر میکرونیزه کربنات کلسیم یکی از پرکننده‌های معدنی پرمصرف در صنایع پلاستیک و پلیمر است و در تولید طیف گسترده‌ای از محصولات پلیمری به کار می‌رود. دانه‌بندی کنترل‌شده، رطوبت پایین و پراکنش‌پذیری مناسب این ماده، به یکنواختی ترکیب و پایداری فرآیند تولید کمک می‌کند. گریدهای معمولی و کوتد کربنات کلسیم، بسته به نوع پلیمر و فرمولاسیون، برای بهبود خواص فرآیندی و تنظیم ویژگی‌های محصول نهایی انتخاب می‌شوند. این محصول در تولید مستربچ، فیلم‌های پلیمری، محصولات تزریقی، قطعات پلاستیکی و کامپاندهای پلیمری کاربرد دارد. انتخاب گرید مناسب با توجه به اندازه ذرات، میزان پوشش‌دهی سطحی، سفیدی و الزامات محصول نهایی انجام می‌شود.',
+            specs: []
+        },
+        pvc: {
+            title: 'PVC، UPVC و پروفیل',
+            description: 'پودر میکرونیزه کربنات کلسیم یکی از مواد معدنی مهم در فرمولاسیون محصولات PVC و UPVC است و در تولید پروفیل‌های در و پنجره، دیوارپوش، قرنیز، کفپوش و قطعات ساختمانی کاربرد گسترده دارد. یکنواختی دانه‌بندی، سفیدی مناسب و رطوبت پایین پودر در کیفیت ظاهری محصول، پایداری فرآیند اکستروژن و یکنواختی تولید نقش دارد. گریدهای کوتد به‌دلیل پراکنش بهتر در ماتریس پلیمری، در بسیاری از فرمولاسیون‌های PVC مورد استفاده قرار می‌گیرند. انتخاب گرید مناسب با توجه به نوع محصول، درصد مصرف، سرعت تولید و ویژگی‌های مکانیکی و ظاهری مورد انتظار انجام می‌شود. کنترل مستمر کیفیت پودر، به تولید پایدار و کاهش نوسان در فرآیند کمک می‌کند.',
+            specs: []
+        },
+        paper: {
+            title: 'کاغذ و مقوا',
+            description: 'پودر میکرونیزه کربنات کلسیم یکی از پرکننده‌های معدنی پرکاربرد در صنعت کاغذ و مقوا است و در تولید انواع کاغذ و مقوای بسته‌بندی و چاپ استفاده می‌شود. این ماده می‌تواند به بهبود سفیدی، یکنواختی سطح و کیفیت ظاهری محصول کمک کند و در نتیجه قابلیت چاپ‌پذیری و جلوه نهایی را ارتقا دهد. کنترل دانه‌بندی، خلوص و ثبات کیفیت پودر، برای دستیابی به تولید پایدار و محصول یکنواخت اهمیت بالایی دارد. کربنات کلسیم می‌تواند در کاربردهای فیلر و همچنین برخی فرمولاسیون‌های کوتینگ مورد استفاده قرار گیرد. انتخاب گرید مناسب بر اساس نوع خط تولید، مشخصات کاغذ/مقوا و نیازهای فنی مصرف‌کننده انجام می‌شود.',
+            specs: []
+        },
+        feed: {
+            title: 'خوراک دام، طیور و آبزیان',
+            description: 'پودر میکرونیزه کربنات کلسیم یک منبع غنی از کلسیم برای تأمین نیازهای حیاتی در صنعت خوراک دام، طیور و آبزیان محسوب می‌شود. این ماده در تقویت استخوان‌بندی، بهبود کیفیت پوسته تخم‌مرغ در طیور و تنظیم سوخت‌وساز بدن دام نقش کلیدی ایفا می‌کند. خلوص بالا، عدم وجود ناخالصی‌های فلزات سنگین و دانه‌بندی دقیق، از ویژگی‌های حائز اهمیت این پودر برای اطمینان از جذب حداکثری و سلامت محصولات نهایی است. استفاده از گرید مناسب با اندازه ذرات کنترل‌شده، به توزیع یکنواخت در فرمولاسیون و افزایش راندمان تولید خوراک کمک می‌کند. این محصول با استانداردهای بهداشتی و تغذیه‌ای سازگاری کامل دارد و در تولید انواع کنسانتره‌ها و مکمل‌های دامی، طیور و آبزیان به شکل گسترده استفاده می‌شود.',
+            specs: []
+        },
+        rubber: {
+            title: 'صنایع لاستیک و فوم',
+            description: 'پودر میکرونیزه کربنات کلسیم به‌عنوان یک پرکننده معدنی کلیدی در صنایع لاستیک و فوم، نقش مؤثری در بهبود خواص فیزیکی و کاهش هزینه‌های تولید دارد. استفاده از این ماده در فرمولاسیون محصولات لاستیکی، علاوه بر افزایش سختی و مدول الاستیسیته، به بهبود ویژگی‌های پردازشی و جریان‌پذیری آمیزه در فرآیند تولید کمک می‌کند. در صنایع تولید انواع فوم، این پودر با حفظ یکنواختی سلولی و ساختار نهایی، کیفیت و دوام محصول را ارتقا می‌دهد. انتخاب گرید مناسب با دانه‌بندی دقیق و جذب روغن بهینه، تأثیر مستقیمی بر پایداری ابعادی و مقاومت سایشی محصولات نهایی خواهد داشت.',
+            specs: []
+        },
+        construction: {
+            title: 'کاشی، سرامیک و ساختمان',
+            description: 'پودر میکرونیزه کربنات کلسیم در تولید انواع کاشی، سرامیک و مصالح ساختمانی به‌عنوان یک ماده معدنی پرکاربرد استفاده می‌شود. این محصول در فرمولاسیون بدنه‌های سرامیکی، ملات‌های خشک، چسب کاشی، بتونه، گچ‌های پلیمری و پوشش‌های ساختمانی نقش مؤثری دارد. یکنواختی دانه‌بندی و کیفیت پایدار پودر، به کنترل بهتر فرآیند تولید و افزایش کیفیت محصول نهایی کمک شایانی می‌کند. انتخاب گرید مناسب با توجه به ویژگی‌های فنی مورد نیاز و شرایط خط تولید، دستیابی به بافت مطلوب و مقاومت فیزیکی مورد انتظار را تضمین می‌نماید. کربنات کلسیم میکرونیزه با ایجاد خواص پرکنندگی عالی، در بهینه‌سازی فرمولاسیون محصولات ساختمانی و سرامیکی نقش اساسی ایفا می‌کند.',
+            specs: []
+        }
+    }
+};
+
 const translations = {
     'en': {
         'nav-home': 'Home',
@@ -55,7 +132,8 @@ const translations = {
         'p-stat-3': 'Ultra-Fine D50',
         'p-stat-4': 'Moisture Content',
         'product-1-badge': 'Best Seller',
-        'news-hero-badge': 'Route: /news',
+        'product-6-badge': 'Export Grade',
+        'news-hero-badge': 'NEWS & COMPANY RELEASES',
         'news-hero-title': 'News & Company<br><span class="hero__title--orange">Press Releases</span>',
         'news-hero-text': 'Latest corporate milestones, mining expansions, R&D innovations, and international exhibition news.',
         'news-tag': '<span class="section-badge">03</span> News & Insights',
@@ -118,6 +196,8 @@ const translations = {
         'news-2-date': 'May 2026',
         'news-3-title': 'International Mining Exhibition 2026',
         'news-3-date': 'April 2026',
+        'back-to-products': '← Back to Products',
+        'prod-contact-sales': 'Contact Sales',
         'back-to-news': '← Back to News',
         'back-to-articles': '← Back to Articles',
         'home-news-2-date': 'May 2026',
@@ -138,13 +218,25 @@ const translations = {
         'news-3-desc': 'Successful completion of annual international compliance audits for ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018.',
         'home-news-3-excerpt': 'Join Sababehpar Iranian at the upcoming International Mining and Minerals Exhibition. Visit our booth to learn about...',
         'news-3-cta': 'Download PDF →',
-        'articles-hero-badge': 'Route: /articles',
+        'articles-hero-badge': 'TECHNICAL ARTICLES & WHITEPAPERS',
         'articles-hero-title': 'Technical Articles &<br><span class="hero__title--orange">Whitepapers</span>',
         'articles-hero-text': 'In-depth technical papers for chemical engineers, R&D procurement teams, and polymer compounders.',
         'article-1-badge': 'Research Whitepaper',
         'article-1-title': 'Stearic Acid Coating Impact on PVC Processing',
         'article-1-desc': 'Demonstrates how 1.0% surface coating reduces extruder torque by 14% and prevents screw wear during high-speed PVC pipe extrusion.',
         'article-1-cta': 'Read Article →',
+        'news-1-hero-tag': 'CORPORATE MILESTONE',
+        'news-1-hero-title': 'Phase II Quarry Expansion<br><span class="hero__title--orange">Successfully Completed</span>',
+        'news-1-hero-desc': 'Scaling white marble extraction capacity to meet rising global B2B demand.',
+        'news-2-hero-tag': 'R&D INNOVATION',
+        'news-2-hero-title': 'AI-Driven Optical Sorter<br><span class="hero__title--orange">Processing Line Upgrades</span>',
+        'news-2-hero-desc': 'Guaranteed 98%+ whiteness index and automated impurity separation.',
+        'news-3-hero-tag': 'GLOBAL STANDARDS',
+        'news-3-hero-title': 'International Compliance Audits &<br><span class="hero__title--orange">ISO Recertification</span>',
+        'news-3-hero-desc': 'Successful renewal of ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018.',
+        'article-1-hero-badge': 'RESEARCH WHITEPAPER',
+        'article-1-hero-title': 'Stearic Acid Coating Impact<br><span class="hero__title--orange">on PVC Processing</span>',
+        'article-1-hero-desc': 'Technical optimization guide for PVC pipe, profile, and polymer compound manufacturers.',
         'news-1-title': 'Phase II Quarry Expansion Completed',
         'news-1-date': 'June 2026',
         'news-2-title': 'New Laboratory Equipment Upgrades',
@@ -178,17 +270,20 @@ const translations = {
         'industry-construction-title': 'Tiles & Construction',
         'industry-construction-text': 'Used in ceramic bodies, dry mortars, tile adhesives, and putties.',
         'footer-brand-title': 'SABABEHPAR IRANIAN',
-        'footer-desc': 'Leading producer of high-purity micronized calcium carbonate and industrial talc powders from Aligoodarz mines.',
+        'footer-desc': 'Leading producer of high-purity micronized calcium carbonate and mineral powders from Aligoodarz mines, Iran.',
         'footer-products-title': 'Products',
         'footer-quick-title': 'Quick Links',
         'footer-link-home': 'Home',
         'footer-link-about': 'About Us',
         'footer-link-products': 'Products Catalog',
         'footer-link-industries': 'Industries Served',
-        'footer-knowledge-title': 'Knowledge Center',
+        'footer-link-news': 'News & Media',
+        'footer-link-contact': 'Contact Us',
+        'footer-knowledge-title': 'Standards & Quality',
         'footer-kc-qc': 'Quality Control',
         'footer-kc-labs': 'R&D Laboratories',
-        'footer-kc-certs': 'ISO Certifications',
+        'footer-kc-certs': 'Certifications & ISO',
+        'footer-kc-articles': 'Technical Articles',
         'footer-contact-title': 'Contact Us',
         'footer-contact-info': 'Tehran Office: 021 7761 4878<br>Plant: Lorestan, Aligoodarz<br>Email: info@sababehpar.com',
         'footer-product-1': 'GCC Coated CaCO₃',
@@ -196,11 +291,11 @@ const translations = {
         'footer-product-3': 'GCC Uncoated CaCO₃',
         'footer-product-4': 'Paper-Grade Filler',
         'footer-product-5': 'Paint-Grade CaCO₃',
-        'footer-office': '<strong>Tehran Sales Office</strong><br>Tehran, Iran',
-        'footer-factory': '<strong>Processing Plant</strong><br>Aligoodarz, Lorestan, Iran',
+        'footer-office': '<strong>Tehran Sales Office</strong><br><span>Tehran, Iran</span>',
+        'footer-factory': '<strong>Processing Plant</strong><br><span>Aligoodarz, Lorestan, Iran</span>',
         'footer-copyright': '&copy; 2026 Sababehpar Iranian Mining Company. All rights reserved.',
-        'footer-privacy': 'Privacy Policy',
-        'footer-terms': 'Terms of Service',
+        'footer-privacy': 'Company Profile',
+        'footer-terms': 'Sales & Support',
         'phone-header': 'Quick Contact',
         'phone-office': '<strong>Office</strong><span>+98 21 8800 0000</span>',
         'phone-factory': '<strong>Factory</strong><span>+98 912 000 0000</span>',
@@ -415,7 +510,8 @@ const translations = {
         'p-stat-3': 'D50 فوق ریز',
         'p-stat-4': 'میزان رطوبت',
         'product-1-badge': 'پرفروش‌ترین',
-        'news-hero-badge': 'مسیر: /اخبار',
+        'product-6-badge': 'گرید صادراتی',
+        'news-hero-badge': 'اخبار و رویدادهای شرکت',
         'news-hero-title': 'اخبار و<br><span class="hero__title--orange">بیانیه‌های شرکت</span>',
         'news-hero-text': 'آخرین دستاوردهای شرکتی، توسعه معادن، نوآوری‌های تحقیق و توسعه و اخبار نمایشگاه‌های بین‌المللی.',
         'news-tag': '<span class="section-badge">03</span> اخبار و مقالات',
@@ -478,6 +574,8 @@ const translations = {
         'news-2-date': 'اردیبهشت ۱۴۰۵',
         'news-3-title': 'نمایشگاه بین‌المللی معدن ۱۴۰۵',
         'news-3-date': 'فروردین ۱۴۰۵',
+        'back-to-products': '← بازگشت به محصولات',
+        'prod-contact-sales': 'تماس با واحد فروش',
         'back-to-news': '← بازگشت به اخبار',
         'back-to-articles': '← بازگشت به مقالات',
         'home-news-2-date': 'اردیبهشت ۱۴۰۵',
@@ -498,13 +596,25 @@ const translations = {
         'news-3-desc': 'اتمام موفقیت‌آمیز ممیزی‌های سالانه انطباق بین‌المللی برای ISO 9001:2015، ISO 14001:2015 و ISO 45001:2018.',
         'home-news-3-excerpt': 'درک تأثیر اندازه ذرات و پوشش کربنات کلسیم بر خواص مکانیکی ترکیبات PVC و PP...',
         'news-3-cta': 'دانلود PDF ←',
-        'articles-hero-badge': 'مسیر: /مقالات',
+        'articles-hero-badge': 'مرکز مقالات فنی و پژوهشی',
         'articles-hero-title': 'مقالات فنی و<br><span class="hero__title--orange">پژوهشی</span>',
         'articles-hero-text': 'مقاله‌های فنی عمیق برای مهندسان شیمی، تیم‌های تحقیق و توسعه و تولیدکنندگان پلیمر.',
         'article-1-badge': 'مقاله سفید پژوهشی',
         'article-1-title': 'تأثیر پوشش اسید استئاریک در پردازش PVC',
         'article-1-desc': 'نشان می‌دهد که چگونه پوشش سطحی ۱.۰٪، گشتاور اکسترودر را ۱۴٪ کاهش داده و از سایش مارپیچ جلوگیری می‌کند.',
         'article-1-cta': 'خواندن مقاله ←',
+        'news-1-hero-tag': 'دستاوردهای شرکتی',
+        'news-1-hero-title': 'تکمیل موفقیت‌آمیز فاز دوم<br><span class="hero__title--orange">توسعه معدن</span>',
+        'news-1-hero-desc': 'افزایش ظرفیت استخراج سنگ مرمر سفید برای پاسخگویی به تقاضای صنایع جهانی.',
+        'news-2-hero-tag': 'نوآوری تحقیق و توسعه',
+        'news-2-hero-title': 'ارتقاء خطوط پردازش با<br><span class="hero__title--orange">سورتینگ هوشمند AI</span>',
+        'news-2-hero-desc': 'تضمین شاخص سفیدی بالای ۹۸٪ و جداسازی هوشمند ناخالصی‌ها.',
+        'news-3-hero-tag': 'استانداردهای بین‌المللی',
+        'news-3-hero-title': 'ممیزی‌های انطباق بین‌المللی و<br><span class="hero__title--orange">تمدید گواهینامه‌های ISO</span>',
+        'news-3-hero-desc': 'تمدید موفقیت‌آمیز گواهینامه‌های بین‌المللی ISO 9001، ISO 14001 و ISO 45001.',
+        'article-1-hero-badge': 'مقاله پژوهشی تخصصی',
+        'article-1-hero-title': 'تأثیر پوشش اسید استئاریک<br><span class="hero__title--orange">در فرآیند اکستروژن PVC</span>',
+        'article-1-hero-desc': 'راهنمای بهینه‌سازی فنی برای تولیدکنندگان لوله، پروفیل و کامپاندهای پلیمری PVC.',
         'news-1-title': 'تکمیل فاز دوم توسعه معدن',
         'news-1-date': 'خرداد ۱۴۰۵',
         'news-2-title': 'ارتقاء تجهیزات آزمایشگاهی جدید',
@@ -537,17 +647,20 @@ const translations = {
         'industry-construction-title': 'کاشی و سرامیک',
         'industry-construction-text': 'استفاده در بدنه سرامیک، ملات خشک، چسب کاشی و بتونه.',
         'footer-brand-title': 'صبابهپر ایرانیان',
-        'footer-desc': 'تولیدکننده پیشرو پودرهای میکرونیزه کربنات کلسیم و تالک با خلوص بالا از معادن الیگودرز.',
+        'footer-desc': 'تولیدکننده پیشرو پودرهای میکرونیزه کربنات کلسیم و مواد معدنی با خلوص بالا از معادن الیگودرز ایران.',
         'footer-products-title': 'محصولات',
         'footer-quick-title': 'دسترسی سریع',
         'footer-link-home': 'خانه',
         'footer-link-about': 'درباره ما',
         'footer-link-products': 'کاتالوگ محصولات',
         'footer-link-industries': 'صنایع هدف',
-        'footer-knowledge-title': 'مرکز دانش',
+        'footer-link-news': 'اخبار و رسانه',
+        'footer-link-contact': 'تماس با ما',
+        'footer-knowledge-title': 'استانداردها و کیفیت',
         'footer-kc-qc': 'کنترل کیفیت',
         'footer-kc-labs': 'آزمایشگاه‌های تحقیق و توسعه',
         'footer-kc-certs': 'گواهینامه‌های ایزو',
+        'footer-kc-articles': 'مقالات تخصصی',
         'footer-contact-title': 'تماس با ما',
         'footer-contact-info': 'دفتر تهران: ۰۲۱۷۷۶۱۴۸۷۸<br>کارخانه: لرستان، الیگودرز<br>ایمیل: info@sababehpar.com',
         'footer-product-1': 'کربنات کلسیم کوتد',
@@ -555,11 +668,11 @@ const translations = {
         'footer-product-3': 'کربنات کلسیم ساده',
         'footer-product-4': 'گرید فیلر کاغذ',
         'footer-product-5': 'کربنات کلسیم گرید رنگ',
-        'footer-office': '<strong>دفتر فروش تهران</strong><br>تهران، ایران',
-        'footer-factory': '<strong>کارخانه فرآوری</strong><br>الیگودرز، لرستان، ایران',
+        'footer-office': '<strong>دفتر فروش تهران</strong><br><span>تهران، ایران</span>',
+        'footer-factory': '<strong>کارخانه فرآوری</strong><br><span>الیگودرز، لرستان، ایران</span>',
         'footer-copyright': '© ۲۰۲۶ شرکت معدنی صبابهپر ایرانیان. تمامی حقوق محفوظ است.',
-        'footer-privacy': 'حریم خصوصی',
-        'footer-terms': 'شرایط استفاده',
+        'footer-privacy': 'پروفایل شرکت',
+        'footer-terms': 'واحد فروش و پشتیبانی',
         'modal-cta': 'درخواست نمونه صنعتی',
         'about-hero-tag': 'شرکت معدنی صبابهپر ایرانیان',
         'about-hero-title': 'پیشگام در نوآوری مواد معدنی صنعتی و پودرهای میکرونیزه',
@@ -788,6 +901,7 @@ const mapIds = {
     'p-stat-3': '#p-stat-3',
     'p-stat-4': '#p-stat-4',
     'product-1-badge': '#product-1 .product-card__badge',
+    'product-6-badge': '#product-6 .product-card__badge',
     'news-hero-badge': '#news-hero-badge',
     'news-hero-title': '#news-hero-title',
     'news-hero-text': '#news-hero-text',
@@ -837,6 +951,14 @@ const mapIds = {
     'prod-asset-1-title': '#prod-asset-1-title',
     'prod-asset-1-type': '#prod-asset-1-type',
     'article-1-cta': '#article-1-cta',
+    'products-hero-tag': '#products-hero-tag',
+    'products-hero-title': '#products-hero-title',
+    'products-hero-desc': '#products-hero-desc',
+    'products-sec-badge': '#products-sec-badge',
+    'products-sec-title': '#products-sec-title',
+    'products-sec-desc': '#products-sec-desc',
+    'back-to-products': '#back-to-products',
+    'prod-contact-sales': '#prod-contact-sales',
     'back-to-news': '#back-to-news',
     'back-to-articles': '#back-to-articles',
     'home-news-2-date': '#home-news-2-date',
@@ -864,6 +986,18 @@ const mapIds = {
     'article-1-title': '#article-1-title',
     'article-1-desc': '#article-1-desc',
     'article-1-cta': '#article-1-cta',
+    'news-1-hero-tag': '#news-1-hero-tag',
+    'news-1-hero-title': '#news-1-hero-title',
+    'news-1-hero-desc': '#news-1-hero-desc',
+    'news-2-hero-tag': '#news-2-hero-tag',
+    'news-2-hero-title': '#news-2-hero-title',
+    'news-2-hero-desc': '#news-2-hero-desc',
+    'news-3-hero-tag': '#news-3-hero-tag',
+    'news-3-hero-title': '#news-3-hero-title',
+    'news-3-hero-desc': '#news-3-hero-desc',
+    'article-1-hero-badge': '#article-1-hero-badge',
+    'article-1-hero-title': '#article-1-hero-title',
+    'article-1-hero-desc': '#article-1-hero-desc',
     'article-1-page-meta': '#article-1-page-meta',
     'article-1-page-title': '#article-1-page-title',
     'article-1-page-content': '#article-1-page-content',
@@ -889,19 +1023,15 @@ const mapIds = {
     'industry-rubber-text': '#industry-rubber .industry-card__text',
     'industry-construction-title': '#industry-construction .industry-card__title',
     'industry-construction-text': '#industry-construction .industry-card__text',
-    'footer-desc': '.footer__desc',
-    'footer-products-title': '.footer__products .footer__heading',
-    'footer-contact-title': '.footer__contact .footer__heading',
-    'footer-product-1': '#footer-product-1',
-    'footer-product-2': '#footer-product-2',
-    'footer-product-3': '#footer-product-3',
-    'footer-product-4': '#footer-product-4',
-    'footer-product-5': '#footer-product-5',
-    'footer-office': '.footer__contact-item:nth-child(2) div',
-    'footer-factory': '.footer__contact-item:nth-child(3) div',
-    'footer-copyright': '.footer__bottom-inner p',
-    'footer-privacy': '.footer__bottom-links a:nth-child(1)',
-    'footer-terms': '.footer__bottom-links a:nth-child(2)',
+    'footer-desc': '#footer-desc',
+    'footer-quick-title': '#footer-quick-title',
+    'footer-knowledge-title': '#footer-knowledge-title',
+    'footer-contact-title': '#footer-contact-title',
+    'footer-office': '#footer-office',
+    'footer-factory': '#footer-factory',
+    'footer-copyright': '#footer-copyright',
+    'footer-privacy': '#footer-privacy',
+    'footer-terms': '#footer-terms',
     'phone-header': '.floating-phone__header',
     'phone-office': '#phone-office div',
     'phone-factory': '#phone-factory div',
@@ -975,68 +1105,23 @@ function changeLanguage(lang) {
         }
     });
 
-    // Update industry modal data (as it's generated dynamically)
-    if (typeof industryData !== 'undefined') {
-
-        if (lang === 'fa') {
-            industryData.paint.title = 'رنگ و رزین';
-            industryData.paint.description = 'پودر میکرونیزه کربنات کلسیم بهعنوان یکی از پرکنندههای معدنی پرکاربرد در تولید انواع رنگ، رزین و پوششهای صنعتی استفاده میشود. این ماده با برخورداری از سفیدی مطلوب و دانهبندی یکنواخت، به بهبود پوششدهی، تنظیم غلظت و ایجاد بافت مناسب در محصول نهایی کمک میکند. استفاده از گرید مناسب کربنات کلسیم میتواند ضمن حفظ کیفیت، باعث بهینهسازی فرمولاسیون و کاهش هزینههای تولید شود. این محصول در تولید رنگهای ساختمانی، رنگهای صنعتی، پرایمرها، بتونهها و انواع پوششهای پایه آب و پایه حلال کاربرد دارد. انتخاب گرید مناسب بر اساس میزان سفیدی، اندازه ذرات، جذب روغن و قابلیت پراکنش در فرمولاسیون انجام میشود.';
-            industryData.paint.specs = [];
-
-            industryData.plastics.title = 'پلاستیک و پلیمر';
-            industryData.plastics.description = 'پودر میکرونیزه کربنات کلسیم یکی از پرکنندههای معدنی پرمصرف در صنایع پلاستیک و پلیمر است و در تولید طیف گستردهای از محصولات پلیمری به کار میرود. دانهبندی کنترلشده، رطوبت پایین و پراکنشپذیری مناسب این ماده، به یکنواختی ترکیب و پایداری فرآیند تولید کمک میکند. گریدهای معمولی و کوتد کربنات کلسیم، بسته به نوع پلیمر و فرمولاسیون، برای بهبود خواص فرآیندی و تنظیم ویژگیهای محصول نهایی انتخاب میشوند. این محصول در تولید مستربچ، فیلمهای پلیمری، محصولات تزریقی، قطعات پلاستیکی و کامپاندهای پلیمری کاربرد دارد. انتخاب گرید مناسب با توجه به اندازه ذرات، میزان پوششدهی سطحی، سفیدی و الزامات محصول نهایی انجام میشود.';
-            industryData.plastics.specs = [];
-
-            industryData.pvc.title = 'PVC، UPVC و پروفیل';
-            industryData.pvc.description = 'پودر میکرونیزه کربنات کلسیم یکی از مواد معدنی مهم در فرمولاسیون محصولات PVC و UPVC است و در تولید پروفیلهای در و پنجره، دیوارپوش، قرنیز، کفپوش و قطعات ساختمانی کاربرد گسترده دارد. یکنواختی دانهبندی، سفیدی مناسب و رطوبت پایین پودر در کیفیت ظاهری محصول، پایداری فرآیند اکستروژن و یکنواختی تولید نقش دارد. گریدهای کوتد بهدلیل پراکنش بهتر در ماتریس پلیمری، در بسیاری از فرمولاسیونهای PVC مورد استفاده قرار میگیرند. انتخاب گرید مناسب با توجه به نوع محصول، درصد مصرف، سرعت تولید و ویژگیهای مکانیکی و ظاهری مورد انتظار انجام میشود. کنترل مستمر کیفیت پودر، به تولید پایدار و کاهش نوسان در فرآیند کمک میکند.';
-            industryData.pvc.specs = [];
-
-            industryData.paper.title = 'کاغذ و مقوا';
-            industryData.paper.description = 'پودر میکرونیزه کربنات کلسیم یکی از پرکنندههای معدنی پرکاربرد در صنعت کاغذ و مقوا است و در تولید انواع کاغذ و مقوای بستهبندی و چاپ استفاده میشود. این ماده میتواند به بهبود سفیدی، یکنواختی سطح و کیفیت ظاهری محصول کمک کند و در نتیجه قابلیت چاپپذیری و جلوه نهایی را ارتقا دهد. کنترل دانهبندی، خلوص و ثبات کیفیت پودر، برای دستیابی به تولید پایدار و محصول یکنواخت اهمیت بالایی دارد. کربنات کلسیم میتواند در کاربردهای فیلر و همچنین برخی فرمولاسیونهای کوتینگ مورد استفاده قرار گیرد. انتخاب گرید مناسب بر اساس نوع خط تولید، مشخصات کاغذ/مقوا و نیازهای فنی مصرفکننده انجام میشود.';
-            industryData.paper.specs = [];
-
-            industryData.feed.title = 'خوراک دام، طیور و آبزیان';
-            industryData.feed.description = 'پودر میکرونیزه کربنات کلسیم یک منبع غنی از کلسیم برای تأمین نیازهای حیاتی در صنعت خوراک دام، طیور و آبزیان محسوب میشود. این ماده در تقویت استخوانبندی، بهبود کیفیت پوسته تخممرغ در طیور و تنظیم سوختوساز بدن دام نقش کلیدی ایفا میکند. خلوص بالا، عدم وجود ناخالصیهای فلزات سنگین و دانهبندی دقیق، از ویژگیهای حائز اهمیت این پودر برای اطمینان از جذب حداکثری و سلامت محصولات نهایی است. استفاده از گرید مناسب با اندازه ذرات کنترلشده، به توزیع یکنواخت در فرمولاسیون و افزایش راندمان تولید خوراک کمک میکند. این محصول با استانداردهای بهداشتی و تغذیهای سازگاری کامل دارد و در تولید انواع کنسانترهها و مکملهای دامی، طیور و آبزیان به شکل گسترده استفاده میشود.';
-            industryData.feed.specs = [];
-
-            industryData.rubber.title = 'صنایع لاستیک و فوم';
-            industryData.rubber.description = 'پودر میکرونیزه کربنات کلسیم بهعنوان یک پرکننده معدنی کلیدی در صنایع لاستیک و فوم، نقش مؤثری در بهبود خواص فیزیکی و کاهش هزینههای تولید دارد. استفاده از این ماده در فرمولاسیون محصولات لاستیکی، علاوه بر افزایش سختی و مدول الاستیسیته، به بهبود ویژگیهای پردازشی و جریانپذیری آمیزه در فرآیند تولید کمک میکند. در صنایع تولید انواع فوم، این پودر با حفظ یکنواختی سلولی و ساختار نهایی، کیفیت و دوام محصول را ارتقا میدهد. انتخاب گرید مناسب با دانهبندی دقیق و جذب روغن بهینه، تأثیر مستقیمی بر پایداری ابعادی و مقاومت سایشی محصولات نهایی خواهد داشت.';
-            industryData.rubber.specs = [];
-
-            industryData.construction.title = 'کاشی، سرامیک و ساختمان';
-            industryData.construction.description = 'پودر میکرونیزه کربنات کلسیم در تولید انواع کاشی، سرامیک و مصالح ساختمانی بهعنوان یک ماده معدنی پرکاربرد استفاده میشود. این محصول در فرمولاسیون بدنههای سرامیکی، ملاتهای خشک، چسب کاشی، بتونه، گچهای پلیمری و پوششهای ساختمانی نقش مؤثری دارد. یکنواختی دانهبندی و کیفیت پایدار پودر، به کنترل بهتر فرآیند تولید و افزایش کیفیت محصول نهایی کمک شایانی میکند. انتخاب گرید مناسب با توجه به ویژگیهای فنی مورد نیاز و شرایط خط تولید، دستیابی به بافت مطلوب و مقاومت فیزیکی مورد انتظار را تضمین مینماید. کربنات کلسیم میکرونیزه با ایجاد خواص پرکنندگی عالی، در بهینهسازی فرمولاسیون محصولات ساختمانی و سرامیکی نقش اساسی ایفا میکند.';
-            industryData.construction.specs = [];
-        } else {
-            // Restore English industry data
-            industryData.paint.title = 'Paint & Resin';
-            industryData.paint.description = 'Micronized calcium carbonate powder is used as one of the most widely used mineral fillers in the production of various industrial paints, resins, and coatings. Having desirable whiteness and uniform granulation, it helps improve coverage, adjust viscosity, and create appropriate texture in the final product. Using the right grade of calcium carbonate can optimize formulation and reduce production costs while maintaining quality. This product is used in the production of architectural paints, industrial paints, primers, putties, and various water-based and solvent-based coatings. Selecting the right grade is based on whiteness, particle size, oil absorption, and dispersibility in the formulation.';
-            industryData.paint.specs = [];
-
-            industryData.plastics.title = 'Plastics & Polymers';
-            industryData.plastics.description = 'Micronized calcium carbonate powder is one of the most consumed mineral fillers in the plastics and polymer industries, used in producing a wide range of polymeric products. Its controlled granulation, low moisture, and good dispersibility contribute to blend uniformity and production process stability. Regular and coated calcium carbonate grades are selected based on the polymer type and formulation to improve processing properties and final product characteristics. It is applied in manufacturing masterbatches, polymer films, injection molded products, plastic parts, and polymer compounds. Grade selection considers particle size, surface coating, whiteness, and end-product requirements.';
-            industryData.plastics.specs = [];
-
-            industryData.pvc.title = 'PVC, UPVC & Profiles';
-            industryData.pvc.description = 'Micronized calcium carbonate powder is an essential mineral in PVC and UPVC product formulations, widely used in manufacturing door and window profiles, wall panels, baseboards, flooring, and construction parts. The powder\'s granulation uniformity, suitable whiteness, and low moisture impact the product\'s visual quality, extrusion stability, and production consistency. Coated grades are utilized in many PVC formulations due to better dispersion in the polymer matrix. The appropriate grade is chosen based on product type, usage percentage, production speed, and expected mechanical and visual properties. Continuous powder quality control ensures stable production and reduces process fluctuations.';
-            industryData.pvc.specs = [];
-
-            industryData.paper.title = 'Paper & Cardboard';
-            industryData.paper.description = 'Micronized calcium carbonate powder is a highly utilized mineral filler in the paper and cardboard industry, used to produce various packaging and printing papers and boards. This material improves the product\'s whiteness, surface uniformity, and visual quality, thereby enhancing printability and final appearance. Controlling the powder\'s granulation, purity, and quality stability is crucial for achieving stable production and a uniform product. Calcium carbonate is used in filler applications as well as certain coating formulations. Grade selection depends on the production line type, paper/cardboard specifications, and consumer technical needs.';
-            industryData.paper.specs = [];
-
-            industryData.feed.title = 'Animal, Poultry & Aquatic Feed';
-            industryData.feed.description = 'Micronized calcium carbonate powder is considered a rich source of calcium for meeting vital needs in the animal, poultry, and aquatic feed industry. This substance plays a key role in strengthening skeletal structure, improving eggshell quality in poultry, and regulating animal metabolism. High purity, the absence of heavy metal impurities, and precise granulation are significant features of this powder to ensure maximum absorption and final product health. Using a suitable grade with controlled particle size helps achieve uniform distribution in the formulation and increases feed production efficiency. This product fully complies with health and nutritional standards and is extensively used in producing various concentrates and supplements for livestock, poultry, and aquatic animals.';
-            industryData.feed.specs = [];
-
-            industryData.rubber.title = 'Rubber & Foam';
-            industryData.rubber.description = 'Micronized calcium carbonate powder acts as a key mineral filler in the rubber and foam industries, effectively improving physical properties and reducing production costs. Using this material in rubber product formulations not only increases hardness and elastic modulus but also improves processing characteristics and compound flowability during production. In producing various foams, this powder enhances product quality and durability by maintaining uniform cellular structure. Selecting the right grade with precise granulation and optimal oil absorption directly impacts the dimensional stability and abrasion resistance of the final products.';
-            industryData.rubber.specs = [];
-
-            industryData.construction.title = 'Tiles, Ceramics & Construction';
-            industryData.construction.description = 'Micronized calcium carbonate powder is widely used as an applied mineral in producing various tiles, ceramics, and construction materials. It effectively contributes to the formulations of ceramic bodies, dry mortars, tile adhesives, putties, polymer plasters, and construction coatings. The powder\'s uniform granulation and stable quality significantly help control the production process and enhance the final product\'s quality. Choosing the right grade based on required technical features and production line conditions ensures achieving the desired texture and physical resistance. Micronized calcium carbonate plays a fundamental role in optimizing construction and ceramic product formulations by providing excellent filling properties.';
-            industryData.construction.specs = [];
+    // If the industry modal is currently open when switching language, update its content
+    const modal = document.getElementById('industry-modal');
+    if (modal && modal.classList.contains('open')) {
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalCta = document.getElementById('modal-cta');
+        const openIndustry = modal.dataset.activeIndustry;
+        if (openIndustry && window.industryData) {
+            const data = (window.industryData[lang] && window.industryData[lang][openIndustry]) || (window.industryData.en && window.industryData.en[openIndustry]);
+            if (data) {
+                if (modalTitle) modalTitle.textContent = data.title;
+                if (modalDescription) modalDescription.textContent = data.description;
+            }
         }
-
+        if (modalCta) {
+            modalCta.textContent = (lang === 'fa') ? 'درخواست نمونه محصول' : 'Request Industry Sample';
+        }
     }
 }
 

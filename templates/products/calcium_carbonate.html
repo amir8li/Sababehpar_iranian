@@ -9,16 +9,19 @@
         <div class="container">
             <div class="product-header-grid">
                 <div>
-                    <span class="section-badge" style="background: rgba(222,131,75,0.18); color: #de834b; border: 1px solid rgba(222,131,75,0.4); margin-bottom: 1rem; display: inline-block;" id="products-top-badge">SABABEHPAR PRODUCTS</span>
+                    <a href="{% url 'products:index' %}" class="btn btn--outline-dark" id="back-to-products" style="margin-bottom: 1.75rem; display: inline-block;">← Back to Products</a>
+                    <div style="margin-bottom: 1.25rem;">
+                        <span class="section-badge" style="background: rgba(222,131,75,0.15); color: #de834b; border: 1px solid rgba(222,131,75,0.35); padding: 5px 16px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; display: inline-flex; width: fit-content;" id="products-top-badge">SABABEHPAR PRODUCTS</span>
+                    </div>
                     <h1 id="product-1-title" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #ffffff; margin-bottom: 1.5rem; line-height: 1.2;">Calcium Carbonate Powder</h1>
                     <p id="product-1-full" style="font-size: 1.1rem; color: rgba(255,255,255,0.85); line-height: 1.8;">Saba Behpar's calcium carbonate powder, relying on the high-quality Aligudarz mines, has a chemical purity of over 98% and an unparalleled whiteness index. This product, with completely uniform grading and highly accurate particle distribution tolerance, is used as one of the main mineral fillers in various industries of the country. Pipe and fitting manufacturing industries, adhesives and sealants, and tile and ceramic industries use this powder to improve the mechanical strength and dimensional stability of their products while reducing production costs. At Saba Behpar, we guarantee the quality and stability of this strategic filler in all dispatched shipments.</p>
                     <div style="margin-top: 3rem;">
-                        <a href="{% url 'contact:index' %}" class="btn btn--gold">Contact Sales</a>
+                        <a href="{% url 'contact:index' %}" class="btn btn--gold" id="prod-contact-sales">Contact Sales</a>
                     </div>
                 </div>
                 <div>
                     <div class="product-header-img-wrapper">
-                        <img src="{% static 'images/' %}product_uncoated_caco3.jpg" alt="Calcium Carbonate Powder" class="product-header-img">
+                        <img src="{% static 'images/product_uncoated_caco3.jpg' %}" alt="Calcium Carbonate Powder" class="product-header-img">
                     </div>
                 </div>
             </div>

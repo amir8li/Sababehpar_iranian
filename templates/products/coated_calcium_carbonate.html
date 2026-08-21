@@ -9,16 +9,19 @@
         <div class="container">
             <div class="product-header-grid">
                 <div>
-                    <span class="section-badge" style="background: rgba(222,131,75,0.18); color: #de834b; border: 1px solid rgba(222,131,75,0.4); margin-bottom: 1rem; display: inline-block;" id="products-top-badge">SABABEHPAR PRODUCTS</span>
+                    <a href="{% url 'products:index' %}" class="btn btn--outline-dark" id="back-to-products" style="margin-bottom: 1.75rem; display: inline-block;">← Back to Products</a>
+                    <div style="margin-bottom: 1.25rem;">
+                        <span class="section-badge" style="background: rgba(222,131,75,0.15); color: #de834b; border: 1px solid rgba(222,131,75,0.35); padding: 5px 16px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; display: inline-flex; width: fit-content;" id="products-top-badge">SABABEHPAR PRODUCTS</span>
+                    </div>
                     <h1 id="product-2-title" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #ffffff; margin-bottom: 1.5rem; line-height: 1.2;">Coated Calcium Carbonate</h1>
                     <p id="product-2-full" style="font-size: 1.1rem; color: rgba(255,255,255,0.85); line-height: 1.8;">Saba Behpar's coated calcium carbonate powder (coated with stearic acid) is designed for applications requiring high compatibility with polymeric materials. The precise coating process in our factory greatly reduces oil absorption, improves particle dispersion in the polymer matrix, and prevents powder agglomeration during the production process. This product is used as a key raw material in the manufacturing of various plastics, masterbatches, polymers, and door/window profiles. The use of Saba Behpar's coated calcium carbonate increases impact resistance and improves the final surface quality of polymeric products.</p>
                     <div style="margin-top: 3rem;">
-                        <a href="{% url 'contact:index' %}" class="btn btn--gold">Contact Sales</a>
+                        <a href="{% url 'contact:index' %}" class="btn btn--gold" id="prod-contact-sales">Contact Sales</a>
                     </div>
                 </div>
                 <div>
                     <div class="product-header-img-wrapper">
-                        <img src="{% static 'images/' %}product_coated_caco3.jpg" alt="Coated Calcium Carbonate" class="product-header-img">
+                        <img src="{% static 'images/product_coated_caco3.jpg' %}" alt="Coated Calcium Carbonate" class="product-header-img">
                     </div>
                 </div>
             </div>

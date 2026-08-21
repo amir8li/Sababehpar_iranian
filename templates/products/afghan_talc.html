@@ -9,16 +9,19 @@
         <div class="container">
             <div class="product-header-grid">
                 <div>
-                    <span class="section-badge" style="background: rgba(222,131,75,0.18); color: #de834b; border: 1px solid rgba(222,131,75,0.4); margin-bottom: 1rem; display: inline-block;" id="products-top-badge">SABABEHPAR PRODUCTS</span>
+                    <a href="{% url 'products:index' %}" class="btn btn--outline-dark" id="back-to-products" style="margin-bottom: 1.75rem; display: inline-block;">← Back to Products</a>
+                    <div style="margin-bottom: 1.25rem;">
+                        <span class="section-badge" style="background: rgba(222,131,75,0.15); color: #de834b; border: 1px solid rgba(222,131,75,0.35); padding: 5px 16px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; display: inline-flex; width: fit-content;" id="products-top-badge">SABABEHPAR PRODUCTS</span>
+                    </div>
                     <h1 id="product-6-title" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #ffffff; margin-bottom: 1.5rem; line-height: 1.2;">Afghan Talc Powder</h1>
                     <p id="product-6-full" style="font-size: 1.1rem; color: rgba(255,255,255,0.85); line-height: 1.8;">Afghan talc powder is considered one of Saba Behpar's premium and export grades due to the inherent quality of the deposits, exceptionally high whiteness, and unparalleled silicate purity. This imported product, after precise processing and micronization in Saba Behpar's production lines, is prepared for industries that require the highest level of whiteness and the lowest amount of impurities. Industries such as engineering masterbatches, industrial grade cosmetics, and high-quality writing paper are the main customers of this powder. By engineering this mineral, we at Saba Behpar provide customers with a product that meets international standards.</p>
                     <div style="margin-top: 3rem;">
-                        <a href="{% url 'contact:index' %}" class="btn btn--gold">Contact Sales</a>
+                        <a href="{% url 'contact:index' %}" class="btn btn--gold" id="prod-contact-sales">Contact Sales</a>
                     </div>
                 </div>
                 <div>
                     <div class="product-header-img-wrapper">
-                        <img src="{% static 'images/' %}talc_header.jpg" alt="Afghan Talc Powder" class="product-header-img">
+                        <img src="{% static 'images/talc_header.jpg' %}" alt="Afghan Talc Powder" class="product-header-img">
                     </div>
                 </div>
             </div>
