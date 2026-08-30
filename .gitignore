@@ -27,3 +27,7 @@ media/
 *.swp
 *.swo
 *.log
+
+db.sqlite3
+*.zip
+venv/
