@@ -243,53 +243,48 @@
                 <a href="{% url 'news:index' %}" class="btn btn--outline-dark" id="news-view-all">View All Articles →</a>
             </div>
             <div class="news__grid" id="news-grid">
-                <!-- News 1 -->
-                <article class="news-card" id="news-card-1">
-                    <div class="news-card__image">
-                        <img src="{% static 'images/factory_production_line.jpg' %}" alt="Phase II Quarry Expansion Completed" loading="lazy">
-                    </div>
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__date" id="home-news-1-date">June 2026</span>
-                            <span class="news-card__tag" id="home-news-1-tag">News</span>
+                {% if latest_news %}
+                    {% for item in latest_news %}
+                    <article class="news-card" id="news-card-{{ forloop.counter }}">
+                        <div class="news-card__image">
+                            {% if item.cover_image %}
+                                <img src="{{ item.cover_image.url }}" alt="{{ item.title }}" loading="lazy">
+                            {% elif forloop.counter == 1 %}
+                                <img src="{% static 'images/factory_production_line.jpg' %}" alt="{{ item.title }}" loading="lazy">
+                            {% elif forloop.counter == 2 %}
+                                <img src="{% static 'images/about_history.jpg' %}" alt="{{ item.title }}" loading="lazy">
+                            {% else %}
+                                <img src="{% static 'images/about_sustainability.jpg' %}" alt="{{ item.title }}" loading="lazy">
+                            {% endif %}
                         </div>
-                        <h3 class="news-card__title" id="home-news-1-title">Phase II Quarry Expansion Completed</h3>
-                        <p class="news-card__excerpt" id="home-news-1-excerpt">Sababehpar Iranian announces the completion of Phase II mining operations, increasing annual extraction capacity...</p>
-                        <a href="{% url 'news:news_1' %}" class="news-card__cta" id="home-news-1-cta">Read News →</a>
-                    </div>
-                </article>
-
-                <!-- News 2 -->
-                <article class="news-card" id="news-card-2">
-                    <div class="news-card__image">
-                        <img src="{% static 'images/about_history.jpg' %}" alt="New Laboratory Equipment Upgrades" loading="lazy">
-                    </div>
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__date" id="home-news-2-date">May 2026</span>
-                            <span class="news-card__tag" id="home-news-2-tag">Press Release</span>
+                        <div class="news-card__content">
+                            <div class="news-card__meta">
+                                <span class="news-card__date">{{ item.created_at|date:"F Y" }}</span>
+                                <span class="news-card__tag">{{ item.get_category_display|default:"News" }}</span>
+                            </div>
+                            <h3 class="news-card__title">{{ item.title }}</h3>
+                            <p class="news-card__excerpt">{{ item.summary|truncatewords:20 }}</p>
+                            <a href="{% url 'news:detail' item.slug %}" class="news-card__cta">Read News →</a>
                         </div>
-                        <h3 class="news-card__title" id="home-news-2-title">New Laboratory Equipment Upgrades</h3>
-                        <p class="news-card__excerpt" id="home-news-2-excerpt">Our R&D facility has been upgraded with the latest particle size analyzers and whiteness measurement tools to ensure...</p>
-                        <a href="{% url 'news:news_2' %}" class="news-card__cta" id="home-news-2-cta">Read News →</a>
-                    </div>
-                </article>
-
-                <!-- News 3 -->
-                <article class="news-card" id="news-card-3">
-                    <div class="news-card__image">
-                        <img src="{% static 'images/about_sustainability.jpg' %}" alt="International Mining Exhibition 2026" loading="lazy">
-                    </div>
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__date" id="home-news-3-date">April 2026</span>
-                            <span class="news-card__tag" id="home-news-3-tag">News</span>
+                    </article>
+                    {% endfor %}
+                {% else %}
+                    <!-- News 1 Fallback -->
+                    <article class="news-card" id="news-card-1">
+                        <div class="news-card__image">
+                            <img src="{% static 'images/factory_production_line.jpg' %}" alt="Phase II Quarry Expansion Completed" loading="lazy">
                         </div>
-                        <h3 class="news-card__title" id="home-news-3-title">International Mining Exhibition 2026</h3>
-                        <p class="news-card__excerpt" id="home-news-3-excerpt">Join Sababehpar Iranian at the upcoming International Mining and Minerals Exhibition. Visit our booth to learn about...</p>
-                        <a href="{% url 'news:news_3' %}" class="news-card__cta" id="home-news-3-cta">Read News →</a>
-                    </div>
-                </article>
+                        <div class="news-card__content">
+                            <div class="news-card__meta">
+                                <span class="news-card__date" id="home-news-1-date">June 2026</span>
+                                <span class="news-card__tag" id="home-news-1-tag">News</span>
+                            </div>
+                            <h3 class="news-card__title" id="home-news-1-title">Phase II Quarry Expansion Completed</h3>
+                            <p class="news-card__excerpt" id="home-news-1-excerpt">Sababehpar Iranian announces the completion of Phase II mining operations, increasing annual extraction capacity...</p>
+                            <a href="{% url 'news:news_1' %}" class="news-card__cta" id="home-news-1-cta">Read News →</a>
+                        </div>
+                    </article>
+                {% endif %}
             </div>
         </div>
     </section>

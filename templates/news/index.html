@@ -27,46 +27,42 @@
     <section style="background: #0B0E14; padding: 5rem 0;">
         <div class="container">
             <div class="article-list">
-                
-                <!-- News Item 1 -->
-                <div class="article-list-item">
-                    <div class="article-list-item__image-wrap">
-                        <img src="{% static 'images/' %}factory_production_line.jpg" alt="News 1" class="article-list-item__image">
+                {% if articles %}
+                    {% for article in articles %}
+                    <div class="article-list-item {% if forloop.counter|divisibleby:2 %}article-list-item--reverse{% endif %}">
+                        <div class="article-list-item__image-wrap">
+                            {% if article.cover_image %}
+                                <img src="{{ article.cover_image.url }}" alt="{{ article.title }}" class="article-list-item__image">
+                            {% elif forloop.counter == 1 %}
+                                <img src="{% static 'images/factory_production_line.jpg' %}" alt="{{ article.title }}" class="article-list-item__image">
+                            {% elif forloop.counter == 2 %}
+                                <img src="{% static 'images/about_history.jpg' %}" alt="{{ article.title }}" class="article-list-item__image">
+                            {% else %}
+                                <img src="{% static 'images/about_sustainability.jpg' %}" alt="{{ article.title }}" class="article-list-item__image">
+                            {% endif %}
+                        </div>
+                        <div class="article-list-item__content">
+                            <span class="article-list-item__badge">{{ article.created_at|date:"F Y" }}</span>
+                            <h3 class="article-list-item__title">{{ article.title }}</h3>
+                            <p class="article-list-item__text">{{ article.summary }}</p>
+                            <a href="{% url 'news:detail' article.slug %}" class="article-list-item__cta">Read News →</a>
+                        </div>
                     </div>
-                    <div class="article-list-item__content">
-                        <span class="article-list-item__badge" id="news-1-date">June 2026</span>
-                        <h3 class="article-list-item__title" id="news-1-title">Phase II Quarry Expansion Completed</h3>
-                        <p class="article-list-item__text" id="news-1-desc">Sababehpar Iranian completes Phase II development at Shaghez Aligoodarz quarry, increasing raw white marble extraction by 30%.</p>
-                        <a href="{% url 'news:news_1' %}" class="article-list-item__cta" id="news-1-cta">Read News →</a>
+                    {% endfor %}
+                {% else %}
+                    <!-- News Item 1 -->
+                    <div class="article-list-item">
+                        <div class="article-list-item__image-wrap">
+                            <img src="{% static 'images/factory_production_line.jpg' %}" alt="News 1" class="article-list-item__image">
+                        </div>
+                        <div class="article-list-item__content">
+                            <span class="article-list-item__badge">June 2026</span>
+                            <h3 class="article-list-item__title">Phase II Quarry Expansion Completed</h3>
+                            <p class="article-list-item__text">Sababehpar Iranian completes Phase II development at Shaghez Aligoodarz quarry, increasing raw white marble extraction by 30%.</p>
+                            <a href="{% url 'news:news_1' %}" class="article-list-item__cta">Read News →</a>
+                        </div>
                     </div>
-                </div>
-
-                <!-- News Item 2 (Reversed) -->
-                <div class="article-list-item article-list-item--reverse">
-                    <div class="article-list-item__image-wrap">
-                        <img src="{% static 'images/' %}about_history.jpg" alt="News 2" class="article-list-item__image">
-                    </div>
-                    <div class="article-list-item__content">
-                        <span class="article-list-item__badge" id="news-2-date">May 2026</span>
-                        <h3 class="article-list-item__title" id="news-2-title">AI-Driven Laser Optical Sorter Installation</h3>
-                        <p class="article-list-item__text" id="news-2-desc">Integration of automated optical sorters at Processing Plant Line III, guaranteeing 98%+ whiteness consistency across all batches.</p>
-                        <a href="{% url 'news:news_2' %}" class="article-list-item__cta" id="news-2-cta">Read News →</a>
-                    </div>
-                </div>
-
-                <!-- News Item 3 -->
-                <div class="article-list-item">
-                    <div class="article-list-item__image-wrap">
-                        <img src="{% static 'images/' %}about_sustainability.jpg" alt="News 3" class="article-list-item__image">
-                    </div>
-                    <div class="article-list-item__content">
-                        <span class="article-list-item__badge" id="news-3-date">April 2026</span>
-                        <h3 class="article-list-item__title" id="news-3-title">ISO Recertification Accomplished</h3>
-                        <p class="article-list-item__text" id="news-3-desc">Successful completion of annual international compliance audits for ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018.</p>
-                        <a href="{% url 'news:news_3' %}" class="article-list-item__cta" id="news-3-cta">Read News →</a>
-                    </div>
-                </div>
-
+                {% endif %}
             </div>
         </div>
     </section>

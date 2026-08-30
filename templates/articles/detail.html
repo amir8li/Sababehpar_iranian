@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ article.title|default:"Technical Article" }} | Sababehpar Iranian{% endblock %}
+
+{% block content %}
+    <!-- Subpage Hero Banner -->
+    <section class="hero">
+        <div class="hero__slideshow">
+            <div class="hero__slide active" style="background-image: url('{% if article.cover_image %}{{ article.cover_image.url }}{% else %}{% static 'images/ind_pvc.jpg' %}{% endif %}'); background-size: cover; background-position: center;">
+                <div class="hero__overlay"></div>
+            </div>
+        </div>
+        <div class="hero__content">
+            <span class="hero__tag" id="article-hero-badge">RESEARCH WHITEPAPER</span>
+            <h1 class="hero__title" id="article-hero-title">
+                {{ article.title }}
+            </h1>
+            {% if article.summary %}
+            <p class="hero__description" id="article-hero-desc">
+                {{ article.summary }}
+            </p>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="article-body" style="background: #0B0E14; padding: 4rem 0 6rem;">
+        <div class="container" style="max-width: 860px; margin: 0 auto;">
+            <a href="{% url 'articles_list' %}" class="btn btn--outline-dark" id="back-to-articles" style="margin-bottom: 2.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">← Back to Articles</a>
+            
+            <div class="article-meta" style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.25rem; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                <span style="color: var(--color-accent); font-weight: 600;">Research Whitepaper</span>
+                <span>•</span>
+                <span>By {{ article.author|default:"Sababehpar R&D Team" }}</span>
+                <span>•</span>
+                <span>{{ article.created_at|date:"F Y" }}</span>
+            </div>
+            
+            <h1 style="color: #FFF; font-size: 2.4rem; margin-bottom: 2rem; line-height: 1.3;">{{ article.title }}</h1>
+            
+            {% if article.cover_image %}
+            <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 2.5rem; border: 1px solid rgba(255,255,255,0.1);">
+                <img src="{{ article.cover_image.url }}" alt="{{ article.title }}" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 460px;">
+            </div>
+            {% endif %}
+            
+            <div style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 1.9;">
+                {{ article.content|safe }}
+            </div>
+
+            {% if article.pdf_file %}
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                <a href="{{ article.pdf_file.url }}" download class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download Full Technical Paper (PDF)
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

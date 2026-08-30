@@ -27,20 +27,38 @@
     <section style="background: #0B0E14; padding: 5rem 0;">
         <div class="container">
             <div class="article-list">
-                
-                <!-- Article Item 1 -->
-                <div class="article-list-item">
-                    <div class="article-list-item__image-wrap">
-                        <img src="{% static 'images/ind_pvc.jpg' %}" alt="Stearic Acid Coating Impact on PVC Processing" class="article-list-item__image">
+                {% if technical_articles %}
+                    {% for article in technical_articles %}
+                    <div class="article-list-item {% if forloop.counter|divisibleby:2 %}article-list-item--reverse{% endif %}">
+                        <div class="article-list-item__image-wrap">
+                            {% if article.cover_image %}
+                                <img src="{{ article.cover_image.url }}" alt="{{ article.title }}" class="article-list-item__image">
+                            {% else %}
+                                <img src="{% static 'images/ind_pvc.jpg' %}" alt="{{ article.title }}" class="article-list-item__image">
+                            {% endif %}
+                        </div>
+                        <div class="article-list-item__content">
+                            <span class="article-list-item__badge">{{ article.created_at|date:"F Y" }}</span>
+                            <h3 class="article-list-item__title">{{ article.title }}</h3>
+                            <p class="article-list-item__text">{{ article.summary }}</p>
+                            <a href="{% url 'article_detail' article.slug %}" class="article-list-item__cta">Read Article →</a>
+                        </div>
                     </div>
-                    <div class="article-list-item__content">
-                        <span class="article-list-item__badge" id="article-1-badge">Research Whitepaper</span>
-                        <h3 class="article-list-item__title" id="article-1-title">Stearic Acid Coating Impact on PVC Processing</h3>
-                        <p class="article-list-item__text" id="article-1-desc">Demonstrates how 1.0% surface coating reduces extruder torque by 14% and prevents screw wear during high-speed PVC pipe extrusion.</p>
-                        <a href="{% url 'article_1' %}" class="article-list-item__cta" id="article-1-cta">Read Article →</a>
+                    {% endfor %}
+                {% else %}
+                    <!-- Fallback Article Item 1 -->
+                    <div class="article-list-item">
+                        <div class="article-list-item__image-wrap">
+                            <img src="{% static 'images/ind_pvc.jpg' %}" alt="Stearic Acid Coating Impact on PVC Processing" class="article-list-item__image">
+                        </div>
+                        <div class="article-list-item__content">
+                            <span class="article-list-item__badge">Research Whitepaper</span>
+                            <h3 class="article-list-item__title">Stearic Acid Coating Impact on PVC Processing</h3>
+                            <p class="article-list-item__text">Demonstrates how 1.0% surface coating reduces extruder torque by 14% and prevents screw wear during high-speed PVC pipe extrusion.</p>
+                            <a href="{% url 'article_1' %}" class="article-list-item__cta">Read Article →</a>
+                        </div>
                     </div>
-                </div>
-
+                {% endif %}
             </div>
         </div>
     </section>
