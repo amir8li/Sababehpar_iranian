@@ -2280,7 +2280,7 @@ html[dir="rtl"] .floating-phone__popup {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../assets/images/about_hero.jpg') center/cover no-repeat;
+    background: url('../images/about_hero.jpg') center/cover no-repeat;
 }
 
 .about-grid-2col {

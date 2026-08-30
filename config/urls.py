@@ -29,6 +29,7 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('news/', include('news.urls')),
     path('articles/', news_views.articles_list, name='articles_list'),
+    path('articles/index.html', news_views.articles_list),
     path('articles/article-1/', news_views.article_1, name='article_1'),
     path('articles/article-1.html', news_views.article_1),
     path('articles/<slug:slug>/', news_views.article_detail, name='article_detail'),
@@ -42,8 +43,6 @@ from django.views.static import serve
 
 urlpatterns += [
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATICFILES_DIRS[0] if settings.STATICFILES_DIRS else settings.STATIC_ROOT}),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

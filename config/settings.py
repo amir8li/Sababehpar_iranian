@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-polgi7g@bxhg5@s$41@9l2ebv(b6bfr!riomz71ecxb4j0e4ai')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', 'False').lower() in ('true', '1')
+DEBUG = os.environ.get('DJANGO_DEBUG', 'True').lower() in ('true', '1')
 
 ALLOWED_HOSTS = [
     'sababehpariranian.com',
@@ -33,7 +33,12 @@ ALLOWED_HOSTS = [
     'www.sababehpar.com',
     'localhost',
     '127.0.0.1',
+    '0.0.0.0',
+    'testserver',
 ]
+
+if DEBUG:
+    ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://sababehpariranian.com',
@@ -151,6 +156,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# WhiteNoise configuration
+WHITENOISE_USE_FINDERS = True
 
 # Media files (User uploads, PDFs, images)
 MEDIA_URL = '/media/'

@@ -5,6 +5,7 @@ app_name = 'products'
 
 urlpatterns = [
     path('', views.product_list, name='index'),
+    path('index.html', views.product_list),
     path('calcium-carbonate/', views.calcium_carbonate, name='calcium_carbonate'),
     path('calcium-carbonate.html', views.calcium_carbonate),
     path('coated-calcium-carbonate/', views.coated_calcium_carbonate, name='coated_calcium_carbonate'),
