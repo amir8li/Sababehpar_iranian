@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Certifications & ISO Standards | Sababehpar Iranian{% endblock %}
+
+{% block content %}
+<!-- Subpage Banner -->
+    <header style="background: linear-gradient(135deg, #0A192F 0%, #16243D 100%); padding: 4rem 0 2.5rem; text-align: center;">
+        <div class="container">
+            <span class="section-badge">ISO &amp; LABORATORY CERTIFICATIONS</span>
+            <h1 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-top: 0.5rem;">ISO Certifications &amp; Standards</h1>
+            <p style="font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0.75rem auto 0;">Official ISO quality management, environmental safety certificates, MSDS sheets, and batch COA documents.</p>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <!-- Certification Download Cards -->
+    <section style="background: #0B0E14; padding: 4rem 0;">
+        <div class="container">
+            <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                
+                <div class="product-card" style="padding: 2rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏅</div>
+                    <h3 style="color: #FFF; font-size: 1.2rem; margin-bottom: 0.25rem;">ISO 9001:2015</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-bottom: 1.5rem;">Quality Management System Certification</p>
+                    <button style="padding: 10px 22px; background: #D4AF37; color: #121620; font-weight: 700; border: none; border-radius: 6px; cursor: pointer;" onclick="alert('Simulated PDF Download: ISO-9001-Sababehpar.pdf starting...')">Download ISO 9001 PDF</button>
+                </div>
+
+                <div class="product-card" style="padding: 2rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🌿</div>
+                    <h3 style="color: #FFF; font-size: 1.2rem; margin-bottom: 0.25rem;">ISO 14001:2015</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-bottom: 1.5rem;">Environmental Management Certification</p>
+                    <button style="padding: 10px 22px; background: #D4AF37; color: #121620; font-weight: 700; border: none; border-radius: 6px; cursor: pointer;" onclick="alert('Simulated PDF Download: ISO-14001-Sababehpar.pdf starting...')">Download ISO 14001 PDF</button>
+                </div>
+
+                <div class="product-card" style="padding: 2rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🛡️</div>
+                    <h3 style="color: #FFF; font-size: 1.2rem; margin-bottom: 0.25rem;">ISO 45001:2018</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; margin-bottom: 1.5rem;">Occupational Health &amp; Safety Certification</p>
+                    <button style="padding: 10px 22px; background: #D4AF37; color: #121620; font-weight: 700; border: none; border-radius: 6px; cursor: pointer;" onclick="alert('Simulated PDF Download: ISO-45001-Sababehpar.pdf starting...')">Download ISO 45001 PDF</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+{% endblock %}

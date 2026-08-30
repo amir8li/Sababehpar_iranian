@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}R&D Laboratories | Sababehpar Iranian Mining Co.{% endblock %}
+
+{% block content %}
+<!-- Subpage Banner -->
+    <header style="background: linear-gradient(135deg, #131A26 0%, #1A2438 100%); padding: 4rem 0 2.5rem; text-align: center;">
+        <div class="container">
+            <span class="section-badge">R&amp;D LABORATORIES</span>
+            <h1 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-top: 0.5rem;">R&amp;D Testing Laboratories</h1>
+            <p style="font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0.75rem auto 0;">In-house laboratory infrastructure equipped for elemental chemical assays and laser particle diffraction analysis.</p>
+        </div>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <!-- Lab Equipment Cards -->
+    <section style="background: #0B0E14; padding: 4rem 0;">
+        <div class="container">
+            <div class="grid-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                
+                <div class="product-card" style="padding: 2rem;">
+                    <strong style="color: #D4AF37; font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">XRF Spectrometer</strong>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.6;">Performs elemental X-ray fluorescence analysis verifying CaCO3 purity &amp; ensuring SiO2 and Fe2O3 remain below 0.1% thresholds.</p>
+                </div>
+
+                <div class="product-card" style="padding: 2rem;">
+                    <strong style="color: #D4AF37; font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">Malvern Laser Particle Sizer</strong>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.6;">High-precision laser diffraction analysis measuring D10, D50, and D97 particle distribution curves for uniform batch quality.</p>
+                </div>
+
+                <div class="product-card" style="padding: 2rem;">
+                    <strong style="color: #D4AF37; font-size: 1.2rem; display: block; margin-bottom: 0.5rem;">HunterLab Spectrophotometer</strong>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; line-height: 1.6;">ISO Whiteness Index (Ry) and CIELAB color measurement ensuring natural marble brightness standards (98%+).</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+{% endblock %}

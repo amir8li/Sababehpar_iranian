@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Industries | Sababehpar Iranian Mining Co.{% endblock %}
+
+{% block content %}
+<main class="page-main">
+    <section class="hero">
+        <div class="hero__slideshow">
+            <div class="hero__slide active" style="background-image: url('{% static 'images/' %}products_hero.jpg')">
+                <div class="hero__overlay"></div>
+            </div>
+        </div>
+        <div class="hero__content">
+            <p class="hero__tag" id="industries-badge">Global Reach</p>
+            <h1 class="hero__title" id="industries-hero-title">
+                Industries We<br>
+                <span class="hero__title--orange">Serve</span>
+            </h1>
+            <p class="hero__description" id="industries-hero-text">
+                High-performance mineral solutions tailored for diverse industrial applications.
+            </p>
+        </div>
+    </section>
+
+        <!-- Industries Grid -->
+        <section class="industries">
+            <div class="container">
+                <div class="products-grid">
+                
+                    <div class="industry-card products-grid__card" data-industry="paint" id="industry-paint">
+                        <img src="{% static 'images/' %}ind_paint.jpg" alt="Paint & Resin" class="products-grid__img">
+                        <div class="products-grid__content">
+                            <div class="industry-card__icon" style="display: none;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="6" x="2" y="2" rx="2"/><path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect width="4" height="6" x="8" y="16" rx="1"/></svg>
+                            </div>
+                            <h3 class="industry-card__title" id="ind-card-paint-title">Paint & Resin</h3>
+                            <p class="industry-card__text" id="ind-card-paint-desc">Essential mineral filler for paints and industrial coatings.</p>
+                        </div>
+                    </div>
+
+                    <div class="industry-card products-grid__card" data-industry="plastics" id="industry-plastics">
+                        <img src="{% static 'images/' %}ind_plastics.jpg" alt="Plastics & Polymers" class="products-grid__img">
+                        <div class="products-grid__content">
+                            <div class="industry-card__icon" style="display: none;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>
+                            </div>
+                            <h3 class="industry-card__title" id="ind-card-plastics-title">Plastics & Polymers</h3>
+                            <p class="industry-card__text" id="ind-card-plastics-desc">High-quality filler for masterbatches and polymer compounds.</p>
+                        </div>
+                    </div>
+
+                    <div class="industry-card products-grid__card" data-industry="pvc" id="industry-pvc">
+                        <img src="{% static 'images/' %}ind_pvc.jpg" alt="PVC, UPVC & Profiles" class="products-grid__img">
+                        <div class="products-grid__content">
+                            <div class="industry-card__icon" style="display: none;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                            </div>
+                            <h3 class="industry-card__title" id="ind-card-pvc-title">PVC, UPVC & Profiles</h3>
+                            <p class="industry-card__text" id="ind-card-pvc-desc">Crucial ingredient for window profiles, wall panels, and flooring.</p>
+                        </div>
+                    </div>
+
+                    <div class="industry-card products-grid__card" data-industry="paper" id="industry-paper">
+                        <img src="{% static 'images/' %}ind_paper.jpg" alt="Paper & Cardboard" class="products-grid__img">
+                        <div class="products-grid__content">
+                            <div class="industry-card__icon" style="display: none;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+                            </div>
+                            <h3 class="industry-card__title" id="ind-card-paper-title">Paper & Cardboard</h3>
+                            <p class="industry-card__text" id="ind-card-paper-desc">Improves whiteness, surface uniformity, and printability.</p>
+                        </div>
+                    </div>
+
+                    <div class="industry-card products-grid__card" data-industry="feed" id="industry-feed">
+                        <img src="{% static 'images/' %}ind_feed.jpg" alt="Animal & Poultry Feed" class="products-grid__img">
+                        <div class="products-grid__content">
+                            <div class="industry-card__icon" style="display: none;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                            </div>
+                            <h3 class="industry-card__title" id="ind-card-feed-title">Animal & Poultry Feed</h3>
+                            <p class="industry-card__text" id="ind-card-feed-desc">Rich calcium source for livestock, poultry, and aquatic feed.</p>
+                        </div>
+                    </div>
+
+                    <div class="industry-card products-grid__card" data-industry="rubber" id="industry-rubber">
+                        <img src="{% static 'images/' %}ind_rubber.jpg" alt="Rubber & Foam" class="products-grid__img">
+                        <div class="products-grid__content">
+                            <div class="industry-card__icon" style="display: none;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="22" y1="12" x2="16" y2="12"/><line x1="2" y1="12" x2="8" y2="12"/></svg>
+                            </div>
+                            <h3 class="industry-card__title" id="ind-card-rubber-title">Rubber & Foam</h3>
+                            <p class="industry-card__text" id="ind-card-rubber-desc">Enhances physical properties and flowability in rubber compounds.</p>
+                        </div>
+                    </div>
+
+                    <div class="industry-card products-grid__card" data-industry="construction" id="industry-construction">
+                        <img src="{% static 'images/' %}ind_construction.jpg" alt="Tiles & Construction" class="products-grid__img">
+                        <div class="products-grid__content">
+                            <div class="industry-card__icon" style="display: none;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 9v6"/><path d="M16 15v6"/><path d="M16 3v6"/><path d="M3 15h18"/><path d="M3 9h18"/><path d="M8 15v6"/><path d="M8 3v6"/></svg>
+                            </div>
+                            <h3 class="industry-card__title" id="ind-card-construction-title">Tiles & Construction</h3>
+                            <p class="industry-card__text" id="ind-card-construction-desc">Used in ceramic bodies, dry mortars, tile adhesives, and putties.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="industry-modal" id="industry-modal">
+        <div class="industry-modal__overlay" id="modal-overlay"></div>
+        <div class="industry-modal__content" id="modal-content">
+            <button class="industry-modal__close" id="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+            <div class="industry-modal__icon" id="modal-icon"></div>
+            <h3 class="industry-modal__title" id="modal-title"></h3>
+            <p class="industry-modal__description" id="modal-description"></p>
+            <div class="industry-modal__specs" id="modal-specs"></div>
+            <a href="{% url 'contact:index' %}" class="btn btn--gold" id="modal-cta">Request Industry Sample</a>
+        </div>
+    </div>
+{% endblock %}
