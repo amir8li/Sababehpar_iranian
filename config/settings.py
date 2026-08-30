@@ -65,9 +65,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom Apps
+    'news',
+    'articles',
     'website',
     'products',
-    'news',
     'contact',
 ]
 

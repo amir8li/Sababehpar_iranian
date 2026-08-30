@@ -8,6 +8,18 @@ from news import views as news_views
 from django.views.generic.base import RedirectView
 from website import views as website_views
 
+from django.contrib.auth.models import Group
+
+# Custom Admin Branding
+admin.site.site_header = "Sababehpar Iranian Administration"
+admin.site.site_title = "Sababehpar Admin Portal"
+admin.site.index_title = "Website Content Management"
+
+try:
+    admin.site.unregister(Group)
+except Exception:
+    pass
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('robots.txt', website_views.robots_txt, name='robots_txt'),
