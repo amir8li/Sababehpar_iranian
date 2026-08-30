@@ -6,7 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Sababehpar Iranian | Premium Calcium Carbonate Producer{% endblock %}</title>
     <meta name="description" content="{% block meta_description %}Sababehpar Iranian Mining Company — Leading producer of micronized calcium carbonate powder, GCC coated & uncoated, talc, and limestone from Aligoodarz mines.{% endblock %}">
+    <meta name="google-site-verification" content="LqmKFhASn4zLjelmQCJzwwUhEYUf7CMcQu3H6isW5zg">
     <meta name="keywords" content="calcium carbonate, CaCO3, micronized powder, GCC, mining, Iran, Aligoodarz, mineral processing, industrial minerals">
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:title" content="{% block og_title %}Sababehpar Iranian | Premium Calcium Carbonate Producer{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Leading producer of micronized calcium carbonate powder, GCC coated & uncoated, talc, and limestone from Aligoodarz mines.{% endblock %}">
+    <meta property="og:image" content="https://{{ request.get_host }}{% static 'images/logo.jpg' %}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}Sababehpar Iranian | Premium Calcium Carbonate Producer{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}Leading producer of micronized calcium carbonate powder, GCC coated & uncoated, talc, and limestone.{% endblock %}">
+    <meta name="twitter:image" content="https://{{ request.get_host }}{% static 'images/logo.jpg' %}">
+
+    <!-- Schema.org Organization Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sababehpar Iranian Mining Company",
+      "url": "https://{{ request.get_host }}/",
+      "logo": "https://{{ request.get_host }}{% static 'images/logo.jpg' %}",
+      "description": "Leading producer of micronized calcium carbonate powder, GCC coated & uncoated, talc, and limestone from Aligoodarz mines.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+98-21-77614878",
+        "contactType": "sales",
+        "email": "info@sababehpar.com",
+        "areaServed": "Global",
+        "availableLanguage": ["English", "Persian"]
+      },
+      "sameAs": [
+        "https://sababehpar.com",
+        "https://sababehpariranian.com"
+      ]
+    }
+    </script>
+
+
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

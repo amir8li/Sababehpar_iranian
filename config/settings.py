@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +21,32 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-polgi7g@bxhg5@s$41@9l2ebv(b6bfr!riomz71ecxb4j0e4ai'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-polgi7g@bxhg5@s$41@9l2ebv(b6bfr!riomz71ecxb4j0e4ai')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', 'False').lower() in ('true', '1')
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'sababehpariranian.com',
+    'www.sababehpariranian.com',
+    'sababehpar.com',
+    'www.sababehpar.com',
+    'localhost',
+    '127.0.0.1',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://sababehpariranian.com',
+    'https://www.sababehpariranian.com',
+    'https://sababehpar.com',
+    'https://www.sababehpar.com',
+    'http://sababehpariranian.com',
+    'http://www.sababehpariranian.com',
+    'http://sababehpar.com',
+    'http://www.sababehpar.com',
+]
+
+
 
 
 # Application definition
@@ -107,6 +128,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
