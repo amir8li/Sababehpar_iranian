@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -25,6 +26,9 @@ urlpatterns = [
     path('contact-us/', RedirectView.as_view(url='/contact/', permanent=True)),
     path('contact-us', RedirectView.as_view(url='/contact/', permanent=True)),
 
+]
+
+urlpatterns += i18n_patterns(
     path('', include('website.urls')),
     path('products/', include('products.urls')),
     path('news/', include('news.urls')),
@@ -35,7 +39,8 @@ urlpatterns = [
     path('articles/<slug:slug>/', news_views.article_detail, name='article_detail'),
     path('articles/<slug:slug>.html', news_views.article_detail),
     path('contact/', include('contact.urls')),
-]
+    prefix_default_language=False,
+)
 
 
 from django.urls import re_path

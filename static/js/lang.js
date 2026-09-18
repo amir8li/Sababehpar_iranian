@@ -1182,7 +1182,7 @@ function changeLanguage(lang) {
 
 // Check local storage for language preference on load
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('sababehpar-lang') || 'en';
+    const savedLang = document.documentElement.lang || 'en';
     
     // Set initial language switcher text
     const langToggle = document.getElementById('lang-toggle');
@@ -1200,13 +1200,6 @@ document.addEventListener('DOMContentLoaded', () => {
         changeLanguage(savedLang);
     }
     
-    // Ensure the language change listener calls the actual changeLanguage function
-    document.querySelectorAll('.language-selector__option').forEach(option => {
-        option.addEventListener('click', (e) => {
-            e.preventDefault();
-            const selectedLang = option.dataset.lang;
-            changeLanguage(selectedLang);
-            // The active class and text is handled in script.js by default
-        });
+    // Navigation is now handled natively via a href URLs for SEO.
     });
 });

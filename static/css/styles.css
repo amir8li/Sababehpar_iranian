@@ -2075,7 +2075,7 @@ html[dir="rtl"] .footer__links a:hover {
         gap: 0.5rem;
     }
 
-    .utility-header__link:last-child {
+    #header-email, #header-email-2, .utility-email-separator {
         display: none;
     }
 

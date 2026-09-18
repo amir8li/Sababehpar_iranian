@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile dropdown toggle logic
     document.querySelectorAll('.navbar__mobile-toggle').forEach(toggle => {
         toggle.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent navigating to href="#"
+             // Prevent navigating to href="#"
             toggle.classList.toggle('open');
             const sublinks = toggle.nextElementSibling;
             if (sublinks && sublinks.classList.contains('navbar__mobile-sublinks')) {
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.language-selector__option').forEach(option => {
         option.addEventListener('click', (e) => {
-            e.preventDefault();
+            
             document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
             option.classList.add('active');
             langToggle.childNodes[2].textContent = ` ${option.textContent.trim().substring(0, 2).toUpperCase()} `;
@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             card.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
+                    
                     card.click();
                 }
             });
