@@ -2067,6 +2067,12 @@ html[dir="rtl"] .footer__links a:hover {
 }
 
 @media (max-width: 640px) {
+    .about__image-badge {
+        bottom: 0;
+        right: 0;
+        border-radius: 12px 0 0 0;
+    }
+
     .container {
         padding: 0 1.25rem;
     }
@@ -2086,6 +2092,11 @@ html[dir="rtl"] .footer__links a:hover {
     .hero__title {
         font-size: 1.75rem;
     }
+    .section-title {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
 
     .hero__description {
         font-size: 0.95rem;
@@ -2096,13 +2107,23 @@ html[dir="rtl"] .footer__links a:hover {
     }
 
     .about__stats {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.5rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about__stat:not(:last-child)::after {
+        width: auto;
+        height: 1px;
+        right: 10%;
+        left: 10%;
+        bottom: -0.75rem;
+        top: auto;
+        background: rgba(var(--color-accent-rgb), 0.3);
     }
 
     .about__features {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .feature-card {
@@ -2265,6 +2286,12 @@ html[dir="rtl"] .floating-phone__popup {
 }
 
 @media (max-width: 640px) {
+    .about__image-badge {
+        bottom: 0;
+        right: 0;
+        border-radius: 12px 0 0 0;
+    }
+
     html[dir="rtl"] .floating-phone {
         right: 1.25rem;
     }
@@ -2850,4 +2877,18 @@ html[dir="rtl"] .navbar__mobile-sublinks.open {
 .asset-card:hover .asset-download {
     opacity: 1;
     transform: translateY(2px);
+}
+
+
+@media (max-width: 640px) {
+    .about__image-badge {
+        bottom: 0;
+        right: 0;
+        border-radius: 12px 0 0 0;
+    }
+
+    p, span, h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
 }
