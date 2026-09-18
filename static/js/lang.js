@@ -1191,7 +1191,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (option) {
             document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
             option.classList.add('active');
-            langToggle.childNodes[2].textContent = ` ${savedLang.toUpperCase()} `;
+            document.getElementById("lang-toggle-text").textContent = ` ${savedLang.toUpperCase()} `;
         }
     }
 

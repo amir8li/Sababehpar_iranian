@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
             option.classList.add('active');
-            langToggle.childNodes[2].textContent = ` ${option.textContent.trim().substring(0, 2).toUpperCase()} `;
+            document.getElementById("lang-toggle-text").textContent = ` ${option.textContent.trim().substring(0, 2).toUpperCase()} `;
             langDropdown.classList.remove('open');
         });
     });
