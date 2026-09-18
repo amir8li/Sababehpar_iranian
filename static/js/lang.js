@@ -1201,5 +1201,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Navigation is now handled natively via a href URLs for SEO.
-    });
 });
