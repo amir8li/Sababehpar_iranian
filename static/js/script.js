@@ -116,11 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.language-selector__option').forEach(option => {
         option.addEventListener('click', (e) => {
-            
+            e.preventDefault();
             document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
             option.classList.add('active');
-            document.getElementById("lang-toggle-text").textContent = ` ${option.textContent.trim().substring(0, 2).toUpperCase()} `;
+            document.getElementById("lang-toggle-text").textContent = option.dataset.lang === 'fa' ? ' FA ' : ' EN ';
             langDropdown.classList.remove('open');
+            window.location.href = option.href;
         });
     });
 
