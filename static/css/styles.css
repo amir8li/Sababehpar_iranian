@@ -250,6 +250,7 @@ html[dir="rtl"] .section-badge {
     gap: 0.4rem;
     color: rgba(255, 255, 255, 0.75);
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 .utility-header__link:hover {
@@ -2066,6 +2067,21 @@ html[dir="rtl"] .footer__links a:hover {
     }
 }
 
+@media (max-width: 992px) {
+    #header-email-2, .utility-email-separator {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #header-email {
+        display: none;
+    }
+    .utility-header__contact {
+        gap: 1rem;
+    }
+}
+
 @media (max-width: 640px) {
     .about__image-badge {
         bottom: 0;
@@ -2079,10 +2095,6 @@ html[dir="rtl"] .footer__links a:hover {
 
     .utility-header__contact {
         gap: 0.5rem;
-    }
-
-    #header-email, #header-email-2, .utility-email-separator {
-        display: none;
     }
 
     .hero {
