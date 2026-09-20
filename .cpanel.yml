@@ -1,0 +1,29 @@
+---
+deployment:
+  tasks:
+    # 1. Detect cPanel username and set application deployment directory
+    - export CPANEL_USER=${USER:-sababeh1}
+    - export DEPLOYPATH=/home/$CPANEL_USER/public_html/
+    - export VENV_PYTHON=/home/$CPANEL_USER/virtualenv/sababehpar_website/3.9/bin/python
+
+    # 2. Ensure essential runtime directories existx
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/mkdir -p $DEPLOYPATH/media
+    - /bin/mkdir -p $DEPLOYPATH/staticfiles
+    - /bin/mkdir -p $DEPLOYPATH/tmp
+
+    # 3. Preserve live production database & media uploads so git deployments do not overwrite them
+    - if [ -f $DEPLOYPATH/db.sqlite3 ]; then /bin/cp -f $DEPLOYPATH/db.sqlite3 $DEPLOYPATH/db.sqlite3.live_bak; fi
+
+    # 4. Copy all project files to the deployment target
+    - /bin/cp -R * $DEPLOYPATH/
+
+    # 5. Restore live production database
+    - if [ -f $DEPLOYPATH/db.sqlite3.live_bak ]; then /bin/mv -f $DEPLOYPATH/db.sqlite3.live_bak $DEPLOYPATH/db.sqlite3; fi
+
+    # 6. Run database migrations & collect static files (if virtual environment exists)
+    - if [ -f $VENV_PYTHON ]; then $VENV_PYTHON $DEPLOYPATH/manage.py migrate --noinput; fi
+    - if [ -f $VENV_PYTHON ]; then $VENV_PYTHON $DEPLOYPATH/manage.py collectstatic --noinput; fi
+
+    # 7. Signal Phusion Passenger to reload the Python application immediately
+    - /bin/touch $DEPLOYPATH/tmp/restart.txt
