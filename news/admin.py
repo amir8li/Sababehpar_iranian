@@ -1,16 +1,22 @@
 from django.contrib import admin
-from .models import NewsArticle, TechnicalArticle
+from .models import NewsArticle
 
 @admin.register(NewsArticle)
 class NewsArticleAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'is_published', 'created_at')
     list_filter = ('category', 'is_published', 'created_at')
-    search_fields = ('title', 'summary', 'content')
+    list_editable = ('is_published',)
+    search_fields = ('title', 'title_fa', 'summary', 'summary_fa', 'content')
     prepopulated_fields = {'slug': ('title',)}
-
-@admin.register(TechnicalArticle)
-class TechnicalArticleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'author', 'is_published', 'created_at')
-    list_filter = ('is_published', 'created_at')
-    search_fields = ('title', 'author', 'summary')
-    prepopulated_fields = {'slug': ('title',)}
+    fieldsets = (
+        ('English Content', {
+            'fields': ('title', 'slug', 'category', 'summary', 'content', 'cover_image')
+        }),
+        ('Persian / Farsi Content (محتوای فارسی)', {
+            'fields': ('title_fa', 'summary_fa', 'content_fa'),
+            'classes': ('collapse',),
+        }),
+        ('Publication Settings', {
+            'fields': ('is_published',)
+        }),
+    )

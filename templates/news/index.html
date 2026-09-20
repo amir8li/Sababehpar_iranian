@@ -25,6 +25,29 @@
 <section style="background: #0B0E14; padding: 5rem 0;">
 <div class="container">
 <div class="article-list">
+{% if articles %}
+    {% for article in articles %}
+    <div class="article-list-item {% if forloop.counter|divisibleby:2 %}article-list-item--reverse{% endif %}">
+        <div class="article-list-item__image-wrap">
+            {% if article.cover_image %}
+                <img src="{{ article.cover_image.url }}" alt="{{ article.title }}" class="article-list-item__image" loading="lazy">
+            {% elif forloop.counter == 1 %}
+                <img src="{% static 'images/factory_production_line.webp' %}" alt="{{ article.title }}" class="article-list-item__image" loading="lazy">
+            {% elif forloop.counter == 2 %}
+                <img src="{% static 'images/about_history.webp' %}" alt="{{ article.title }}" class="article-list-item__image" loading="lazy">
+            {% else %}
+                <img src="{% static 'images/about_sustainability.webp' %}" alt="{{ article.title }}" class="article-list-item__image" loading="lazy">
+            {% endif %}
+        </div>
+        <div class="article-list-item__content">
+            <span class="article-list-item__badge">{{ article.created_at|date:"F Y" }}</span>
+            <h3 class="article-list-item__title">{{ article.title }}</h3>
+            <p class="article-list-item__text">{{ article.summary }}</p>
+            <a href="{% url 'news:detail' article.slug %}" class="article-list-item__cta">Read News →</a>
+        </div>
+    </div>
+    {% endfor %}
+{% else %}
 <!-- News Item 1 -->
 <div class="article-list-item">
 <div class="article-list-item__image-wrap">
@@ -61,6 +84,7 @@
 <a class="article-list-item__cta" href="{% url 'news:news_3' %}" id="news-3-cta">Read News →</a>
 </div>
 </div>
+{% endif %}
 </div>
 </div>
 </section>
