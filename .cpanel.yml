@@ -7,22 +7,23 @@ deployment:
     - export VENV_PYTHON=$VENV_DIR/bin/python
     - export VENV_PIP=$VENV_DIR/bin/pip
 
-    # معرفی صریح مسیرهای site-packages به پایتون
-    - export PYTHONPATH=$VENV_DIR/lib/python3.9/site-packages:$VENV_DIR/lib64/python3.9/site-packages:$DEPLOYPATH:$PYTHONPATH
-
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/mkdir -p $DEPLOYPATH/media
     - /bin/mkdir -p $DEPLOYPATH/staticfiles
     - /bin/mkdir -p $DEPLOYPATH/tmp
 
+    # 1. نصب و کپی تضمینی پکیج Pillow به دایرکتوری lib
     - if [ -f $VENV_PIP ]; then $VENV_PIP install Pillow; fi
+    - /bin/mkdir -p $VENV_DIR/lib/python3.9/site-packages/
+    - if [ -d $VENV_DIR/lib64/python3.9/site-packages/PIL ]; then /bin/cp -rf $VENV_DIR/lib64/python3.9/site-packages/PIL* $VENV_DIR/lib/python3.9/site-packages/; fi
+    - if [ -d $VENV_DIR/lib64/python3.9/site-packages/pillow* ]; then /bin/cp -rf $VENV_DIR/lib64/python3.9/site-packages/pillow* $VENV_DIR/lib/python3.9/site-packages/; fi
 
     - if [ -f $DEPLOYPATH/db.sqlite3 ]; then /bin/cp -f $DEPLOYPATH/db.sqlite3 $DEPLOYPATH/db.sqlite3.live_bak; fi
     - /bin/cp -rf . $DEPLOYPATH/
     - if [ -f $DEPLOYPATH/db.sqlite3.live_bak ]; then /bin/mv -f $DEPLOYPATH/db.sqlite3.live_bak $DEPLOYPATH/db.sqlite3; fi
 
-    # اجرای مایگریشن با متغیر PYTHONPATH تنظیم‌شده
-    - if [ -f $VENV_PYTHON ]; then $VENV_PYTHON $DEPLOYPATH/manage.py migrate --noinput; fi
-    - if [ -f $VENV_PYTHON ]; then $VENV_PYTHON $DEPLOYPATH/manage.py collectstatic --noinput; fi
+    # 2. تزریق مستقیم PYTHONPATH در خط اجرای migrate و collectstatic
+    - if [ -f $VENV_PYTHON ]; then PYTHONPATH=$VENV_DIR/lib64/python3.9/site-packages:$VENV_DIR/lib/python3.9/site-packages:$DEPLOYPATH $VENV_PYTHON $DEPLOYPATH/manage.py migrate --noinput; fi
+    - if [ -f $VENV_PYTHON ]; then PYTHONPATH=$VENV_DIR/lib64/python3.9/site-packages:$VENV_DIR/lib/python3.9/site-packages:$DEPLOYPATH $VENV_PYTHON $DEPLOYPATH/manage.py collectstatic --noinput; fi
 
     - /bin/touch $DEPLOYPATH/tmp/restart.txt
