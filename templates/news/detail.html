@@ -13,12 +13,12 @@
         </div>
         <div class="hero__content">
             <span class="hero__tag">{{ article.get_category_display|default:"COMPANY NEWS" }}</span>
-            <h1 class="hero__title">
-                {{ article.title }}
+            <h1 class="hero__title" data-en="{{ article.title }}" data-fa="{{ article.title_fa|default:article.title }}">
+                {{ article.display_title }}
             </h1>
-            {% if article.summary %}
-            <p class="hero__description">
-                {{ article.summary }}
+            {% if article.summary or article.summary_fa %}
+            <p class="hero__description" data-en="{{ article.summary }}" data-fa="{{ article.summary_fa|default:article.summary }}">
+                {{ article.display_summary }}
             </p>
             {% endif %}
         </div>
@@ -27,22 +27,22 @@
     <!-- Article Content -->
     <section class="article-body" style="background: #0B0E14; padding: 4rem 0 6rem;">
         <div class="container" style="max-width: 800px; margin: 0 auto;">
-            <a href="{% url 'news:index' %}" class="btn btn--outline-dark" id="back-to-news" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">← Back to News</a>
+            <a href="{% url 'news:index' %}" class="btn btn--outline-dark" id="back-to-news" data-en="← Back to News" data-fa="← بازگشت به اخبار" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">{% if LANGUAGE_CODE == 'fa' %}← بازگشت به اخبار{% else %}← Back to News{% endif %}</a>
             <div class="article-meta" style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.25rem; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
                 <span style="color: var(--color-accent); font-weight: 600;">{{ article.get_category_display|default:"News" }}</span>
                 <span>•</span>
                 <span>{{ article.created_at|date:"F Y" }}</span>
             </div>
-            <h1 style="color: #FFF; font-size: 2.5rem; margin-bottom: 1.5rem; line-height: 1.2;">{{ article.title }}</h1>
+            <h1 style="color: #FFF; font-size: 2.5rem; margin-bottom: 1.5rem; line-height: 1.2;" data-en="{{ article.title }}" data-fa="{{ article.title_fa|default:article.title }}">{{ article.display_title }}</h1>
             
             {% if article.cover_image %}
             <div style="position: relative; border-radius: 12px; overflow: hidden; margin-bottom: 2.5rem; border: 1px solid rgba(255,255,255,0.1);">
-                <img src="{{ article.cover_image.url }}" alt="{{ article.title }}" style="width: 100%; border-radius: 12px; display: block;">
+                <img src="{{ article.cover_image.url }}" alt="{{ article.display_title }}" style="width: 100%; border-radius: 12px; display: block;">
             </div>
             {% endif %}
             
-            <div style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 1.9;">
-                {{ article.content|safe }}
+            <div class="article-body-content" data-en="{{ article.content|safe }}" data-fa="{{ article.content_fa|default:article.content|safe }}" style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 1.9;">
+                {{ article.display_content|safe }}
             </div>
         </div>
     </section>

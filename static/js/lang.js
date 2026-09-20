@@ -1092,6 +1092,20 @@ function changeLanguage(lang) {
         document.documentElement.setAttribute('dir', 'ltr');
     }
     
+    // Switch all dynamic bilingual elements (supports database-driven news and articles from django-admin)
+    document.querySelectorAll('[data-en][data-fa]').forEach(el => {
+        const faVal = el.getAttribute('data-fa');
+        const enVal = el.getAttribute('data-en');
+        const text = (lang === 'fa' || lang === 'ar') ? ((faVal && faVal !== 'None') ? faVal : enVal) : enVal;
+        if (text) {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = text;
+            } else {
+                el.innerHTML = text;
+            }
+        }
+    });
+
     // SVG Dropdown Arrow Icon
     const dropdownArrowSvg = `<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><path d="m6 9 6 6 6-6"/></svg>`;
 

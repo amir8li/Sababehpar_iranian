@@ -14,7 +14,6 @@ class NewsArticleAdmin(admin.ModelAdmin):
         }),
         ('Persian / Farsi Content (محتوای فارسی)', {
             'fields': ('title_fa', 'summary_fa', 'content_fa'),
-            'classes': ('collapse',),
         }),
         ('Publication Settings', {
             'fields': ('is_published',)

@@ -29,6 +29,30 @@ class NewsArticle(models.Model):
     def __str__(self):
         return self.title
 
+    @property
+    def display_title(self):
+        from django.utils import translation
+        lang = translation.get_language()
+        if lang and lang.startswith('fa') and self.title_fa:
+            return self.title_fa
+        return self.title
+
+    @property
+    def display_summary(self):
+        from django.utils import translation
+        lang = translation.get_language()
+        if lang and lang.startswith('fa') and self.summary_fa:
+            return self.summary_fa
+        return self.summary
+
+    @property
+    def display_content(self):
+        from django.utils import translation
+        lang = translation.get_language()
+        if lang and lang.startswith('fa') and self.content_fa:
+            return self.content_fa
+        return self.content
+
 
 class TechnicalArticle(models.Model):
     title = models.CharField(max_length=255)
@@ -51,3 +75,27 @@ class TechnicalArticle(models.Model):
 
     def __str__(self):
         return self.title
+
+    @property
+    def display_title(self):
+        from django.utils import translation
+        lang = translation.get_language()
+        if lang and lang.startswith('fa') and self.title_fa:
+            return self.title_fa
+        return self.title
+
+    @property
+    def display_summary(self):
+        from django.utils import translation
+        lang = translation.get_language()
+        if lang and lang.startswith('fa') and self.summary_fa:
+            return self.summary_fa
+        return self.summary
+
+    @property
+    def display_content(self):
+        from django.utils import translation
+        lang = translation.get_language()
+        if lang and lang.startswith('fa') and self.content_fa:
+            return self.content_fa
+        return self.content

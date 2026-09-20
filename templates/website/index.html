@@ -255,9 +255,9 @@
                 <span class="news-card__date">{{ item.created_at|date:"F Y" }}</span>
                 <span class="news-card__tag">{{ item.get_category_display|default:"News" }}</span>
             </div>
-            <h3 class="news-card__title">{{ item.title }}</h3>
-            <p class="news-card__excerpt">{{ item.summary|truncatewords:20 }}</p>
-            <a href="{% url 'news:detail' item.slug %}" class="news-card__cta">Read News →</a>
+            <h3 class="news-card__title" data-en="{{ item.title }}" data-fa="{{ item.title_fa|default:item.title }}">{{ item.display_title }}</h3>
+            <p class="news-card__excerpt" data-en="{{ item.summary|truncatewords:20 }}" data-fa="{{ item.summary_fa|default:item.summary|truncatewords:20 }}">{{ item.display_summary|truncatewords:20 }}</p>
+            <a href="{% url 'news:detail' item.slug %}" class="news-card__cta" data-en="Read News →" data-fa="خواندن خبر ←">{% if LANGUAGE_CODE == 'fa' %}خواندن خبر ←{% else %}Read News →{% endif %}</a>
         </div>
     </article>
     {% endfor %}
