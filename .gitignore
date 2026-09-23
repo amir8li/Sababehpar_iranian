@@ -28,3 +28,8 @@ staticfiles/
 *.swp
 *.swo
 *.log
+
+# Ignore non-webp images to enforce optimization
+*.jpg
+*.jpeg
+*.png
