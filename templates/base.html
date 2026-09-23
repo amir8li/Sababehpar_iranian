@@ -17,13 +17,13 @@
     <meta property="og:url" content="{{ request.build_absolute_uri }}">
     <meta property="og:title" content="{% block og_title %}Sababehpar Iranian | Premium Calcium Carbonate Producer{% endblock %}">
     <meta property="og:description" content="{% block og_description %}Leading producer of micronized calcium carbonate powder, GCC coated & uncoated, talc, and limestone from Aligoodarz mines.{% endblock %}">
-    <meta property="og:image" content="https://{{ request.get_host }}{% static 'images/logo.jpg' %}">
+    <meta property="og:image" content="https://{{ request.get_host }}{% static 'images/logo.webp' %}">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{% block twitter_title %}Sababehpar Iranian | Premium Calcium Carbonate Producer{% endblock %}">
     <meta name="twitter:description" content="{% block twitter_description %}Leading producer of micronized calcium carbonate powder, GCC coated & uncoated, talc, and limestone.{% endblock %}">
-    <meta name="twitter:image" content="https://{{ request.get_host }}{% static 'images/logo.jpg' %}">
+    <meta name="twitter:image" content="https://{{ request.get_host }}{% static 'images/logo.webp' %}">
 
     <!-- Schema.org Organization Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -32,7 +32,7 @@
       "@type": "Organization",
       "name": "Sababehpar Iranian Mining Company",
       "url": "https://{{ request.get_host }}/",
-      "logo": "https://{{ request.get_host }}{% static 'images/logo.jpg' %}",
+      "logo": "https://{{ request.get_host }}{% static 'images/logo.webp' %}",
       "description": "Leading producer of micronized calcium carbonate powder, GCC coated & uncoated, talc, and limestone from Aligoodarz mines.",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -129,7 +129,7 @@
         <div class="container navbar__inner">
             <a href="{% url 'website:home' %}" class="navbar__brand" id="brand-logo" style="text-decoration: none;">
                 <div class="navbar__logo">
-                    <img src="{% static 'images/logo.jpg' %}" alt="Sababehpar Logo" width="50" height="48" style="height: 48px; width: auto; object-fit: contain; background: white; padding: 4px; border-radius: 8px;">
+                    <img src="{% static 'images/logo.webp' %}" alt="Sababehpar Logo" width="50" height="48" style="height: 48px; width: auto; object-fit: contain; background: white; padding: 4px; border-radius: 8px;">
                 </div>
                 <div class="navbar__brand-text">
                     <span class="navbar__title" id="brand-title">Sababehpar Iranian</span>
