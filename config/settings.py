@@ -31,7 +31,6 @@ ALLOWED_HOSTS = [
     'www.sababehpariranian.com',
     'sababehpar.com',
     'www.sababehpar.com',
-    '.liara.run',
     'localhost',
     '127.0.0.1',
     '0.0.0.0',
@@ -50,15 +49,7 @@ CSRF_TRUSTED_ORIGINS = [
     'http://www.sababehpariranian.com',
     'http://sababehpar.com',
     'http://www.sababehpar.com',
-    'https://*.liara.run',
-    'http://*.liara.run',
 ]
-
-# Liara reverse proxy & SSL settings
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-USE_X_FORWARDED_HOST = True
-USE_X_FORWARDED_PORT = True
-
 
 
 
@@ -196,46 +187,6 @@ if ORIG_MEDIA.exists():
                 shutil.copytree(item, target)
             else:
                 shutil.copy2(item, target)
-
-# Ensure storage and media directories have full permissions (chmod 777)
-try:
-    os.chmod(STORAGE_DIR, 0o777)
-except Exception:
-    pass
-
-try:
-    os.chmod(MEDIA_ROOT, 0o777)
-except Exception:
-    pass
-
-# Ensure upload directories exist and are writable
-for sub in ['news_covers', 'article_covers', 'technical_papers', 'products', 'product_tds', 'product_coa']:
-    sub_path = MEDIA_ROOT / sub
-    sub_path.mkdir(parents=True, exist_ok=True)
-    try:
-        os.chmod(sub_path, 0o777)
-    except Exception:
-        pass
-
-# Ensure any existing files in MEDIA_ROOT are readable by Nginx
-for root_dir, dirs, files in os.walk(MEDIA_ROOT):
-    for d in dirs:
-        try:
-            os.chmod(os.path.join(root_dir, d), 0o777)
-        except Exception:
-            pass
-    for f in files:
-        try:
-            os.chmod(os.path.join(root_dir, f), 0o666)
-        except Exception:
-            pass
-
-# Upload size limits & permissions (support up to 100 MB uploads)
-DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600
-FILE_UPLOAD_MAX_MEMORY_SIZE = 104857600
-FILE_UPLOAD_PERMISSIONS = 0o666
-FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o777
-FILE_UPLOAD_TEMP_DIR = '/tmp'
 
 # Email
 MAILERS = {
