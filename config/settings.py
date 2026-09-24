@@ -109,14 +109,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
-# Support Liara persistent disk at /app/storage, /storage, or local BASE_DIR / 'storage'
-if Path('/app/storage').is_dir():
-    STORAGE_DIR = Path('/app/storage')
-elif Path('/storage').is_dir() and not (BASE_DIR / 'storage').is_dir():
-    STORAGE_DIR = Path('/storage')
-else:
-    STORAGE_DIR = BASE_DIR / 'storage'
-
+STORAGE_DIR = BASE_DIR / 'storage'
 STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 DB_PATH = STORAGE_DIR / 'db.sqlite3'
 ORIG_DB = BASE_DIR / 'db.sqlite3'
@@ -183,11 +176,6 @@ WHITENOISE_USE_FINDERS = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = STORAGE_DIR / 'media'
 MEDIA_ROOT.mkdir(parents=True, exist_ok=True)
-try:
-    os.chmod(MEDIA_ROOT, 0o777)
-except Exception:
-    pass
-
 ORIG_MEDIA = BASE_DIR / 'media'
 
 if ORIG_MEDIA.exists():
@@ -199,22 +187,6 @@ if ORIG_MEDIA.exists():
                 shutil.copytree(item, target)
             else:
                 shutil.copy2(item, target)
-
-# Ensure upload directories exist and are writable
-for sub in ['news_covers', 'article_covers', 'technical_papers', 'products', 'product_tds', 'product_coa']:
-    sub_path = MEDIA_ROOT / sub
-    sub_path.mkdir(parents=True, exist_ok=True)
-    try:
-        os.chmod(sub_path, 0o777)
-    except Exception:
-        pass
-
-# File upload permissions and limits (support up to 100 MB uploads)
-FILE_UPLOAD_PERMISSIONS = 0o664
-FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o775
-DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600
-FILE_UPLOAD_MAX_MEMORY_SIZE = 104857600
-FILE_UPLOAD_TEMP_DIR = '/tmp'
 
 # Email
 MAILERS = {
