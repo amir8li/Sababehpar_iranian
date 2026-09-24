@@ -1,5 +1,12 @@
 {
-"build": {
-   "location": "germany"
+   "build": {
+      "location": "germany"
+   },
+   "disks": [
+      {
+         "name": "sababehpar-dashboard",
+         "mountTo": "storage"
+      }
+   ]
 }
-}
+
