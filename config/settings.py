@@ -188,6 +188,17 @@ if ORIG_MEDIA.exists():
             else:
                 shutil.copy2(item, target)
 
+# Ensure upload directories exist
+for sub in ['news_covers', 'article_covers', 'technical_papers', 'products', 'product_tds', 'product_coa']:
+    (MEDIA_ROOT / sub).mkdir(parents=True, exist_ok=True)
+
+# Upload size limits & permissions (support up to 100 MB uploads)
+DATA_UPLOAD_MAX_MEMORY_SIZE = 104857600
+FILE_UPLOAD_MAX_MEMORY_SIZE = 104857600
+FILE_UPLOAD_PERMISSIONS = 0o664
+FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o775
+FILE_UPLOAD_TEMP_DIR = '/tmp'
+
 # Email
 MAILERS = {
     'default': {
