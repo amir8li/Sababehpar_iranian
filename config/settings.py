@@ -109,10 +109,20 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
+STORAGE_DIR = BASE_DIR / 'storage'
+STORAGE_DIR.mkdir(parents=True, exist_ok=True)
+DB_PATH = STORAGE_DIR / 'db.sqlite3'
+ORIG_DB = BASE_DIR / 'db.sqlite3'
+
+# If persistent storage DB does not exist or is empty, seed it from original repository database
+if (not DB_PATH.exists() or DB_PATH.stat().st_size == 0) and ORIG_DB.exists():
+    import shutil
+    shutil.copy2(ORIG_DB, DB_PATH)
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'storage' / 'db.sqlite3',
+        'NAME': DB_PATH,
     }
 }
 
@@ -164,7 +174,19 @@ WHITENOISE_USE_FINDERS = True
 
 # Media files (User uploads, PDFs, images)
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = STORAGE_DIR / 'media'
+MEDIA_ROOT.mkdir(parents=True, exist_ok=True)
+ORIG_MEDIA = BASE_DIR / 'media'
+
+if ORIG_MEDIA.exists():
+    for item in ORIG_MEDIA.glob('*'):
+        target = MEDIA_ROOT / item.name
+        if not target.exists():
+            import shutil
+            if item.is_dir():
+                shutil.copytree(item, target)
+            else:
+                shutil.copy2(item, target)
 
 # Email
 MAILERS = {

@@ -13,6 +13,7 @@ __pycache__/
 # Django local database & media
 db.sqlite3
 db.sqlite3-journal
+storage/
 media/
 staticfiles/
 
