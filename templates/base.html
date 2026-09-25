@@ -61,18 +61,99 @@
     <style>
         .footer__inner {
             display: grid !important;
-            grid-template-columns: 1.4fr 1fr 1fr 1.3fr !important;
-            gap: 1.75rem !important;
+            grid-template-columns: 1.4fr 1fr 1.3fr !important;
+            gap: 2.5rem !important;
             align-items: start !important;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             .footer__inner {
                 grid-template-columns: 1fr 1fr !important;
+                gap: 2rem !important;
+            }
+            .footer__col--brand {
+                grid-column: 1 / -1;
             }
         }
         @media (max-width: 576px) {
             .footer__inner {
                 grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            .footer__col--brand {
+                grid-column: auto;
+            }
+        }
+        .footer__bottom-inner {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            flex-wrap: wrap !important;
+            gap: 1rem !important;
+        }
+        .footer__dev-credit {
+            margin: 0;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.45);
+            text-align: center;
+        }
+        .dev-author {
+            position: relative;
+            display: inline-block;
+        }
+        .dev-author__link {
+            color: #de834b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+        .dev-author__link:hover {
+            color: #f3a879;
+            text-decoration: underline;
+        }
+        .dev-author__tooltip {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%) translateY(4px);
+            background: #0f1623;
+            border: 1px solid rgba(222, 131, 75, 0.45);
+            color: #ffffff;
+            padding: 5px 11px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+            max-width: 90vw;
+        }
+        .dev-author__tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: #0f1623 transparent transparent transparent;
+        }
+        .dev-author:hover .dev-author__tooltip {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+        @media (max-width: 860px) {
+            .footer__bottom-inner {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 0.75rem !important;
             }
         }
     </style>
@@ -254,31 +335,21 @@
                 </div>
             </div>
 
-            <!-- Col 2: Quick Links -->
+            <!-- Col 2: Quick Links (Updated per new navbar) -->
             <div class="footer__col">
                 <h4 class="footer__heading" id="footer-quick-title">Quick Links</h4>
                 <ul class="footer__links">
                     <li><a href="{% url 'website:home' %}" id="footer-link-home">Home</a></li>
                     <li><a href="{% url 'website:about' %}" id="footer-link-about">About Us</a></li>
-                    <li><a href="{% url 'products:index' %}" id="footer-link-products">Products Catalog</a></li>
-                    <li><a href="{% url 'website:industries' %}" id="footer-link-industries">Industries Served</a></li>
-                    <li><a href="{% url 'news:index' %}" id="footer-link-news">News &amp; Media</a></li>
+                    <li><a href="{% url 'products:index' %}" id="footer-link-products">Products</a></li>
+                    <li><a href="{% url 'website:industries' %}" id="footer-link-industries">Industries</a></li>
+                    <li><a href="{% url 'news:index' %}" id="footer-link-news">News</a></li>
+                    <li><a href="{% url 'articles_list' %}" id="footer-link-articles">Articles</a></li>
                     <li><a href="{% url 'contact:index' %}" id="footer-link-contact">Contact Us</a></li>
                 </ul>
             </div>
 
-            <!-- Col 3: Standards & Quality -->
-            <div class="footer__col">
-                <h4 class="footer__heading" id="footer-knowledge-title">Standards &amp; Quality</h4>
-                <ul class="footer__links">
-                    <li><a href="{% url 'website:quality_control' %}" id="footer-kc-qc">Quality Control</a></li>
-                    <li><a href="{% url 'website:labs' %}" id="footer-kc-labs">R&D Laboratories</a></li>
-                    <li><a href="{% url 'website:certifications' %}" id="footer-kc-certs">Certifications &amp; ISO</a></li>
-                    <li><a href="{% url 'articles_list' %}" id="footer-kc-articles">Technical Articles</a></li>
-                </ul>
-            </div>
-
-            <!-- Col 4: Contact & Locations -->
+            <!-- Col 3: Contact Us -->
             <div class="footer__col footer__col--contact">
                 <h4 class="footer__heading" id="footer-contact-title">Contact Us</h4>
                 <div class="footer__contact-list">
@@ -316,6 +387,24 @@
         <div class="footer__bottom">
             <div class="container footer__bottom-inner">
                 <p id="footer-copyright">&copy; 2026 Sababehpar Iranian Mining Company. All rights reserved.</p>
+                <p class="footer__dev-credit" dir="ltr">
+                    designed and developed by 
+                    <span class="dev-author">
+                        <a href="https://www.linkedin.com/in/mobin-shekari-ardekani/" target="_blank" rel="noopener noreferrer" class="dev-author__link">Mobin Shekari Ardekani</a>
+                        <span class="dev-author__tooltip">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#0A66C2" style="flex-shrink:0;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <span>https://www.linkedin.com/in/mobin-shekari-ardekani/</span>
+                        </span>
+                    </span>
+                    &amp; 
+                    <span class="dev-author">
+                        <a href="https://www.linkedin.com/in/amirali-rahnamania/" target="_blank" rel="noopener noreferrer" class="dev-author__link">AmirAli Rahnamania</a>
+                        <span class="dev-author__tooltip">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#0A66C2" style="flex-shrink:0;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <span>https://www.linkedin.com/in/amirali-rahnamania/</span>
+                        </span>
+                    </span>
+                </p>
                 <div class="footer__bottom-links">
                     <a href="{% url 'website:about' %}" id="footer-privacy">Company Profile</a>
                     <a href="{% url 'contact:index' %}" id="footer-terms">Sales &amp; Support</a>
