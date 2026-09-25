@@ -370,8 +370,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{% static 'js/lang.js' %}?v=2"></script>
-    <script src="{% static 'js/script.js' %}?v=2"></script>
+    <script src="{% static 'js/lang.js' %}?v={% now 'U' %}"></script>
+    <script src="{% static 'js/script.js' %}?v={% now 'U' %}"></script>
     {% block extra_js %}{% endblock %}
 </body>
 </html>

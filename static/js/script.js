@@ -117,9 +117,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.language-selector__option').forEach(option => {
         option.addEventListener('click', (e) => {
             e.preventDefault();
+            const lang = option.dataset.lang || 'en';
+            localStorage.setItem('sababehpar-lang', lang);
             document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
             option.classList.add('active');
-            document.getElementById("lang-toggle-text").textContent = option.dataset.lang === 'fa' ? ' FA ' : ' EN ';
+            const langToggleText = document.getElementById("lang-toggle-text");
+            if (langToggleText) {
+                langToggleText.textContent = lang === 'fa' ? ' FA ' : ' EN ';
+            }
             langDropdown.classList.remove('open');
             window.location.href = option.href;
         });
@@ -323,10 +328,28 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
+    function getActiveLanguage() {
+        const html = document.documentElement;
+        const htmlLang = (html ? (html.getAttribute('lang') || html.lang) : '') || '';
+        if (htmlLang.toLowerCase().startsWith('fa') || htmlLang.toLowerCase().startsWith('ar')) return 'fa';
+        if (htmlLang.toLowerCase().startsWith('en')) return 'en';
+
+        const path = window.location.pathname;
+        if (path.startsWith('/fa/') || path === '/fa') {
+            return 'fa';
+        }
+
+        const dir = (html ? html.getAttribute('dir') : '') || '';
+        if (dir.toLowerCase() === 'rtl') return 'fa';
+        if (dir.toLowerCase() === 'ltr') return 'en';
+
+        return 'en';
+    }
+
     document.querySelectorAll('.industry-card').forEach(card => {
         card.addEventListener('click', () => {
             const industry = card.dataset.industry;
-            const currentLang = localStorage.getItem('sababehpar-lang') || 'en';
+            const currentLang = getActiveLanguage();
             const langData = (window.industryData && window.industryData[currentLang]) 
                 ? window.industryData[currentLang] 
                 : (window.industryData && window.industryData.en ? window.industryData.en : window.industryData);
@@ -350,12 +373,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (modalCta) {
                 if (currentLang === 'fa') {
                     modalCta.textContent = 'درخواست نمونه محصول';
+                    modalCta.href = '/fa/contact/';
                 } else {
                     modalCta.textContent = 'Request Industry Sample';
+                    modalCta.href = '/contact/';
                 }
             }
 
             if (modal) {
+                modal.setAttribute('dir', currentLang === 'fa' ? 'rtl' : 'ltr');
                 modal.dataset.activeIndustry = industry;
                 modal.classList.add('open');
                 document.body.style.overflow = 'hidden';
@@ -484,7 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Prevent trigger if clicking directly on a mailto link
                 if (e.target.tagName === 'A') return;
 
-                const currentLang = localStorage.getItem('sababehpar-lang') || 'en';
+                const currentLang = getActiveLanguage();
                 const pNameKey = `mgmt-p${index + 1}-name`;
                 const pRoleKey = `mgmt-p${index + 1}-role`;
                 const pBioKey = `mgmt-p${index + 1}-bio`;
@@ -512,6 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     modalEmailLink.textContent = emailEl.href.replace('mailto:', '');
                 }
 
+                teamModal.setAttribute('dir', currentLang === 'fa' ? 'rtl' : 'ltr');
                 teamModal.style.display = 'flex';
                 teamModal.setAttribute('aria-hidden', 'false');
                 document.body.style.overflow = 'hidden';

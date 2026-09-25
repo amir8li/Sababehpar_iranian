@@ -1082,8 +1082,11 @@ const mapIds = {
 };
 
 function changeLanguage(lang) {
-    // Save language to localStorage
+    // Save language to localStorage and documentElement
     localStorage.setItem('sababehpar-lang', lang);
+    if (document.documentElement) {
+        document.documentElement.lang = lang;
+    }
     
     // Switch dir attribute for styling (RTL/LTR)
     if (lang === 'fa' || lang === 'ar') {
@@ -1177,6 +1180,7 @@ function changeLanguage(lang) {
     // If the industry modal is currently open when switching language, update its content
     const modal = document.getElementById('industry-modal');
     if (modal && modal.classList.contains('open')) {
+        modal.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
         const modalTitle = document.getElementById('modal-title');
         const modalDescription = document.getElementById('modal-description');
         const modalCta = document.getElementById('modal-cta');
@@ -1189,30 +1193,41 @@ function changeLanguage(lang) {
             }
         }
         if (modalCta) {
-            modalCta.textContent = (lang === 'fa') ? 'درخواست نمونه محصول' : 'Request Industry Sample';
+            if (lang === 'fa') {
+                modalCta.textContent = 'درخواست نمونه محصول';
+                modalCta.href = '/fa/contact/';
+            } else {
+                modalCta.textContent = 'Request Industry Sample';
+                modalCta.href = '/contact/';
+            }
         }
     }
 }
 
-// Check local storage for language preference on load
+// Check language preference on load
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = document.documentElement.lang || 'en';
+    const isFa = (document.documentElement.lang && document.documentElement.lang.toLowerCase().startsWith('fa'))
+        || window.location.pathname.startsWith('/fa/')
+        || window.location.pathname === '/fa'
+        || (document.documentElement.getAttribute('dir') === 'rtl');
+    const pageLang = isFa ? 'fa' : 'en';
+    
+    localStorage.setItem('sababehpar-lang', pageLang);
+    if (document.documentElement) {
+        document.documentElement.lang = pageLang;
+    }
     
     // Set initial language switcher text
-    const langToggle = document.getElementById('lang-toggle');
-    if (langToggle && savedLang !== 'en') {
-        const option = document.querySelector(`.language-selector__option[data-lang="${savedLang}"]`);
-        if (option) {
-            document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
-            option.classList.add('active');
-            document.getElementById("lang-toggle-text").textContent = ` ${savedLang.toUpperCase()} `;
-        }
+    const langToggleText = document.getElementById("lang-toggle-text");
+    if (langToggleText) {
+        langToggleText.textContent = ` ${pageLang.toUpperCase()} `;
+    }
+    const option = document.querySelector(`.language-selector__option[data-lang="${pageLang}"]`);
+    if (option) {
+        document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
+        option.classList.add('active');
     }
 
-    // Apply the saved language immediately
-    if (savedLang !== 'en') {
-        changeLanguage(savedLang);
-    }
-    
-    // Navigation is now handled natively via a href URLs for SEO.
+    // Apply translations for the active page language
+    changeLanguage(pageLang);
 });
