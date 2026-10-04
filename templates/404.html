@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Page Not Found" %} | Sababehpar Iranian{% endblock %}
+
+{% block content %}
+<section style="background: linear-gradient(135deg, #0A192F 0%, #16243D 100%); min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 4rem 1rem;">
+    <div class="container">
+        <h1 style="font-size: clamp(4rem, 10vw, 8rem); font-weight: 900; color: #de834b; margin-bottom: 0; line-height: 1; text-shadow: 0 10px 30px rgba(222,131,75,0.2);">404</h1>
+        
+        <h2 style="font-size: clamp(1.5rem, 4vw, 2.5rem); color: #FFF; font-weight: 700; margin: 1rem 0 1.5rem;">
+            {% if LANGUAGE_CODE == 'fa' %}
+            صفحه مورد نظر پیدا نشد!
+            {% else %}
+            Page Not Found!
+            {% endif %}
+        </h2>
+        
+        <p style="color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 600px; margin: 0 auto 2.5rem; line-height: 1.6;">
+            {% if LANGUAGE_CODE == 'fa' %}
+            متاسفانه آدرسی که به دنبال آن هستید تغییر کرده و یا دیگر وجود ندارد. ممکن است این صفحه در نسخه قبلی سایت بوده باشد.
+            {% else %}
+            Unfortunately, the page you are looking for has been moved or no longer exists. It may have belonged to an older version of our website.
+            {% endif %}
+        </p>
+
+        <a href="{% url 'website:home' %}" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: #de834b; color: #fff; text-decoration: none; font-weight: 700; border-radius: 8px; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(222,131,75,0.4); transition: transform 0.3s, box-shadow 0.3s;">
+            {% if LANGUAGE_CODE == 'fa' %}
+            بازگشت به صفحه اصلی
+            {% else %}
+            Return to Homepage
+            {% endif %}
+        </a>
+    </div>
+</section>
+{% endblock %}
