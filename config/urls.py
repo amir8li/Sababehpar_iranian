@@ -44,6 +44,11 @@ urlpatterns = [
     path('درباره-ما-2', RedirectView.as_view(url='/fa/about/', permanent=True)),
     path('%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7-2/', RedirectView.as_view(url='/fa/about/', permanent=True)),
     path('%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7-2', RedirectView.as_view(url='/fa/about/', permanent=True)),
+    path('پودر-میکرونیزه/', RedirectView.as_view(url='/fa/products/', permanent=True)),
+    path('پودر-میکرونیزه', RedirectView.as_view(url='/fa/products/', permanent=True)),
+    path('%d9%be%d9%88%d8%af%d8%b1-%d9%85%db%8c%da%a9%d8%b1%d9%88%d9%86%db%8c%d8%b2%d9%87/', RedirectView.as_view(url='/fa/products/', permanent=True)),
+    path('%d9%be%d9%88%d8%af%d8%b1-%d9%85%db%8c%da%a9%d8%b1%d9%88%d9%86%db%8c%d8%b2%d9%87', RedirectView.as_view(url='/fa/products/', permanent=True)),
+
 
 
 ]
