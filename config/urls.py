@@ -38,6 +38,12 @@ urlpatterns = [
     path('contact-us/', RedirectView.as_view(url='/contact/', permanent=True)),
     path('contact-us', RedirectView.as_view(url='/contact/', permanent=True)),
 
+    path('درباره-ما-2/', RedirectView.as_view(url='/fa/about/', permanent=True)),
+    path('درباره-ما-2', RedirectView.as_view(url='/fa/about/', permanent=True)),
+    path('%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7-2/', RedirectView.as_view(url='/fa/about/', permanent=True)),
+    path('%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7-2', RedirectView.as_view(url='/fa/about/', permanent=True)),
+
+
 ]
 
 urlpatterns += i18n_patterns(
