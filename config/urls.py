@@ -7,6 +7,7 @@ from django.conf.urls.static import static
 from news import views as news_views
 
 from django.views.generic.base import RedirectView
+from django.views.generic import TemplateView
 from website import views as website_views
 
 from django.contrib.auth.models import Group
@@ -23,6 +24,7 @@ except Exception:
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('robots.txt', website_views.robots_txt, name='robots_txt'),
     path('sitemap.xml', website_views.sitemap_xml, name='sitemap_xml'),
     
