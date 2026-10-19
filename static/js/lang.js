@@ -152,10 +152,10 @@ const translations = {
         'home-news-1-date': 'June 2026',
         'news-1-page-meta': '<span style="color: var(--color-accent); font-weight: 600;">News</span><span>•</span><span>June 2026</span>',
         'news-1-page-title': 'Phase II Quarry Expansion Completed',
-        'news-1-page-content': '<p>Sababehpar Iranian is proud to announce the successful completion of our Phase II development at the Shaghez Aligoodarz quarry. This major infrastructure investment has increased our raw white marble extraction capacity by over 30%.</p><h2>Meeting Global Demand</h2><p>With the rising global demand for ultra-high purity calcium carbonate across the polymer and paint industries, securing a steady stream of raw material is paramount. The new extraction zones tap into a remarkably pure vein of marble, ensuring that our downstream processing facilities operate at peak efficiency.</p><p>We are committed to sustainable mining practices. As part of this expansion, new ecological restoration protocols have been implemented to ensure that extracted zones are rehabilitated concurrently.</p>',
+        'news-1-page-content': '<p>Sababehpar Iranian is proud to announce the successful completion of our Phase II development at the Shaghez Aligoodarz quarry. This major infrastructure investment has increased our raw calcium carbonate extraction capacity by over 30%.</p><h2>Meeting Industrial Demand</h2><p>With the rising demand for ultra-high purity calcium carbonate across the polymer and paint industries, securing a steady stream of raw material is paramount. The new extraction zones tap into a remarkably pure vein of mineral ore, ensuring that our downstream processing facilities operate at peak efficiency.</p><p>We are committed to sustainable mining practices. As part of this expansion, new ecological restoration protocols have been implemented to ensure that extracted zones are rehabilitated concurrently.</p>',
         'home-news-1-tag': 'News',
         'home-news-1-title': 'Phase II Quarry Expansion Completed',
-        'news-1-desc': 'Sababehpar Iranian completes Phase II development at Shaghez Aligoodarz quarry, increasing raw white marble extraction by 30%.',
+        'news-1-desc': 'Sababehpar Iranian completes Phase II development at Shaghez Aligoodarz quarry, increasing raw calcium carbonate extraction capacity by 30%.',
         'home-news-1-excerpt': 'Sababehpar Iranian announces the completion of Phase II mining operations, increasing annual extraction capacity...',
         'home-news-1-cta': 'Read News →',
         'home-news-2-cta': 'Read News →',
@@ -237,7 +237,7 @@ const translations = {
         'article-1-cta': 'Read Article →',
         'news-1-hero-tag': 'CORPORATE MILESTONE',
         'news-1-hero-title': 'Phase II Quarry Expansion<br><span class="hero__title--orange">Successfully Completed</span>',
-        'news-1-hero-desc': 'Scaling white marble extraction capacity to meet rising global B2B demand.',
+        'news-1-hero-desc': 'Scaling high-purity calcium carbonate extraction capacity to meet rising industrial demand.',
         'news-2-hero-tag': 'R&D INNOVATION',
         'news-2-hero-title': 'AI-Driven Optical Sorter<br><span class="hero__title--orange">Processing Line Upgrades</span>',
         'news-2-hero-desc': 'Guaranteed 98%+ whiteness index and automated impurity separation.',
@@ -263,7 +263,7 @@ const translations = {
         'industries-subtitle': 'Our mineral products serve as essential raw materials across diverse manufacturing sectors. Click any industry to learn more.',
 
         'industries-badge': 'Global Reach',
-        'industries-hero-title': 'Industries We<br><span class="hero__title--orange">Serve</span>',
+        'industries-hero-title': 'Target Industries &<br><span class="hero__title--orange">Applications</span>',
         'industries-hero-text': 'High-performance mineral solutions tailored for diverse industrial applications.',
         'industry-paint-title': 'Paint & Resin',
         'industry-paint-text': 'Essential mineral filler for paints and industrial coatings.',
@@ -310,16 +310,16 @@ const translations = {
         'modal-cta': 'Request Industry Sample',
         'about-hero-tag': 'SABABEHPAR IRANIAN MINING CO.',
         'about-hero-title': 'Pioneering Industrial Minerals & Powder Innovation',
-        'about-hero-desc': 'From raw marble quarry extraction in Shaghez Aligoodarz to high-precision ball mill micronizing, Sababehpar Iranian delivers pure calcium carbonate and talc powders to global B2B manufacturers.',
+        'about-hero-desc': 'From high-purity calcium carbonate quarry extraction in Shaghez Aligoodarz to high-precision ball mill micronizing, Sababehpar Iranian delivers pure calcium carbonate and talc powders to leading domestic and international manufacturers.',
         'about-history-badge': '01',
         'about-history-title': 'History & Company Foundations',
-        'about-history-p1': '<strong>1. Founding & Mining Rights (1993):</strong> Sababehpar Iranian Mining Company was established in 1993 after acquiring direct mining extraction rights at the world-renowned Shaghez marble deposits in Aligoodarz, Lorestan province.',
-        'about-history-p2': '<strong>2. Vertical Integration Strategy:</strong> Unlike standard processing trading firms, Sababehpar operates fully vertically integrated operations — controlling raw quarry block selection, crushing, continuous ball mill micronizing, and automated packaging under one roof.',
-        'about-history-p3': '<strong>3. Exceptional Chemical Purity (+98% CaCO3):</strong> Aligoodarz marble is internationally recognized for its crystalline structure and ultra-high chemical purity, yielding natural whiteness indices exceeding 98.0% with minimal silica impurities.',
+        'about-history-p1': '<strong>1. Founding & Mining Rights:</strong> Sababehpar Iranian Mining Company was established after acquiring direct mining extraction rights at the world-renowned Shaghez calcium carbonate deposits in Aligoodarz, Lorestan province.',
+        'about-history-p2': '<strong>2. Vertical Integration Strategy:</strong> Unlike standard processing trading firms, Sababehpar operates fully vertically integrated operations — controlling raw mineral ore extraction, crushing, continuous ball mill micronizing, and automated packaging under one roof.',
+        'about-history-p3': '<strong>3. Exceptional Chemical Purity (+98% CaCO3):</strong> Aligoodarz calcium carbonate is internationally recognized for its crystalline structure and ultra-high chemical purity, yielding natural whiteness indices exceeding 98.0% with minimal silica impurities.',
         'about-history-p4': '<strong>4. Automated Micronizing Lines & Coating:</strong> Our Aligoodarz processing plant operates 6 automated production lines, including specialized high-temperature stearic acid surface treatment units for polymer extrusion grades.',
-        'about-history-p5': '<strong>5. Scaled B2B Capacity (60,000+ Tons):</strong> With an annual processing capacity exceeding 60,000 metric tons, Sababehpar serves domestic and regional polymer, coating, masterbatch, mortar, and paper manufacturing industries.',
-        'about-history-img-tag': 'SHAGHEZ ALIGOODARZ QUARRY',
-        'about-history-img-title': 'Automated Wire-Saw Extraction',
+        'about-history-p5': '<strong>5. Scaled Capacity (60,000+ Tons):</strong> With an annual processing capacity exceeding 60,000 metric tons, Sababehpar serves domestic and regional polymer, coating, masterbatch, mortar, and paper manufacturing industries.',
+        'about-history-img-tag': 'SABABEHPAR INDUSTRIAL COMPLEX',
+        'about-history-img-title': 'Advanced Crushing & Processing Facility',
         'about-team-badge': '02',
         'about-team-title': 'Executive Management Team',
         'about-team-subtitle': 'Leadership, geological expertise, and chemical engineering innovation driving Sababehpar forward.',
@@ -394,7 +394,7 @@ const translations = {
         'mgmt-gov-card3-desc': 'Direct board-level engagement for customized micronized powder specifications, bulk logistics, and long-term industrial supply agreements.',
         'products-hero-tag': 'HIGH-PURITY INDUSTRIAL MINERAL POWDERS',
         'products-hero-title': 'Sababehpar Manufactured Product Catalog',
-        'products-hero-desc': 'Mined directly from our ultra-white Shaghez Aligoodarz marble deposits and micronized via 6 continuous ball mills. Sababehpar Iranian produces stearic acid coated calcium carbonate, ultra-fine uncoated GCC, industrial talc powder, paper grade extenders, and dry-mix construction minerals for B2B manufacturers worldwide.',
+        'products-hero-desc': 'Mined directly from our ultra-white Shaghez Aligoodarz calcium carbonate deposits and micronized via 6 continuous ball mills. Sababehpar Iranian produces stearic acid coated calcium carbonate, ultra-fine uncoated GCC, industrial talc powder, paper grade extenders, and dry-mix construction minerals for leading manufacturers worldwide.',
         'products-sec-badge': 'PRODUCT LINES',
         'products-sec-title': 'Select a Product Line to View Technical Specifications',
         'products-sec-desc': 'Click any product card below to explore mesh sizing charts, chemical purity analyses (XRF), and Certificate of Analysis (COA) datasheets.',
@@ -406,7 +406,7 @@ const translations = {
         'pcard-1-cta': 'View Coated CaCO₃ Specs & PDFs →',
         'pcard-2-tag': 'Natural Uncoated Grade',
         'pcard-2-title': 'Uncoated Micronized Calcium Carbonate',
-        'pcard-2-desc': 'Natural ground marble calcium carbonate with +98% chemical purity and 98%+ natural brightness. Ideal for water-based coatings, adhesives, and rubber formulations.',
+        'pcard-2-desc': 'Natural ground calcium carbonate with +98% chemical purity and 98%+ natural brightness. Ideal for water-based coatings, adhesives, and rubber formulations.',
         'pcard-2-spec1': '• <strong>Purity & Mesh:</strong> +98% CaCO₃ | 400 to 3500 Mesh (D90: < 8µm)',
         'pcard-2-spec2': '• <strong>Applications:</strong> Emulsion Paints, Adhesives, Rubber, Sealants & Putty',
         'pcard-2-cta': 'View Uncoated CaCO₃ Specs & PDFs →',
@@ -430,7 +430,7 @@ const translations = {
         'pcard-5-cta': 'View Construction Specs & PDFs →',
         'caco3-badge': 'HIGH-PURITY GCC PRODUCT GROUP',
         'caco3-title': 'Calcium Carbonate (GCC) Product Group',
-        'caco3-desc': 'Ultra-white micronized calcium carbonate manufactured from Aligoodarz marble deposits. Available in stearic acid surface-coated, ultra-fine uncoated, paper filler, and dry-mix construction mineral grades.',
+        'caco3-desc': 'Ultra-white micronized calcium carbonate manufactured from Aligoodarz calcium carbonate deposits. Available in stearic acid surface-coated, ultra-fine uncoated, paper filler, and dry-mix construction mineral grades.',
         'caco3-spec-title': 'Technical Specification & Sieve Analysis',
         'caco3-th-grade': 'Grade Name',
         'caco3-th-purity': 'CaCO3 Purity',
@@ -456,9 +456,9 @@ const translations = {
         'contact-details-title': 'Sababehpar Iranian Mining Co.',
         'contact-details-desc': 'Sababehpar Iranian Mining Company specializes in the extraction and processing of high-purity calcium carbonate. We are ready to answer your questions and fulfill your orders.',
         'contact-office-title': 'Tehran Office',
-        'contact-office-addr': 'Tehran, Shariati Ave, Hoghoughi St, No. 60, Ground Floor',
+        'contact-office-addr': 'Tehran, Shariati Ave, Hoghoughi St, No. 60, 5th Floor',
         'contact-factory-title': 'Aligoodarz Factory',
-        'contact-factory-addr': 'Lorestan, Aligoodarz, 5th km of Old Road',
+        'contact-factory-addr': 'Lorestan, Aligoodarz, 5th km of Old Isfahan Road',
         'contact-phone-title': 'Phone Numbers',
         'contact-social-title': 'Social Media',
         'phone-popup-header': 'Quick Contact',
@@ -492,7 +492,7 @@ const translations = {
         'brand-subtitle': 'شرکت معدنی',
         
         'hero-tag': 'راهکارهای معدنی برتر از سال ۱۳۷۲',
-        'hero-title': 'تولیدکننده پیشرو <br><span class="hero__title--orange">کربنات کلسیم</span> در ایران',
+        'hero-title': 'تولیدکننده پیشرو <br><span class="hero__title--orange" style="white-space: nowrap;">کربنات کلسیم</span> در ایران',
         'hero-desc': 'پودرهای میکرونیزه کربنات کلسیم با خلوص بالا از معادن الیگودرز.<br>تأمین‌کننده صنایع رنگ، پلاستیک، ساختمان و کاغذ در جهان.',
         'hero-cta-explore': 'آشنایی با شرکت',
         'hero-cta-products': 'مشاهده محصولات',
@@ -500,7 +500,7 @@ const translations = {
         'about-badge-text': 'سال سابقه درخشان',
         'about-tag': '<span class="section-badge">01</span> درباره صبابهپر ایرانیان',
         'about-title': 'نامی معتبر در <span class="gold-text">فرآوری مواد معدنی</span>',
-        'about-text-1': 'شرکت معدنی صبابهپر ایرانیان در استخراج و فرآوری کربنات کلسیم با خلوص بالا از معادن ممتاز <strong>شاقز، الیگودرز</strong> تخصص دارد. ما با بهره‌گیری از خطوط تولید مدرن و کنترل کیفیت دقیق، پودرهای میکرونیزه برتر را به صنایع ایران و منطقه عرضه می‌کنیم.',
+        'about-text-1': 'شرکت معدنی صبابهپر ایرانیان در استخراج و فرآوری <span style="white-space: nowrap;">کربنات کلسیم</span> با خلوص بالا از معادن ممتاز <strong>شاقز، الیگودرز</strong> تخصص دارد. ما با بهره‌گیری از خطوط تولید مدرن و کنترل کیفیت دقیق، پودرهای میکرونیزه برتر را به صنایع ایران و منطقه عرضه می‌کنیم.',
         'about-text-2': 'عملیات یکپارچه ما — از معدن تا محصول نهایی — سطوح بی‌نظیر خلوص و توزیع دقیق اندازه ذرات متناسب با مشخصات تولیدی هر مشتری را تضمین می‌کند.',
         'about-learn-more': 'بیشتر بدانید <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>',
         'stat-experience-label': 'سال تجربه',
@@ -543,10 +543,10 @@ const translations = {
         'home-news-1-date': 'خرداد ۱۴۰۵',
         'news-1-page-meta': '<span style="color: var(--color-accent); font-weight: 600;">اخبار</span><span>•</span><span>خرداد ۱۴۰۵</span>',
         'news-1-page-title': 'تکمیل فاز دوم توسعه معدن',
-        'news-1-page-content': '<p>شرکت صبابهپر ایرانیان با افتخار اتمام موفقیت‌آمیز فاز دوم توسعه در معدن شاقز الیگودرز را اعلام می‌کند. این سرمایه‌گذاری بزرگ زیرساختی، ظرفیت استخراج سنگ مرمر سفید خام ما را بیش از ۳۰٪ افزایش داده است.</p><h2>تأمین تقاضای جهانی</h2><p>با افزایش تقاضای جهانی برای کربنات کلسیم با خلوص فوق‌العاده در صنایع پلیمر و رنگ، تضمین جریان ثابت مواد اولیه امری حیاتی است. مناطق جدید استخراج به رگه‌ای بسیار خالص از مرمر دسترسی دارند و اطمینان می‌دهند که تجهیزات فرآوری ما با حداکثر کارایی عمل می‌کنند.</p><p>ما به شیوه‌های معدن‌کاری پایدار متعهد هستیم. به عنوان بخشی از این توسعه، پروتکل‌های جدید احیای زیست‌محیطی اجرا شده‌اند تا اطمینان حاصل شود مناطق استخراج‌شده به طور همزمان بازسازی می‌شوند.</p>',
+        'news-1-page-content': '<p>شرکت صبابهپر ایرانیان با افتخار اتمام موفقیت‌آمیز فاز دوم توسعه در معدن شاقز الیگودرز را اعلام می‌کند. این سرمایه‌گذاری بزرگ زیرساختی، ظرفیت استخراج سنگ کربنات کلسیم خام ما را بیش از ۳۰٪ افزایش داده است.</p><h2>تأمین تقاضای صنایع</h2><p>با افزایش تقاضا برای کربنات کلسیم با خلوص فوق‌العاده در صنایع پلیمر و رنگ، تضمین جریان ثابت مواد اولیه امری حیاتی است. مناطق جدید استخراج به رگه‌ای بسیار خالص از کانسار کربنات دسترسی دارند و اطمینان می‌دهند که تجهیزات فرآوری ما با حداکثر کارایی عمل می‌کنند.</p><p>ما به شیوه‌های معدن‌کاری پایدار متعهد هستیم. به عنوان بخشی از این توسعه، پروتکل‌های جدید احیای زیست‌محیطی اجرا شده‌اند تا اطمینان حاصل شود مناطق استخراج‌شده به طور همزمان بازسازی می‌شوند.</p>',
         'home-news-1-tag': 'اخبار',
         'home-news-1-title': 'توسعه عملیات معدنی الیگودرز: فاز دوم',
-        'news-1-desc': 'صبابهپر ایرانیان فاز دوم توسعه را در معدن شاقز الیگودرز تکمیل کرد و استخراج مرمر سفید خام را ۳۰٪ افزایش داد.',
+        'news-1-desc': 'صبابهپر ایرانیان فاز دوم توسعه را در معدن شاقز الیگودرز تکمیل کرد و استخراج سنگ کربنات خام را ۳۰٪ افزایش داد.',
         'home-news-1-excerpt': 'صبابهپر ایرانیان از آغاز فاز دوم عملیات معدنی خبر داد که ظرفیت استخراج سالانه را ۳۰٪ افزایش می‌دهد...',
         'home-news-1-cta': 'خواندن خبر ←',
         'home-news-2-cta': 'خواندن خبر ←',
@@ -628,7 +628,7 @@ const translations = {
         'article-1-cta': 'خواندن مقاله ←',
         'news-1-hero-tag': 'دستاوردهای شرکتی',
         'news-1-hero-title': 'تکمیل موفقیت‌آمیز فاز دوم<br><span class="hero__title--orange">توسعه معدن</span>',
-        'news-1-hero-desc': 'افزایش ظرفیت استخراج سنگ مرمر سفید برای پاسخگویی به تقاضای صنایع جهانی.',
+        'news-1-hero-desc': 'افزایش ظرفیت استخراج سنگ کربنات با خلوص بالا برای پاسخگویی به تقاضای صنایع.',
         'news-2-hero-tag': 'نوآوری تحقیق و توسعه',
         'news-2-hero-title': 'ارتقاء خطوط پردازش با<br><span class="hero__title--orange">سورتینگ هوشمند AI</span>',
         'news-2-hero-desc': 'تضمین شاخص سفیدی بالای ۹۸٪ و جداسازی هوشمند ناخالصی‌ها.',
@@ -653,7 +653,7 @@ const translations = {
         'industries-subtitle': 'محصولات معدنی ما به عنوان مواد اولیه ضروری در بخش‌های مختلف تولید عمل می‌کنند. برای اطلاعات بیشتر روی هر صنعت کلیک کنید.',
 
         'industries-badge': 'دسترسی جهانی',
-        'industries-hero-title': 'صنایعی که به آنها<br><span class="hero__title--orange">خدمت می‌کنیم</span>',
+        'industries-hero-title': 'صنایع هدف و<br><span class="hero__title--orange">کاربرد محصولات</span>',
         'industries-hero-text': 'راه‌حل‌های معدنی با کارایی بالا، سفارشی‌سازی شده برای کاربردهای متنوع صنعتی.',
         'industry-paint-title': 'رنگ و رزین',
         'industry-paint-text': 'پرکننده معدنی پرکاربرد در تولید انواع رنگ و پوشش‌های صنعتی.',
@@ -696,16 +696,16 @@ const translations = {
         'modal-cta': 'درخواست نمونه صنعتی',
         'about-hero-tag': 'شرکت معدنی صبابهپر ایرانیان',
         'about-hero-title': 'پیشگام در نوآوری مواد معدنی صنعتی و پودرهای میکرونیزه',
-        'about-hero-desc': 'از استخراج سنگ مرمر در معادن شاقز الیگودرز تا میکرونیزاسیون پیشرفته، صبابهپر ایرانیان تامین‌کننده کربنات کلسیم و تالک خالص صنایع B2B جهانی است.',
+        'about-hero-desc': 'از استخراج سنگ کربنات در معادن شاقز الیگودرز تا میکرونیزاسیون پیشرفته، صبابهپر ایرانیان تأمین‌کننده پودرهای میکرونیزه <span style="white-space: nowrap;">کربنات کلسیم</span> و تالک با خلوص بالا برای صنایع تولیدی داخلی و صادراتی است.',
         'about-history-badge': '۰۱',
         'about-history-title': 'تاریخچه و بنیان‌های شرکت',
-        'about-history-p1': '<strong>۱. تأسیس و حقوق بهره‌برداری (۱۳۷۲):</strong> شرکت معدنی صبابهپر ایرانیان در سال ۱۳۷۲ پس از اخذ حقوق بهره‌برداری مستقیم از معادن مرمر شاقز الیگودرز تاسیس شد.',
-        'about-history-p2': '<strong>۲. استراتژی یکپارچه‌سازی عمودی:</strong> برخلاف بازرگانی‌های عادی، صبابهپر کنترل کامل از استخراج کوپ، خردایش تا میکرونیزاسیون و بسته‌بندی را بر عهده دارد.',
-        'about-history-p3': '<strong>۳. خلوص شیمیایی فوق‌العاده (۹۸٪+ CaCO3):</strong> مرمر الیگودرز دارای سفیدی طبیعی بالای ۹۸٪ و حداقل ناخالصی سیلیس است.',
+        'about-history-p1': '<strong>۱. تأسیس و حقوق بهره‌برداری (۱۳۹۲):</strong> شرکت معدنی صبابهپر ایرانیان پس از اخذ حقوق بهره‌برداری مستقیم از معادن غنی سنگ کربنات شاقز الیگودرز تأسیس شد.',
+        'about-history-p2': '<strong>۲. استراتژی یکپارچه‌سازی عمودی:</strong> برخلاف بازرگانی‌های عادی، صبابهپر کنترل کامل از استخراج سنگ معدنی، خردایش تا میکرونیزاسیون و بسته‌بندی را بر عهده دارد.',
+        'about-history-p3': '<strong>۳. خلوص شیمیایی فوق‌العاده (۹۸٪+ CaCO3):</strong> سنگ کربنات کلسیم الیگودرز دارای سفیدی طبیعی بالای ۹۸٪ و حداقل ناخالصی سیلیس است.',
         'about-history-p4': '<strong>۴. خطوط میکرونیزه و پوشش‌دهی:</strong> بهره‌برداری از ۶ خط تولید اتوماتیک شامل واحدهای پوشش‌دهی با اسید استئاریک.',
         'about-history-p5': '<strong>۵. ظرفیت صنعتی ۶۰,۰۰۰ تن:</strong> ظرفیت سالانه ۶۰,۰۰۰ تن برای تامین صنایع پلیمر، رنگ، مستربچ و کاغذ.',
-        'about-history-img-tag': 'معدن شاقز الیگودرز',
-        'about-history-img-title': 'استخراج مکانیزه با سیم‌بر',
+        'about-history-img-tag': 'مجتمع کارخانجات صبابهپر الیگودرز',
+        'about-history-img-title': 'خطوط پیشرفته خردایش و فرآوری سنگ کربنات',
         'about-team-badge': '۰۲',
         'about-team-title': 'تیم مدیریت ارشد',
         'about-team-subtitle': 'رهبری، دانش زمین‌شناسی و نوآوری مهندسی شیمی در صبابهپر ایرانیان.',
@@ -780,19 +780,19 @@ const translations = {
         'mgmt-gov-card3-desc': 'ارتباط مستقیم مدیریتی برای تولید پودرهای سفارشی، لجستیک فله و قراردادهای بلندمدت تامین صنایع.',
         'products-hero-tag': 'پودرهای معدنی صنعتی با خلوص بالا',
         'products-hero-title': 'کاتالوگ محصولات تولیدی شرکت صبابهپر',
-        'products-hero-desc': 'استخراج مستقیم از ذخایر مرمر سفید شاقز الیگودرز و میکرونیزاسیون توسط ۶ خط آسیاب گلوله‌ای مداربسته. شرکت صبابهپر ایرانیان تولیدکننده کربنات کلسیم پوشش‌دار با اسید استئاریک، پودرهای فوق ریز بدون پوشش، تالک صنعتی و پرکننده‌های معدنی تخصصی برای صنایع پلیمر، مستربچ، رنگ، کاغذ و ساختمان است.',
+        'products-hero-desc': 'استخراج مستقیم از ذخایر سنگ کربنات کلسیم شاقز الیگودرز و میکرونیزاسیون توسط ۶ خط آسیاب گلوله‌ای مداربسته. شرکت صبابهپر ایرانیان تولیدکننده کربنات کلسیم پوشش‌دار با اسید استئاریک، پودرهای فوق ریز بدون پوشش، تالک صنعتی و پرکننده‌های معدنی تخصصی برای صنایع پلیمر، مستربچ، رنگ، کاغذ و ساختمان است.',
         'products-sec-badge': 'خطوط تولید محصولات',
         'products-sec-title': 'برای مشاهده مشخصات فنی، خط محصول مورد نظر را انتخاب کنید',
         'products-sec-desc': 'روی هر یک از کارت‌های محصول زیر کلیک کنید تا نمودارهای دانه‌بندی مش، آنالیز خلوص شیمیایی (XRF) و برگه آنالیز کیفیت (COA) را مشاهده نمایید.',
         'pcard-1-tag': 'گرید پوشش‌دار (کوتد سطحی)',
         'pcard-1-title': 'کربنات کلسیم پوشش‌دار (اسید استئاریک)',
-        'pcard-1-desc': 'پودر میکرونیزه سفید مرمر پوشش‌داده شده با اسید استئاریک خالص. ایجاد خاصیت آبگریزی، پراکندگی عالی در فاز پلیمری و کاهش گشتاور در فرایند اکسترودر.',
+        'pcard-1-desc': 'پودر میکرونیزه کربنات کلسیم پوشش‌داده شده با اسید استئاریک خالص. ایجاد خاصیت آبگریزی، پراکندگی عالی در فاز پلیمری و کاهش گشتاور در فرایند اکسترودر.',
         'pcard-1-spec1': '• <strong>خلوص و مش:</strong> +۹۸٪ CaCO3 | مش ۴۰۰ تا ۳۵۰۰ (D90: کمتر از ۸ میکرون)',
         'pcard-1-spec2': '• <strong>کاربردها:</strong> لوله‌ها و پروفیل PVC، مستربچ PP، کامپاند پلاستیک',
         'pcard-1-cta': 'مشاهده مشخصات و دریافت PDF کربنات کوتد ←',
         'pcard-2-tag': 'گرید طبیعی بدون پوشش',
         'pcard-2-title': 'کربنات کلسیم میکرونیزه بدون پوشش',
-        'pcard-2-desc': 'پودر کربنات کلسیم خالص حاصل از مرمر طبیعی با خلوص شیمیایی بالای ۹۸٪ و سفیدی طبیعی بالای ۹۸٪. ایده‌آل برای پوشش‌های پایه آب، چسب‌ها و صنایع لاستیک.',
+        'pcard-2-desc': 'پودر کربنات کلسیم خالص حاصل از سنگ کربنات طبیعی با خلوص شیمیایی بالای ۹۸٪ و سفیدی طبیعی بالای ۹۸٪. ایده‌آل برای پوشش‌های پایه آب، چسب‌ها و صنایع لاستیک.',
         'pcard-2-spec1': '• <strong>خلوص و مش:</strong> +۹۸٪ CaCO3 | مش ۴۰۰ تا ۳۵۰۰ (D90: کمتر از ۸ میکرون)',
         'pcard-2-spec2': '• <strong>کاربردها:</strong> رنگ‌های امولسیونی، چسب‌سازی، لاستیک، بتونه و درزگیرها',
         'pcard-2-cta': 'مشاهده مشخصات و دریافت PDF کربنات ساده ←',
@@ -816,7 +816,7 @@ const translations = {
         'pcard-5-cta': 'مشاهده مشخصات گرید ساختمانی ←',
         'caco3-badge': 'گرید کربنات کلسیم با خلوص بالا',
         'caco3-title': 'گروه محصولات کربنات کلسیم (GCC)',
-        'caco3-desc': 'کربنات کلسیم میکرونیزه سفید مرمر حاصل از معادن الیگودرز. عرضه در گریدهای پوشش‌دار اسید استئاریک، بدون پوشش فوق‌ریز، پرکننده کاغذ و فیلرهای ملات خشک ساختمانی.',
+        'caco3-desc': 'کربنات کلسیم میکرونیزه با خلوص بالا حاصل از معادن الیگودرز. عرضه در گریدهای پوشش‌دار اسید استئاریک، بدون پوشش فوق‌ریز، پرکننده کاغذ و فیلرهای ملات خشک ساختمانی.',
         'caco3-spec-title': 'مشخصات فنی و دانه‌بندی مش',
         'caco3-th-grade': 'نام گرید',
         'caco3-th-purity': 'خلوص CaCO3',
@@ -842,9 +842,9 @@ const translations = {
         'contact-details-title': 'شرکت معدنی صبابهپر ایرانیان',
         'contact-details-desc': 'شرکت معدنی صبابهپر ایرانیان متخصص در استخراج و فراوری کربنات کلسیم با خلوص بالا است. ما آماده پاسخگویی به سوالات و تامین سفارشات شما هستیم.',
         'contact-office-title': 'دفتر تهران',
-        'contact-office-addr': 'تهران، خیابان شریعتی، خیابان حقوقی، پلاک ۶۰، طبقه همکف',
+        'contact-office-addr': 'تهران، خیابان شریعتی، خیابان حقوقی، پلاک ۶۰، طبقه ۵',
         'contact-factory-title': 'کارخانه الیگودرز',
-        'contact-factory-addr': 'لرستان، الیگودرز، کیلومتر ۵ جاده قدیم',
+        'contact-factory-addr': 'لرستان، الیگودرز، کیلومتر ۵ جاده قدیم اصفهان',
         'contact-phone-title': 'شماره های تماس',
         'contact-social-title': 'شبکه های اجتماعی',
         'phone-popup-header': 'ارتباط سریع',
@@ -1113,51 +1113,59 @@ function changeLanguage(lang) {
     // Apply translations by mapIds
     const currentTranslations = translations[lang] || translations['en'];
     for (const [key, selector] of Object.entries(mapIds)) {
-        const elements = document.querySelectorAll(selector);
-        elements.forEach(el => {
-            if (currentTranslations[key] !== undefined) {
-                if (key === 'nav-about' || key === 'nav-products') {
-                    if (el.classList.contains('navbar__mobile-toggle')) {
-                        el.innerHTML = `<span>${currentTranslations[key]}</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><path d="m6 9 6 6 6-6"/></svg>`;
-                    } else if (el.classList.contains('navbar__link')) {
-                        el.innerHTML = `${currentTranslations[key]} ${dropdownArrowSvg}`;
+        try {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(el => {
+                if (currentTranslations[key] !== undefined) {
+                    if (key === 'nav-about' || key === 'nav-products') {
+                        if (el.classList.contains('navbar__mobile-toggle')) {
+                            el.innerHTML = `<span>${currentTranslations[key]}</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><path d="m6 9 6 6 6-6"/></svg>`;
+                        } else if (el.classList.contains('navbar__link')) {
+                            el.innerHTML = `${currentTranslations[key]} ${dropdownArrowSvg}`;
+                        } else {
+                            el.innerHTML = currentTranslations[key];
+                        }
                     } else {
-                        el.innerHTML = currentTranslations[key];
-                    }
-                } else {
-                    if (el.tagName === 'IMG') {
-                        el.alt = currentTranslations[key];
-                    } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                        el.placeholder = currentTranslations[key];
-                    } else {
-                        el.innerHTML = currentTranslations[key];
+                        if (el.tagName === 'IMG') {
+                            el.alt = currentTranslations[key];
+                        } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                            el.placeholder = currentTranslations[key];
+                        } else {
+                            el.innerHTML = currentTranslations[key];
+                        }
                     }
                 }
-            }
-        });
+            });
+        } catch (e) {
+            // Ignore querySelector errors for non-matching selectors
+        }
     }
 
     // Apply translations by element ID fallback for all subpages
     for (const [key, text] of Object.entries(currentTranslations)) {
-        const el = document.getElementById(key);
-        if (el) {
-            if (key === 'nav-about' || key === 'nav-products') {
-                if (el.classList.contains('navbar__mobile-toggle')) {
-                    el.innerHTML = `<span>${text}</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><path d="m6 9 6 6 6-6"/></svg>`;
-                } else if (el.classList.contains('navbar__link')) {
-                    el.innerHTML = `${text} ${dropdownArrowSvg}`;
+        try {
+            const el = document.getElementById(key);
+            if (el) {
+                if (key === 'nav-about' || key === 'nav-products') {
+                    if (el.classList.contains('navbar__mobile-toggle')) {
+                        el.innerHTML = `<span>${text}</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><path d="m6 9 6 6 6-6"/></svg>`;
+                    } else if (el.classList.contains('navbar__link')) {
+                        el.innerHTML = `${text} ${dropdownArrowSvg}`;
+                    } else {
+                        el.innerHTML = text;
+                    }
                 } else {
-                    el.innerHTML = text;
-                }
-            } else {
-                if (el.tagName === 'IMG') {
-                    el.alt = text;
-                } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                    el.placeholder = text;
-                } else {
-                    el.innerHTML = text;
+                    if (el.tagName === 'IMG') {
+                        el.alt = text;
+                    } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = text;
+                    } else {
+                        el.innerHTML = text;
+                    }
                 }
             }
+        } catch (e) {
+            // Ignore
         }
     }
 
@@ -1203,16 +1211,19 @@ function changeLanguage(lang) {
 }
 
 // Check language preference on load
-document.addEventListener('DOMContentLoaded', () => {
+function initLanguage() {
+    const savedLang = localStorage.getItem('sababehpar-lang');
     const isFa = (document.documentElement.lang && document.documentElement.lang.toLowerCase().startsWith('fa'))
         || window.location.pathname.startsWith('/fa/')
         || window.location.pathname === '/fa'
-        || (document.documentElement.getAttribute('dir') === 'rtl');
+        || (document.documentElement.getAttribute('dir') === 'rtl')
+        || (savedLang === 'fa');
     const pageLang = isFa ? 'fa' : 'en';
     
     localStorage.setItem('sababehpar-lang', pageLang);
     if (document.documentElement) {
         document.documentElement.lang = pageLang;
+        document.documentElement.setAttribute('dir', pageLang === 'fa' ? 'rtl' : 'ltr');
     }
     
     // Set initial language switcher text
@@ -1228,4 +1239,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Apply translations for the active page language
     changeLanguage(pageLang);
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguage);
+} else {
+    initLanguage();
+}
+

@@ -116,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.language-selector__option').forEach(option => {
         option.addEventListener('click', (e) => {
-            e.preventDefault();
             const lang = option.dataset.lang || 'en';
             localStorage.setItem('sababehpar-lang', lang);
             document.querySelectorAll('.language-selector__option').forEach(o => o.classList.remove('active'));
@@ -126,7 +125,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 langToggleText.textContent = lang === 'fa' ? ' FA ' : ' EN ';
             }
             langDropdown.classList.remove('open');
-            window.location.href = option.href;
+            if (typeof changeLanguage === 'function') {
+                changeLanguage(lang);
+            }
+            const href = option.getAttribute('href');
+            if (href && href !== '#' && !href.startsWith('javascript:')) {
+                const currentPath = window.location.pathname;
+                if (href !== currentPath && href !== window.location.href) {
+                    window.location.href = href;
+                    return;
+                }
+            }
+            e.preventDefault();
         });
     });
 
